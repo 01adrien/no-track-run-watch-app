@@ -1,0 +1,27 @@
+App mobile tierce (NoTrackRun)
+        ↓  Garmin Mobile SDK (Android / iOS)
+Garmin Connect  ← installé sur le téléphone du coureur
+        ↓  companion.js  ← tourne DANS Garmin Connect
+        ↓  BLE propriétaire Garmin
+Montre Garmin
+
+
+-- Montre ne sauvegarde pas point gps et stats pour le téléphone
+-- affichage allure en m/s ? km/h ? min/km ?
+-- capture d'ecran de l'app (en action et du simulateur)
+-- degre tolerance sur le pace cible
+
+
+xhost +local:docker
+docker run --rm \
+  --name garmin-sdk \
+  -e DISPLAY="$DISPLAY" \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  -v ~/Bureau/garmin:/workspace \
+  --network host \
+  garmin-dev
+
+
+adb forward tcp:7381 tcp:7381
+
+node -e "require('http').createServer((r,s)=>{let b='';r.on('data',d=>b+=d);r.on('end',()=>{console.log('Reçu:',b);s.writeHead(200);s.end('ok')})}).listen(3000)"

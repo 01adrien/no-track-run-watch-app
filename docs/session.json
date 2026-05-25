@@ -1,0 +1,51 @@
+{
+    "label": "Training",
+    "date": "2026-03-25",
+    "duration": 1506,
+    "distance": 4933,
+    "blocks": [
+        {
+            "label": "Warm Up",
+            "fields": [
+                {
+                    "distance": 1500,
+                    "pace": 2.78
+                },
+                {
+                    "duration": 150,
+                    "pace": 3.33
+                }
+            ]
+        },
+        {
+            "label": "Cardio",
+            "fields": [
+                {
+                    "distance": 400,
+                    "pace": 4.17
+                },
+                {
+                    "duration": 72,
+                    "pace": 5.56
+                },
+                {
+                    "distance": 400,
+                    "pace": 4.17
+                },
+                {
+                    "duration": 72,
+                    "pace": 5.56
+                }
+            ]
+        },
+        {
+            "label": "Calm Down",
+            "fields": [
+                {
+                    "duration": 480,
+                    "pace": 2.78
+                }
+            ]
+        }
+    ]
+}
