@@ -15,5 +15,4 @@ build:
 run:
 	$(SDK)/monkeydo $(PRG) $(DEVICE)
 
-
 all: build run

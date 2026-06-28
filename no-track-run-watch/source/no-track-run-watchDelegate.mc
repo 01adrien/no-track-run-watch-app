@@ -76,7 +76,7 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                 app._sendResultsToPhone();
                 return true;
             }
-            if (key == WatchUi.KEY_ESC) {
+            if (key == WatchUi.KEY_DOWN) {
                 app.backIdle();
                 return true;
             }

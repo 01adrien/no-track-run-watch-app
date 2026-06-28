@@ -401,12 +401,12 @@ _workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_12_82_12_i
         symbol [ key %tmp.111 79 16 19 ];
         symbol [ WatchUi %tmp.112 79 23 30 ];
         %tmp.112 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ESC %tmp.113 79 31 38 ];
-        %tmp.113 = getv %tmp.112 :KEY_ESC;
+        symbol [ KEY_DOWN %tmp.113 79 31 39 ];
+        %tmp.113 = getv %tmp.112 :KEY_DOWN;
         %tmp.114 = eq %tmp.111 %tmp.113;
         bf %tmp.114 @_workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_12_82_12_if_end;
 _workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_12_82_12_if_true:
-_workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_40_82_12_start:
+_workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_41_82_12_start:
 [ "/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" 80 16 ]
         %tmp.115 = lgetv %app.1;
         symbol [ app %tmp.115 80 16 19 ];
@@ -416,7 +416,7 @@ _workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_40_82_12_s
 [ "/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" 81 16 ]
         %tmp.117 = true;
         ret %tmp.117;
-_workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_40_82_12_stop:
+_workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_41_82_12_stop:
         goto @_workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_12_82_12_if_end;
 _workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_79_12_82_12_if_end:
 _workspace_no_track_run_watch_source_no_track_run_watchDelegate_mc_73_49_85_8_stop:

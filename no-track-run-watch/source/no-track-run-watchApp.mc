@@ -47,8 +47,6 @@ class NoTrackRunWatchApp extends Application.AppBase {
     var avgPace         as Float       = 0.0;
     var countdownValue  as Number      = 3;
     var blinkOn         as Boolean     = true;
-    var timerLoading    as Timer.Timer = new Timer.Timer();
-    var sessionToSend   as Dictionary  = {};
     var currentSpeed    as Float       = 0.0;
     var errorMsg        as String      = "";
     var syncTimeout     as Number      = 10;
@@ -94,8 +92,8 @@ class NoTrackRunWatchApp extends Application.AppBase {
     }
 
     function onStart(state as Dictionary?) as Void {
-        _retrySendIfPending();
         Communications.registerForPhoneAppMessages(method(:onPhoneMessage));
+        _retrySendIfPending();
         // Sensor.enableSensorEvents(method(:onSensor));
         Position.enableLocationEvents(
             {
@@ -320,6 +318,7 @@ class NoTrackRunWatchApp extends Application.AppBase {
 
    function backIdle() as Void {
         sessionData = {};
+        Application.Storage.deleteValue("session@notrackrun");
         _timer.stop();
         appState    = STATE_IDLE;
     }
@@ -329,7 +328,6 @@ class NoTrackRunWatchApp extends Application.AppBase {
         currentBlockIdx = 0;
         currentFieldIdx = 0;
         fieldElapsed    = 0;
-        sessionToSend   = {};
         fieldDistance   = 0.0;
         results         = [];
         avgPace         = 0.0;
@@ -348,8 +346,8 @@ class NoTrackRunWatchApp extends Application.AppBase {
         }
 
         function onComplete() as Void {
-            // Application.Storage.deleteValue("session@notrackrun");
-            // _app.backIdle();
+             Application.Storage.deleteValue("session@notrackrun");
+             _app.backIdle();
             WatchUi.requestUpdate();
         }
 
@@ -365,9 +363,7 @@ class NoTrackRunWatchApp extends Application.AppBase {
             "sessionId" => sessionData["id"],
             "results"   => results
         }; 
-        
         _sendSession(payload);
-        
     }
 
 
@@ -379,25 +375,23 @@ class NoTrackRunWatchApp extends Application.AppBase {
     }
 
     function _sendSession(session as Dictionary) as Void {
-        sessionToSend = session;
         appState = STATE_SENDING_SESSION;
         sendingTime = 0;
         Communications.transmit(session, null, new TransmitCallback(self));
-        // timerLoading.start(method(:finishLoading), 1000, false);
     }
 
-    function finishLoading() as Void {
-        Communications.transmit(sessionToSend, null, new TransmitCallback(self));
-    }
+    // Hiérarchie des qualités GPS :
+    // QUALITY_NOT_AVAILABLE = 0  — pas de GPS du tout
+    // QUALITY_LAST_KNOWN    = 1  — position stale (replay FIT, cold start)
+    // QUALITY_POOR          = 2  — fix 2D seulement
+    // QUALITY_USABLE        = 3  — fix 3D, précision > 3.0 DOP  ← tu attends ça
+    // QUALITY_GOOD          = 4  — fix 3D, précision <= 3.0 DOP
 
+    // Pour débloquer plus vite → accepter QUALITY_POOR
     function isGpsReady(info as Position.Info) as Boolean {
-        if (info == null) {
-            return false;
-        }
-        if (info.accuracy == null) {
-            return false;
-        }
-        return info.accuracy >= Position.QUALITY_USABLE;
+        if (info == null)           { return false; }
+        if (info.accuracy == null)  { return false; }
+        return info.accuracy >= Position.QUALITY_POOR;  // fix 2D suffit pour commencer
     }
 }
 
