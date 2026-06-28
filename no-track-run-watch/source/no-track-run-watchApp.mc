@@ -40,10 +40,11 @@ class NoTrackRunWatchApp extends Application.AppBase {
     var currentBlockIdx as Number      = 0;
     var currentFieldIdx as Number      = 0;
     var fieldElapsed    as Number      = 0;
+    var fieldMovingTime as Number      = 0;
     var fieldDistance   as Float       = 0.0;
     var results         as Array       = [];
     var _timer          as Timer.Timer = new Timer.Timer();
-    var currentPace     as Float       = 0.0;
+    var avgPace         as Float       = 0.0;
     var countdownValue  as Number      = 3;
     var blinkOn         as Boolean     = true;
     var timerLoading    as Timer.Timer = new Timer.Timer();
@@ -184,7 +185,7 @@ class NoTrackRunWatchApp extends Application.AppBase {
 
         if(appState == STATE_GPS_FIXING && isGpsReady(Position.getInfo())) {
             appState = STATE_COUNTDOWN;
-            countdownValue = 3;
+            countdownValue = 4;
             WatchUi.requestUpdate();
         }
 
@@ -205,11 +206,13 @@ class NoTrackRunWatchApp extends Application.AppBase {
                 appState        = STATE_RUNNING;
                 currentBlockIdx = 0;
                 currentFieldIdx = 0;
-                currentPace     = 0.0;
+                avgPace         = 0.0;
                 fieldElapsed    = 0;
                 fieldDistance   = 0.0;
+                fieldMovingTime = 0;
                 results         = [];
                 currentSpeed    = 0.0;
+
             }
             WatchUi.requestUpdate();
             return;
@@ -217,10 +220,13 @@ class NoTrackRunWatchApp extends Application.AppBase {
 
         if (appState != STATE_RUNNING) { return; }
 
-
-        currentPace   = currentSpeed;
-        fieldElapsed  += 1;
-        fieldDistance += currentPace;
+        var moving = currentSpeed > 0.3;
+        fieldElapsed  += 1; // sec
+        fieldDistance += moving ? currentSpeed : 0.0 ; // m / s
+        fieldMovingTime += moving ? 1 : 0;  
+        if (fieldMovingTime > 0) {
+            avgPace = fieldDistance / fieldMovingTime; // m/s sur temps réel
+        }
 
         if (_isFieldDone()) {
             _saveFieldResult();
@@ -276,7 +282,7 @@ class NoTrackRunWatchApp extends Application.AppBase {
     function _advanceField() as Void {
         fieldElapsed  = 0;
         fieldDistance = 0.0;
-        currentPace   = 0.0;
+        avgPace   = 0.0;
 
         var block  = getCurrentBlock();
         var fields = block["fields"] as Array;
@@ -326,7 +332,8 @@ class NoTrackRunWatchApp extends Application.AppBase {
         sessionToSend   = {};
         fieldDistance   = 0.0;
         results         = [];
-        currentPace     = 0.0;
+        avgPace         = 0.0;
+        fieldMovingTime = 0;
         sendingTime     = 0;
     }
 
@@ -384,17 +391,12 @@ class NoTrackRunWatchApp extends Application.AppBase {
     }
 
     function isGpsReady(info as Position.Info) as Boolean {
-
         if (info == null) {
             return false;
         }
-
         if (info.accuracy == null) {
             return false;
         }
-
-
-
         return info.accuracy >= Position.QUALITY_USABLE;
     }
 }

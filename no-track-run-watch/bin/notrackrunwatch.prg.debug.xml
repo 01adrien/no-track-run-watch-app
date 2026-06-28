@@ -4,483 +4,494 @@
     <pcToLineNum>
         <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="36" parent="globals/NoTrackRunWatchApp" pc="268435460" symbol="&lt;init&gt;"/>
         <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="38" parent="globals/NoTrackRunWatchApp" pc="268435478" symbol="&lt;init&gt;"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="44" parent="globals/NoTrackRunWatchApp" pc="268435492" symbol="&lt;init&gt;"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="45" parent="globals/NoTrackRunWatchApp" pc="268435506" symbol="&lt;init&gt;"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="49" parent="globals/NoTrackRunWatchApp" pc="268435540" symbol="&lt;init&gt;"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="50" parent="globals/NoTrackRunWatchApp" pc="268435574" symbol="&lt;init&gt;"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="2" lineNum="403" parent="globals" pc="268435589" symbol="getApp"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="2" lineNum="404" parent="globals" pc="268435599" symbol="getApp"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="45" parent="globals/NoTrackRunWatchApp" pc="268435492" symbol="&lt;init&gt;"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="46" parent="globals/NoTrackRunWatchApp" pc="268435506" symbol="&lt;init&gt;"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="50" parent="globals/NoTrackRunWatchApp" pc="268435540" symbol="&lt;init&gt;"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="1" lineNum="51" parent="globals/NoTrackRunWatchApp" pc="268435574" symbol="&lt;init&gt;"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="2" lineNum="408" parent="globals" pc="268435589" symbol="getApp"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="2" lineNum="409" parent="globals" pc="268435599" symbol="getApp"/>
         <entry filename="/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435615" symbol="&lt;init&gt;"/>
         <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="4" lineNum="6" parent="globals/NoTrackRunView" pc="268435639" symbol="&lt;init&gt;"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="5" lineNum="12" parent="globals/NoTrackRunDelegate" pc="268435658" symbol="&lt;init&gt;"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="6" lineNum="269" parent="globals/NoTrackRunWatchApp" pc="268435677" symbol="_finishSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="6" lineNum="271" parent="globals/NoTrackRunWatchApp" pc="268435679" symbol="_finishSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="6" lineNum="272" parent="globals/NoTrackRunWatchApp" pc="268435692" symbol="_finishSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="183" parent="globals/NoTrackRunWatchApp" pc="268435709" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="185" parent="globals/NoTrackRunWatchApp" pc="268435711" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="186" parent="globals/NoTrackRunWatchApp" pc="268435757" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="187" parent="globals/NoTrackRunWatchApp" pc="268435770" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="190" parent="globals/NoTrackRunWatchApp" pc="268435786" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="192" parent="globals/NoTrackRunWatchApp" pc="268435803" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="193" parent="globals/NoTrackRunWatchApp" pc="268435823" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="194" parent="globals/NoTrackRunWatchApp" pc="268435836" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="195" parent="globals/NoTrackRunWatchApp" pc="268435852" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="198" parent="globals/NoTrackRunWatchApp" pc="268435856" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="201" parent="globals/NoTrackRunWatchApp" pc="268435878" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="202" parent="globals/NoTrackRunWatchApp" pc="268435895" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="203" parent="globals/NoTrackRunWatchApp" pc="268435914" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="204" parent="globals/NoTrackRunWatchApp" pc="268435931" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="205" parent="globals/NoTrackRunWatchApp" pc="268435944" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="206" parent="globals/NoTrackRunWatchApp" pc="268435957" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="207" parent="globals/NoTrackRunWatchApp" pc="268435970" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="208" parent="globals/NoTrackRunWatchApp" pc="268435983" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="209" parent="globals/NoTrackRunWatchApp" pc="268435996" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="210" parent="globals/NoTrackRunWatchApp" pc="268436009" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="211" parent="globals/NoTrackRunWatchApp" pc="268436023" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="213" parent="globals/NoTrackRunWatchApp" pc="268436039" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="214" parent="globals/NoTrackRunWatchApp" pc="268436055" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="217" parent="globals/NoTrackRunWatchApp" pc="268436059" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="217" parent="globals/NoTrackRunWatchApp" pc="268436076" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="220" parent="globals/NoTrackRunWatchApp" pc="268436080" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="221" parent="globals/NoTrackRunWatchApp" pc="268436096" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="222" parent="globals/NoTrackRunWatchApp" pc="268436115" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="224" parent="globals/NoTrackRunWatchApp" pc="268436137" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="225" parent="globals/NoTrackRunWatchApp" pc="268436151" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="226" parent="globals/NoTrackRunWatchApp" pc="268436163" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="228" parent="globals/NoTrackRunWatchApp" pc="268436178" symbol="onTick"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="8" lineNum="164" parent="globals/NoTrackRunWatchApp" pc="268436195" symbol="onPosition"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="8" lineNum="166" parent="globals/NoTrackRunWatchApp" pc="268436197" symbol="onPosition"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="8" lineNum="167" parent="globals/NoTrackRunWatchApp" pc="268436217" symbol="onPosition"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="8" lineNum="169" parent="globals/NoTrackRunWatchApp" pc="268436236" symbol="onPosition"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="231" parent="globals/NoTrackRunWatchApp" pc="268436250" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="232" parent="globals/NoTrackRunWatchApp" pc="268436254" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="233" parent="globals/NoTrackRunWatchApp" pc="268436267" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="235" parent="globals/NoTrackRunWatchApp" pc="268436280" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="236" parent="globals/NoTrackRunWatchApp" pc="268436290" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="238" parent="globals/NoTrackRunWatchApp" pc="268436297" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="239" parent="globals/NoTrackRunWatchApp" pc="268436314" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="242" parent="globals/NoTrackRunWatchApp" pc="268436336" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="243" parent="globals/NoTrackRunWatchApp" pc="268436343" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="245" parent="globals/NoTrackRunWatchApp" pc="268436347" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="253" parent="globals/NoTrackRunWatchApp" pc="268436455" symbol="_saveFieldResult"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="10" lineNum="115" parent="globals/NoTrackRunWatchApp" pc="268436468" symbol="getInitialView"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="10" lineNum="116" parent="globals/NoTrackRunWatchApp" pc="268436470" symbol="getInitialView"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="11" lineNum="354" parent="globals/NoTrackRunWatchApp" pc="268436537" symbol="_sendResultsToPhone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="11" lineNum="355" parent="globals/NoTrackRunWatchApp" pc="268436541" symbol="_sendResultsToPhone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="11" lineNum="361" parent="globals/NoTrackRunWatchApp" pc="268436609" symbol="_sendResultsToPhone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="275" parent="globals/NoTrackRunWatchApp" pc="268436624" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="276" parent="globals/NoTrackRunWatchApp" pc="268436628" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="277" parent="globals/NoTrackRunWatchApp" pc="268436641" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="278" parent="globals/NoTrackRunWatchApp" pc="268436654" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="280" parent="globals/NoTrackRunWatchApp" pc="268436667" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="281" parent="globals/NoTrackRunWatchApp" pc="268436680" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="283" parent="globals/NoTrackRunWatchApp" pc="268436690" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="284" parent="globals/NoTrackRunWatchApp" pc="268436719" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="286" parent="globals/NoTrackRunWatchApp" pc="268436741" symbol="_advanceField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="13" lineNum="366" parent="globals/NoTrackRunWatchApp" pc="268436754" symbol="_retrySendIfPending"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="13" lineNum="367" parent="globals/NoTrackRunWatchApp" pc="268436758" symbol="_retrySendIfPending"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="13" lineNum="368" parent="globals/NoTrackRunWatchApp" pc="268436780" symbol="_retrySendIfPending"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="13" lineNum="369" parent="globals/NoTrackRunWatchApp" pc="268436787" symbol="_retrySendIfPending"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="290" parent="globals/NoTrackRunWatchApp" pc="268436805" symbol="_advanceBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="291" parent="globals/NoTrackRunWatchApp" pc="268436809" symbol="_advanceBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="292" parent="globals/NoTrackRunWatchApp" pc="268436825" symbol="_advanceBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="294" parent="globals/NoTrackRunWatchApp" pc="268436838" symbol="_advanceBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="295" parent="globals/NoTrackRunWatchApp" pc="268436867" symbol="_advanceBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="297" parent="globals/NoTrackRunWatchApp" pc="268436889" symbol="_advanceBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="15" lineNum="95" parent="globals/NoTrackRunWatchApp" pc="268436902" symbol="onStart"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="15" lineNum="96" parent="globals/NoTrackRunWatchApp" pc="268436904" symbol="onStart"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="15" lineNum="97" parent="globals/NoTrackRunWatchApp" pc="268436916" symbol="onStart"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="15" lineNum="99" parent="globals/NoTrackRunWatchApp" pc="268436948" symbol="onStart"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="138" parent="globals/NoTrackRunWatchApp" pc="268437013" symbol="_isFieldDone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="139" parent="globals/NoTrackRunWatchApp" pc="268437017" symbol="_isFieldDone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="140" parent="globals/NoTrackRunWatchApp" pc="268437030" symbol="_isFieldDone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="141" parent="globals/NoTrackRunWatchApp" pc="268437050" symbol="_isFieldDone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="142" parent="globals/NoTrackRunWatchApp" pc="268437060" symbol="_isFieldDone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="144" parent="globals/NoTrackRunWatchApp" pc="268437075" symbol="_isFieldDone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="145" parent="globals/NoTrackRunWatchApp" pc="268437085" symbol="_isFieldDone"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="17" lineNum="177" parent="globals/NoTrackRunWatchApp" pc="268437098" symbol="startSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="17" lineNum="178" parent="globals/NoTrackRunWatchApp" pc="268437100" symbol="startSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="17" lineNum="179" parent="globals/NoTrackRunWatchApp" pc="268437113" symbol="startSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="17" lineNum="180" parent="globals/NoTrackRunWatchApp" pc="268437154" symbol="startSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="385" parent="globals/NoTrackRunWatchApp" pc="268437171" symbol="isGpsReady"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="387" parent="globals/NoTrackRunWatchApp" pc="268437173" symbol="isGpsReady"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="388" parent="globals/NoTrackRunWatchApp" pc="268437179" symbol="isGpsReady"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="391" parent="globals/NoTrackRunWatchApp" pc="268437185" symbol="isGpsReady"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="392" parent="globals/NoTrackRunWatchApp" pc="268437197" symbol="isGpsReady"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="395" parent="globals/NoTrackRunWatchApp" pc="268437203" symbol="isGpsReady"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="301" parent="globals/NoTrackRunWatchApp" pc="268437218" symbol="skipCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="302" parent="globals/NoTrackRunWatchApp" pc="268437220" symbol="skipCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="302" parent="globals/NoTrackRunWatchApp" pc="268437237" symbol="skipCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="303" parent="globals/NoTrackRunWatchApp" pc="268437241" symbol="skipCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="304" parent="globals/NoTrackRunWatchApp" pc="268437253" symbol="skipCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="305" parent="globals/NoTrackRunWatchApp" pc="268437265" symbol="skipCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="20" lineNum="108" parent="globals/NoTrackRunWatchApp" pc="268437282" symbol="onStop"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="20" lineNum="109" parent="globals/NoTrackRunWatchApp" pc="268437284" symbol="onStop"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="20" lineNum="111" parent="globals/NoTrackRunWatchApp" pc="268437302" symbol="onStop"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="20" lineNum="112" parent="globals/NoTrackRunWatchApp" pc="268437324" symbol="onStop"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="21" lineNum="381" parent="globals/NoTrackRunWatchApp" pc="268437364" symbol="finishLoading"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="21" lineNum="382" parent="globals/NoTrackRunWatchApp" pc="268437366" symbol="finishLoading"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="149" parent="globals/NoTrackRunWatchApp" pc="268437416" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="150" parent="globals/NoTrackRunWatchApp" pc="268437420" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="151" parent="globals/NoTrackRunWatchApp" pc="268437433" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="152" parent="globals/NoTrackRunWatchApp" pc="268437453" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="153" parent="globals/NoTrackRunWatchApp" pc="268437463" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="154" parent="globals/NoTrackRunWatchApp" pc="268437476" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="156" parent="globals/NoTrackRunWatchApp" pc="268437501" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="157" parent="globals/NoTrackRunWatchApp" pc="268437511" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="158" parent="globals/NoTrackRunWatchApp" pc="268437524" symbol="primaryRemaining"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="23" lineNum="309" parent="globals/NoTrackRunWatchApp" pc="268437547" symbol="endSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="23" lineNum="310" parent="globals/NoTrackRunWatchApp" pc="268437549" symbol="endSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="64" parent="globals/NoTrackRunWatchApp" pc="268437562" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="66" parent="globals/NoTrackRunWatchApp" pc="268437566" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="68" parent="globals/NoTrackRunWatchApp" pc="268437576" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="69" parent="globals/NoTrackRunWatchApp" pc="268437594" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="70" parent="globals/NoTrackRunWatchApp" pc="268437613" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="71" parent="globals/NoTrackRunWatchApp" pc="268437634" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="72" parent="globals/NoTrackRunWatchApp" pc="268437644" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="76" parent="globals/NoTrackRunWatchApp" pc="268437663" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="78" parent="globals/NoTrackRunWatchApp" pc="268437681" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="79" parent="globals/NoTrackRunWatchApp" pc="268437685" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="81" parent="globals/NoTrackRunWatchApp" pc="268437707" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="82" parent="globals/NoTrackRunWatchApp" pc="268437713" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="83" parent="globals/NoTrackRunWatchApp" pc="268437723" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="85" parent="globals/NoTrackRunWatchApp" pc="268437739" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="89" parent="globals/NoTrackRunWatchApp" pc="268437755" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="92" parent="globals/NoTrackRunWatchApp" pc="268437768" symbol="onPhoneMessage"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="373" parent="globals/NoTrackRunWatchApp" pc="268437785" symbol="_sendSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="374" parent="globals/NoTrackRunWatchApp" pc="268437787" symbol="_sendSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="375" parent="globals/NoTrackRunWatchApp" pc="268437797" symbol="_sendSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="376" parent="globals/NoTrackRunWatchApp" pc="268437810" symbol="_sendSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="377" parent="globals/NoTrackRunWatchApp" pc="268437823" symbol="_sendSession"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="320" parent="globals/NoTrackRunWatchApp" pc="268437867" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="321" parent="globals/NoTrackRunWatchApp" pc="268437869" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="322" parent="globals/NoTrackRunWatchApp" pc="268437882" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="323" parent="globals/NoTrackRunWatchApp" pc="268437895" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="324" parent="globals/NoTrackRunWatchApp" pc="268437908" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="325" parent="globals/NoTrackRunWatchApp" pc="268437921" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="326" parent="globals/NoTrackRunWatchApp" pc="268437935" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="327" parent="globals/NoTrackRunWatchApp" pc="268437948" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="328" parent="globals/NoTrackRunWatchApp" pc="268437962" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="329" parent="globals/NoTrackRunWatchApp" pc="268437975" symbol="_resetState"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="27" lineNum="128" parent="globals/NoTrackRunWatchApp" pc="268437989" symbol="getCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="27" lineNum="129" parent="globals/NoTrackRunWatchApp" pc="268437993" symbol="getCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="27" lineNum="130" parent="globals/NoTrackRunWatchApp" pc="268438006" symbol="getCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="27" lineNum="131" parent="globals/NoTrackRunWatchApp" pc="268438016" symbol="getCurrentField"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="28" lineNum="123" parent="globals/NoTrackRunWatchApp" pc="268438028" symbol="getCurrentBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="28" lineNum="124" parent="globals/NoTrackRunWatchApp" pc="268438032" symbol="getCurrentBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="28" lineNum="125" parent="globals/NoTrackRunWatchApp" pc="268438048" symbol="getCurrentBlock"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="29" lineNum="134" parent="globals/NoTrackRunWatchApp" pc="268438060" symbol="getGoal"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="29" lineNum="135" parent="globals/NoTrackRunWatchApp" pc="268438062" symbol="getGoal"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="30" lineNum="332" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268438104" symbol="&lt;init&gt;"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="31" lineNum="56" parent="globals/NoTrackRunWatchApp" pc="268438123" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="31" lineNum="57" parent="globals/NoTrackRunWatchApp" pc="268438125" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="32" lineNum="314" parent="globals/NoTrackRunWatchApp" pc="268438144" symbol="backIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="32" lineNum="315" parent="globals/NoTrackRunWatchApp" pc="268438146" symbol="backIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="32" lineNum="316" parent="globals/NoTrackRunWatchApp" pc="268438160" symbol="backIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="32" lineNum="317" parent="globals/NoTrackRunWatchApp" pc="268438178" symbol="backIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="256" parent="globals/NoTrackRunWatchApp" pc="268438192" symbol="_saveSessionLocally"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="257" parent="globals/NoTrackRunWatchApp" pc="268438196" symbol="_saveSessionLocally"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="258" parent="globals/NoTrackRunWatchApp" pc="268438222" symbol="_saveSessionLocally"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="260" parent="globals/NoTrackRunWatchApp" pc="268438226" symbol="_saveSessionLocally"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="261" parent="globals/NoTrackRunWatchApp" pc="268438234" symbol="_saveSessionLocally"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="34" lineNum="86" parent="globals/NoTrackRunView" pc="268438318" symbol="_drawCountdown"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="34" lineNum="87" parent="globals/NoTrackRunView" pc="268438322" symbol="_drawCountdown"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="34" lineNum="89" parent="globals/NoTrackRunView" pc="268438341" symbol="_drawCountdown"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="34" lineNum="90" parent="globals/NoTrackRunView" pc="268438363" symbol="_drawCountdown"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="258" parent="globals/NoTrackRunView" pc="268438410" symbol="_drawLoading"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="260" parent="globals/NoTrackRunView" pc="268438414" symbol="_drawLoading"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="261" parent="globals/NoTrackRunView" pc="268438433" symbol="_drawLoading"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="263" parent="globals/NoTrackRunView" pc="268438452" symbol="_drawLoading"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="265" parent="globals/NoTrackRunView" pc="268438474" symbol="_drawLoading"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="279" parent="globals/NoTrackRunView" pc="268438509" symbol="formatPace"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="280" parent="globals/NoTrackRunView" pc="268438513" symbol="formatPace"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="280" parent="globals/NoTrackRunView" pc="268438524" symbol="formatPace"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="281" parent="globals/NoTrackRunView" pc="268438533" symbol="formatPace"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="282" parent="globals/NoTrackRunView" pc="268438543" symbol="formatPace"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="283" parent="globals/NoTrackRunView" pc="268438562" symbol="formatPace"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="284" parent="globals/NoTrackRunView" pc="268438584" symbol="formatPace"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="37" lineNum="295" parent="globals/NoTrackRunView" pc="268438627" symbol="formatDistance"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="37" lineNum="296" parent="globals/NoTrackRunView" pc="268438629" symbol="formatDistance"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="37" lineNum="297" parent="globals/NoTrackRunView" pc="268438640" symbol="formatDistance"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="37" lineNum="299" parent="globals/NoTrackRunView" pc="268438672" symbol="formatDistance"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="210" parent="globals/NoTrackRunView" pc="268438695" symbol="_drawIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="211" parent="globals/NoTrackRunView" pc="268438699" symbol="_drawIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="212" parent="globals/NoTrackRunView" pc="268438718" symbol="_drawIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="214" parent="globals/NoTrackRunView" pc="268438737" symbol="_drawIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="215" parent="globals/NoTrackRunView" pc="268438759" symbol="_drawIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="217" parent="globals/NoTrackRunView" pc="268438796" symbol="_drawIdle"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="97" parent="globals/NoTrackRunView" pc="268438819" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="98" parent="globals/NoTrackRunView" pc="268438823" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="99" parent="globals/NoTrackRunView" pc="268438842" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="100" parent="globals/NoTrackRunView" pc="268438855" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="102" parent="globals/NoTrackRunView" pc="268438862" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="103" parent="globals/NoTrackRunView" pc="268438875" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="106" parent="globals/NoTrackRunView" pc="268438888" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="107" parent="globals/NoTrackRunView" pc="268438910" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="108" parent="globals/NoTrackRunView" pc="268438920" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="109" parent="globals/NoTrackRunView" pc="268438948" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="112" parent="globals/NoTrackRunView" pc="268438958" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="113" parent="globals/NoTrackRunView" pc="268438968" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="114" parent="globals/NoTrackRunView" pc="268438975" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="115" parent="globals/NoTrackRunView" pc="268438982" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="116" parent="globals/NoTrackRunView" pc="268438995" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="117" parent="globals/NoTrackRunView" pc="268439008" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="118" parent="globals/NoTrackRunView" pc="268439021" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="119" parent="globals/NoTrackRunView" pc="268439036" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="120" parent="globals/NoTrackRunView" pc="268439050" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="121" parent="globals/NoTrackRunView" pc="268439075" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="122" parent="globals/NoTrackRunView" pc="268439089" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="123" parent="globals/NoTrackRunView" pc="268439100" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="125" parent="globals/NoTrackRunView" pc="268439125" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="128" parent="globals/NoTrackRunView" pc="268439150" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="130" parent="globals/NoTrackRunView" pc="268439172" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="131" parent="globals/NoTrackRunView" pc="268439214" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="133" parent="globals/NoTrackRunView" pc="268439234" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="136" parent="globals/NoTrackRunView" pc="268439244" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="137" parent="globals/NoTrackRunView" pc="268439257" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="139" parent="globals/NoTrackRunView" pc="268439279" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="140" parent="globals/NoTrackRunView" pc="268439299" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="141" parent="globals/NoTrackRunView" pc="268439321" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="145" parent="globals/NoTrackRunView" pc="268439369" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="148" parent="globals/NoTrackRunView" pc="268439408" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="151" parent="globals/NoTrackRunView" pc="268439418" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="152" parent="globals/NoTrackRunView" pc="268439440" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="154" parent="globals/NoTrackRunView" pc="268439485" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="157" parent="globals/NoTrackRunView" pc="268439495" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="158" parent="globals/NoTrackRunView" pc="268439505" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="159" parent="globals/NoTrackRunView" pc="268439527" symbol="_drawRunning"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="242" parent="globals/NoTrackRunView" pc="268439573" symbol="_drawSyncOk"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="243" parent="globals/NoTrackRunView" pc="268439577" symbol="_drawSyncOk"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="244" parent="globals/NoTrackRunView" pc="268439584" symbol="_drawSyncOk"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="246" parent="globals/NoTrackRunView" pc="268439603" symbol="_drawSyncOk"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="247" parent="globals/NoTrackRunView" pc="268439625" symbol="_drawSyncOk"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="248" parent="globals/NoTrackRunView" pc="268439656" symbol="_drawSyncOk"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="250" parent="globals/NoTrackRunView" pc="268439666" symbol="_drawSyncOk"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="251" parent="globals/NoTrackRunView" pc="268439688" symbol="_drawSyncOk"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="41" lineNum="14" parent="globals/NoTrackRunView" pc="268439720" symbol="onLayout"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="225" parent="globals/NoTrackRunView" pc="268439723" symbol="_drawNeedSync"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="226" parent="globals/NoTrackRunView" pc="268439727" symbol="_drawNeedSync"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="227" parent="globals/NoTrackRunView" pc="268439734" symbol="_drawNeedSync"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="229" parent="globals/NoTrackRunView" pc="268439753" symbol="_drawNeedSync"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="230" parent="globals/NoTrackRunView" pc="268439775" symbol="_drawNeedSync"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="231" parent="globals/NoTrackRunView" pc="268439806" symbol="_drawNeedSync"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="233" parent="globals/NoTrackRunView" pc="268439816" symbol="_drawNeedSync"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="234" parent="globals/NoTrackRunView" pc="268439838" symbol="_drawNeedSync"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="168" parent="globals/NoTrackRunView" pc="268439870" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="169" parent="globals/NoTrackRunView" pc="268439874" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="170" parent="globals/NoTrackRunView" pc="268439893" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="172" parent="globals/NoTrackRunView" pc="268439900" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="173" parent="globals/NoTrackRunView" pc="268439922" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="175" parent="globals/NoTrackRunView" pc="268439953" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="178" parent="globals/NoTrackRunView" pc="268439963" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="179" parent="globals/NoTrackRunView" pc="268439970" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="180" parent="globals/NoTrackRunView" pc="268439977" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="181" parent="globals/NoTrackRunView" pc="268439987" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="182" parent="globals/NoTrackRunView" pc="268440011" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="183" parent="globals/NoTrackRunView" pc="268440018" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="184" parent="globals/NoTrackRunView" pc="268440031" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="187" parent="globals/NoTrackRunView" pc="268440057" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="188" parent="globals/NoTrackRunView" pc="268440079" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="190" parent="globals/NoTrackRunView" pc="268440118" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="192" parent="globals/NoTrackRunView" pc="268440128" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="194" parent="globals/NoTrackRunView" pc="268440167" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="196" parent="globals/NoTrackRunView" pc="268440177" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="197" parent="globals/NoTrackRunView" pc="268440203" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="198" parent="globals/NoTrackRunView" pc="268440225" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="200" parent="globals/NoTrackRunView" pc="268440264" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="202" parent="globals/NoTrackRunView" pc="268440274" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="203" parent="globals/NoTrackRunView" pc="268440296" symbol="_drawFinished"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="287" parent="globals/NoTrackRunView" pc="268440328" symbol="formatTime"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="288" parent="globals/NoTrackRunView" pc="268440332" symbol="formatTime"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="288" parent="globals/NoTrackRunView" pc="268440343" symbol="formatTime"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="289" parent="globals/NoTrackRunView" pc="268440352" symbol="formatTime"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="290" parent="globals/NoTrackRunView" pc="268440371" symbol="formatTime"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="291" parent="globals/NoTrackRunView" pc="268440393" symbol="formatTime"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="292" parent="globals/NoTrackRunView" pc="268440437" symbol="formatTime"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="48" parent="globals/NoTrackRunView" pc="268440458" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="49" parent="globals/NoTrackRunView" pc="268440462" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="50" parent="globals/NoTrackRunView" pc="268440481" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="53" parent="globals/NoTrackRunView" pc="268440488" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="54" parent="globals/NoTrackRunView" pc="268440510" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="55" parent="globals/NoTrackRunView" pc="268440526" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="56" parent="globals/NoTrackRunView" pc="268440554" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="59" parent="globals/NoTrackRunView" pc="268440564" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="60" parent="globals/NoTrackRunView" pc="268440586" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="61" parent="globals/NoTrackRunView" pc="268440602" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="62" parent="globals/NoTrackRunView" pc="268440630" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="65" parent="globals/NoTrackRunView" pc="268440640" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="66" parent="globals/NoTrackRunView" pc="268440656" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="67" parent="globals/NoTrackRunView" pc="268440672" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="69" parent="globals/NoTrackRunView" pc="268440688" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="70" parent="globals/NoTrackRunView" pc="268440710" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="71" parent="globals/NoTrackRunView" pc="268440762" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="73" parent="globals/NoTrackRunView" pc="268440772" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="75" parent="globals/NoTrackRunView" pc="268440811" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="77" parent="globals/NoTrackRunView" pc="268440821" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="79" parent="globals/NoTrackRunView" pc="268440860" symbol="_drawSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="46" lineNum="10" parent="globals/NoTrackRunView" pc="268440871" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="46" lineNum="11" parent="globals/NoTrackRunView" pc="268440873" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="16" parent="globals/NoTrackRunView" pc="268440892" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="17" parent="globals/NoTrackRunView" pc="268440896" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="18" parent="globals/NoTrackRunView" pc="268440918" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="20" parent="globals/NoTrackRunView" pc="268440930" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="21" parent="globals/NoTrackRunView" pc="268440943" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="22" parent="globals/NoTrackRunView" pc="268440960" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="24" parent="globals/NoTrackRunView" pc="268440979" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="25" parent="globals/NoTrackRunView" pc="268440996" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="26" parent="globals/NoTrackRunView" pc="268441015" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="27" parent="globals/NoTrackRunView" pc="268441032" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="28" parent="globals/NoTrackRunView" pc="268441051" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="29" parent="globals/NoTrackRunView" pc="268441068" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="30" parent="globals/NoTrackRunView" pc="268441087" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="31" parent="globals/NoTrackRunView" pc="268441104" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="32" parent="globals/NoTrackRunView" pc="268441123" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="33" parent="globals/NoTrackRunView" pc="268441140" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="34" parent="globals/NoTrackRunView" pc="268441159" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="35" parent="globals/NoTrackRunView" pc="268441176" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="36" parent="globals/NoTrackRunView" pc="268441195" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="37" parent="globals/NoTrackRunView" pc="268441212" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="38" parent="globals/NoTrackRunView" pc="268441236" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="39" parent="globals/NoTrackRunView" pc="268441253" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="40" parent="globals/NoTrackRunView" pc="268441277" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="41" parent="globals/NoTrackRunView" pc="268441294" symbol="onUpdate"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="48" lineNum="14" parent="globals/NoTrackRunDelegate" pc="268441322" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="48" lineNum="15" parent="globals/NoTrackRunDelegate" pc="268441324" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="49" lineNum="18" parent="globals/NoTrackRunDelegate" pc="268441343" symbol="_resetToSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="49" lineNum="19" parent="globals/NoTrackRunDelegate" pc="268441347" symbol="_resetToSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="49" lineNum="20" parent="globals/NoTrackRunDelegate" pc="268441360" symbol="_resetToSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="49" lineNum="21" parent="globals/NoTrackRunDelegate" pc="268441372" symbol="_resetToSummary"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="24" parent="globals/NoTrackRunDelegate" pc="268441389" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="25" parent="globals/NoTrackRunDelegate" pc="268441393" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="26" parent="globals/NoTrackRunDelegate" pc="268441406" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="28" parent="globals/NoTrackRunDelegate" pc="268441419" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="30" parent="globals/NoTrackRunDelegate" pc="268441436" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="33" parent="globals/NoTrackRunDelegate" pc="268441442" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="35" parent="globals/NoTrackRunDelegate" pc="268441459" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="36" parent="globals/NoTrackRunDelegate" pc="268441481" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="37" parent="globals/NoTrackRunDelegate" pc="268441493" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="38" parent="globals/NoTrackRunDelegate" pc="268441509" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="41" parent="globals/NoTrackRunDelegate" pc="268441515" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="42" parent="globals/NoTrackRunDelegate" pc="268441526" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="43" parent="globals/NoTrackRunDelegate" pc="268441538" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="44" parent="globals/NoTrackRunDelegate" pc="268441554" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="48" parent="globals/NoTrackRunDelegate" pc="268441563" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="50" parent="globals/NoTrackRunDelegate" pc="268441580" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="51" parent="globals/NoTrackRunDelegate" pc="268441602" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="52" parent="globals/NoTrackRunDelegate" pc="268441614" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="54" parent="globals/NoTrackRunDelegate" pc="268441620" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="55" parent="globals/NoTrackRunDelegate" pc="268441631" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="56" parent="globals/NoTrackRunDelegate" pc="268441643" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="58" parent="globals/NoTrackRunDelegate" pc="268441649" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="59" parent="globals/NoTrackRunDelegate" pc="268441671" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="60" parent="globals/NoTrackRunDelegate" pc="268441683" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="64" parent="globals/NoTrackRunDelegate" pc="268441692" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="66" parent="globals/NoTrackRunDelegate" pc="268441709" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="67" parent="globals/NoTrackRunDelegate" pc="268441731" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="68" parent="globals/NoTrackRunDelegate" pc="268441743" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="72" parent="globals/NoTrackRunDelegate" pc="268441752" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="74" parent="globals/NoTrackRunDelegate" pc="268441769" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="75" parent="globals/NoTrackRunDelegate" pc="268441791" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="76" parent="globals/NoTrackRunDelegate" pc="268441803" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="80" parent="globals/NoTrackRunDelegate" pc="268441812" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="82" parent="globals/NoTrackRunDelegate" pc="268441829" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="83" parent="globals/NoTrackRunDelegate" pc="268441840" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="84" parent="globals/NoTrackRunDelegate" pc="268441852" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="88" parent="globals/NoTrackRunDelegate" pc="268441861" symbol="onKey"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="51" lineNum="348" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441864" symbol="onError"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="51" lineNum="349" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441866" symbol="onError"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="51" lineNum="350" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441885" symbol="onError"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="52" lineNum="342" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441902" symbol="onComplete"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="52" lineNum="345" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441904" symbol="onComplete"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="53" lineNum="336" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441921" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="53" lineNum="337" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441923" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="53" lineNum="338" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441941" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="53" lineNum="339" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268441951" symbol="initialize"/>
-        <entry filename="/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen" id="54" lineNum="13" parent="globals/Rez/Layouts" pc="268441968" symbol="MainLayout"/>
-        <entry filename="/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen" id="54" lineNum="14" parent="globals/Rez/Layouts" pc="268441978" symbol="MainLayout"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="5" lineNum="13" parent="globals/NoTrackRunDelegate" pc="268435658" symbol="&lt;init&gt;"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="6" lineNum="276" parent="globals/NoTrackRunWatchApp" pc="268435677" symbol="_finishSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="6" lineNum="278" parent="globals/NoTrackRunWatchApp" pc="268435679" symbol="_finishSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="6" lineNum="279" parent="globals/NoTrackRunWatchApp" pc="268435692" symbol="_finishSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="184" parent="globals/NoTrackRunWatchApp" pc="268435709" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="186" parent="globals/NoTrackRunWatchApp" pc="268435713" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="187" parent="globals/NoTrackRunWatchApp" pc="268435759" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="188" parent="globals/NoTrackRunWatchApp" pc="268435772" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="189" parent="globals/NoTrackRunWatchApp" pc="268435785" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="192" parent="globals/NoTrackRunWatchApp" pc="268435804" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="194" parent="globals/NoTrackRunWatchApp" pc="268435821" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="195" parent="globals/NoTrackRunWatchApp" pc="268435841" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="196" parent="globals/NoTrackRunWatchApp" pc="268435854" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="197" parent="globals/NoTrackRunWatchApp" pc="268435870" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="200" parent="globals/NoTrackRunWatchApp" pc="268435874" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="203" parent="globals/NoTrackRunWatchApp" pc="268435896" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="204" parent="globals/NoTrackRunWatchApp" pc="268435913" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="205" parent="globals/NoTrackRunWatchApp" pc="268435932" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="206" parent="globals/NoTrackRunWatchApp" pc="268435949" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="207" parent="globals/NoTrackRunWatchApp" pc="268435962" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="208" parent="globals/NoTrackRunWatchApp" pc="268435975" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="209" parent="globals/NoTrackRunWatchApp" pc="268435988" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="210" parent="globals/NoTrackRunWatchApp" pc="268436001" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="211" parent="globals/NoTrackRunWatchApp" pc="268436014" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="212" parent="globals/NoTrackRunWatchApp" pc="268436027" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="213" parent="globals/NoTrackRunWatchApp" pc="268436040" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="214" parent="globals/NoTrackRunWatchApp" pc="268436054" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="217" parent="globals/NoTrackRunWatchApp" pc="268436070" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="218" parent="globals/NoTrackRunWatchApp" pc="268436086" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="221" parent="globals/NoTrackRunWatchApp" pc="268436090" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="221" parent="globals/NoTrackRunWatchApp" pc="268436107" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="223" parent="globals/NoTrackRunWatchApp" pc="268436111" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="224" parent="globals/NoTrackRunWatchApp" pc="268436127" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="225" parent="globals/NoTrackRunWatchApp" pc="268436146" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="226" parent="globals/NoTrackRunWatchApp" pc="268436181" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="227" parent="globals/NoTrackRunWatchApp" pc="268436213" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="228" parent="globals/NoTrackRunWatchApp" pc="268436230" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="231" parent="globals/NoTrackRunWatchApp" pc="268436258" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="232" parent="globals/NoTrackRunWatchApp" pc="268436272" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="233" parent="globals/NoTrackRunWatchApp" pc="268436284" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="7" lineNum="235" parent="globals/NoTrackRunWatchApp" pc="268436299" symbol="onTick"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="8" lineNum="165" parent="globals/NoTrackRunWatchApp" pc="268436316" symbol="onPosition"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="8" lineNum="167" parent="globals/NoTrackRunWatchApp" pc="268436318" symbol="onPosition"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="8" lineNum="168" parent="globals/NoTrackRunWatchApp" pc="268436338" symbol="onPosition"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="8" lineNum="170" parent="globals/NoTrackRunWatchApp" pc="268436357" symbol="onPosition"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="238" parent="globals/NoTrackRunWatchApp" pc="268436371" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="239" parent="globals/NoTrackRunWatchApp" pc="268436375" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="240" parent="globals/NoTrackRunWatchApp" pc="268436388" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="242" parent="globals/NoTrackRunWatchApp" pc="268436401" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="243" parent="globals/NoTrackRunWatchApp" pc="268436411" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="245" parent="globals/NoTrackRunWatchApp" pc="268436418" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="246" parent="globals/NoTrackRunWatchApp" pc="268436435" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="249" parent="globals/NoTrackRunWatchApp" pc="268436457" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="250" parent="globals/NoTrackRunWatchApp" pc="268436464" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="252" parent="globals/NoTrackRunWatchApp" pc="268436468" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="9" lineNum="260" parent="globals/NoTrackRunWatchApp" pc="268436576" symbol="_saveFieldResult"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="10" lineNum="116" parent="globals/NoTrackRunWatchApp" pc="268436589" symbol="getInitialView"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="10" lineNum="117" parent="globals/NoTrackRunWatchApp" pc="268436591" symbol="getInitialView"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="11" lineNum="362" parent="globals/NoTrackRunWatchApp" pc="268436658" symbol="_sendResultsToPhone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="11" lineNum="363" parent="globals/NoTrackRunWatchApp" pc="268436662" symbol="_sendResultsToPhone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="11" lineNum="369" parent="globals/NoTrackRunWatchApp" pc="268436730" symbol="_sendResultsToPhone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="282" parent="globals/NoTrackRunWatchApp" pc="268436745" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="283" parent="globals/NoTrackRunWatchApp" pc="268436749" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="284" parent="globals/NoTrackRunWatchApp" pc="268436762" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="285" parent="globals/NoTrackRunWatchApp" pc="268436775" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="287" parent="globals/NoTrackRunWatchApp" pc="268436788" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="288" parent="globals/NoTrackRunWatchApp" pc="268436801" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="290" parent="globals/NoTrackRunWatchApp" pc="268436811" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="291" parent="globals/NoTrackRunWatchApp" pc="268436840" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="12" lineNum="293" parent="globals/NoTrackRunWatchApp" pc="268436862" symbol="_advanceField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="13" lineNum="374" parent="globals/NoTrackRunWatchApp" pc="268436875" symbol="_retrySendIfPending"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="13" lineNum="375" parent="globals/NoTrackRunWatchApp" pc="268436879" symbol="_retrySendIfPending"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="13" lineNum="376" parent="globals/NoTrackRunWatchApp" pc="268436901" symbol="_retrySendIfPending"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="13" lineNum="377" parent="globals/NoTrackRunWatchApp" pc="268436908" symbol="_retrySendIfPending"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="297" parent="globals/NoTrackRunWatchApp" pc="268436926" symbol="_advanceBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="298" parent="globals/NoTrackRunWatchApp" pc="268436930" symbol="_advanceBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="299" parent="globals/NoTrackRunWatchApp" pc="268436946" symbol="_advanceBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="301" parent="globals/NoTrackRunWatchApp" pc="268436959" symbol="_advanceBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="302" parent="globals/NoTrackRunWatchApp" pc="268436988" symbol="_advanceBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="14" lineNum="304" parent="globals/NoTrackRunWatchApp" pc="268437010" symbol="_advanceBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="15" lineNum="96" parent="globals/NoTrackRunWatchApp" pc="268437023" symbol="onStart"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="15" lineNum="97" parent="globals/NoTrackRunWatchApp" pc="268437025" symbol="onStart"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="15" lineNum="98" parent="globals/NoTrackRunWatchApp" pc="268437037" symbol="onStart"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="15" lineNum="100" parent="globals/NoTrackRunWatchApp" pc="268437069" symbol="onStart"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="139" parent="globals/NoTrackRunWatchApp" pc="268437134" symbol="_isFieldDone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="140" parent="globals/NoTrackRunWatchApp" pc="268437138" symbol="_isFieldDone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="141" parent="globals/NoTrackRunWatchApp" pc="268437151" symbol="_isFieldDone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="142" parent="globals/NoTrackRunWatchApp" pc="268437171" symbol="_isFieldDone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="143" parent="globals/NoTrackRunWatchApp" pc="268437181" symbol="_isFieldDone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="145" parent="globals/NoTrackRunWatchApp" pc="268437196" symbol="_isFieldDone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="16" lineNum="146" parent="globals/NoTrackRunWatchApp" pc="268437206" symbol="_isFieldDone"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="17" lineNum="178" parent="globals/NoTrackRunWatchApp" pc="268437219" symbol="startSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="17" lineNum="179" parent="globals/NoTrackRunWatchApp" pc="268437221" symbol="startSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="17" lineNum="180" parent="globals/NoTrackRunWatchApp" pc="268437234" symbol="startSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="17" lineNum="181" parent="globals/NoTrackRunWatchApp" pc="268437275" symbol="startSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="393" parent="globals/NoTrackRunWatchApp" pc="268437292" symbol="isGpsReady"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="394" parent="globals/NoTrackRunWatchApp" pc="268437294" symbol="isGpsReady"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="395" parent="globals/NoTrackRunWatchApp" pc="268437300" symbol="isGpsReady"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="397" parent="globals/NoTrackRunWatchApp" pc="268437306" symbol="isGpsReady"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="398" parent="globals/NoTrackRunWatchApp" pc="268437318" symbol="isGpsReady"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="18" lineNum="400" parent="globals/NoTrackRunWatchApp" pc="268437324" symbol="isGpsReady"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="308" parent="globals/NoTrackRunWatchApp" pc="268437339" symbol="skipCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="309" parent="globals/NoTrackRunWatchApp" pc="268437341" symbol="skipCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="309" parent="globals/NoTrackRunWatchApp" pc="268437358" symbol="skipCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="310" parent="globals/NoTrackRunWatchApp" pc="268437362" symbol="skipCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="311" parent="globals/NoTrackRunWatchApp" pc="268437374" symbol="skipCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="19" lineNum="312" parent="globals/NoTrackRunWatchApp" pc="268437386" symbol="skipCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="20" lineNum="109" parent="globals/NoTrackRunWatchApp" pc="268437403" symbol="onStop"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="20" lineNum="110" parent="globals/NoTrackRunWatchApp" pc="268437405" symbol="onStop"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="20" lineNum="112" parent="globals/NoTrackRunWatchApp" pc="268437423" symbol="onStop"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="20" lineNum="113" parent="globals/NoTrackRunWatchApp" pc="268437445" symbol="onStop"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="21" lineNum="389" parent="globals/NoTrackRunWatchApp" pc="268437485" symbol="finishLoading"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="21" lineNum="390" parent="globals/NoTrackRunWatchApp" pc="268437487" symbol="finishLoading"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="150" parent="globals/NoTrackRunWatchApp" pc="268437537" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="151" parent="globals/NoTrackRunWatchApp" pc="268437541" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="152" parent="globals/NoTrackRunWatchApp" pc="268437554" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="153" parent="globals/NoTrackRunWatchApp" pc="268437574" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="154" parent="globals/NoTrackRunWatchApp" pc="268437584" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="155" parent="globals/NoTrackRunWatchApp" pc="268437597" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="157" parent="globals/NoTrackRunWatchApp" pc="268437622" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="158" parent="globals/NoTrackRunWatchApp" pc="268437632" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="22" lineNum="159" parent="globals/NoTrackRunWatchApp" pc="268437645" symbol="primaryRemaining"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="23" lineNum="316" parent="globals/NoTrackRunWatchApp" pc="268437668" symbol="endSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="23" lineNum="317" parent="globals/NoTrackRunWatchApp" pc="268437670" symbol="endSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="65" parent="globals/NoTrackRunWatchApp" pc="268437683" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="67" parent="globals/NoTrackRunWatchApp" pc="268437687" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="69" parent="globals/NoTrackRunWatchApp" pc="268437697" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="70" parent="globals/NoTrackRunWatchApp" pc="268437715" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="71" parent="globals/NoTrackRunWatchApp" pc="268437734" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="72" parent="globals/NoTrackRunWatchApp" pc="268437755" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="73" parent="globals/NoTrackRunWatchApp" pc="268437765" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="77" parent="globals/NoTrackRunWatchApp" pc="268437784" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="79" parent="globals/NoTrackRunWatchApp" pc="268437802" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="80" parent="globals/NoTrackRunWatchApp" pc="268437806" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="82" parent="globals/NoTrackRunWatchApp" pc="268437828" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="83" parent="globals/NoTrackRunWatchApp" pc="268437834" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="84" parent="globals/NoTrackRunWatchApp" pc="268437844" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="86" parent="globals/NoTrackRunWatchApp" pc="268437860" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="90" parent="globals/NoTrackRunWatchApp" pc="268437876" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="24" lineNum="93" parent="globals/NoTrackRunWatchApp" pc="268437889" symbol="onPhoneMessage"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="381" parent="globals/NoTrackRunWatchApp" pc="268437906" symbol="_sendSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="382" parent="globals/NoTrackRunWatchApp" pc="268437908" symbol="_sendSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="383" parent="globals/NoTrackRunWatchApp" pc="268437918" symbol="_sendSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="384" parent="globals/NoTrackRunWatchApp" pc="268437931" symbol="_sendSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="25" lineNum="385" parent="globals/NoTrackRunWatchApp" pc="268437944" symbol="_sendSession"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="327" parent="globals/NoTrackRunWatchApp" pc="268437988" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="328" parent="globals/NoTrackRunWatchApp" pc="268437990" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="329" parent="globals/NoTrackRunWatchApp" pc="268438003" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="330" parent="globals/NoTrackRunWatchApp" pc="268438016" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="331" parent="globals/NoTrackRunWatchApp" pc="268438029" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="332" parent="globals/NoTrackRunWatchApp" pc="268438042" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="333" parent="globals/NoTrackRunWatchApp" pc="268438056" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="334" parent="globals/NoTrackRunWatchApp" pc="268438069" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="335" parent="globals/NoTrackRunWatchApp" pc="268438083" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="336" parent="globals/NoTrackRunWatchApp" pc="268438096" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="26" lineNum="337" parent="globals/NoTrackRunWatchApp" pc="268438109" symbol="_resetState"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="27" lineNum="129" parent="globals/NoTrackRunWatchApp" pc="268438123" symbol="getCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="27" lineNum="130" parent="globals/NoTrackRunWatchApp" pc="268438127" symbol="getCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="27" lineNum="131" parent="globals/NoTrackRunWatchApp" pc="268438140" symbol="getCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="27" lineNum="132" parent="globals/NoTrackRunWatchApp" pc="268438150" symbol="getCurrentField"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="28" lineNum="124" parent="globals/NoTrackRunWatchApp" pc="268438162" symbol="getCurrentBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="28" lineNum="125" parent="globals/NoTrackRunWatchApp" pc="268438166" symbol="getCurrentBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="28" lineNum="126" parent="globals/NoTrackRunWatchApp" pc="268438182" symbol="getCurrentBlock"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="29" lineNum="135" parent="globals/NoTrackRunWatchApp" pc="268438194" symbol="getGoal"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="29" lineNum="136" parent="globals/NoTrackRunWatchApp" pc="268438196" symbol="getGoal"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="30" lineNum="340" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268438238" symbol="&lt;init&gt;"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="31" lineNum="57" parent="globals/NoTrackRunWatchApp" pc="268438257" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="31" lineNum="58" parent="globals/NoTrackRunWatchApp" pc="268438259" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="32" lineNum="321" parent="globals/NoTrackRunWatchApp" pc="268438278" symbol="backIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="32" lineNum="322" parent="globals/NoTrackRunWatchApp" pc="268438280" symbol="backIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="32" lineNum="323" parent="globals/NoTrackRunWatchApp" pc="268438294" symbol="backIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="32" lineNum="324" parent="globals/NoTrackRunWatchApp" pc="268438312" symbol="backIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="263" parent="globals/NoTrackRunWatchApp" pc="268438326" symbol="_saveSessionLocally"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="264" parent="globals/NoTrackRunWatchApp" pc="268438330" symbol="_saveSessionLocally"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="265" parent="globals/NoTrackRunWatchApp" pc="268438356" symbol="_saveSessionLocally"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="267" parent="globals/NoTrackRunWatchApp" pc="268438360" symbol="_saveSessionLocally"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="33" lineNum="268" parent="globals/NoTrackRunWatchApp" pc="268438368" symbol="_saveSessionLocally"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="34" lineNum="86" parent="globals/NoTrackRunView" pc="268438452" symbol="_drawCountdown"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="34" lineNum="87" parent="globals/NoTrackRunView" pc="268438456" symbol="_drawCountdown"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="34" lineNum="89" parent="globals/NoTrackRunView" pc="268438475" symbol="_drawCountdown"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="34" lineNum="90" parent="globals/NoTrackRunView" pc="268438497" symbol="_drawCountdown"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="258" parent="globals/NoTrackRunView" pc="268438544" symbol="_drawLoading"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="260" parent="globals/NoTrackRunView" pc="268438548" symbol="_drawLoading"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="261" parent="globals/NoTrackRunView" pc="268438567" symbol="_drawLoading"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="263" parent="globals/NoTrackRunView" pc="268438586" symbol="_drawLoading"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="35" lineNum="265" parent="globals/NoTrackRunView" pc="268438608" symbol="_drawLoading"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="279" parent="globals/NoTrackRunView" pc="268438643" symbol="formatPace"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="280" parent="globals/NoTrackRunView" pc="268438647" symbol="formatPace"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="280" parent="globals/NoTrackRunView" pc="268438658" symbol="formatPace"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="281" parent="globals/NoTrackRunView" pc="268438667" symbol="formatPace"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="282" parent="globals/NoTrackRunView" pc="268438677" symbol="formatPace"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="283" parent="globals/NoTrackRunView" pc="268438696" symbol="formatPace"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="36" lineNum="284" parent="globals/NoTrackRunView" pc="268438718" symbol="formatPace"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="37" lineNum="295" parent="globals/NoTrackRunView" pc="268438761" symbol="formatDistance"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="37" lineNum="296" parent="globals/NoTrackRunView" pc="268438763" symbol="formatDistance"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="37" lineNum="297" parent="globals/NoTrackRunView" pc="268438774" symbol="formatDistance"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="37" lineNum="299" parent="globals/NoTrackRunView" pc="268438806" symbol="formatDistance"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="210" parent="globals/NoTrackRunView" pc="268438829" symbol="_drawIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="211" parent="globals/NoTrackRunView" pc="268438833" symbol="_drawIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="212" parent="globals/NoTrackRunView" pc="268438852" symbol="_drawIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="214" parent="globals/NoTrackRunView" pc="268438871" symbol="_drawIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="215" parent="globals/NoTrackRunView" pc="268438893" symbol="_drawIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="38" lineNum="217" parent="globals/NoTrackRunView" pc="268438930" symbol="_drawIdle"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="97" parent="globals/NoTrackRunView" pc="268438953" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="98" parent="globals/NoTrackRunView" pc="268438957" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="99" parent="globals/NoTrackRunView" pc="268438976" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="100" parent="globals/NoTrackRunView" pc="268438989" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="102" parent="globals/NoTrackRunView" pc="268438996" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="103" parent="globals/NoTrackRunView" pc="268439009" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="106" parent="globals/NoTrackRunView" pc="268439022" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="107" parent="globals/NoTrackRunView" pc="268439044" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="108" parent="globals/NoTrackRunView" pc="268439054" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="109" parent="globals/NoTrackRunView" pc="268439082" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="112" parent="globals/NoTrackRunView" pc="268439092" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="113" parent="globals/NoTrackRunView" pc="268439102" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="114" parent="globals/NoTrackRunView" pc="268439109" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="115" parent="globals/NoTrackRunView" pc="268439116" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="116" parent="globals/NoTrackRunView" pc="268439129" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="117" parent="globals/NoTrackRunView" pc="268439142" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="118" parent="globals/NoTrackRunView" pc="268439155" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="119" parent="globals/NoTrackRunView" pc="268439170" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="120" parent="globals/NoTrackRunView" pc="268439184" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="121" parent="globals/NoTrackRunView" pc="268439209" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="122" parent="globals/NoTrackRunView" pc="268439223" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="123" parent="globals/NoTrackRunView" pc="268439234" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="125" parent="globals/NoTrackRunView" pc="268439259" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="128" parent="globals/NoTrackRunView" pc="268439284" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="130" parent="globals/NoTrackRunView" pc="268439306" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="131" parent="globals/NoTrackRunView" pc="268439348" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="133" parent="globals/NoTrackRunView" pc="268439368" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="136" parent="globals/NoTrackRunView" pc="268439378" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="137" parent="globals/NoTrackRunView" pc="268439391" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="139" parent="globals/NoTrackRunView" pc="268439413" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="140" parent="globals/NoTrackRunView" pc="268439433" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="141" parent="globals/NoTrackRunView" pc="268439455" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="145" parent="globals/NoTrackRunView" pc="268439503" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="148" parent="globals/NoTrackRunView" pc="268439542" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="151" parent="globals/NoTrackRunView" pc="268439552" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="152" parent="globals/NoTrackRunView" pc="268439574" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="154" parent="globals/NoTrackRunView" pc="268439619" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="157" parent="globals/NoTrackRunView" pc="268439629" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="158" parent="globals/NoTrackRunView" pc="268439639" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="39" lineNum="159" parent="globals/NoTrackRunView" pc="268439661" symbol="_drawRunning"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="242" parent="globals/NoTrackRunView" pc="268439707" symbol="_drawSyncOk"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="243" parent="globals/NoTrackRunView" pc="268439711" symbol="_drawSyncOk"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="244" parent="globals/NoTrackRunView" pc="268439718" symbol="_drawSyncOk"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="246" parent="globals/NoTrackRunView" pc="268439737" symbol="_drawSyncOk"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="247" parent="globals/NoTrackRunView" pc="268439759" symbol="_drawSyncOk"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="248" parent="globals/NoTrackRunView" pc="268439790" symbol="_drawSyncOk"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="250" parent="globals/NoTrackRunView" pc="268439800" symbol="_drawSyncOk"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="40" lineNum="251" parent="globals/NoTrackRunView" pc="268439822" symbol="_drawSyncOk"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="41" lineNum="14" parent="globals/NoTrackRunView" pc="268439854" symbol="onLayout"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="225" parent="globals/NoTrackRunView" pc="268439857" symbol="_drawNeedSync"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="226" parent="globals/NoTrackRunView" pc="268439861" symbol="_drawNeedSync"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="227" parent="globals/NoTrackRunView" pc="268439868" symbol="_drawNeedSync"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="229" parent="globals/NoTrackRunView" pc="268439887" symbol="_drawNeedSync"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="230" parent="globals/NoTrackRunView" pc="268439909" symbol="_drawNeedSync"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="231" parent="globals/NoTrackRunView" pc="268439940" symbol="_drawNeedSync"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="233" parent="globals/NoTrackRunView" pc="268439950" symbol="_drawNeedSync"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="42" lineNum="234" parent="globals/NoTrackRunView" pc="268439972" symbol="_drawNeedSync"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="168" parent="globals/NoTrackRunView" pc="268440004" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="169" parent="globals/NoTrackRunView" pc="268440008" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="170" parent="globals/NoTrackRunView" pc="268440027" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="172" parent="globals/NoTrackRunView" pc="268440034" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="173" parent="globals/NoTrackRunView" pc="268440056" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="175" parent="globals/NoTrackRunView" pc="268440087" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="178" parent="globals/NoTrackRunView" pc="268440097" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="179" parent="globals/NoTrackRunView" pc="268440104" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="180" parent="globals/NoTrackRunView" pc="268440111" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="181" parent="globals/NoTrackRunView" pc="268440121" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="182" parent="globals/NoTrackRunView" pc="268440145" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="183" parent="globals/NoTrackRunView" pc="268440152" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="184" parent="globals/NoTrackRunView" pc="268440165" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="187" parent="globals/NoTrackRunView" pc="268440191" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="188" parent="globals/NoTrackRunView" pc="268440213" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="190" parent="globals/NoTrackRunView" pc="268440252" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="192" parent="globals/NoTrackRunView" pc="268440262" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="194" parent="globals/NoTrackRunView" pc="268440301" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="196" parent="globals/NoTrackRunView" pc="268440311" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="197" parent="globals/NoTrackRunView" pc="268440337" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="198" parent="globals/NoTrackRunView" pc="268440359" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="200" parent="globals/NoTrackRunView" pc="268440398" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="202" parent="globals/NoTrackRunView" pc="268440408" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="43" lineNum="203" parent="globals/NoTrackRunView" pc="268440430" symbol="_drawFinished"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="287" parent="globals/NoTrackRunView" pc="268440462" symbol="formatTime"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="288" parent="globals/NoTrackRunView" pc="268440466" symbol="formatTime"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="288" parent="globals/NoTrackRunView" pc="268440477" symbol="formatTime"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="289" parent="globals/NoTrackRunView" pc="268440486" symbol="formatTime"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="290" parent="globals/NoTrackRunView" pc="268440505" symbol="formatTime"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="291" parent="globals/NoTrackRunView" pc="268440527" symbol="formatTime"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="44" lineNum="292" parent="globals/NoTrackRunView" pc="268440571" symbol="formatTime"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="48" parent="globals/NoTrackRunView" pc="268440592" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="49" parent="globals/NoTrackRunView" pc="268440596" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="50" parent="globals/NoTrackRunView" pc="268440615" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="53" parent="globals/NoTrackRunView" pc="268440622" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="54" parent="globals/NoTrackRunView" pc="268440644" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="55" parent="globals/NoTrackRunView" pc="268440660" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="56" parent="globals/NoTrackRunView" pc="268440688" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="59" parent="globals/NoTrackRunView" pc="268440698" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="60" parent="globals/NoTrackRunView" pc="268440720" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="61" parent="globals/NoTrackRunView" pc="268440736" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="62" parent="globals/NoTrackRunView" pc="268440764" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="65" parent="globals/NoTrackRunView" pc="268440774" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="66" parent="globals/NoTrackRunView" pc="268440790" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="67" parent="globals/NoTrackRunView" pc="268440806" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="69" parent="globals/NoTrackRunView" pc="268440822" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="70" parent="globals/NoTrackRunView" pc="268440844" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="71" parent="globals/NoTrackRunView" pc="268440896" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="73" parent="globals/NoTrackRunView" pc="268440906" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="75" parent="globals/NoTrackRunView" pc="268440945" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="77" parent="globals/NoTrackRunView" pc="268440955" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="45" lineNum="79" parent="globals/NoTrackRunView" pc="268440994" symbol="_drawSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="46" lineNum="10" parent="globals/NoTrackRunView" pc="268441005" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="46" lineNum="11" parent="globals/NoTrackRunView" pc="268441007" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="16" parent="globals/NoTrackRunView" pc="268441026" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="17" parent="globals/NoTrackRunView" pc="268441030" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="18" parent="globals/NoTrackRunView" pc="268441052" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="20" parent="globals/NoTrackRunView" pc="268441064" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="21" parent="globals/NoTrackRunView" pc="268441077" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="22" parent="globals/NoTrackRunView" pc="268441094" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="24" parent="globals/NoTrackRunView" pc="268441113" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="25" parent="globals/NoTrackRunView" pc="268441130" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="26" parent="globals/NoTrackRunView" pc="268441149" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="27" parent="globals/NoTrackRunView" pc="268441166" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="28" parent="globals/NoTrackRunView" pc="268441185" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="29" parent="globals/NoTrackRunView" pc="268441202" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="30" parent="globals/NoTrackRunView" pc="268441221" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="31" parent="globals/NoTrackRunView" pc="268441238" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="32" parent="globals/NoTrackRunView" pc="268441257" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="33" parent="globals/NoTrackRunView" pc="268441274" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="34" parent="globals/NoTrackRunView" pc="268441293" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="35" parent="globals/NoTrackRunView" pc="268441310" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="36" parent="globals/NoTrackRunView" pc="268441329" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="37" parent="globals/NoTrackRunView" pc="268441346" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="38" parent="globals/NoTrackRunView" pc="268441370" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="39" parent="globals/NoTrackRunView" pc="268441387" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="40" parent="globals/NoTrackRunView" pc="268441411" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchView.mc" id="47" lineNum="41" parent="globals/NoTrackRunView" pc="268441428" symbol="onUpdate"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="48" lineNum="15" parent="globals/NoTrackRunDelegate" pc="268441456" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="48" lineNum="16" parent="globals/NoTrackRunDelegate" pc="268441458" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="49" lineNum="19" parent="globals/NoTrackRunDelegate" pc="268441477" symbol="_resetToSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="49" lineNum="20" parent="globals/NoTrackRunDelegate" pc="268441481" symbol="_resetToSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="49" lineNum="21" parent="globals/NoTrackRunDelegate" pc="268441494" symbol="_resetToSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="49" lineNum="22" parent="globals/NoTrackRunDelegate" pc="268441506" symbol="_resetToSummary"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="25" parent="globals/NoTrackRunDelegate" pc="268441523" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="26" parent="globals/NoTrackRunDelegate" pc="268441527" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="27" parent="globals/NoTrackRunDelegate" pc="268441540" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="29" parent="globals/NoTrackRunDelegate" pc="268441553" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="31" parent="globals/NoTrackRunDelegate" pc="268441570" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="34" parent="globals/NoTrackRunDelegate" pc="268441576" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="36" parent="globals/NoTrackRunDelegate" pc="268441593" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="37" parent="globals/NoTrackRunDelegate" pc="268441615" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="38" parent="globals/NoTrackRunDelegate" pc="268441627" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="39" parent="globals/NoTrackRunDelegate" pc="268441643" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="42" parent="globals/NoTrackRunDelegate" pc="268441649" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="43" parent="globals/NoTrackRunDelegate" pc="268441660" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="44" parent="globals/NoTrackRunDelegate" pc="268441672" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="45" parent="globals/NoTrackRunDelegate" pc="268441688" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="49" parent="globals/NoTrackRunDelegate" pc="268441697" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="51" parent="globals/NoTrackRunDelegate" pc="268441714" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="52" parent="globals/NoTrackRunDelegate" pc="268441736" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="53" parent="globals/NoTrackRunDelegate" pc="268441748" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="55" parent="globals/NoTrackRunDelegate" pc="268441754" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="56" parent="globals/NoTrackRunDelegate" pc="268441765" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="57" parent="globals/NoTrackRunDelegate" pc="268441777" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="59" parent="globals/NoTrackRunDelegate" pc="268441783" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="60" parent="globals/NoTrackRunDelegate" pc="268441805" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="61" parent="globals/NoTrackRunDelegate" pc="268441817" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="65" parent="globals/NoTrackRunDelegate" pc="268441826" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="67" parent="globals/NoTrackRunDelegate" pc="268441843" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="68" parent="globals/NoTrackRunDelegate" pc="268441865" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="69" parent="globals/NoTrackRunDelegate" pc="268441877" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="73" parent="globals/NoTrackRunDelegate" pc="268441886" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="75" parent="globals/NoTrackRunDelegate" pc="268441903" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="76" parent="globals/NoTrackRunDelegate" pc="268441925" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="77" parent="globals/NoTrackRunDelegate" pc="268441937" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="79" parent="globals/NoTrackRunDelegate" pc="268441943" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="80" parent="globals/NoTrackRunDelegate" pc="268441954" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="81" parent="globals/NoTrackRunDelegate" pc="268441966" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="87" parent="globals/NoTrackRunDelegate" pc="268441975" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="89" parent="globals/NoTrackRunDelegate" pc="268441992" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="90" parent="globals/NoTrackRunDelegate" pc="268442003" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="91" parent="globals/NoTrackRunDelegate" pc="268442015" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="92" parent="globals/NoTrackRunDelegate" pc="268442031" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchDelegate.mc" id="50" lineNum="96" parent="globals/NoTrackRunDelegate" pc="268442040" symbol="onKey"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="51" lineNum="356" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442043" symbol="onError"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="51" lineNum="357" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442045" symbol="onError"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="51" lineNum="358" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442064" symbol="onError"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="52" lineNum="350" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442081" symbol="onComplete"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="52" lineNum="353" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442083" symbol="onComplete"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="53" lineNum="344" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442100" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="53" lineNum="345" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442102" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="53" lineNum="346" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442120" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/source/no-track-run-watchApp.mc" id="53" lineNum="347" parent="globals/NoTrackRunWatchApp/TransmitCallback" pc="268442130" symbol="initialize"/>
+        <entry filename="/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen" id="54" lineNum="13" parent="globals/Rez/Layouts" pc="268442147" symbol="MainLayout"/>
+        <entry filename="/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen" id="54" lineNum="14" parent="globals/Rez/Layouts" pc="268442157" symbol="MainLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry id="41" method="true" symbol="primaryRemaining"/>
+        <entry id="42" method="true" symbol="primaryRemaining"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry field="true" id="22" symbol="appState"/>
         <entry id="8391715" symbol="acquisitionType"/>
-        <entry id="65" method="true" symbol="MainLayout"/>
+        <entry id="66" method="true" symbol="MainLayout"/>
         <entry id="11" method="true" symbol="_advanceBlock"/>
-        <entry id="47" method="true" symbol="startSession"/>
-        <entry id="54" method="true" symbol="_drawLoading"/>
-        <entry id="33" method="true" symbol="finishLoading"/>
-        <entry id="39" method="true" symbol="onPosition"/>
+        <entry id="48" method="true" symbol="startSession"/>
+        <entry id="55" method="true" symbol="_drawLoading"/>
+        <entry id="34" method="true" symbol="finishLoading"/>
+        <entry id="40" method="true" symbol="onPosition"/>
         <entry id="20" method="true" symbol="_sendSession"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="44" symbol="sessionData"/>
-        <entry field="true" id="66" symbol="AppName"/>
-        <entry id="53" method="true" symbol="_drawIdle"/>
+        <entry field="true" id="45" symbol="sessionData"/>
+        <entry field="true" id="67" symbol="AppName"/>
+        <entry id="54" method="true" symbol="_drawIdle"/>
         <entry id="8388633" module="true" symbol="ActivityMonitor"/>
         <entry id="16" method="true" symbol="_retrySendIfPending"/>
         <entry id="5" module="true" symbol="globals/Rez/Strings"/>
-        <entry id="61" method="true" symbol="formatTime"/>
-        <entry field="true" id="49" symbol="timerLoading"/>
+        <entry id="62" method="true" symbol="formatTime"/>
+        <entry field="true" id="50" symbol="timerLoading"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry id="55" method="true" symbol="_drawNeedSync"/>
+        <entry id="56" method="true" symbol="_drawNeedSync"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
-        <entry id="56" method="true" symbol="_drawRunning"/>
-        <entry field="true" id="24" symbol="blinkOn"/>
+        <entry id="57" method="true" symbol="_drawRunning"/>
+        <entry field="true" id="25" symbol="blinkOn"/>
         <entry id="29" method="true" symbol="endSession"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-        <entry field="true" id="27" symbol="currentFieldIdx"/>
+        <entry field="true" id="33" symbol="fieldMovingTime"/>
+        <entry field="true" id="28" symbol="currentFieldIdx"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
-        <entry field="true" id="26" symbol="currentBlockIdx"/>
-        <entry field="true" id="28" symbol="currentPace"/>
+        <entry field="true" id="27" symbol="currentBlockIdx"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry id="35" method="true" symbol="getCurrentField"/>
+        <entry id="36" method="true" symbol="getCurrentField"/>
         <entry field="true" id="8388738" symbol="currentSpeed"/>
         <entry field="true" id="31" symbol="fieldDistance"/>
-        <entry id="62" method="true" symbol="_resetToSummary"/>
+        <entry id="63" method="true" symbol="_resetToSummary"/>
         <entry id="8" object="true" symbol="NoTrackRunWatchApp"/>
         <entry id="13" method="true" symbol="_finishSession"/>
-        <entry id="58" method="true" symbol="_drawSyncOk"/>
+        <entry field="true" id="23" symbol="avgPace"/>
+        <entry id="59" method="true" symbol="_drawSyncOk"/>
         <entry field="true" id="21" symbol="_timer"/>
-        <entry id="51" method="true" symbol="_drawCountdown"/>
+        <entry id="52" method="true" symbol="_drawCountdown"/>
         <entry field="true" id="8390041" method="true" symbol="mode"/>
-        <entry field="true" id="63" symbol="_app"/>
+        <entry field="true" id="64" symbol="_app"/>
         <entry id="8388637" module="true" symbol="Communications"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
         <entry id="8388828" method="true" symbol="onError"/>
         <entry id="7" object="true" symbol="NoTrackRunView"/>
         <entry id="6" object="true" symbol="NoTrackRunDelegate"/>
-        <entry field="true" id="48" symbol="syncTimeout"/>
+        <entry field="true" id="49" symbol="syncTimeout"/>
         <entry id="14" method="true" symbol="_isFieldDone"/>
-        <entry id="23" method="true" symbol="backIdle"/>
+        <entry id="24" method="true" symbol="backIdle"/>
         <entry id="10" object="true" symbol="TransmitCallback"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="17" method="true" symbol="_saveFieldResult"/>
-        <entry field="true" id="43" symbol="sendingTime"/>
+        <entry field="true" id="44" symbol="sendingTime"/>
         <entry field="true" id="30" symbol="errorMsg"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry id="38" method="true" symbol="onPhoneMessage"/>
-        <entry id="52" method="true" symbol="_drawFinished"/>
-        <entry field="true" id="64" symbol="LauncherIcon"/>
+        <entry id="39" method="true" symbol="onPhoneMessage"/>
+        <entry id="53" method="true" symbol="_drawFinished"/>
+        <entry field="true" id="65" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
-        <entry id="59" method="true" symbol="formatDistance"/>
+        <entry id="60" method="true" symbol="formatDistance"/>
         <entry id="8388643" module="true" symbol="Sensor"/>
         <entry id="15" method="true" symbol="_resetState"/>
-        <entry id="34" method="true" symbol="getCurrentBlock"/>
+        <entry id="35" method="true" symbol="getCurrentBlock"/>
         <entry field="true" id="32" symbol="fieldElapsed"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry field="true" id="42" symbol="results"/>
-        <entry id="40" method="true" symbol="onTick"/>
+        <entry field="true" id="43" symbol="results"/>
+        <entry id="41" method="true" symbol="onTick"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry id="19" method="true" symbol="_sendResultsToPhone"/>
-        <entry id="36" method="true" symbol="getGoal"/>
-        <entry id="37" method="true" symbol="isGpsReady"/>
-        <entry id="57" method="true" symbol="_drawSummary"/>
-        <entry field="true" id="45" symbol="sessionToSend"/>
+        <entry id="37" method="true" symbol="getGoal"/>
+        <entry id="38" method="true" symbol="isGpsReady"/>
+        <entry id="58" method="true" symbol="_drawSummary"/>
+        <entry field="true" id="46" symbol="sessionToSend"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry field="true" id="9" symbol="SIMULATOR"/>
         <entry id="8389281" method="true" symbol="onStop"/>
@@ -488,120 +499,121 @@
         <entry id="8389097" method="true" symbol="onKey"/>
         <entry id="8388829" method="true" symbol="onComplete"/>
         <entry id="8388646" module="true" object="true" symbol="Timer"/>
-        <entry id="50" module="true" symbol="Layouts"/>
-        <entry id="46" method="true" symbol="skipCurrentField"/>
+        <entry id="51" module="true" symbol="Layouts"/>
+        <entry id="47" method="true" symbol="skipCurrentField"/>
         <entry id="8388642" module="true" symbol="Position"/>
         <entry id="18" method="true" symbol="_saveSessionLocally"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry id="60" method="true" symbol="formatPace"/>
-        <entry field="true" id="25" symbol="countdownValue"/>
+        <entry id="61" method="true" symbol="formatPace"/>
+        <entry field="true" id="26" symbol="countdownValue"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268436249" name="info" stackId="1" startPc="268436195"/>
-        <entry endPc="268436466" name="block" stackId="1" startPc="268436254"/>
-        <entry endPc="268436466" name="field" stackId="2" startPc="268436254"/>
-        <entry endPc="268436466" name="targetPace" stackId="3" startPc="268436254"/>
-        <entry endPc="268436466" name="realPace" stackId="4" startPc="268436254"/>
-        <entry endPc="268436466" name="tolerance" stackId="5" startPc="268436254"/>
-        <entry endPc="268436466" name="success" stackId="6" startPc="268436254"/>
-        <entry endPc="268436622" name="payload" stackId="1" startPc="268436541"/>
-        <entry endPc="268436752" name="block" stackId="1" startPc="268436628"/>
-        <entry endPc="268436752" name="fields" stackId="2" startPc="268436628"/>
-        <entry endPc="268436803" name="pending" stackId="1" startPc="268436758"/>
-        <entry endPc="268436900" name="blocks" stackId="1" startPc="268436809"/>
-        <entry arg="true" endPc="268437012" name="state" stackId="1" startPc="268436902"/>
-        <entry endPc="268437096" name="field" stackId="1" startPc="268437017"/>
-        <entry endPc="268437071" name="target" stackId="2" startPc="268437050"/>
-        <entry endPc="268437096" name="target" stackId="3" startPc="268437075"/>
-        <entry arg="true" endPc="268437217" name="info" stackId="1" startPc="268437171"/>
-        <entry arg="true" endPc="268437363" name="state" stackId="1" startPc="268437282"/>
-        <entry endPc="268437545" name="field" stackId="1" startPc="268437420"/>
-        <entry endPc="268437497" name="dist" stackId="2" startPc="268437453"/>
-        <entry endPc="268437497" name="rem" stackId="3" startPc="268437453"/>
-        <entry endPc="268437545" name="dur" stackId="4" startPc="268437501"/>
-        <entry endPc="268437545" name="rem" stackId="5" startPc="268437501"/>
-        <entry arg="true" endPc="268437784" name="msg" stackId="1" startPc="268437562"/>
-        <entry endPc="268437783" name="data" stackId="2" startPc="268437566"/>
-        <entry endPc="268437751" name="d" stackId="3" startPc="268437681"/>
-        <entry endPc="268437751" name="pending" stackId="4" startPc="268437681"/>
-        <entry arg="true" endPc="268437866" name="session" stackId="1" startPc="268437785"/>
-        <entry endPc="268438027" name="block" stackId="1" startPc="268437993"/>
-        <entry endPc="268438027" name="fields" stackId="2" startPc="268437993"/>
-        <entry endPc="268438059" name="blocks" stackId="1" startPc="268438032"/>
-        <entry endPc="268438316" name="store" stackId="1" startPc="268438196"/>
-        <entry arg="true" endPc="268438409" name="dc" stackId="1" startPc="268438318"/>
-        <entry arg="true" endPc="268438409" name="app" stackId="2" startPc="268438318"/>
-        <entry endPc="268438408" name="cx" stackId="3" startPc="268438322"/>
-        <entry arg="true" endPc="268438508" name="dc" stackId="1" startPc="268438410"/>
-        <entry arg="true" endPc="268438508" name="app" stackId="2" startPc="268438410"/>
-        <entry arg="true" endPc="268438508" name="msg" stackId="3" startPc="268438410"/>
-        <entry endPc="268438507" name="cx" stackId="4" startPc="268438414"/>
-        <entry endPc="268438507" name="cy" stackId="5" startPc="268438414"/>
-        <entry arg="true" endPc="268438626" name="pace" stackId="1" startPc="268438509"/>
-        <entry endPc="268438626" name="paceSkm" stackId="2" startPc="268438513"/>
-        <entry endPc="268438626" name="minutes" stackId="3" startPc="268438513"/>
-        <entry endPc="268438626" name="seconds" stackId="4" startPc="268438513"/>
-        <entry arg="true" endPc="268438694" name="dist" stackId="1" startPc="268438627"/>
-        <entry arg="true" endPc="268438818" name="dc" stackId="1" startPc="268438695"/>
-        <entry arg="true" endPc="268438818" name="app" stackId="2" startPc="268438695"/>
-        <entry endPc="268438817" name="cx" stackId="3" startPc="268438699"/>
-        <entry endPc="268438817" name="cy" stackId="4" startPc="268438699"/>
-        <entry arg="true" endPc="268439572" name="dc" stackId="1" startPc="268438819"/>
-        <entry arg="true" endPc="268439572" name="app" stackId="2" startPc="268438819"/>
-        <entry endPc="268439571" name="cx" stackId="3" startPc="268438823"/>
-        <entry endPc="268439571" name="w" stackId="4" startPc="268438823"/>
-        <entry endPc="268439571" name="y" stackId="5" startPc="268438823"/>
-        <entry endPc="268439571" name="block" stackId="6" startPc="268438823"/>
-        <entry endPc="268439571" name="field" stackId="7" startPc="268438823"/>
-        <entry endPc="268439571" name="blkLabel" stackId="8" startPc="268438823"/>
-        <entry endPc="268439571" name="fields" stackId="9" startPc="268438823"/>
-        <entry endPc="268439571" name="dotSize" stackId="10" startPc="268438823"/>
-        <entry endPc="268439571" name="dotSpacing" stackId="11" startPc="268438823"/>
-        <entry endPc="268439571" name="totalDots" stackId="12" startPc="268438823"/>
-        <entry endPc="268439571" name="dotsWidth" stackId="13" startPc="268438823"/>
-        <entry endPc="268439571" name="dotX" stackId="14" startPc="268438823"/>
-        <entry endPc="268439233" name="i" stackId="15" startPc="268439036"/>
-        <entry endPc="268439571" name="primary" stackId="16" startPc="268438823"/>
-        <entry endPc="268439571" name="targetPace" stackId="17" startPc="268438823"/>
-        <entry arg="true" endPc="268439719" name="dc" stackId="1" startPc="268439573"/>
-        <entry arg="true" endPc="268439719" name="app" stackId="2" startPc="268439573"/>
-        <entry endPc="268439718" name="y" stackId="3" startPc="268439577"/>
-        <entry endPc="268439718" name="cx" stackId="4" startPc="268439577"/>
-        <entry arg="true" endPc="268439869" name="dc" stackId="1" startPc="268439723"/>
-        <entry arg="true" endPc="268439869" name="app" stackId="2" startPc="268439723"/>
-        <entry endPc="268439868" name="y" stackId="3" startPc="268439727"/>
-        <entry endPc="268439868" name="cx" stackId="4" startPc="268439727"/>
-        <entry arg="true" endPc="268440327" name="dc" stackId="1" startPc="268439870"/>
-        <entry arg="true" endPc="268440327" name="app" stackId="2" startPc="268439870"/>
-        <entry endPc="268440326" name="cx" stackId="3" startPc="268439874"/>
-        <entry endPc="268440326" name="y" stackId="4" startPc="268439874"/>
-        <entry endPc="268440326" name="totalDist" stackId="5" startPc="268439874"/>
-        <entry endPc="268440326" name="totalTime" stackId="6" startPc="268439874"/>
-        <entry endPc="268440326" name="results" stackId="7" startPc="268439874"/>
-        <entry endPc="268440056" name="i" stackId="8" startPc="268440011"/>
-        <entry endPc="268440043" name="r" stackId="9" startPc="268440011"/>
-        <entry endPc="268440326" name="avgPace" stackId="10" startPc="268439874"/>
-        <entry arg="true" endPc="268440457" name="seconds" stackId="1" startPc="268440328"/>
-        <entry endPc="268440457" name="m" stackId="2" startPc="268440332"/>
-        <entry endPc="268440457" name="s" stackId="3" startPc="268440332"/>
-        <entry endPc="268440457" name="str" stackId="4" startPc="268440332"/>
-        <entry arg="true" endPc="268440870" name="dc" stackId="1" startPc="268440458"/>
-        <entry arg="true" endPc="268440870" name="app" stackId="2" startPc="268440458"/>
-        <entry endPc="268440869" name="cx" stackId="3" startPc="268440462"/>
-        <entry endPc="268440869" name="y" stackId="4" startPc="268440462"/>
-        <entry endPc="268440869" name="label" stackId="5" startPc="268440462"/>
-        <entry endPc="268440869" name="date" stackId="6" startPc="268440462"/>
-        <entry endPc="268440869" name="blocks" stackId="7" startPc="268440462"/>
-        <entry endPc="268440869" name="totalDistance" stackId="8" startPc="268440462"/>
-        <entry endPc="268440869" name="totalDuration" stackId="9" startPc="268440462"/>
-        <entry arg="true" endPc="268441321" name="dc" stackId="1" startPc="268440892"/>
-        <entry endPc="268441320" name="app" stackId="2" startPc="268440896"/>
-        <entry endPc="268441387" name="app" stackId="1" startPc="268441347"/>
-        <entry arg="true" endPc="268441863" name="keyEvent" stackId="1" startPc="268441389"/>
-        <entry endPc="268441863" name="app" stackId="2" startPc="268441393"/>
-        <entry endPc="268441863" name="key" stackId="3" startPc="268441393"/>
-        <entry arg="true" endPc="268441967" name="app" stackId="1" startPc="268441921"/>
-        <entry arg="true" endPc="268441984" name="dc" stackId="1" startPc="268441968"/>
+        <entry endPc="268436314" name="moving" stackId="1" startPc="268435713"/>
+        <entry arg="true" endPc="268436370" name="info" stackId="1" startPc="268436316"/>
+        <entry endPc="268436587" name="block" stackId="1" startPc="268436375"/>
+        <entry endPc="268436587" name="field" stackId="2" startPc="268436375"/>
+        <entry endPc="268436587" name="targetPace" stackId="3" startPc="268436375"/>
+        <entry endPc="268436587" name="realPace" stackId="4" startPc="268436375"/>
+        <entry endPc="268436587" name="tolerance" stackId="5" startPc="268436375"/>
+        <entry endPc="268436587" name="success" stackId="6" startPc="268436375"/>
+        <entry endPc="268436743" name="payload" stackId="1" startPc="268436662"/>
+        <entry endPc="268436873" name="block" stackId="1" startPc="268436749"/>
+        <entry endPc="268436873" name="fields" stackId="2" startPc="268436749"/>
+        <entry endPc="268436924" name="pending" stackId="1" startPc="268436879"/>
+        <entry endPc="268437021" name="blocks" stackId="1" startPc="268436930"/>
+        <entry arg="true" endPc="268437133" name="state" stackId="1" startPc="268437023"/>
+        <entry endPc="268437217" name="field" stackId="1" startPc="268437138"/>
+        <entry endPc="268437192" name="target" stackId="2" startPc="268437171"/>
+        <entry endPc="268437217" name="target" stackId="3" startPc="268437196"/>
+        <entry arg="true" endPc="268437338" name="info" stackId="1" startPc="268437292"/>
+        <entry arg="true" endPc="268437484" name="state" stackId="1" startPc="268437403"/>
+        <entry endPc="268437666" name="field" stackId="1" startPc="268437541"/>
+        <entry endPc="268437618" name="dist" stackId="2" startPc="268437574"/>
+        <entry endPc="268437618" name="rem" stackId="3" startPc="268437574"/>
+        <entry endPc="268437666" name="dur" stackId="4" startPc="268437622"/>
+        <entry endPc="268437666" name="rem" stackId="5" startPc="268437622"/>
+        <entry arg="true" endPc="268437905" name="msg" stackId="1" startPc="268437683"/>
+        <entry endPc="268437904" name="data" stackId="2" startPc="268437687"/>
+        <entry endPc="268437872" name="d" stackId="3" startPc="268437802"/>
+        <entry endPc="268437872" name="pending" stackId="4" startPc="268437802"/>
+        <entry arg="true" endPc="268437987" name="session" stackId="1" startPc="268437906"/>
+        <entry endPc="268438161" name="block" stackId="1" startPc="268438127"/>
+        <entry endPc="268438161" name="fields" stackId="2" startPc="268438127"/>
+        <entry endPc="268438193" name="blocks" stackId="1" startPc="268438166"/>
+        <entry endPc="268438450" name="store" stackId="1" startPc="268438330"/>
+        <entry arg="true" endPc="268438543" name="dc" stackId="1" startPc="268438452"/>
+        <entry arg="true" endPc="268438543" name="app" stackId="2" startPc="268438452"/>
+        <entry endPc="268438542" name="cx" stackId="3" startPc="268438456"/>
+        <entry arg="true" endPc="268438642" name="dc" stackId="1" startPc="268438544"/>
+        <entry arg="true" endPc="268438642" name="app" stackId="2" startPc="268438544"/>
+        <entry arg="true" endPc="268438642" name="msg" stackId="3" startPc="268438544"/>
+        <entry endPc="268438641" name="cx" stackId="4" startPc="268438548"/>
+        <entry endPc="268438641" name="cy" stackId="5" startPc="268438548"/>
+        <entry arg="true" endPc="268438760" name="speedMs" stackId="1" startPc="268438643"/>
+        <entry endPc="268438760" name="paceSkm" stackId="2" startPc="268438647"/>
+        <entry endPc="268438760" name="minutes" stackId="3" startPc="268438647"/>
+        <entry endPc="268438760" name="seconds" stackId="4" startPc="268438647"/>
+        <entry arg="true" endPc="268438828" name="dist" stackId="1" startPc="268438761"/>
+        <entry arg="true" endPc="268438952" name="dc" stackId="1" startPc="268438829"/>
+        <entry arg="true" endPc="268438952" name="app" stackId="2" startPc="268438829"/>
+        <entry endPc="268438951" name="cx" stackId="3" startPc="268438833"/>
+        <entry endPc="268438951" name="cy" stackId="4" startPc="268438833"/>
+        <entry arg="true" endPc="268439706" name="dc" stackId="1" startPc="268438953"/>
+        <entry arg="true" endPc="268439706" name="app" stackId="2" startPc="268438953"/>
+        <entry endPc="268439705" name="cx" stackId="3" startPc="268438957"/>
+        <entry endPc="268439705" name="w" stackId="4" startPc="268438957"/>
+        <entry endPc="268439705" name="y" stackId="5" startPc="268438957"/>
+        <entry endPc="268439705" name="block" stackId="6" startPc="268438957"/>
+        <entry endPc="268439705" name="field" stackId="7" startPc="268438957"/>
+        <entry endPc="268439705" name="blkLabel" stackId="8" startPc="268438957"/>
+        <entry endPc="268439705" name="fields" stackId="9" startPc="268438957"/>
+        <entry endPc="268439705" name="dotSize" stackId="10" startPc="268438957"/>
+        <entry endPc="268439705" name="dotSpacing" stackId="11" startPc="268438957"/>
+        <entry endPc="268439705" name="totalDots" stackId="12" startPc="268438957"/>
+        <entry endPc="268439705" name="dotsWidth" stackId="13" startPc="268438957"/>
+        <entry endPc="268439705" name="dotX" stackId="14" startPc="268438957"/>
+        <entry endPc="268439367" name="i" stackId="15" startPc="268439170"/>
+        <entry endPc="268439705" name="primary" stackId="16" startPc="268438957"/>
+        <entry endPc="268439705" name="targetPace" stackId="17" startPc="268438957"/>
+        <entry arg="true" endPc="268439853" name="dc" stackId="1" startPc="268439707"/>
+        <entry arg="true" endPc="268439853" name="app" stackId="2" startPc="268439707"/>
+        <entry endPc="268439852" name="y" stackId="3" startPc="268439711"/>
+        <entry endPc="268439852" name="cx" stackId="4" startPc="268439711"/>
+        <entry arg="true" endPc="268440003" name="dc" stackId="1" startPc="268439857"/>
+        <entry arg="true" endPc="268440003" name="app" stackId="2" startPc="268439857"/>
+        <entry endPc="268440002" name="y" stackId="3" startPc="268439861"/>
+        <entry endPc="268440002" name="cx" stackId="4" startPc="268439861"/>
+        <entry arg="true" endPc="268440461" name="dc" stackId="1" startPc="268440004"/>
+        <entry arg="true" endPc="268440461" name="app" stackId="2" startPc="268440004"/>
+        <entry endPc="268440460" name="cx" stackId="3" startPc="268440008"/>
+        <entry endPc="268440460" name="y" stackId="4" startPc="268440008"/>
+        <entry endPc="268440460" name="totalDist" stackId="5" startPc="268440008"/>
+        <entry endPc="268440460" name="totalTime" stackId="6" startPc="268440008"/>
+        <entry endPc="268440460" name="results" stackId="7" startPc="268440008"/>
+        <entry endPc="268440190" name="i" stackId="8" startPc="268440145"/>
+        <entry endPc="268440177" name="r" stackId="9" startPc="268440145"/>
+        <entry endPc="268440460" name="avgPace" stackId="10" startPc="268440008"/>
+        <entry arg="true" endPc="268440591" name="seconds" stackId="1" startPc="268440462"/>
+        <entry endPc="268440591" name="m" stackId="2" startPc="268440466"/>
+        <entry endPc="268440591" name="s" stackId="3" startPc="268440466"/>
+        <entry endPc="268440591" name="str" stackId="4" startPc="268440466"/>
+        <entry arg="true" endPc="268441004" name="dc" stackId="1" startPc="268440592"/>
+        <entry arg="true" endPc="268441004" name="app" stackId="2" startPc="268440592"/>
+        <entry endPc="268441003" name="cx" stackId="3" startPc="268440596"/>
+        <entry endPc="268441003" name="y" stackId="4" startPc="268440596"/>
+        <entry endPc="268441003" name="label" stackId="5" startPc="268440596"/>
+        <entry endPc="268441003" name="date" stackId="6" startPc="268440596"/>
+        <entry endPc="268441003" name="blocks" stackId="7" startPc="268440596"/>
+        <entry endPc="268441003" name="totalDistance" stackId="8" startPc="268440596"/>
+        <entry endPc="268441003" name="totalDuration" stackId="9" startPc="268440596"/>
+        <entry arg="true" endPc="268441455" name="dc" stackId="1" startPc="268441026"/>
+        <entry endPc="268441454" name="app" stackId="2" startPc="268441030"/>
+        <entry endPc="268441521" name="app" stackId="1" startPc="268441481"/>
+        <entry arg="true" endPc="268442042" name="keyEvent" stackId="1" startPc="268441523"/>
+        <entry endPc="268442042" name="app" stackId="2" startPc="268441527"/>
+        <entry endPc="268442042" name="key" stackId="3" startPc="268441527"/>
+        <entry arg="true" endPc="268442146" name="app" stackId="1" startPc="268442100"/>
+        <entry arg="true" endPc="268442163" name="dc" stackId="1" startPc="268442147"/>
     </localVars>
     <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3076-00"/>
     <annotations>
@@ -611,13 +623,13 @@
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="63" parentId="" symbolId="globals" type="module"/>
         <dataEntry label="globals/NoTrackRunWatchApp" offset="150" parentId="globals" symbolId="NoTrackRunWatchApp" type="class"/>
-        <dataEntry label="globals/Rez" offset="549" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/NoTrackRunView" offset="604" parentId="globals" symbolId="NoTrackRunView" type="class"/>
-        <dataEntry label="globals/NoTrackRunDelegate" offset="755" parentId="globals" symbolId="NoTrackRunDelegate" type="class"/>
-        <dataEntry label="globals/NoTrackRunWatchApp/TransmitCallback" offset="818" parentId="NoTrackRunWatchApp" symbolId="TransmitCallback" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="889" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="928" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="967" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez" offset="557" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/NoTrackRunView" offset="612" parentId="globals" symbolId="NoTrackRunView" type="class"/>
+        <dataEntry label="globals/NoTrackRunDelegate" offset="763" parentId="globals" symbolId="NoTrackRunDelegate" type="class"/>
+        <dataEntry label="globals/NoTrackRunWatchApp/TransmitCallback" offset="826" parentId="NoTrackRunWatchApp" symbolId="TransmitCallback" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="897" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="936" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="975" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435588" name="&lt;init&gt;" parent="NoTrackRunWatchApp" startPc="268435460">
@@ -638,91 +650,91 @@
         <functionEntry accessMode="public" endPc="268435708" name="_finishSession" parent="NoTrackRunWatchApp" startPc="268435677">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436194" name="onTick" parent="NoTrackRunWatchApp" startPc="268435709">
+        <functionEntry accessMode="public" endPc="268436315" name="onTick" parent="NoTrackRunWatchApp" startPc="268435709">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436249" name="onPosition" parent="NoTrackRunWatchApp" startPc="268436195">
+        <functionEntry accessMode="public" endPc="268436370" name="onPosition" parent="NoTrackRunWatchApp" startPc="268436316">
             <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436467" name="_saveFieldResult" parent="NoTrackRunWatchApp" startPc="268436250">
+        <functionEntry accessMode="public" endPc="268436588" name="_saveFieldResult" parent="NoTrackRunWatchApp" startPc="268436371">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436536" name="getInitialView" parent="NoTrackRunWatchApp" startPc="268436468">
+        <functionEntry accessMode="public" endPc="268436657" name="getInitialView" parent="NoTrackRunWatchApp" startPc="268436589">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436623" name="_sendResultsToPhone" parent="NoTrackRunWatchApp" startPc="268436537">
+        <functionEntry accessMode="public" endPc="268436744" name="_sendResultsToPhone" parent="NoTrackRunWatchApp" startPc="268436658">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436753" name="_advanceField" parent="NoTrackRunWatchApp" startPc="268436624">
+        <functionEntry accessMode="public" endPc="268436874" name="_advanceField" parent="NoTrackRunWatchApp" startPc="268436745">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436804" name="_retrySendIfPending" parent="NoTrackRunWatchApp" startPc="268436754">
+        <functionEntry accessMode="public" endPc="268436925" name="_retrySendIfPending" parent="NoTrackRunWatchApp" startPc="268436875">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436901" name="_advanceBlock" parent="NoTrackRunWatchApp" startPc="268436805">
+        <functionEntry accessMode="public" endPc="268437022" name="_advanceBlock" parent="NoTrackRunWatchApp" startPc="268436926">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437012" name="onStart" parent="NoTrackRunWatchApp" startPc="268436902">
+        <functionEntry accessMode="public" endPc="268437133" name="onStart" parent="NoTrackRunWatchApp" startPc="268437023">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437097" name="_isFieldDone" parent="NoTrackRunWatchApp" startPc="268437013">
+        <functionEntry accessMode="public" endPc="268437218" name="_isFieldDone" parent="NoTrackRunWatchApp" startPc="268437134">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437170" name="startSession" parent="NoTrackRunWatchApp" startPc="268437098">
+        <functionEntry accessMode="public" endPc="268437291" name="startSession" parent="NoTrackRunWatchApp" startPc="268437219">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437217" name="isGpsReady" parent="NoTrackRunWatchApp" startPc="268437171">
+        <functionEntry accessMode="public" endPc="268437338" name="isGpsReady" parent="NoTrackRunWatchApp" startPc="268437292">
             <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437281" name="skipCurrentField" parent="NoTrackRunWatchApp" startPc="268437218">
+        <functionEntry accessMode="public" endPc="268437402" name="skipCurrentField" parent="NoTrackRunWatchApp" startPc="268437339">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437363" name="onStop" parent="NoTrackRunWatchApp" startPc="268437282">
+        <functionEntry accessMode="public" endPc="268437484" name="onStop" parent="NoTrackRunWatchApp" startPc="268437403">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437415" name="finishLoading" parent="NoTrackRunWatchApp" startPc="268437364">
+        <functionEntry accessMode="public" endPc="268437536" name="finishLoading" parent="NoTrackRunWatchApp" startPc="268437485">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437546" name="primaryRemaining" parent="NoTrackRunWatchApp" startPc="268437416">
+        <functionEntry accessMode="public" endPc="268437667" name="primaryRemaining" parent="NoTrackRunWatchApp" startPc="268437537">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437561" name="endSession" parent="NoTrackRunWatchApp" startPc="268437547">
+        <functionEntry accessMode="public" endPc="268437682" name="endSession" parent="NoTrackRunWatchApp" startPc="268437668">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437784" name="onPhoneMessage" parent="NoTrackRunWatchApp" startPc="268437562">
+        <functionEntry accessMode="public" endPc="268437905" name="onPhoneMessage" parent="NoTrackRunWatchApp" startPc="268437683">
             <param id="msg"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437866" name="_sendSession" parent="NoTrackRunWatchApp" startPc="268437785">
+        <functionEntry accessMode="public" endPc="268437987" name="_sendSession" parent="NoTrackRunWatchApp" startPc="268437906">
             <param id="session"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437988" name="_resetState" parent="NoTrackRunWatchApp" startPc="268437867">
+        <functionEntry accessMode="public" endPc="268438122" name="_resetState" parent="NoTrackRunWatchApp" startPc="268437988">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438027" name="getCurrentField" parent="NoTrackRunWatchApp" startPc="268437989">
+        <functionEntry accessMode="public" endPc="268438161" name="getCurrentField" parent="NoTrackRunWatchApp" startPc="268438123">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438059" name="getCurrentBlock" parent="NoTrackRunWatchApp" startPc="268438028">
+        <functionEntry accessMode="public" endPc="268438193" name="getCurrentBlock" parent="NoTrackRunWatchApp" startPc="268438162">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438103" name="getGoal" parent="NoTrackRunWatchApp" startPc="268438060">
+        <functionEntry accessMode="public" endPc="268438237" name="getGoal" parent="NoTrackRunWatchApp" startPc="268438194">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438122" name="&lt;init&gt;" parent="TransmitCallback" startPc="268438104">
+        <functionEntry accessMode="public" endPc="268438256" name="&lt;init&gt;" parent="TransmitCallback" startPc="268438238">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438143" name="initialize" parent="NoTrackRunWatchApp" startPc="268438123">
+        <functionEntry accessMode="public" endPc="268438277" name="initialize" parent="NoTrackRunWatchApp" startPc="268438257">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438191" name="backIdle" parent="NoTrackRunWatchApp" startPc="268438144">
+        <functionEntry accessMode="public" endPc="268438325" name="backIdle" parent="NoTrackRunWatchApp" startPc="268438278">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438317" name="_saveSessionLocally" parent="NoTrackRunWatchApp" startPc="268438192">
+        <functionEntry accessMode="public" endPc="268438451" name="_saveSessionLocally" parent="NoTrackRunWatchApp" startPc="268438326">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -734,91 +746,91 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438409" name="_drawCountdown" parent="NoTrackRunView" startPc="268438318">
+        <functionEntry accessMode="public" endPc="268438543" name="_drawCountdown" parent="NoTrackRunView" startPc="268438452">
             <param id="dc"/>
             <param id="app"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438508" name="_drawLoading" parent="NoTrackRunView" startPc="268438410">
+        <functionEntry accessMode="public" endPc="268438642" name="_drawLoading" parent="NoTrackRunView" startPc="268438544">
             <param id="dc"/>
             <param id="app"/>
             <param id="msg"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438626" name="formatPace" parent="NoTrackRunView" startPc="268438509">
-            <param id="pace"/>
+        <functionEntry accessMode="public" endPc="268438760" name="formatPace" parent="NoTrackRunView" startPc="268438643">
+            <param id="speedMs"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438694" name="formatDistance" parent="NoTrackRunView" startPc="268438627">
+        <functionEntry accessMode="public" endPc="268438828" name="formatDistance" parent="NoTrackRunView" startPc="268438761">
             <param id="dist"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438818" name="_drawIdle" parent="NoTrackRunView" startPc="268438695">
+        <functionEntry accessMode="public" endPc="268438952" name="_drawIdle" parent="NoTrackRunView" startPc="268438829">
             <param id="dc"/>
             <param id="app"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439572" name="_drawRunning" parent="NoTrackRunView" startPc="268438819">
+        <functionEntry accessMode="public" endPc="268439706" name="_drawRunning" parent="NoTrackRunView" startPc="268438953">
             <param id="dc"/>
             <param id="app"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439719" name="_drawSyncOk" parent="NoTrackRunView" startPc="268439573">
+        <functionEntry accessMode="public" endPc="268439853" name="_drawSyncOk" parent="NoTrackRunView" startPc="268439707">
             <param id="dc"/>
             <param id="app"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439722" name="onLayout" parent="NoTrackRunView" startPc="268439720">
+        <functionEntry accessMode="public" endPc="268439856" name="onLayout" parent="NoTrackRunView" startPc="268439854">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439869" name="_drawNeedSync" parent="NoTrackRunView" startPc="268439723">
-            <param id="dc"/>
-            <param id="app"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268440327" name="_drawFinished" parent="NoTrackRunView" startPc="268439870">
+        <functionEntry accessMode="public" endPc="268440003" name="_drawNeedSync" parent="NoTrackRunView" startPc="268439857">
             <param id="dc"/>
             <param id="app"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440457" name="formatTime" parent="NoTrackRunView" startPc="268440328">
+        <functionEntry accessMode="public" endPc="268440461" name="_drawFinished" parent="NoTrackRunView" startPc="268440004">
+            <param id="dc"/>
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440591" name="formatTime" parent="NoTrackRunView" startPc="268440462">
             <param id="seconds"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440870" name="_drawSummary" parent="NoTrackRunView" startPc="268440458">
+        <functionEntry accessMode="public" endPc="268441004" name="_drawSummary" parent="NoTrackRunView" startPc="268440592">
             <param id="dc"/>
             <param id="app"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440891" name="initialize" parent="NoTrackRunView" startPc="268440871">
+        <functionEntry accessMode="public" endPc="268441025" name="initialize" parent="NoTrackRunView" startPc="268441005">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441321" name="onUpdate" parent="NoTrackRunView" startPc="268440892">
+        <functionEntry accessMode="public" endPc="268441455" name="onUpdate" parent="NoTrackRunView" startPc="268441026">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441342" name="initialize" parent="NoTrackRunDelegate" startPc="268441322">
+        <functionEntry accessMode="public" endPc="268441476" name="initialize" parent="NoTrackRunDelegate" startPc="268441456">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441388" name="_resetToSummary" parent="NoTrackRunDelegate" startPc="268441343">
+        <functionEntry accessMode="public" endPc="268441522" name="_resetToSummary" parent="NoTrackRunDelegate" startPc="268441477">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441863" name="onKey" parent="NoTrackRunDelegate" startPc="268441389">
+        <functionEntry accessMode="public" endPc="268442042" name="onKey" parent="NoTrackRunDelegate" startPc="268441523">
             <param id="keyEvent"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441901" name="onError" parent="TransmitCallback" startPc="268441864">
+        <functionEntry accessMode="public" endPc="268442080" name="onError" parent="TransmitCallback" startPc="268442043">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441920" name="onComplete" parent="TransmitCallback" startPc="268441902">
+        <functionEntry accessMode="public" endPc="268442099" name="onComplete" parent="TransmitCallback" startPc="268442081">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441967" name="initialize" parent="TransmitCallback" startPc="268441921">
+        <functionEntry accessMode="public" endPc="268442146" name="initialize" parent="TransmitCallback" startPc="268442100">
             <param id="app"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441984" name="MainLayout" parent="Layouts" startPc="268441968">
+        <functionEntry accessMode="public" endPc="268442163" name="MainLayout" parent="Layouts" startPc="268442147">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

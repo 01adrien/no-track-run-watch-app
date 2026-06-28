@@ -1,5 +1,6 @@
 import Toybox.Lang;
 import Toybox.WatchUi;
+using Toybox.System;
 
 // ─────────────────────────────────────────────
 //  Delegate — gestion des touches
@@ -52,7 +53,7 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                 return true;
             }
             if (key == WatchUi.KEY_ESC) {
-                _resetToSummary();
+                app.backIdle();
                 return true;
             }
             if (key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) {
@@ -75,12 +76,19 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                 app._sendResultsToPhone();
                 return true;
             }
+            if (key == WatchUi.KEY_ESC) {
+                app.backIdle();
+                return true;
+            }
+
+
         }
 
         if (app.appState == STATE_SESSION_SYNC_APP) {
 
             if (key == WatchUi.KEY_ESC) {
-                // app.backIdle();
+                app.backIdle();
+                WatchUi.requestUpdate();
                 return true;
             }
         }

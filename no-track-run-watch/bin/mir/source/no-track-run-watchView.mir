@@ -1154,12 +1154,12 @@ _workspace_no_track_run_watch_source_no_track_run_watchView_mc_139_8_147_8_if_en
         %tmp.185 = getv function %tmp.184 :formatPace;
         %tmp.186 = lgetv %app;
         symbol [ app %tmp.186 153 23 26 ];
-        symbol [ currentPace %tmp.187 153 27 38 ];
-        %tmp.187 = getv %tmp.186 :currentPace;
+        symbol [ avgPace %tmp.187 153 27 34 ];
+        %tmp.187 = getv %tmp.186 :avgPace;
         %tmp.188 = invoke %tmp.184 %tmp.185(%tmp.187);
-        symbol [ Graphics %tmp.189 153 41 49 ];
+        symbol [ Graphics %tmp.189 153 37 45 ];
         %tmp.189 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.190 153 50 69 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.190 153 46 65 ];
         %tmp.190 = getv %tmp.189 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.178 %tmp.179(%tmp.180, %tmp.181, %tmp.183, %tmp.188, %tmp.190);
 [ "/workspace/no-track-run-watch/source/no-track-run-watchView.mc" 154 8 ]
@@ -1902,36 +1902,36 @@ _workspace_no_track_run_watch_source_no_track_run_watchView_mc_258_86_272_4_star
         invoke %tmp.17 %tmp.18(%tmp.19, %tmp.22, %tmp.24, %tmp.25, %tmp.27);
 _workspace_no_track_run_watch_source_no_track_run_watchView_mc_258_86_272_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/no-track-run-watchView.mc"; @line = 279; @symbol_functiondef = [formatPace,279,13,23]; @symbol_param<0> = [pace,279,24,28]; @symbol_param<0>_type<0> = [Float,279,32,37]; @symbol_return<0> = [String,279,42,48]; ]
-    function formatPace(pace as Float) as String {
-_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_49_285_4_start:
+    [ @file = "/workspace/no-track-run-watch/source/no-track-run-watchView.mc"; @line = 279; @symbol_functiondef = [formatPace,279,13,23]; @symbol_param<0> = [speedMs,279,24,31]; @symbol_param<0>_type<0> = [Float,279,35,40]; @symbol_return<0> = [String,279,45,51]; ]
+    function formatPace(speedMs as Float) as String {
+_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_52_285_4_start:
 [ "/workspace/no-track-run-watch/source/no-track-run-watchView.mc" 280 8 ]
-_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_44_if_stmt:
-        %tmp.1 = lgetv %pace;
-        symbol [ pace %tmp.1 280 12 16 ];
+_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_50_if_stmt:
+        %tmp.1 = lgetv %speedMs;
+        symbol [ speedMs %tmp.1 280 12 19 ];
         %tmp.2 = 0.0;
         %tmp.3 = lte %tmp.1 %tmp.2;
-        bf %tmp.3 @_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_44_if_end;
-_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_44_if_true:
-_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_25_280_44_start:
-[ "/workspace/no-track-run-watch/source/no-track-run-watchView.mc" 280 27 ]
-        %tmp.4 = "-- /km";
+        bf %tmp.3 @_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_50_if_end;
+_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_50_if_true:
+_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_28_280_50_start:
+[ "/workspace/no-track-run-watch/source/no-track-run-watchView.mc" 280 30 ]
+        %tmp.4 = "-- min/km";
         ret %tmp.4;
-_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_25_280_44_stop:
-        goto @_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_44_if_end;
-_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_44_if_end:
+_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_28_280_50_stop:
+        goto @_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_50_if_end;
+_workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_50_if_end:
 [ "/workspace/no-track-run-watch/source/no-track-run-watchView.mc" 281 8 ]
-        [ "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_49_285_4_start" "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_49_285_4_stop" ]
+        [ "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_52_285_4_start" "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_52_285_4_stop" ]
         %paceSkm.1 = local;
         symbol [ paceSkm %paceSkm.1 281 12 19 ];
         %tmp.5 = 1000.0;
-        %tmp.6 = lgetv %pace;
-        symbol [ pace %tmp.6 281 31 35 ];
+        %tmp.6 = lgetv %speedMs;
+        symbol [ speedMs %tmp.6 281 31 38 ];
         %tmp.7 = div %tmp.5 %tmp.6;
         lputv %paceSkm.1 %tmp.7;
         symbol [ paceSkm %paceSkm.1 281 12 19 ];
 [ "/workspace/no-track-run-watch/source/no-track-run-watchView.mc" 282 8 ]
-        [ "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_49_285_4_start" "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_49_285_4_stop" ]
+        [ "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_52_285_4_start" "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_52_285_4_stop" ]
         %minutes.2 = local;
         symbol [ minutes %minutes.2 282 12 19 ];
         %tmp.8 = lgetv %paceSkm.1;
@@ -1944,7 +1944,7 @@ _workspace_no_track_run_watch_source_no_track_run_watchView_mc_280_8_280_44_if_e
         lputv %minutes.2 %tmp.12;
         symbol [ minutes %minutes.2 282 12 19 ];
 [ "/workspace/no-track-run-watch/source/no-track-run-watchView.mc" 283 8 ]
-        [ "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_49_285_4_start" "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_49_285_4_stop" ]
+        [ "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_52_285_4_start" "_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_52_285_4_stop" ]
         %seconds.3 = local;
         symbol [ seconds %seconds.3 283 12 19 ];
         %tmp.13 = lgetv %paceSkm.1;
@@ -1983,10 +1983,10 @@ _workspace_no_track_run_watch_source_no_track_run_watchView_mc_284_32_284_53_end
         %tmp.30 = lgetv %seconds.3;
         symbol [ seconds %tmp.30 284 59 66 ];
         %tmp.31 = add %tmp.29 %tmp.30;
-        %tmp.32 = " /km";
+        %tmp.32 = " min/km";
         %tmp.33 = add %tmp.31 %tmp.32;
         ret %tmp.33;
-_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_49_285_4_stop:
+_workspace_no_track_run_watch_source_no_track_run_watchView_mc_279_52_285_4_stop:
     }
     [ @file = "/workspace/no-track-run-watch/source/no-track-run-watchView.mc"; @line = 287; @symbol_functiondef = [formatTime,287,13,23]; @symbol_param<0> = [seconds,287,24,31]; @symbol_param<0>_type<0> = [Number,287,35,41]; @symbol_return<0> = [String,287,46,52]; ]
     function formatTime(seconds as Number) as String {

@@ -1,0 +1,142 @@
+// ─────────────────────────────────────────────────────────────
+// ACTIVITY RECORDING — RECAP
+// docs:
+//   https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording.html
+//   https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording/Session.html
+//   https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor.html
+// ─────────────────────────────────────────────────────────────
+
+// manifest.xml
+// <iq:uses-permission id="Fit"/>
+// <iq:uses-permission id="FitContributor"/>
+// <iq:uses-permission id="Positioning"/>
+
+using Toybox.ActivityRecording;
+using Toybox.FitContributor;
+using Toybox.Activity;
+
+// ── 1. CRÉER LA SESSION ──────────────────────────────────────
+// À faire AVANT start(), idéalement au STATE_COUNTDOWN
+// Une seule session à la fois — si une session non sauvegardée
+// existe, createSession() la retourne au lieu d'en créer une nouvelle.
+
+var _fitSession = ActivityRecording.createSession({
+    :name     => "NoTrackRun",       // max 15 chars recommandé
+    :sport    => Activity.SPORT_RUNNING,
+    :subSport => Activity.SUB_SPORT_GENERIC
+});
+
+// ── 2. CRÉER LES CHAMPS CUSTOM ───────────────────────────────
+// À faire après createSession() et AVANT start()
+// Max 16 fields au total, max 256 bytes par message
+// DATA_TYPE_STRING interdit sur MESG_TYPE_RECORD
+
+// Champ par LAP (écrit 1x à chaque addLap())
+var _fieldTargetPace = _fitSession.createField(
+    "target_pace",                   // nom dans Garmin Connect
+    0,                               // fieldId unique (0..N)
+    FitContributor.DATA_TYPE_FLOAT,
+    { :mesgType => FitContributor.MESG_TYPE_LAP, :units => "m/s" }
+);
+
+var _fieldRealPace = _fitSession.createField(
+    "real_pace",
+    1,
+    FitContributor.DATA_TYPE_FLOAT,
+    { :mesgType => FitContributor.MESG_TYPE_LAP, :units => "m/s" }
+);
+
+var _fieldSuccess = _fitSession.createField(
+    "success",
+    2,
+    FitContributor.DATA_TYPE_UINT8,
+    { :mesgType => FitContributor.MESG_TYPE_LAP }
+);
+
+// Champ global SESSION (écrit 1x à la fin, après stop())
+var _fieldSessionId = _fitSession.createField(
+    "session_id",
+    3,
+    FitContributor.DATA_TYPE_STRING,
+    { :mesgType => FitContributor.MESG_TYPE_SESSION, :count => 16 }
+);
+
+// Champ temps réel RECORD (~1x/sec pendant l'enregistrement)
+var _fieldCurrentPace = _fitSession.createField(
+    "current_pace",
+    4,
+    FitContributor.DATA_TYPE_FLOAT,
+    { :mesgType => FitContributor.MESG_TYPE_RECORD, :units => "m/s" }
+    // DATA_TYPE_STRING interdit ici
+);
+
+// ── 3. DÉMARRER ──────────────────────────────────────────────
+_fitSession.start();                 // retourne true si OK
+
+// ── 4. PENDANT LA SESSION ────────────────────────────────────
+// Mise à jour du champ RECORD à chaque tick (onTick)
+_fieldCurrentPace.setData(currentSpeed);
+
+// ── 5. À CHAQUE FIN DE FIELD → LAP ──────────────────────────
+// Écrire les données LAP AVANT addLap()
+_fieldTargetPace.setData(field["pace"].toFloat());
+_fieldRealPace.setData(realPace);
+_fieldSuccess.setData(success ? 1 : 0);
+_fitSession.addLap();               // retourne true si OK
+
+// ── 6. OPTIONNEL — ÉCOUTER LES EVENTS DE LAP ─────────────────
+// Permet de récupérer les stats calculées par la montre elle-même
+// Non supporté sur les vieux devices (FR230/235/630...)
+_fitSession.setTimerEventListener(method(:onTimerEvent));
+
+function onTimerEvent(eventType as Number, eventData as Dictionary) as Void {
+    if (eventType == ActivityRecording.TIMER_EVENT_LAP && eventData != null) {
+        var dist     = eventData[:elapsedDistance]; // Float  — mètres
+        var avgSpeed = eventData[:averageSpeed];    // Float  — m/s
+        var maxSpeed = eventData[:maxSpeed];        // Float  — m/s
+        var elapsed  = eventData[:elapsedTime];     // Number — millisecondes
+        var timer    = eventData[:timerTime];       // Number — millisecondes
+    }
+}
+
+// Events disponibles :
+// TIMER_EVENT_START, TIMER_EVENT_STOP, TIMER_EVENT_PAUSE,
+// TIMER_EVENT_RESUME, TIMER_EVENT_LAP, TIMER_EVENT_RESET,
+// TIMER_EVENT_WORKOUT_STEP_COMPLETE, TIMER_EVENT_NEXT_MULTISPORT_LEG
+
+// ── 7. FIN DE SESSION ────────────────────────────────────────
+_fitSession.stop();
+
+// Écrire les champs SESSION après stop(), avant save()
+_fieldSessionId.setData(sessionData["id"].toString());
+
+_fitSession.save();                 // écrit le FIT → sync Garmin Connect
+// ou
+_fitSession.discard();              // annule et supprime
+
+// ── 8. VÉRIFICATIONS UTILES ──────────────────────────────────
+_fitSession.isRecording();          // Boolean
+
+// Libérer la mémoire après save/discard (important sur vieux VMs)
+_fitSession = null;
+
+// ── TYPES DE DONNÉES DISPONIBLES ─────────────────────────────
+// FitContributor.DATA_TYPE_SINT8
+// FitContributor.DATA_TYPE_UINT8
+// FitContributor.DATA_TYPE_SINT16
+// FitContributor.DATA_TYPE_UINT16
+// FitContributor.DATA_TYPE_SINT32
+// FitContributor.DATA_TYPE_UINT32
+// FitContributor.DATA_TYPE_STRING  (interdit sur MESG_TYPE_RECORD)
+// FitContributor.DATA_TYPE_FLOAT
+// FitContributor.DATA_TYPE_DOUBLE
+
+// ── SPORTS UTILES ────────────────────────────────────────────
+// Activity.SPORT_RUNNING
+// Activity.SPORT_TRAINING
+// Activity.SUB_SPORT_GENERIC
+// Activity.SUB_SPORT_STREET
+// Activity.SUB_SPORT_TRAIL
+// Activity.SUB_SPORT_TRACK
+// Activity.SUB_SPORT_CARDIO_TRAINING
+// Activity.SUB_SPORT_STRENGTH_TRAINING

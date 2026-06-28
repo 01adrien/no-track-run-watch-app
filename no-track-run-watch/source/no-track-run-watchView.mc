@@ -150,7 +150,7 @@ class NoTrackRunView extends WatchUi.View {
         // ── Pace courant ──
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, y, Graphics.FONT_TINY,
-            formatPace(app.currentPace), Graphics.TEXT_JUSTIFY_CENTER);
+            formatPace(app.avgPace), Graphics.TEXT_JUSTIFY_CENTER);
         y += 28;
 
         // ── Pace cible ──
@@ -276,12 +276,12 @@ class NoTrackRunView extends WatchUi.View {
     //  FORMATERS
     // ─────────────────────────────────────────
     
-    function formatPace(pace as Float) as String {
-        if (pace <= 0.0) { return "-- /km"; }
-        var paceSkm = 1000.0 / pace;
+    function formatPace(speedMs as Float) as String {
+        if (speedMs <= 0.0) { return "-- min/km"; }
+        var paceSkm = 1000.0 / speedMs;
         var minutes = (paceSkm / 60).toNumber();
         var seconds = (paceSkm - minutes * 60).toNumber();
-        return minutes + ":" + (seconds < 10 ? "0" : "") + seconds + " /km";
+        return minutes + ":" + (seconds < 10 ? "0" : "") + seconds + " min/km";
     }
 
     function formatTime(seconds as Number) as String {
