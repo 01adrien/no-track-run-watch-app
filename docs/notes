@@ -25,3 +25,5 @@ docker run --rm \
 adb forward tcp:7381 tcp:7381
 
 node -e "require('http').createServer((r,s)=>{let b='';r.on('data',d=>b+=d);r.on('end',()=>{console.log('Reçu:',b);s.writeHead(200);s.end('ok')})}).listen(3000)"
+
+
