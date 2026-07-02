@@ -1,0 +1,577 @@
+[ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [ActivityRecording,1,13,30]; ]
+using Toybox.ActivityRecording;
+[ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [FitContributor,2,13,27]; ]
+using Toybox.FitContributor;
+[ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Activity,3,13,21]; ]
+using Toybox.Activity;
+[ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
+import Toybox.Lang;
+[ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 6; @symbol_classdef = [FitManager,6,6,16]; ]
+class FitManager {
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 8; @position = 8; @symbol_vardef = [session,8,8,15]; @symbol_type<0> = [ActivityRecording,8,25,42]; @symbol_type<1> = [Session,8,43,50]; ]
+    var session as ActivityRecording.Session or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 11; @position = 8; @symbol_vardef = [_fBlockLabel,11,8,20]; @symbol_type<0> = [FitContributor,11,25,39]; @symbol_type<1> = [Field,11,40,45]; ]
+    var _fBlockLabel as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 12; @position = 8; @symbol_vardef = [_fTargetPace,12,8,20]; @symbol_type<0> = [FitContributor,12,25,39]; @symbol_type<1> = [Field,12,40,45]; ]
+    var _fTargetPace as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 13; @position = 8; @symbol_vardef = [_fRealPace,13,8,18]; @symbol_type<0> = [FitContributor,13,25,39]; @symbol_type<1> = [Field,13,40,45]; ]
+    var _fRealPace as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 14; @position = 8; @symbol_vardef = [_fGoalType,14,8,18]; @symbol_type<0> = [FitContributor,14,25,39]; @symbol_type<1> = [Field,14,40,45]; ]
+    var _fGoalType as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 15; @position = 8; @symbol_vardef = [_fGoalValue,15,8,19]; @symbol_type<0> = [FitContributor,15,25,39]; @symbol_type<1> = [Field,15,40,45]; ]
+    var _fGoalValue as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 16; @position = 8; @symbol_vardef = [_fSuccess,16,8,17]; @symbol_type<0> = [FitContributor,16,25,39]; @symbol_type<1> = [Field,16,40,45]; ]
+    var _fSuccess as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 17; @position = 8; @symbol_vardef = [_fBlockId,17,8,17]; @symbol_type<0> = [FitContributor,17,25,39]; @symbol_type<1> = [Field,17,40,45]; ]
+    var _fBlockId as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 21; @position = 8; @symbol_vardef = [_fSessionId,21,8,19]; @symbol_type<0> = [FitContributor,21,25,39]; @symbol_type<1> = [Field,21,40,45]; ]
+    var _fSessionId as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 22; @position = 8; @symbol_vardef = [_fSessionLabel,22,8,22]; @symbol_type<0> = [FitContributor,22,26,40]; @symbol_type<1> = [Field,22,41,46]; ]
+    var _fSessionLabel as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 25; @position = 8; @symbol_vardef = [_fCurrentPace,25,8,21]; @symbol_type<0> = [FitContributor,25,25,39]; @symbol_type<1> = [Field,25,40,45]; ]
+    var _fCurrentPace as FitContributor.Field or Null = null;
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 29; @symbol_functiondef = [init,29,13,17]; ]
+    function init() as Void {
+_workspace_no_track_run_watch_source_FitManager_mc_29_28_113_4_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 30 8 ]
+_workspace_no_track_run_watch_source_FitManager_mc_30_8_30_56_if_stmt:
+        symbol [ Toybox %tmp.2 30 14 20 ];
+        %tmp.2 = getv ? :Toybox;
+        %tmp.4 = const :ActivityRecording;
+        symbol [ ActivityRecording %tmp.4 30 26 43 const ];
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        %tmp.6 = not %tmp.5;
+        bf %tmp.6 @_workspace_no_track_run_watch_source_FitManager_mc_30_8_30_56_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_30_8_30_56_if_true:
+_workspace_no_track_run_watch_source_FitManager_mc_30_46_30_56_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 30 48 ]
+        ret ?;
+_workspace_no_track_run_watch_source_FitManager_mc_30_46_30_56_stop:
+        goto @_workspace_no_track_run_watch_source_FitManager_mc_30_8_30_56_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_30_8_30_56_if_end:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 32 8 ]
+        symbol [ ActivityRecording %tmp.7 32 18 35 ];
+        %tmp.7 = getm $.Toybox.ActivityRecording;
+        symbol [ createSession %tmp.8 32 36 49 ];
+        %tmp.8 = getv function %tmp.7 :createSession;
+        %tmp.9 = newd 3;
+        %tmp.11 = const :name;
+        symbol [ name %tmp.11 33 13 17 const ];
+        %tmp.12 = "NoTrackRun";
+        %tmp.13 = dup %tmp.9;
+        %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+        %tmp.16 = const :sport;
+        symbol [ sport %tmp.16 34 13 18 const ];
+        symbol [ Activity %tmp.17 34 25 33 ];
+        %tmp.17 = getm $.Toybox.Activity;
+        symbol [ SPORT_RUNNING %tmp.18 34 34 47 ];
+        %tmp.18 = getv %tmp.17 :SPORT_RUNNING;
+        %tmp.19 = dup %tmp.14;
+        %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+        %tmp.22 = const :subSport;
+        symbol [ subSport %tmp.22 35 13 21 const ];
+        symbol [ Activity %tmp.23 35 25 33 ];
+        %tmp.23 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_GENERIC %tmp.24 35 34 51 ];
+        %tmp.24 = getv %tmp.23 :SUB_SPORT_GENERIC;
+        %tmp.25 = dup %tmp.20;
+        %tmp.26 = aputv %tmp.25 %tmp.22 %tmp.24;
+        %tmp.27 = invoke %tmp.7 %tmp.8(%tmp.26);
+        symbol [ session ? 32 8 15 ];
+        putv self :session %tmp.27;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 39 8 ]
+        symbol [ session %tmp.29 39 23 30 ];
+        %tmp.29 = getv ? :session;
+        symbol [ createField %tmp.30 39 31 42 ];
+        %tmp.30 = getv function %tmp.29 :createField;
+        %tmp.31 = "block_label";
+        %tmp.32 = 0;
+        symbol [ FitContributor %tmp.33 42 12 26 ];
+        %tmp.33 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_STRING %tmp.34 42 27 43 ];
+        %tmp.34 = getv %tmp.33 :DATA_TYPE_STRING;
+        %tmp.35 = newd 2;
+        %tmp.37 = const :mesgType;
+        symbol [ mesgType %tmp.37 43 15 23 const ];
+        symbol [ FitContributor %tmp.38 43 27 41 ];
+        %tmp.38 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_LAP %tmp.39 43 42 55 ];
+        %tmp.39 = getv %tmp.38 :MESG_TYPE_LAP;
+        %tmp.40 = dup %tmp.35;
+        %tmp.41 = aputv %tmp.40 %tmp.37 %tmp.39;
+        %tmp.43 = const :count;
+        symbol [ count %tmp.43 43 58 63 const ];
+        %tmp.44 = 16;
+        %tmp.45 = dup %tmp.41;
+        %tmp.46 = aputv %tmp.45 %tmp.43 %tmp.44;
+        %tmp.47 = invoke %tmp.29 %tmp.30(%tmp.31, %tmp.32, %tmp.34, %tmp.46);
+        symbol [ _fBlockLabel ? 39 8 20 ];
+        putv self :_fBlockLabel %tmp.47;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 46 8 ]
+        symbol [ session %tmp.49 46 23 30 ];
+        %tmp.49 = getv ? :session;
+        symbol [ createField %tmp.50 46 31 42 ];
+        %tmp.50 = getv function %tmp.49 :createField;
+        %tmp.51 = "target_pace";
+        %tmp.52 = 1;
+        symbol [ FitContributor %tmp.53 49 12 26 ];
+        %tmp.53 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_FLOAT %tmp.54 49 27 42 ];
+        %tmp.54 = getv %tmp.53 :DATA_TYPE_FLOAT;
+        %tmp.55 = newd 2;
+        %tmp.57 = const :mesgType;
+        symbol [ mesgType %tmp.57 50 15 23 const ];
+        symbol [ FitContributor %tmp.58 50 27 41 ];
+        %tmp.58 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_LAP %tmp.59 50 42 55 ];
+        %tmp.59 = getv %tmp.58 :MESG_TYPE_LAP;
+        %tmp.60 = dup %tmp.55;
+        %tmp.61 = aputv %tmp.60 %tmp.57 %tmp.59;
+        %tmp.63 = const :units;
+        symbol [ units %tmp.63 50 58 63 const ];
+        %tmp.64 = "m/s";
+        %tmp.65 = dup %tmp.61;
+        %tmp.66 = aputv %tmp.65 %tmp.63 %tmp.64;
+        %tmp.67 = invoke %tmp.49 %tmp.50(%tmp.51, %tmp.52, %tmp.54, %tmp.66);
+        symbol [ _fTargetPace ? 46 8 20 ];
+        putv self :_fTargetPace %tmp.67;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 53 8 ]
+        symbol [ session %tmp.69 53 21 28 ];
+        %tmp.69 = getv ? :session;
+        symbol [ createField %tmp.70 53 29 40 ];
+        %tmp.70 = getv function %tmp.69 :createField;
+        %tmp.71 = "real_pace";
+        %tmp.72 = 2;
+        symbol [ FitContributor %tmp.73 56 12 26 ];
+        %tmp.73 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_FLOAT %tmp.74 56 27 42 ];
+        %tmp.74 = getv %tmp.73 :DATA_TYPE_FLOAT;
+        %tmp.75 = newd 2;
+        %tmp.77 = const :mesgType;
+        symbol [ mesgType %tmp.77 57 15 23 const ];
+        symbol [ FitContributor %tmp.78 57 27 41 ];
+        %tmp.78 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_LAP %tmp.79 57 42 55 ];
+        %tmp.79 = getv %tmp.78 :MESG_TYPE_LAP;
+        %tmp.80 = dup %tmp.75;
+        %tmp.81 = aputv %tmp.80 %tmp.77 %tmp.79;
+        %tmp.83 = const :units;
+        symbol [ units %tmp.83 57 58 63 const ];
+        %tmp.84 = "m/s";
+        %tmp.85 = dup %tmp.81;
+        %tmp.86 = aputv %tmp.85 %tmp.83 %tmp.84;
+        %tmp.87 = invoke %tmp.69 %tmp.70(%tmp.71, %tmp.72, %tmp.74, %tmp.86);
+        symbol [ _fRealPace ? 53 8 18 ];
+        putv self :_fRealPace %tmp.87;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 60 8 ]
+        symbol [ session %tmp.89 60 21 28 ];
+        %tmp.89 = getv ? :session;
+        symbol [ createField %tmp.90 60 29 40 ];
+        %tmp.90 = getv function %tmp.89 :createField;
+        %tmp.91 = "goal_type";
+        %tmp.92 = 3;
+        symbol [ FitContributor %tmp.93 63 12 26 ];
+        %tmp.93 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_UINT8 %tmp.94 63 27 42 ];
+        %tmp.94 = getv %tmp.93 :DATA_TYPE_UINT8;
+        %tmp.95 = newd 1;
+        %tmp.97 = const :mesgType;
+        symbol [ mesgType %tmp.97 64 15 23 const ];
+        symbol [ FitContributor %tmp.98 64 27 41 ];
+        %tmp.98 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_LAP %tmp.99 64 42 55 ];
+        %tmp.99 = getv %tmp.98 :MESG_TYPE_LAP;
+        %tmp.100 = dup %tmp.95;
+        %tmp.101 = aputv %tmp.100 %tmp.97 %tmp.99;
+        %tmp.102 = invoke %tmp.89 %tmp.90(%tmp.91, %tmp.92, %tmp.94, %tmp.101);
+        symbol [ _fGoalType ? 60 8 18 ];
+        putv self :_fGoalType %tmp.102;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 67 8 ]
+        symbol [ session %tmp.104 67 22 29 ];
+        %tmp.104 = getv ? :session;
+        symbol [ createField %tmp.105 67 30 41 ];
+        %tmp.105 = getv function %tmp.104 :createField;
+        %tmp.106 = "goal_value";
+        %tmp.107 = 4;
+        symbol [ FitContributor %tmp.108 70 12 26 ];
+        %tmp.108 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_UINT32 %tmp.109 70 27 43 ];
+        %tmp.109 = getv %tmp.108 :DATA_TYPE_UINT32;
+        %tmp.110 = newd 1;
+        %tmp.112 = const :mesgType;
+        symbol [ mesgType %tmp.112 71 15 23 const ];
+        symbol [ FitContributor %tmp.113 71 27 41 ];
+        %tmp.113 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_LAP %tmp.114 71 42 55 ];
+        %tmp.114 = getv %tmp.113 :MESG_TYPE_LAP;
+        %tmp.115 = dup %tmp.110;
+        %tmp.116 = aputv %tmp.115 %tmp.112 %tmp.114;
+        %tmp.117 = invoke %tmp.104 %tmp.105(%tmp.106, %tmp.107, %tmp.109, %tmp.116);
+        symbol [ _fGoalValue ? 67 8 19 ];
+        putv self :_fGoalValue %tmp.117;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 75 8 ]
+        symbol [ session %tmp.119 75 20 27 ];
+        %tmp.119 = getv ? :session;
+        symbol [ createField %tmp.120 75 28 39 ];
+        %tmp.120 = getv function %tmp.119 :createField;
+        %tmp.121 = "block_id";
+        %tmp.122 = 4;
+        symbol [ FitContributor %tmp.123 78 12 26 ];
+        %tmp.123 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_STRING %tmp.124 78 27 43 ];
+        %tmp.124 = getv %tmp.123 :DATA_TYPE_STRING;
+        %tmp.125 = newd 2;
+        %tmp.127 = const :mesgType;
+        symbol [ mesgType %tmp.127 79 15 23 const ];
+        symbol [ FitContributor %tmp.128 79 27 41 ];
+        %tmp.128 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_LAP %tmp.129 79 42 55 ];
+        %tmp.129 = getv %tmp.128 :MESG_TYPE_LAP;
+        %tmp.130 = dup %tmp.125;
+        %tmp.131 = aputv %tmp.130 %tmp.127 %tmp.129;
+        %tmp.133 = const :count;
+        symbol [ count %tmp.133 79 58 63 const ];
+        %tmp.134 = 16;
+        %tmp.135 = dup %tmp.131;
+        %tmp.136 = aputv %tmp.135 %tmp.133 %tmp.134;
+        %tmp.137 = invoke %tmp.119 %tmp.120(%tmp.121, %tmp.122, %tmp.124, %tmp.136);
+        symbol [ _fBlockId ? 75 8 17 ];
+        putv self :_fBlockId %tmp.137;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 83 8 ]
+        symbol [ session %tmp.139 83 20 27 ];
+        %tmp.139 = getv ? :session;
+        symbol [ createField %tmp.140 83 28 39 ];
+        %tmp.140 = getv function %tmp.139 :createField;
+        %tmp.141 = "success";
+        %tmp.142 = 5;
+        symbol [ FitContributor %tmp.143 86 12 26 ];
+        %tmp.143 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_UINT8 %tmp.144 86 27 42 ];
+        %tmp.144 = getv %tmp.143 :DATA_TYPE_UINT8;
+        %tmp.145 = newd 1;
+        %tmp.147 = const :mesgType;
+        symbol [ mesgType %tmp.147 87 15 23 const ];
+        symbol [ FitContributor %tmp.148 87 27 41 ];
+        %tmp.148 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_LAP %tmp.149 87 42 55 ];
+        %tmp.149 = getv %tmp.148 :MESG_TYPE_LAP;
+        %tmp.150 = dup %tmp.145;
+        %tmp.151 = aputv %tmp.150 %tmp.147 %tmp.149;
+        %tmp.152 = invoke %tmp.139 %tmp.140(%tmp.141, %tmp.142, %tmp.144, %tmp.151);
+        symbol [ _fSuccess ? 83 8 17 ];
+        putv self :_fSuccess %tmp.152;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 92 8 ]
+        symbol [ session %tmp.154 92 22 29 ];
+        %tmp.154 = getv ? :session;
+        symbol [ createField %tmp.155 92 30 41 ];
+        %tmp.155 = getv function %tmp.154 :createField;
+        %tmp.156 = "session_id";
+        %tmp.157 = 6;
+        symbol [ FitContributor %tmp.158 95 12 26 ];
+        %tmp.158 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_UINT32 %tmp.159 95 27 43 ];
+        %tmp.159 = getv %tmp.158 :DATA_TYPE_UINT32;
+        %tmp.160 = newd 1;
+        %tmp.162 = const :mesgType;
+        symbol [ mesgType %tmp.162 96 15 23 const ];
+        symbol [ FitContributor %tmp.163 96 27 41 ];
+        %tmp.163 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_SESSION %tmp.164 96 42 59 ];
+        %tmp.164 = getv %tmp.163 :MESG_TYPE_SESSION;
+        %tmp.165 = dup %tmp.160;
+        %tmp.166 = aputv %tmp.165 %tmp.162 %tmp.164;
+        %tmp.167 = invoke %tmp.154 %tmp.155(%tmp.156, %tmp.157, %tmp.159, %tmp.166);
+        symbol [ _fSessionId ? 92 8 19 ];
+        putv self :_fSessionId %tmp.167;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 99 8 ]
+        symbol [ session %tmp.169 99 25 32 ];
+        %tmp.169 = getv ? :session;
+        symbol [ createField %tmp.170 99 33 44 ];
+        %tmp.170 = getv function %tmp.169 :createField;
+        %tmp.171 = "session_label";
+        %tmp.172 = 7;
+        symbol [ FitContributor %tmp.173 102 12 26 ];
+        %tmp.173 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_STRING %tmp.174 102 27 43 ];
+        %tmp.174 = getv %tmp.173 :DATA_TYPE_STRING;
+        %tmp.175 = newd 2;
+        %tmp.177 = const :mesgType;
+        symbol [ mesgType %tmp.177 103 15 23 const ];
+        symbol [ FitContributor %tmp.178 103 27 41 ];
+        %tmp.178 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_SESSION %tmp.179 103 42 59 ];
+        %tmp.179 = getv %tmp.178 :MESG_TYPE_SESSION;
+        %tmp.180 = dup %tmp.175;
+        %tmp.181 = aputv %tmp.180 %tmp.177 %tmp.179;
+        %tmp.183 = const :count;
+        symbol [ count %tmp.183 103 62 67 const ];
+        %tmp.184 = 16;
+        %tmp.185 = dup %tmp.181;
+        %tmp.186 = aputv %tmp.185 %tmp.183 %tmp.184;
+        %tmp.187 = invoke %tmp.169 %tmp.170(%tmp.171, %tmp.172, %tmp.174, %tmp.186);
+        symbol [ _fSessionLabel ? 99 8 22 ];
+        putv self :_fSessionLabel %tmp.187;
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 107 8 ]
+        symbol [ session %tmp.189 107 24 31 ];
+        %tmp.189 = getv ? :session;
+        symbol [ createField %tmp.190 107 32 43 ];
+        %tmp.190 = getv function %tmp.189 :createField;
+        %tmp.191 = "current_pace";
+        %tmp.192 = 8;
+        symbol [ FitContributor %tmp.193 110 12 26 ];
+        %tmp.193 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_FLOAT %tmp.194 110 27 42 ];
+        %tmp.194 = getv %tmp.193 :DATA_TYPE_FLOAT;
+        %tmp.195 = newd 2;
+        %tmp.197 = const :mesgType;
+        symbol [ mesgType %tmp.197 111 15 23 const ];
+        symbol [ FitContributor %tmp.198 111 27 41 ];
+        %tmp.198 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_RECORD %tmp.199 111 42 58 ];
+        %tmp.199 = getv %tmp.198 :MESG_TYPE_RECORD;
+        %tmp.200 = dup %tmp.195;
+        %tmp.201 = aputv %tmp.200 %tmp.197 %tmp.199;
+        %tmp.203 = const :units;
+        symbol [ units %tmp.203 111 61 66 const ];
+        %tmp.204 = "m/s";
+        %tmp.205 = dup %tmp.201;
+        %tmp.206 = aputv %tmp.205 %tmp.203 %tmp.204;
+        %tmp.207 = invoke %tmp.189 %tmp.190(%tmp.191, %tmp.192, %tmp.194, %tmp.206);
+        symbol [ _fCurrentPace ? 107 8 21 ];
+        putv self :_fCurrentPace %tmp.207;
+_workspace_no_track_run_watch_source_FitManager_mc_29_28_113_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 117; @symbol_functiondef = [tick,117,13,17]; @symbol_param<0> = [currentSpeed,117,18,30]; @symbol_param<0>_type<0> = [Float,117,34,39]; ]
+    function tick(currentSpeed as Float) as Void {
+_workspace_no_track_run_watch_source_FitManager_mc_117_49_120_4_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 118 8 ]
+_workspace_no_track_run_watch_source_FitManager_mc_118_8_118_65_if_stmt:
+_workspace_no_track_run_watch_source_FitManager_mc_118_12_118_52_begin:
+        symbol [ session %tmp.2 118 12 19 ];
+        %tmp.2 = getv ? :session;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bt %tmp.4 @_workspace_no_track_run_watch_source_FitManager_mc_118_8_118_65_if_true;
+_workspace_no_track_run_watch_source_FitManager_mc_118_31_118_52_false:
+        symbol [ session %tmp.6 118 32 39 ];
+        %tmp.6 = getv ? :session;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ isRecording %tmp.8 118 40 51 ];
+        %tmp.8 = getv function %tmp.7 :isRecording;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = not %tmp.9;
+        push %tmp.10;
+_workspace_no_track_run_watch_source_FitManager_mc_118_31_118_52_end:
+        %tmp.11 = phi [%tmp.4 @_workspace_no_track_run_watch_source_FitManager_mc_118_12_118_52_begin] [%tmp.10 @_workspace_no_track_run_watch_source_FitManager_mc_118_31_118_52_false] [%tmp.11 @_workspace_no_track_run_watch_source_FitManager_mc_118_31_118_52_end];
+        bf %tmp.11 @_workspace_no_track_run_watch_source_FitManager_mc_118_8_118_65_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_118_8_118_65_if_true:
+_workspace_no_track_run_watch_source_FitManager_mc_118_55_118_65_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 118 57 ]
+        ret ?;
+_workspace_no_track_run_watch_source_FitManager_mc_118_55_118_65_stop:
+        goto @_workspace_no_track_run_watch_source_FitManager_mc_118_8_118_65_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_118_8_118_65_if_end:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 119 8 ]
+        symbol [ _fCurrentPace %tmp.13 119 8 21 ];
+        %tmp.13 = getv ? :_fCurrentPace;
+        symbol [ setData %tmp.14 119 22 29 ];
+        %tmp.14 = getv function %tmp.13 :setData;
+        %tmp.15 = lgetv %currentSpeed;
+        symbol [ currentSpeed %tmp.15 119 30 42 ];
+        invoke %tmp.13 %tmp.14(%tmp.15);
+_workspace_no_track_run_watch_source_FitManager_mc_117_49_120_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 124; @symbol_functiondef = [recordLap,124,13,22]; @symbol_param<0> = [blockLabel,125,8,18]; @symbol_param<0>_type<0> = [String,125,23,29]; @symbol_param<1> = [targetPace,126,8,18]; @symbol_param<1>_type<0> = [Float,126,23,28]; @symbol_param<2> = [realPace,127,8,16]; @symbol_param<2>_type<0> = [Float,127,23,28]; @symbol_param<3> = [goalType,128,8,16]; @symbol_param<3>_type<0> = [Number,128,23,29]; @symbol_param<4> = [goalValue,129,8,17]; @symbol_param<4>_type<0> = [Number,129,23,29]; @symbol_param<5> = [success,130,8,15]; @symbol_param<5>_type<0> = [Boolean,130,23,30]; ]
+    function recordLap(blockLabel as String, targetPace as Float, realPace as Float, goalType as Number, goalValue as Number, success as Boolean) as Void {
+_workspace_no_track_run_watch_source_FitManager_mc_131_14_142_4_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 132 8 ]
+_workspace_no_track_run_watch_source_FitManager_mc_132_8_132_65_if_stmt:
+_workspace_no_track_run_watch_source_FitManager_mc_132_12_132_52_begin:
+        symbol [ session %tmp.2 132 12 19 ];
+        %tmp.2 = getv ? :session;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bt %tmp.4 @_workspace_no_track_run_watch_source_FitManager_mc_132_8_132_65_if_true;
+_workspace_no_track_run_watch_source_FitManager_mc_132_31_132_52_false:
+        symbol [ session %tmp.6 132 32 39 ];
+        %tmp.6 = getv ? :session;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ isRecording %tmp.8 132 40 51 ];
+        %tmp.8 = getv function %tmp.7 :isRecording;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        %tmp.10 = not %tmp.9;
+        push %tmp.10;
+_workspace_no_track_run_watch_source_FitManager_mc_132_31_132_52_end:
+        %tmp.11 = phi [%tmp.4 @_workspace_no_track_run_watch_source_FitManager_mc_132_12_132_52_begin] [%tmp.10 @_workspace_no_track_run_watch_source_FitManager_mc_132_31_132_52_false] [%tmp.11 @_workspace_no_track_run_watch_source_FitManager_mc_132_31_132_52_end];
+        bf %tmp.11 @_workspace_no_track_run_watch_source_FitManager_mc_132_8_132_65_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_132_8_132_65_if_true:
+_workspace_no_track_run_watch_source_FitManager_mc_132_55_132_65_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 132 57 ]
+        ret ?;
+_workspace_no_track_run_watch_source_FitManager_mc_132_55_132_65_stop:
+        goto @_workspace_no_track_run_watch_source_FitManager_mc_132_8_132_65_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_132_8_132_65_if_end:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 134 8 ]
+        symbol [ _fBlockLabel %tmp.13 134 8 20 ];
+        %tmp.13 = getv ? :_fBlockLabel;
+        symbol [ setData %tmp.14 134 21 28 ];
+        %tmp.14 = getv function %tmp.13 :setData;
+        %tmp.15 = lgetv %blockLabel;
+        symbol [ blockLabel %tmp.15 134 29 39 ];
+        invoke %tmp.13 %tmp.14(%tmp.15);
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 135 8 ]
+        symbol [ _fTargetPace %tmp.17 135 8 20 ];
+        %tmp.17 = getv ? :_fTargetPace;
+        symbol [ setData %tmp.18 135 21 28 ];
+        %tmp.18 = getv function %tmp.17 :setData;
+        %tmp.19 = lgetv %targetPace;
+        symbol [ targetPace %tmp.19 135 29 39 ];
+        invoke %tmp.17 %tmp.18(%tmp.19);
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 136 8 ]
+        symbol [ _fRealPace %tmp.21 136 8 18 ];
+        %tmp.21 = getv ? :_fRealPace;
+        symbol [ setData %tmp.22 136 19 26 ];
+        %tmp.22 = getv function %tmp.21 :setData;
+        %tmp.23 = lgetv %realPace;
+        symbol [ realPace %tmp.23 136 27 35 ];
+        invoke %tmp.21 %tmp.22(%tmp.23);
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 137 8 ]
+        symbol [ _fGoalType %tmp.25 137 8 18 ];
+        %tmp.25 = getv ? :_fGoalType;
+        symbol [ setData %tmp.26 137 19 26 ];
+        %tmp.26 = getv function %tmp.25 :setData;
+        %tmp.27 = lgetv %goalType;
+        symbol [ goalType %tmp.27 137 27 35 ];
+        invoke %tmp.25 %tmp.26(%tmp.27);
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 138 8 ]
+        symbol [ _fGoalValue %tmp.29 138 8 19 ];
+        %tmp.29 = getv ? :_fGoalValue;
+        symbol [ setData %tmp.30 138 20 27 ];
+        %tmp.30 = getv function %tmp.29 :setData;
+        %tmp.31 = lgetv %goalValue;
+        symbol [ goalValue %tmp.31 138 28 37 ];
+        invoke %tmp.29 %tmp.30(%tmp.31);
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 139 8 ]
+        symbol [ _fSuccess %tmp.33 139 8 17 ];
+        %tmp.33 = getv ? :_fSuccess;
+        symbol [ setData %tmp.34 139 18 25 ];
+        %tmp.34 = getv function %tmp.33 :setData;
+_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_begin:
+        %tmp.35 = lgetv %success;
+        symbol [ success %tmp.35 139 26 33 ];
+        bf %tmp.35 @_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_else_false;
+_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_true:
+        %tmp.36 = 1;
+        push %tmp.36;
+        goto @_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_end;
+_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_else_false:
+        %tmp.37 = 0;
+        push %tmp.37;
+_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_end:
+        %tmp.38 = phi [%tmp.35 @_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_begin] [%tmp.36 @_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_true] [%tmp.37 @_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_else_false] [%tmp.38 @_workspace_no_track_run_watch_source_FitManager_mc_139_26_139_40_end];
+        invoke %tmp.33 %tmp.34(%tmp.38);
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 141 8 ]
+        symbol [ session %tmp.40 141 8 15 ];
+        %tmp.40 = getv ? :session;
+        symbol [ addLap %tmp.41 141 16 22 ];
+        %tmp.41 = getv function %tmp.40 :addLap;
+        invoke %tmp.40 %tmp.41();
+_workspace_no_track_run_watch_source_FitManager_mc_131_14_142_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 146; @symbol_functiondef = [stopAndSave,146,13,24]; @symbol_param<0> = [sessionId,146,25,34]; @symbol_param<0>_type<0> = [Number,146,38,44]; @symbol_param<1> = [sessionLabel,146,46,58]; @symbol_param<1>_type<0> = [String,146,62,68]; ]
+    function stopAndSave(sessionId as Number, sessionLabel as String) as Void {
+_workspace_no_track_run_watch_source_FitManager_mc_146_78_157_4_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 147 8 ]
+_workspace_no_track_run_watch_source_FitManager_mc_147_8_147_39_if_stmt:
+        symbol [ session %tmp.2 147 12 19 ];
+        %tmp.2 = getv ? :session;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_workspace_no_track_run_watch_source_FitManager_mc_147_8_147_39_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_147_8_147_39_if_true:
+_workspace_no_track_run_watch_source_FitManager_mc_147_29_147_39_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 147 31 ]
+        ret ?;
+_workspace_no_track_run_watch_source_FitManager_mc_147_29_147_39_stop:
+        goto @_workspace_no_track_run_watch_source_FitManager_mc_147_8_147_39_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_147_8_147_39_if_end:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 149 8 ]
+        symbol [ session %tmp.6 149 8 15 ];
+        %tmp.6 = getv ? :session;
+        symbol [ stop %tmp.7 149 16 20 ];
+        %tmp.7 = getv function %tmp.6 :stop;
+        invoke %tmp.6 %tmp.7();
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 152 8 ]
+        symbol [ _fSessionId %tmp.9 152 8 19 ];
+        %tmp.9 = getv ? :_fSessionId;
+        symbol [ setData %tmp.10 152 20 27 ];
+        %tmp.10 = getv function %tmp.9 :setData;
+        %tmp.11 = lgetv %sessionId;
+        symbol [ sessionId %tmp.11 152 28 37 ];
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 153 8 ]
+        symbol [ _fSessionLabel %tmp.13 153 8 22 ];
+        %tmp.13 = getv ? :_fSessionLabel;
+        symbol [ setData %tmp.14 153 23 30 ];
+        %tmp.14 = getv function %tmp.13 :setData;
+        %tmp.15 = lgetv %sessionLabel;
+        symbol [ sessionLabel %tmp.15 153 31 43 ];
+        invoke %tmp.13 %tmp.14(%tmp.15);
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 155 8 ]
+        symbol [ session %tmp.17 155 8 15 ];
+        %tmp.17 = getv ? :session;
+        symbol [ save %tmp.18 155 16 20 ];
+        %tmp.18 = getv function %tmp.17 :save;
+        invoke %tmp.17 %tmp.18();
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 156 8 ]
+        %tmp.19 = null;
+        symbol [ session ? 156 8 15 ];
+        putv self :session %tmp.19;
+_workspace_no_track_run_watch_source_FitManager_mc_146_78_157_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 159; @symbol_functiondef = [discard,159,13,20]; ]
+    function discard() as Void {
+_workspace_no_track_run_watch_source_FitManager_mc_159_31_164_4_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 160 8 ]
+_workspace_no_track_run_watch_source_FitManager_mc_160_8_160_39_if_stmt:
+        symbol [ session %tmp.2 160 12 19 ];
+        %tmp.2 = getv ? :session;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_workspace_no_track_run_watch_source_FitManager_mc_160_8_160_39_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_160_8_160_39_if_true:
+_workspace_no_track_run_watch_source_FitManager_mc_160_29_160_39_start:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 160 31 ]
+        ret ?;
+_workspace_no_track_run_watch_source_FitManager_mc_160_29_160_39_stop:
+        goto @_workspace_no_track_run_watch_source_FitManager_mc_160_8_160_39_if_end;
+_workspace_no_track_run_watch_source_FitManager_mc_160_8_160_39_if_end:
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 161 8 ]
+        symbol [ session %tmp.6 161 8 15 ];
+        %tmp.6 = getv ? :session;
+        symbol [ stop %tmp.7 161 16 20 ];
+        %tmp.7 = getv function %tmp.6 :stop;
+        invoke %tmp.6 %tmp.7();
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 162 8 ]
+        symbol [ session %tmp.9 162 8 15 ];
+        %tmp.9 = getv ? :session;
+        symbol [ discard %tmp.10 162 16 23 ];
+        %tmp.10 = getv function %tmp.9 :discard;
+        invoke %tmp.9 %tmp.10();
+[ "/workspace/no-track-run-watch/source/FitManager.mc" 163 8 ]
+        %tmp.11 = null;
+        symbol [ session ? 163 8 15 ];
+        putv self :session %tmp.11;
+_workspace_no_track_run_watch_source_FitManager_mc_159_31_164_4_stop:
+    }
+}
+[ @file = "/workspace/no-track-run-watch/source/FitManager.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,793 @@
+[ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 3; @symbol_enumdef = [AppState,3,5,13]; ]
+enum AppState {
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 4; @position = 4; @symbol_enumdec = [STATE_IDLE,4,4,14]; ]
+    STATE_IDLE,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 5; @position = 4; @symbol_enumdec = [STATE_SUMMARY,5,4,17]; ]
+    STATE_SUMMARY,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 6; @position = 4; @symbol_enumdec = [STATE_COUNTDOWN,6,4,19]; ]
+    STATE_COUNTDOWN,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 7; @position = 4; @symbol_enumdec = [STATE_RUNNING,7,4,17]; ]
+    STATE_RUNNING,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 8; @position = 4; @symbol_enumdec = [STATE_FINISHED,8,4,18]; ]
+    STATE_FINISHED,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 9; @position = 4; @symbol_enumdec = [STATE_NEED_SYNC,9,4,19]; ]
+    STATE_NEED_SYNC,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 10; @position = 4; @symbol_enumdec = [STATE_SYNCED,10,4,16]; ]
+    STATE_SYNCED,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 11; @position = 4; @symbol_enumdec = [STATE_LOADING,11,4,17]; ]
+    STATE_LOADING,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 12; @position = 4; @symbol_enumdec = [STATE_SENDING,12,4,17]; ]
+    STATE_SENDING,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 13; @position = 4; @symbol_enumdec = [STATE_GPS_FIXING,13,4,20]; ]
+    STATE_GPS_FIXING,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 14; @position = 4; @symbol_enumdec = [STATE_ERROR,14,4,15]; ]
+    STATE_ERROR
+}
+[ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 17; @symbol_enumdef = [AppEvent,17,5,13]; ]
+enum AppEvent {
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 18; @position = 4; @symbol_enumdec = [EVENT_SESSION_RECEIVED,18,4,26]; ]
+    EVENT_SESSION_RECEIVED,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 19; @position = 4; @symbol_enumdec = [EVENT_SESSION_START,19,4,23]; ]
+    EVENT_SESSION_START,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 20; @position = 4; @symbol_enumdec = [EVENT_SESSION_END,20,4,21]; ]
+    EVENT_SESSION_END,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 21; @position = 4; @symbol_enumdec = [EVENT_FIELD_SKIP,21,4,20]; ]
+    EVENT_FIELD_SKIP,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 22; @position = 4; @symbol_enumdec = [EVENT_SEND_RESULTS,22,4,22]; ]
+    EVENT_SEND_RESULTS,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 23; @position = 4; @symbol_enumdec = [EVENT_ACK_RECEIVED,23,4,22]; ]
+    EVENT_ACK_RECEIVED,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 24; @position = 4; @symbol_enumdec = [EVENT_NOT_SYNCED,24,4,20]; ]
+    EVENT_NOT_SYNCED,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 25; @position = 4; @symbol_enumdec = [EVENT_BACK_IDLE,25,4,19]; ]
+    EVENT_BACK_IDLE,
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 26; @position = 4; @symbol_enumdec = [EVENT_INIT_GPS,26,4,18]; ]
+    EVENT_INIT_GPS
+}
+[ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 29; @symbol_classdef = [Fsm,29,6,9]; ]
+class Fsm {
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 29; ]
+    <init> {
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 31 8 ]
+        symbol [ STATE_IDLE %tmp.2 31 28 38 ];
+        %tmp.2 = getv ? :STATE_IDLE;
+        putv self :state %tmp.2;
+    }
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 29; ]
+    static
+    <init> {
+    }
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 31; @position = 8; @symbol_vardef = [state,31,8,13]; @symbol_type<0> = [AppState,31,17,25]; ]
+    var state as AppState;
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 33; @symbol_functiondef = [transition,33,13,23]; @symbol_param<0> = [next,33,24,28]; @symbol_param<0>_type<0> = [AppState,33,32,40]; ]
+    function transition(next as AppState) as Void {
+_workspace_no_track_run_watch_source_Fsm_mc_33_50_38_4_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 34 8 ]
+        %tmp.1 = self;
+        symbol [ onExit %tmp.2 34 8 14 ];
+        %tmp.2 = getv function %tmp.1 :onExit;
+        symbol [ state %tmp.4 34 15 20 ];
+        %tmp.4 = getv ? :state;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 35 8 ]
+        %tmp.5 = lgetv %next;
+        symbol [ next %tmp.5 35 16 20 ];
+        symbol [ state ? 35 8 13 ];
+        putv self :state %tmp.5;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 36 8 ]
+        %tmp.6 = self;
+        symbol [ onEnter %tmp.7 36 8 15 ];
+        %tmp.7 = getv function %tmp.6 :onEnter;
+        symbol [ state %tmp.9 36 16 21 ];
+        %tmp.9 = getv ? :state;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 37 8 ]
+        symbol [ WatchUi %tmp.10 37 8 15 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.11 37 16 29 ];
+        %tmp.11 = getv function %tmp.10 :requestUpdate;
+        invoke %tmp.10 %tmp.11();
+_workspace_no_track_run_watch_source_Fsm_mc_33_50_38_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 40; @symbol_functiondef = [handle,40,13,19]; @symbol_param<0> = [event,40,20,25]; @symbol_param<0>_type<0> = [AppEvent,40,29,37]; ]
+    function handle(event as AppEvent) as Void {
+_workspace_no_track_run_watch_source_Fsm_mc_40_47_42_4_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 41 8 ]
+        %tmp.1 = self;
+        symbol [ onEvent %tmp.2 41 8 15 ];
+        %tmp.2 = getv function %tmp.1 :onEvent;
+        symbol [ state %tmp.4 41 16 21 ];
+        %tmp.4 = getv ? :state;
+        %tmp.5 = lgetv %event;
+        symbol [ event %tmp.5 41 23 28 ];
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.5);
+_workspace_no_track_run_watch_source_Fsm_mc_40_47_42_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 44; @symbol_functiondef = [tick,44,13,17]; ]
+    function tick() as Void {
+_workspace_no_track_run_watch_source_Fsm_mc_44_28_47_4_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 45 8 ]
+        %tmp.1 = self;
+        symbol [ onTick %tmp.2 45 8 14 ];
+        %tmp.2 = getv function %tmp.1 :onTick;
+        symbol [ state %tmp.4 45 15 20 ];
+        %tmp.4 = getv ? :state;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 46 8 ]
+        symbol [ WatchUi %tmp.5 46 8 15 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.6 46 16 29 ];
+        %tmp.6 = getv function %tmp.5 :requestUpdate;
+        invoke %tmp.5 %tmp.6();
+_workspace_no_track_run_watch_source_Fsm_mc_44_28_47_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 52; @symbol_functiondef = [onTick,52,13,19]; @symbol_param<0> = [state,52,20,25]; @symbol_param<0>_type<0> = [AppState,52,29,37]; ]
+    function onTick(state as AppState) as Void {
+_workspace_no_track_run_watch_source_Fsm_mc_52_47_81_4_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 53 8 ]
+        [ "_workspace_no_track_run_watch_source_Fsm_mc_52_47_81_4_start" "_workspace_no_track_run_watch_source_Fsm_mc_52_47_81_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 53 12 15 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 53 18 24 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %app.1 %tmp.3;
+        symbol [ app %app.1 53 12 15 ];
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 54 8 ]
+        %tmp.4 = lgetv %state;
+        symbol [ state %tmp.4 54 16 21 ];
+        push %tmp.4;
+        switch %tmp.4 @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 55 12 ]
+        %tmp.5 = dup %tmp.4;
+        symbol [ STATE_IDLE %tmp.7 55 17 27 ];
+        %tmp.7 = getv ? :STATE_IDLE;
+        %tmp.8 = getv function %tmp.5 :equals;
+        %tmp.9 = invoke %tmp.5 %tmp.8 (%tmp.7);
+        bt %tmp.9 @_workspace_no_track_run_watch_source_Fsm_mc_55_12_56_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 57 12 ]
+        %tmp.10 = dup %tmp.4;
+        symbol [ STATE_SUMMARY %tmp.12 57 17 30 ];
+        %tmp.12 = getv ? :STATE_SUMMARY;
+        %tmp.13 = getv function %tmp.10 :equals;
+        %tmp.14 = invoke %tmp.10 %tmp.13 (%tmp.12);
+        bt %tmp.14 @_workspace_no_track_run_watch_source_Fsm_mc_57_12_58_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 59 12 ]
+        %tmp.15 = dup %tmp.4;
+        symbol [ STATE_COUNTDOWN %tmp.17 59 17 32 ];
+        %tmp.17 = getv ? :STATE_COUNTDOWN;
+        %tmp.18 = getv function %tmp.15 :equals;
+        %tmp.19 = invoke %tmp.15 %tmp.18 (%tmp.17);
+        bt %tmp.19 @_workspace_no_track_run_watch_source_Fsm_mc_59_12_61_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 62 12 ]
+        %tmp.20 = dup %tmp.4;
+        symbol [ STATE_RUNNING %tmp.22 62 17 30 ];
+        %tmp.22 = getv ? :STATE_RUNNING;
+        %tmp.23 = getv function %tmp.20 :equals;
+        %tmp.24 = invoke %tmp.20 %tmp.23 (%tmp.22);
+        bt %tmp.24 @_workspace_no_track_run_watch_source_Fsm_mc_62_12_64_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 65 12 ]
+        %tmp.25 = dup %tmp.4;
+        symbol [ STATE_FINISHED %tmp.27 65 17 31 ];
+        %tmp.27 = getv ? :STATE_FINISHED;
+        %tmp.28 = getv function %tmp.25 :equals;
+        %tmp.29 = invoke %tmp.25 %tmp.28 (%tmp.27);
+        bt %tmp.29 @_workspace_no_track_run_watch_source_Fsm_mc_65_12_66_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 67 12 ]
+        %tmp.30 = dup %tmp.4;
+        symbol [ STATE_NEED_SYNC %tmp.32 67 17 32 ];
+        %tmp.32 = getv ? :STATE_NEED_SYNC;
+        %tmp.33 = getv function %tmp.30 :equals;
+        %tmp.34 = invoke %tmp.30 %tmp.33 (%tmp.32);
+        bt %tmp.34 @_workspace_no_track_run_watch_source_Fsm_mc_67_12_68_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 69 12 ]
+        %tmp.35 = dup %tmp.4;
+        symbol [ STATE_SYNCED %tmp.37 69 17 29 ];
+        %tmp.37 = getv ? :STATE_SYNCED;
+        %tmp.38 = getv function %tmp.35 :equals;
+        %tmp.39 = invoke %tmp.35 %tmp.38 (%tmp.37);
+        bt %tmp.39 @_workspace_no_track_run_watch_source_Fsm_mc_69_12_70_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 71 12 ]
+        %tmp.40 = dup %tmp.4;
+        symbol [ STATE_LOADING %tmp.42 71 17 30 ];
+        %tmp.42 = getv ? :STATE_LOADING;
+        %tmp.43 = getv function %tmp.40 :equals;
+        %tmp.44 = invoke %tmp.40 %tmp.43 (%tmp.42);
+        bt %tmp.44 @_workspace_no_track_run_watch_source_Fsm_mc_71_12_72_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 73 12 ]
+        %tmp.45 = dup %tmp.4;
+        symbol [ STATE_SENDING %tmp.47 73 17 30 ];
+        %tmp.47 = getv ? :STATE_SENDING;
+        %tmp.48 = getv function %tmp.45 :equals;
+        %tmp.49 = invoke %tmp.45 %tmp.48 (%tmp.47);
+        bt %tmp.49 @_workspace_no_track_run_watch_source_Fsm_mc_73_12_74_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 75 12 ]
+        %tmp.50 = dup %tmp.4;
+        symbol [ STATE_GPS_FIXING %tmp.52 75 17 33 ];
+        %tmp.52 = getv ? :STATE_GPS_FIXING;
+        %tmp.53 = getv function %tmp.50 :equals;
+        %tmp.54 = invoke %tmp.50 %tmp.53 (%tmp.52);
+        bt %tmp.54 @_workspace_no_track_run_watch_source_Fsm_mc_75_12_77_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 78 12 ]
+        %tmp.55 = dup %tmp.4;
+        symbol [ STATE_ERROR %tmp.57 78 17 28 ];
+        %tmp.57 = getv ? :STATE_ERROR;
+        %tmp.58 = getv function %tmp.55 :equals;
+        %tmp.59 = invoke %tmp.55 %tmp.58 (%tmp.57);
+        bt %tmp.59 @_workspace_no_track_run_watch_source_Fsm_mc_78_12_79_21_switchCase;
+_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_defaultCodeBegin;
+_workspace_no_track_run_watch_source_Fsm_mc_55_12_56_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 56 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_57_12_58_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 58 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_59_12_61_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 60 16 ]
+_workspace_no_track_run_watch_source_Fsm_mc_60_16_60_71_if_stmt:
+        %tmp.60 = lgetv %app.1;
+        symbol [ app %tmp.60 60 20 23 ];
+        symbol [ isCountDownOver %tmp.61 60 24 39 ];
+        %tmp.61 = getv function %tmp.60 :isCountDownOver;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        bf %tmp.62 @_workspace_no_track_run_watch_source_Fsm_mc_60_16_60_71_if_end;
+_workspace_no_track_run_watch_source_Fsm_mc_60_16_60_71_if_true:
+_workspace_no_track_run_watch_source_Fsm_mc_60_43_60_71_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 60 45 ]
+        %tmp.63 = self;
+        symbol [ transition %tmp.64 60 45 55 ];
+        %tmp.64 = getv function %tmp.63 :transition;
+        symbol [ STATE_RUNNING %tmp.66 60 56 69 ];
+        %tmp.66 = getv ? :STATE_RUNNING;
+        invoke %tmp.63 %tmp.64(%tmp.66);
+_workspace_no_track_run_watch_source_Fsm_mc_60_43_60_71_stop:
+        goto @_workspace_no_track_run_watch_source_Fsm_mc_60_16_60_71_if_end;
+_workspace_no_track_run_watch_source_Fsm_mc_60_16_60_71_if_end:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 61 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_62_12_64_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 63 16 ]
+        %tmp.67 = lgetv %app.1;
+        symbol [ app %tmp.67 63 16 19 ];
+        symbol [ running %tmp.68 63 20 27 ];
+        %tmp.68 = getv function %tmp.67 :running;
+        invoke %tmp.67 %tmp.68();
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 64 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_65_12_66_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 66 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_67_12_68_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 68 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_69_12_70_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 70 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_71_12_72_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 72 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_73_12_74_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 74 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_75_12_77_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 76 16 ]
+_workspace_no_track_run_watch_source_Fsm_mc_76_16_76_67_if_stmt:
+        %tmp.69 = lgetv %app.1;
+        symbol [ app %tmp.69 76 20 23 ];
+        symbol [ isGpsReady %tmp.70 76 24 34 ];
+        %tmp.70 = getv function %tmp.69 :isGpsReady;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        bf %tmp.71 @_workspace_no_track_run_watch_source_Fsm_mc_76_16_76_67_if_end;
+_workspace_no_track_run_watch_source_Fsm_mc_76_16_76_67_if_true:
+_workspace_no_track_run_watch_source_Fsm_mc_76_38_76_67_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 76 39 ]
+        %tmp.72 = self;
+        symbol [ transition %tmp.73 76 39 49 ];
+        %tmp.73 = getv function %tmp.72 :transition;
+        symbol [ STATE_COUNTDOWN %tmp.75 76 50 65 ];
+        %tmp.75 = getv ? :STATE_COUNTDOWN;
+        invoke %tmp.72 %tmp.73(%tmp.75);
+_workspace_no_track_run_watch_source_Fsm_mc_76_38_76_67_stop:
+        goto @_workspace_no_track_run_watch_source_Fsm_mc_76_16_76_67_if_end;
+_workspace_no_track_run_watch_source_Fsm_mc_76_16_76_67_if_end:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 77 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_78_12_79_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 79 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_defaultCodeBegin:
+_workspace_no_track_run_watch_source_Fsm_mc_54_8_80_8_switchStmtEnd:
+        pop;
+_workspace_no_track_run_watch_source_Fsm_mc_52_47_81_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 83; @symbol_functiondef = [onEvent,83,13,20]; @symbol_param<0> = [state,83,21,26]; @symbol_param<0>_type<0> = [AppState,83,30,38]; @symbol_param<1> = [event,83,40,45]; @symbol_param<1>_type<0> = [AppEvent,83,49,57]; ]
+    function onEvent(state as AppState, event as AppEvent) as Void {
+_workspace_no_track_run_watch_source_Fsm_mc_83_67_119_4_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 84 8 ]
+        [ "_workspace_no_track_run_watch_source_Fsm_mc_83_67_119_4_start" "_workspace_no_track_run_watch_source_Fsm_mc_83_67_119_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 84 12 15 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 84 18 24 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %app.1 %tmp.3;
+        symbol [ app %app.1 84 12 15 ];
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 85 8 ]
+        %tmp.4 = lgetv %state;
+        symbol [ state %tmp.4 85 16 21 ];
+        push %tmp.4;
+        switch %tmp.4 @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 86 12 ]
+        %tmp.5 = dup %tmp.4;
+        symbol [ STATE_IDLE %tmp.7 86 17 27 ];
+        %tmp.7 = getv ? :STATE_IDLE;
+        %tmp.8 = getv function %tmp.5 :equals;
+        %tmp.9 = invoke %tmp.5 %tmp.8 (%tmp.7);
+        bt %tmp.9 @_workspace_no_track_run_watch_source_Fsm_mc_86_12_92_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 93 12 ]
+        %tmp.10 = dup %tmp.4;
+        symbol [ STATE_SUMMARY %tmp.12 93 17 30 ];
+        %tmp.12 = getv ? :STATE_SUMMARY;
+        %tmp.13 = getv function %tmp.10 :equals;
+        %tmp.14 = invoke %tmp.10 %tmp.13 (%tmp.12);
+        bt %tmp.14 @_workspace_no_track_run_watch_source_Fsm_mc_93_12_99_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 100 12 ]
+        %tmp.15 = dup %tmp.4;
+        symbol [ STATE_COUNTDOWN %tmp.17 100 17 32 ];
+        %tmp.17 = getv ? :STATE_COUNTDOWN;
+        %tmp.18 = getv function %tmp.15 :equals;
+        %tmp.19 = invoke %tmp.15 %tmp.18 (%tmp.17);
+        bt %tmp.19 @_workspace_no_track_run_watch_source_Fsm_mc_100_12_101_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 102 12 ]
+        %tmp.20 = dup %tmp.4;
+        symbol [ STATE_RUNNING %tmp.22 102 17 30 ];
+        %tmp.22 = getv ? :STATE_RUNNING;
+        %tmp.23 = getv function %tmp.20 :equals;
+        %tmp.24 = invoke %tmp.20 %tmp.23 (%tmp.22);
+        bt %tmp.24 @_workspace_no_track_run_watch_source_Fsm_mc_102_12_103_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 104 12 ]
+        %tmp.25 = dup %tmp.4;
+        symbol [ STATE_FINISHED %tmp.27 104 17 31 ];
+        %tmp.27 = getv ? :STATE_FINISHED;
+        %tmp.28 = getv function %tmp.25 :equals;
+        %tmp.29 = invoke %tmp.25 %tmp.28 (%tmp.27);
+        bt %tmp.29 @_workspace_no_track_run_watch_source_Fsm_mc_104_12_105_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 106 12 ]
+        %tmp.30 = dup %tmp.4;
+        symbol [ STATE_NEED_SYNC %tmp.32 106 17 32 ];
+        %tmp.32 = getv ? :STATE_NEED_SYNC;
+        %tmp.33 = getv function %tmp.30 :equals;
+        %tmp.34 = invoke %tmp.30 %tmp.33 (%tmp.32);
+        bt %tmp.34 @_workspace_no_track_run_watch_source_Fsm_mc_106_12_107_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 108 12 ]
+        %tmp.35 = dup %tmp.4;
+        symbol [ STATE_SYNCED %tmp.37 108 17 29 ];
+        %tmp.37 = getv ? :STATE_SYNCED;
+        %tmp.38 = getv function %tmp.35 :equals;
+        %tmp.39 = invoke %tmp.35 %tmp.38 (%tmp.37);
+        bt %tmp.39 @_workspace_no_track_run_watch_source_Fsm_mc_108_12_109_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 110 12 ]
+        %tmp.40 = dup %tmp.4;
+        symbol [ STATE_LOADING %tmp.42 110 17 30 ];
+        %tmp.42 = getv ? :STATE_LOADING;
+        %tmp.43 = getv function %tmp.40 :equals;
+        %tmp.44 = invoke %tmp.40 %tmp.43 (%tmp.42);
+        bt %tmp.44 @_workspace_no_track_run_watch_source_Fsm_mc_110_12_111_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 112 12 ]
+        %tmp.45 = dup %tmp.4;
+        symbol [ STATE_SENDING %tmp.47 112 17 30 ];
+        %tmp.47 = getv ? :STATE_SENDING;
+        %tmp.48 = getv function %tmp.45 :equals;
+        %tmp.49 = invoke %tmp.45 %tmp.48 (%tmp.47);
+        bt %tmp.49 @_workspace_no_track_run_watch_source_Fsm_mc_112_12_113_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 114 12 ]
+        %tmp.50 = dup %tmp.4;
+        symbol [ STATE_GPS_FIXING %tmp.52 114 17 33 ];
+        %tmp.52 = getv ? :STATE_GPS_FIXING;
+        %tmp.53 = getv function %tmp.50 :equals;
+        %tmp.54 = invoke %tmp.50 %tmp.53 (%tmp.52);
+        bt %tmp.54 @_workspace_no_track_run_watch_source_Fsm_mc_114_12_115_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 116 12 ]
+        %tmp.55 = dup %tmp.4;
+        symbol [ STATE_ERROR %tmp.57 116 17 28 ];
+        %tmp.57 = getv ? :STATE_ERROR;
+        %tmp.58 = getv function %tmp.55 :equals;
+        %tmp.59 = invoke %tmp.55 %tmp.58 (%tmp.57);
+        bt %tmp.59 @_workspace_no_track_run_watch_source_Fsm_mc_116_12_117_21_switchCase;
+_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_defaultCodeBegin;
+_workspace_no_track_run_watch_source_Fsm_mc_86_12_92_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 87 16 ]
+        %tmp.60 = lgetv %event;
+        symbol [ event %tmp.60 87 24 29 ];
+        push %tmp.60;
+        switch %tmp.60 @_workspace_no_track_run_watch_source_Fsm_mc_87_16_91_16_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_87_16_91_16_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 88 20 ]
+        %tmp.61 = dup %tmp.60;
+        symbol [ EVENT_SESSION_RECEIVED %tmp.63 88 25 47 ];
+        %tmp.63 = getv ? :EVENT_SESSION_RECEIVED;
+        %tmp.64 = getv function %tmp.61 :equals;
+        %tmp.65 = invoke %tmp.61 %tmp.64 (%tmp.63);
+        bt %tmp.65 @_workspace_no_track_run_watch_source_Fsm_mc_88_20_90_29_switchCase;
+_workspace_no_track_run_watch_source_Fsm_mc_87_16_91_16_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_Fsm_mc_87_16_91_16_defaultCodeBegin;
+_workspace_no_track_run_watch_source_Fsm_mc_88_20_90_29_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 89 24 ]
+        %tmp.66 = self;
+        symbol [ transition %tmp.67 89 24 34 ];
+        %tmp.67 = getv function %tmp.66 :transition;
+        symbol [ STATE_SUMMARY %tmp.69 89 35 48 ];
+        %tmp.69 = getv ? :STATE_SUMMARY;
+        invoke %tmp.66 %tmp.67(%tmp.69);
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 90 24 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_87_16_91_16_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_87_16_91_16_defaultCodeBegin:
+_workspace_no_track_run_watch_source_Fsm_mc_87_16_91_16_switchStmtEnd:
+        pop;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 92 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_93_12_99_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 94 16 ]
+        %tmp.70 = lgetv %event;
+        symbol [ event %tmp.70 94 24 29 ];
+        push %tmp.70;
+        switch %tmp.70 @_workspace_no_track_run_watch_source_Fsm_mc_94_16_98_16_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_94_16_98_16_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 95 20 ]
+        %tmp.71 = dup %tmp.70;
+        symbol [ EVENT_SESSION_START %tmp.73 95 25 44 ];
+        %tmp.73 = getv ? :EVENT_SESSION_START;
+        %tmp.74 = getv function %tmp.71 :equals;
+        %tmp.75 = invoke %tmp.71 %tmp.74 (%tmp.73);
+        bt %tmp.75 @_workspace_no_track_run_watch_source_Fsm_mc_95_20_97_29_switchCase;
+_workspace_no_track_run_watch_source_Fsm_mc_94_16_98_16_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_Fsm_mc_94_16_98_16_defaultCodeBegin;
+_workspace_no_track_run_watch_source_Fsm_mc_95_20_97_29_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 96 24 ]
+        %tmp.76 = self;
+        symbol [ transition %tmp.77 96 24 34 ];
+        %tmp.77 = getv function %tmp.76 :transition;
+        symbol [ STATE_GPS_FIXING %tmp.79 96 35 51 ];
+        %tmp.79 = getv ? :STATE_GPS_FIXING;
+        invoke %tmp.76 %tmp.77(%tmp.79);
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 97 24 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_94_16_98_16_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_94_16_98_16_defaultCodeBegin:
+_workspace_no_track_run_watch_source_Fsm_mc_94_16_98_16_switchStmtEnd:
+        pop;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 99 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_100_12_101_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 101 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_102_12_103_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 103 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_104_12_105_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 105 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_106_12_107_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 107 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_108_12_109_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 109 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_110_12_111_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 111 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_112_12_113_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 113 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_114_12_115_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 115 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_116_12_117_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 117 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_defaultCodeBegin:
+_workspace_no_track_run_watch_source_Fsm_mc_85_8_118_8_switchStmtEnd:
+        pop;
+_workspace_no_track_run_watch_source_Fsm_mc_83_67_119_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 121; @symbol_functiondef = [onEnter,121,13,20]; @symbol_param<0> = [state,121,21,26]; @symbol_param<0>_type<0> = [AppState,121,30,38]; ]
+    function onEnter(state as AppState) as Void {
+_workspace_no_track_run_watch_source_Fsm_mc_121_48_150_4_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 122 8 ]
+        [ "_workspace_no_track_run_watch_source_Fsm_mc_121_48_150_4_start" "_workspace_no_track_run_watch_source_Fsm_mc_121_48_150_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 122 12 15 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 122 18 24 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %app.1 %tmp.3;
+        symbol [ app %app.1 122 12 15 ];
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 123 8 ]
+        %tmp.4 = lgetv %state;
+        symbol [ state %tmp.4 123 16 21 ];
+        push %tmp.4;
+        switch %tmp.4 @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 124 12 ]
+        %tmp.5 = dup %tmp.4;
+        symbol [ STATE_IDLE %tmp.7 124 17 27 ];
+        %tmp.7 = getv ? :STATE_IDLE;
+        %tmp.8 = getv function %tmp.5 :equals;
+        %tmp.9 = invoke %tmp.5 %tmp.8 (%tmp.7);
+        bt %tmp.9 @_workspace_no_track_run_watch_source_Fsm_mc_124_12_125_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 126 12 ]
+        %tmp.10 = dup %tmp.4;
+        symbol [ STATE_SUMMARY %tmp.12 126 17 30 ];
+        %tmp.12 = getv ? :STATE_SUMMARY;
+        %tmp.13 = getv function %tmp.10 :equals;
+        %tmp.14 = invoke %tmp.10 %tmp.13 (%tmp.12);
+        bt %tmp.14 @_workspace_no_track_run_watch_source_Fsm_mc_126_12_127_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 128 12 ]
+        %tmp.15 = dup %tmp.4;
+        symbol [ STATE_COUNTDOWN %tmp.17 128 17 32 ];
+        %tmp.17 = getv ? :STATE_COUNTDOWN;
+        %tmp.18 = getv function %tmp.15 :equals;
+        %tmp.19 = invoke %tmp.15 %tmp.18 (%tmp.17);
+        bt %tmp.19 @_workspace_no_track_run_watch_source_Fsm_mc_128_12_130_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 131 12 ]
+        %tmp.20 = dup %tmp.4;
+        symbol [ STATE_RUNNING %tmp.22 131 17 30 ];
+        %tmp.22 = getv ? :STATE_RUNNING;
+        %tmp.23 = getv function %tmp.20 :equals;
+        %tmp.24 = invoke %tmp.20 %tmp.23 (%tmp.22);
+        bt %tmp.24 @_workspace_no_track_run_watch_source_Fsm_mc_131_12_133_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 134 12 ]
+        %tmp.25 = dup %tmp.4;
+        symbol [ STATE_FINISHED %tmp.27 134 17 31 ];
+        %tmp.27 = getv ? :STATE_FINISHED;
+        %tmp.28 = getv function %tmp.25 :equals;
+        %tmp.29 = invoke %tmp.25 %tmp.28 (%tmp.27);
+        bt %tmp.29 @_workspace_no_track_run_watch_source_Fsm_mc_134_12_135_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 136 12 ]
+        %tmp.30 = dup %tmp.4;
+        symbol [ STATE_NEED_SYNC %tmp.32 136 17 32 ];
+        %tmp.32 = getv ? :STATE_NEED_SYNC;
+        %tmp.33 = getv function %tmp.30 :equals;
+        %tmp.34 = invoke %tmp.30 %tmp.33 (%tmp.32);
+        bt %tmp.34 @_workspace_no_track_run_watch_source_Fsm_mc_136_12_137_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 138 12 ]
+        %tmp.35 = dup %tmp.4;
+        symbol [ STATE_SYNCED %tmp.37 138 17 29 ];
+        %tmp.37 = getv ? :STATE_SYNCED;
+        %tmp.38 = getv function %tmp.35 :equals;
+        %tmp.39 = invoke %tmp.35 %tmp.38 (%tmp.37);
+        bt %tmp.39 @_workspace_no_track_run_watch_source_Fsm_mc_138_12_139_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 140 12 ]
+        %tmp.40 = dup %tmp.4;
+        symbol [ STATE_LOADING %tmp.42 140 17 30 ];
+        %tmp.42 = getv ? :STATE_LOADING;
+        %tmp.43 = getv function %tmp.40 :equals;
+        %tmp.44 = invoke %tmp.40 %tmp.43 (%tmp.42);
+        bt %tmp.44 @_workspace_no_track_run_watch_source_Fsm_mc_140_12_141_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 142 12 ]
+        %tmp.45 = dup %tmp.4;
+        symbol [ STATE_SENDING %tmp.47 142 17 30 ];
+        %tmp.47 = getv ? :STATE_SENDING;
+        %tmp.48 = getv function %tmp.45 :equals;
+        %tmp.49 = invoke %tmp.45 %tmp.48 (%tmp.47);
+        bt %tmp.49 @_workspace_no_track_run_watch_source_Fsm_mc_142_12_143_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 144 12 ]
+        %tmp.50 = dup %tmp.4;
+        symbol [ STATE_GPS_FIXING %tmp.52 144 17 33 ];
+        %tmp.52 = getv ? :STATE_GPS_FIXING;
+        %tmp.53 = getv function %tmp.50 :equals;
+        %tmp.54 = invoke %tmp.50 %tmp.53 (%tmp.52);
+        bt %tmp.54 @_workspace_no_track_run_watch_source_Fsm_mc_144_12_146_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 147 12 ]
+        %tmp.55 = dup %tmp.4;
+        symbol [ STATE_ERROR %tmp.57 147 17 28 ];
+        %tmp.57 = getv ? :STATE_ERROR;
+        %tmp.58 = getv function %tmp.55 :equals;
+        %tmp.59 = invoke %tmp.55 %tmp.58 (%tmp.57);
+        bt %tmp.59 @_workspace_no_track_run_watch_source_Fsm_mc_147_12_148_21_switchCase;
+_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_defaultCodeBegin;
+_workspace_no_track_run_watch_source_Fsm_mc_124_12_125_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 125 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_126_12_127_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 127 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_128_12_130_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 129 16 ]
+        %tmp.60 = lgetv %app.1;
+        symbol [ app %tmp.60 129 16 19 ];
+        symbol [ resetCountDown %tmp.61 129 20 34 ];
+        %tmp.61 = getv function %tmp.60 :resetCountDown;
+        invoke %tmp.60 %tmp.61();
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 130 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_131_12_133_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 132 16 ]
+        %tmp.62 = lgetv %app.1;
+        symbol [ app %tmp.62 132 16 19 ];
+        symbol [ initRunning %tmp.63 132 20 31 ];
+        %tmp.63 = getv function %tmp.62 :initRunning;
+        invoke %tmp.62 %tmp.63();
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 133 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_134_12_135_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 135 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_136_12_137_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 137 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_138_12_139_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 139 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_140_12_141_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 141 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_142_12_143_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 143 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_144_12_146_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 145 16 ]
+        %tmp.64 = lgetv %app.1;
+        symbol [ app %tmp.64 145 16 19 ];
+        symbol [ startSession %tmp.65 145 20 32 ];
+        %tmp.65 = getv function %tmp.64 :startSession;
+        invoke %tmp.64 %tmp.65();
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 146 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_147_12_148_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 148 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_defaultCodeBegin:
+_workspace_no_track_run_watch_source_Fsm_mc_123_8_149_8_switchStmtEnd:
+        pop;
+_workspace_no_track_run_watch_source_Fsm_mc_121_48_150_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 152; @symbol_functiondef = [onExit,152,13,19]; @symbol_param<0> = [state,152,20,25]; @symbol_param<0>_type<0> = [AppState,152,29,37]; ]
+    function onExit(state as AppState) as Void {
+_workspace_no_track_run_watch_source_Fsm_mc_152_47_178_4_start:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 153 8 ]
+        [ "_workspace_no_track_run_watch_source_Fsm_mc_152_47_178_4_start" "_workspace_no_track_run_watch_source_Fsm_mc_152_47_178_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 153 12 15 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 153 18 24 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %app.1 %tmp.3;
+        symbol [ app %app.1 153 12 15 ];
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 154 8 ]
+        %tmp.4 = lgetv %state;
+        symbol [ state %tmp.4 154 16 21 ];
+        push %tmp.4;
+        switch %tmp.4 @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 155 12 ]
+        %tmp.5 = dup %tmp.4;
+        symbol [ STATE_IDLE %tmp.7 155 17 27 ];
+        %tmp.7 = getv ? :STATE_IDLE;
+        %tmp.8 = getv function %tmp.5 :equals;
+        %tmp.9 = invoke %tmp.5 %tmp.8 (%tmp.7);
+        bt %tmp.9 @_workspace_no_track_run_watch_source_Fsm_mc_155_12_156_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 157 12 ]
+        %tmp.10 = dup %tmp.4;
+        symbol [ STATE_SUMMARY %tmp.12 157 17 30 ];
+        %tmp.12 = getv ? :STATE_SUMMARY;
+        %tmp.13 = getv function %tmp.10 :equals;
+        %tmp.14 = invoke %tmp.10 %tmp.13 (%tmp.12);
+        bt %tmp.14 @_workspace_no_track_run_watch_source_Fsm_mc_157_12_158_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 159 12 ]
+        %tmp.15 = dup %tmp.4;
+        symbol [ STATE_COUNTDOWN %tmp.17 159 17 32 ];
+        %tmp.17 = getv ? :STATE_COUNTDOWN;
+        %tmp.18 = getv function %tmp.15 :equals;
+        %tmp.19 = invoke %tmp.15 %tmp.18 (%tmp.17);
+        bt %tmp.19 @_workspace_no_track_run_watch_source_Fsm_mc_159_12_160_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 161 12 ]
+        %tmp.20 = dup %tmp.4;
+        symbol [ STATE_RUNNING %tmp.22 161 17 30 ];
+        %tmp.22 = getv ? :STATE_RUNNING;
+        %tmp.23 = getv function %tmp.20 :equals;
+        %tmp.24 = invoke %tmp.20 %tmp.23 (%tmp.22);
+        bt %tmp.24 @_workspace_no_track_run_watch_source_Fsm_mc_161_12_162_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 163 12 ]
+        %tmp.25 = dup %tmp.4;
+        symbol [ STATE_FINISHED %tmp.27 163 17 31 ];
+        %tmp.27 = getv ? :STATE_FINISHED;
+        %tmp.28 = getv function %tmp.25 :equals;
+        %tmp.29 = invoke %tmp.25 %tmp.28 (%tmp.27);
+        bt %tmp.29 @_workspace_no_track_run_watch_source_Fsm_mc_163_12_164_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 165 12 ]
+        %tmp.30 = dup %tmp.4;
+        symbol [ STATE_NEED_SYNC %tmp.32 165 17 32 ];
+        %tmp.32 = getv ? :STATE_NEED_SYNC;
+        %tmp.33 = getv function %tmp.30 :equals;
+        %tmp.34 = invoke %tmp.30 %tmp.33 (%tmp.32);
+        bt %tmp.34 @_workspace_no_track_run_watch_source_Fsm_mc_165_12_166_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 167 12 ]
+        %tmp.35 = dup %tmp.4;
+        symbol [ STATE_SYNCED %tmp.37 167 17 29 ];
+        %tmp.37 = getv ? :STATE_SYNCED;
+        %tmp.38 = getv function %tmp.35 :equals;
+        %tmp.39 = invoke %tmp.35 %tmp.38 (%tmp.37);
+        bt %tmp.39 @_workspace_no_track_run_watch_source_Fsm_mc_167_12_168_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 169 12 ]
+        %tmp.40 = dup %tmp.4;
+        symbol [ STATE_LOADING %tmp.42 169 17 30 ];
+        %tmp.42 = getv ? :STATE_LOADING;
+        %tmp.43 = getv function %tmp.40 :equals;
+        %tmp.44 = invoke %tmp.40 %tmp.43 (%tmp.42);
+        bt %tmp.44 @_workspace_no_track_run_watch_source_Fsm_mc_169_12_170_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 171 12 ]
+        %tmp.45 = dup %tmp.4;
+        symbol [ STATE_SENDING %tmp.47 171 17 30 ];
+        %tmp.47 = getv ? :STATE_SENDING;
+        %tmp.48 = getv function %tmp.45 :equals;
+        %tmp.49 = invoke %tmp.45 %tmp.48 (%tmp.47);
+        bt %tmp.49 @_workspace_no_track_run_watch_source_Fsm_mc_171_12_172_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 173 12 ]
+        %tmp.50 = dup %tmp.4;
+        symbol [ STATE_GPS_FIXING %tmp.52 173 17 33 ];
+        %tmp.52 = getv ? :STATE_GPS_FIXING;
+        %tmp.53 = getv function %tmp.50 :equals;
+        %tmp.54 = invoke %tmp.50 %tmp.53 (%tmp.52);
+        bt %tmp.54 @_workspace_no_track_run_watch_source_Fsm_mc_173_12_174_21_switchCase;
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 175 12 ]
+        %tmp.55 = dup %tmp.4;
+        symbol [ STATE_ERROR %tmp.57 175 17 28 ];
+        %tmp.57 = getv ? :STATE_ERROR;
+        %tmp.58 = getv function %tmp.55 :equals;
+        %tmp.59 = invoke %tmp.55 %tmp.58 (%tmp.57);
+        bt %tmp.59 @_workspace_no_track_run_watch_source_Fsm_mc_175_12_176_21_switchCase;
+_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_defaultCodeBegin;
+_workspace_no_track_run_watch_source_Fsm_mc_155_12_156_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 156 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_157_12_158_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 158 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_159_12_160_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 160 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_161_12_162_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 162 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_163_12_164_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 164 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_165_12_166_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 166 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_167_12_168_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 168 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_169_12_170_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 170 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_171_12_172_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 172 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_173_12_174_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 174 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_175_12_176_21_switchCase:
+[ "/workspace/no-track-run-watch/source/Fsm.mc" 176 16 ]
+        goto break @_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_defaultCodeBegin:
+_workspace_no_track_run_watch_source_Fsm_mc_154_8_177_8_switchStmtEnd:
+        pop;
+_workspace_no_track_run_watch_source_Fsm_mc_152_47_178_4_stop:
+    }
+}
+[ @file = "/workspace/no-track-run-watch/source/Fsm.mc"; @line = 1; ]
+<init> {
+}

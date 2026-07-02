@@ -1,0 +1,47 @@
+[ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 3; @symbol_classdef = [SessionManager,3,6,20]; ]
+class SessionManager {
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 3; ]
+    <init> {
+[ "/workspace/no-track-run-watch/source/SessionManager.mc" 10 8 ]
+        %tmp.1 = newa 0;
+        putv self :results %tmp.1;
+[ "/workspace/no-track-run-watch/source/SessionManager.mc" 12 8 ]
+        %tmp.2 = newd 0;
+        putv self :session %tmp.2;
+    }
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 4; @position = 8; @symbol_vardef = [currentSpeed,4,8,20]; @symbol_type<0> = [Float,4,27,32]; ]
+    var currentSpeed as Float = 0.0;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 5; @position = 8; @symbol_vardef = [currentBlockIdx,5,8,23]; @symbol_type<0> = [Number,5,27,33]; ]
+    var currentBlockIdx as Number = 0;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 6; @position = 8; @symbol_vardef = [currentFieldIdx,6,8,23]; @symbol_type<0> = [Number,6,27,33]; ]
+    var currentFieldIdx as Number = 0;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 7; @position = 8; @symbol_vardef = [fieldElapsed,7,8,20]; @symbol_type<0> = [Number,7,27,33]; ]
+    var fieldElapsed as Number = 0;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 8; @position = 8; @symbol_vardef = [fieldMovingTime,8,8,23]; @symbol_type<0> = [Number,8,27,33]; ]
+    var fieldMovingTime as Number = 0;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 9; @position = 8; @symbol_vardef = [fieldDistance,9,8,21]; @symbol_type<0> = [Float,9,27,32]; ]
+    var fieldDistance as Float = 0.0;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 10; @position = 8; @symbol_vardef = [results,10,8,15]; @symbol_type<0> = [Array,10,27,32]; ]
+    var results as Array;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 11; @position = 8; @symbol_vardef = [avgPace,11,8,15]; @symbol_type<0> = [Float,11,27,32]; ]
+    var avgPace as Float = 0.0;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 12; @position = 8; @symbol_vardef = [session,12,8,15]; @symbol_type<0> = [Dictionary,12,27,37]; ]
+    var session as Dictionary;
+    [ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 14; @symbol_functiondef = [init,14,13,17]; @symbol_param<0> = [sessionData,14,18,29]; @symbol_param<0>_type<0> = [Dictionary,14,33,43]; ]
+    function init(sessionData as Dictionary) {
+_workspace_no_track_run_watch_source_SessionManager_mc_14_45_16_4_start:
+[ "/workspace/no-track-run-watch/source/SessionManager.mc" 15 8 ]
+        %tmp.1 = lgetv %sessionData;
+        symbol [ sessionData %tmp.1 15 18 29 ];
+        symbol [ session ? 15 8 15 ];
+        putv self :session %tmp.1;
+_workspace_no_track_run_watch_source_SessionManager_mc_14_45_16_4_stop:
+    }
+}
+[ @file = "/workspace/no-track-run-watch/source/SessionManager.mc"; @line = 3; ]
+<init> {
+}
