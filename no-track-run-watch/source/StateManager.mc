@@ -11,6 +11,7 @@ enum AppState {
     STATE_SENDING,
     STATE_GPS_FIXING,
     STATE_ERROR,
+    STATE_QUIT,
 }
 
 enum AppEvent {
@@ -27,6 +28,7 @@ enum AppEvent {
     EVENT_SYNCED_OK,
     EVENT_NEED_SYNC,
     EVENT_ERROR,
+    EVENT_QUIT_APP
 }
 
 class StateManager {
@@ -53,7 +55,7 @@ class StateManager {
     function onEvent(state as AppState, e as AppEvent) as Void {
         var app = getApp();
         if (e == EVENT_ERROR) { transition(STATE_ERROR); return;}
-
+        if (e == EVENT_QUIT_APP) { transition(STATE_QUIT); return;}
         switch (state) {
             case STATE_IDLE:
                 if (e == EVENT_SESSION_RECEIVED) {transition(STATE_SUMMARY);}
@@ -126,6 +128,9 @@ class StateManager {
                 break;
             case STATE_GPS_FIXING:
                 app.startSession();
+                break;
+            case STATE_QUIT:
+                app.exit();
                 break;
             case STATE_IDLE:
             case STATE_SUMMARY:

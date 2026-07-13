@@ -4,6 +4,7 @@ import Toybox.Communications;
 import Toybox.Timer;
 import Toybox.Application;
 using Toybox.Position;
+using Toybox.System;
 
 
 class NoTrackRunApp extends Application.AppBase {
@@ -13,6 +14,7 @@ class NoTrackRunApp extends Application.AppBase {
     var timer           as Timer.Timer  = new Timer.Timer();
     var sendingTime     as Number       = 0;
     var errorMsg        as String       = "";
+    var lastRawSpeed    as Float        = 0.0;
 
     function initialize() {
         AppBase.initialize();
@@ -35,27 +37,36 @@ class NoTrackRunApp extends Application.AppBase {
         Position.enableLocationEvents(Position.LOCATION_DISABLE, null);
     }
 
+    function exit() as Void { 
+        System.exit(); 
+    }
+
     function onPhoneMessage(msg as Communications.PhoneAppMessage) as Void {
         var data = msg.data;
+        var type = data["type"] as String;
+
         var event = EVENT_ERROR;
-        if (data instanceof String) {
-            if (data.equals("ACK")) {
-                deleteSession();
-                event = EVENT_SYNCED_OK;
-            }
-        }
-        else if (data instanceof Dictionary) {
-            if (getSession() == null) {
-                rm.init(data as Dictionary);
+        if (type.equals("SESSION_SEND")) {
+             if (getSession() == null) {
+                rm.init(data["payload"] as Dictionary);
                 event = EVENT_SESSION_RECEIVED;
-            } else { event = EVENT_NEED_SYNC; }
+                sendAck("SESSION_ACK", true, null);
+            } else { 
+                event = EVENT_NEED_SYNC; 
+                sendAck("SESSION_ACK", false, "Already a session on the watch");
+            }
+            
+        } else if (type.equals("RESULTS_ACK")) {
+            event = EVENT_SYNCED_OK;
+        } else { 
+            errorMsg = type;
         }
         sm.handle(event);
     }
 
+
     function onPosition(info as Position.Info) as Void {
-        if (info != null && info.speed != null) { rm.currentSpeed = info.speed;} 
-        else { rm.currentSpeed = 0.0;}
+        lastRawSpeed = (info != null && info.speed != null) ? info.speed : 0.0;
     }
     
     function startSession() as Void {
@@ -64,6 +75,7 @@ class NoTrackRunApp extends Application.AppBase {
 
     function onTick() as Void {
         sm.tick();
+        rm.setSpeed(lastRawSpeed);
     }
 
     function isGpsReady() as Boolean {
@@ -84,11 +96,38 @@ class NoTrackRunApp extends Application.AppBase {
         return false;
     }
 
+    function needQuitConfirm() as Boolean {
+        switch (sm.state) {
+            case STATE_IDLE:
+            case STATE_ERROR:
+            case STATE_SYNCED:
+            case STATE_NEED_SYNC:
+                return false;
+
+            default:
+                return true;
+        }
+    }
+
     function sendSession() as Void {
         sendingTime = 0;
         Communications.transmit(
-            getSession(), 
+            {
+                "type"    =>  "RESULTS_SEND",
+                "payload" => getSession(), 
+            },
             null, 
+            new TransmitCallback(self)
+        );
+    }
+
+    function sendAck(type as String, ok as Boolean, error as String?) as Void {
+        var payload = { "status" => ok ? "OK" : "ERROR" };
+        if (error != null) { payload["error"] = error; }
+
+        Communications.transmit(
+            { "type" => type, "payload" => payload },
+            null,
             new TransmitCallback(self)
         );
     }

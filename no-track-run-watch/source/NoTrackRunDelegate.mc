@@ -13,6 +13,12 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
         var app = getApp();
         var sm = app.sm;
         var state = sm.state;
+
+        if (key == WatchUi.KEY_ESC && app.needQuitConfirm()) {
+            showQuitConfirmation();
+            return true;
+        }
+
         switch (state) {
             case STATE_SUMMARY:
                 if (key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) {
@@ -43,5 +49,17 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
         }
 
         return false;
+    }
+
+    private function showQuitConfirmation() as Void {
+        var confirmation = new WatchUi.Confirmation(
+            "Stop session?\nProgress will be lost"
+        );
+
+        WatchUi.pushView(
+            confirmation,
+            new QuitConfirmationDelegate(getApp().sm),
+            WatchUi.SLIDE_IMMEDIATE
+        );
     }
 }

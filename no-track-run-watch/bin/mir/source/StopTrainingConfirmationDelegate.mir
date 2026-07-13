@@ -1,0 +1,79 @@
+[ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [System,3,13,19]; ]
+using Toybox.System;
+[ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 5; @symbol_classdef = [StopTrainingConfirmationDelegate,5,6,38]; @symbol_extends<0> = [WatchUi,6,12,19]; @symbol_extends<1> = [ConfirmationDelegate,6,20,40]; ]
+class StopTrainingConfirmationDelegate extends WatchUi.ConfirmationDelegate {
+    [ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 8; @position = 16; @symbol_vardef = [_stateMachine,8,16,29]; ]
+    private
+    var _stateMachine;
+    [ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; @symbol_param<0> = [stateMachine,10,24,36]; ]
+    function initialize(stateMachine) as Void {
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_10_38_13_4_start:
+[ "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc" 11 8 ]
+        symbol [ ConfirmationDelegate %tmp.2 11 8 28 ];
+        %tmp.2 = getv ? :ConfirmationDelegate;
+        symbol [ initialize %tmp.3 11 29 39 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc" 12 8 ]
+        %tmp.4 = lgetv %stateMachine;
+        symbol [ stateMachine %tmp.4 12 24 36 ];
+        symbol [ _stateMachine ? 12 8 21 ];
+        putv self :_stateMachine %tmp.4;
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_10_38_13_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 15; @symbol_functiondef = [onResponse,15,13,23]; @symbol_param<0> = [response,15,24,32]; @symbol_param<0>_type<0> = [WatchUi,15,36,43]; @symbol_param<0>_type<1> = [Confirm,15,44,51]; @symbol_return<0> = [Boolean,15,56,63]; ]
+    function onResponse(response as WatchUi.Confirm) as Boolean {
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_15_64_23_4_start:
+[ "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc" 16 8 ]
+        symbol [ WatchUi %tmp.1 16 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 16 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 16 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.4 16 32 47 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc" 18 8 ]
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_18_8_20_8_if_stmt:
+        %tmp.5 = lgetv %response;
+        symbol [ response %tmp.5 18 12 20 ];
+        symbol [ WatchUi %tmp.6 18 24 31 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ CONFIRM_YES %tmp.7 18 32 43 ];
+        %tmp.7 = getv %tmp.6 :CONFIRM_YES;
+        %tmp.8 = eq %tmp.5 %tmp.7;
+        bf %tmp.8 @_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_18_8_20_8_if_end;
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_18_8_20_8_if_true:
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_18_45_20_8_start:
+[ "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc" 19 12 ]
+        symbol [ _stateMachine %tmp.10 19 12 25 ];
+        %tmp.10 = getv ? :_stateMachine;
+        symbol [ handle %tmp.11 19 26 32 ];
+        %tmp.11 = getv function %tmp.10 :handle;
+        symbol [ EVENT_QUIT_APP %tmp.13 19 33 47 ];
+        %tmp.13 = getv ? :EVENT_QUIT_APP;
+        invoke %tmp.10 %tmp.11(%tmp.13);
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_18_45_20_8_stop:
+        goto @_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_18_8_20_8_if_end;
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_18_8_20_8_if_end:
+[ "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc" 22 8 ]
+        %tmp.14 = true;
+        ret %tmp.14;
+_workspace_no_track_run_watch_source_StopTrainingConfirmationDelegate_mc_15_64_23_4_stop:
+    }
+}
+[ @file = "/workspace/no-track-run-watch/source/StopTrainingConfirmationDelegate.mc"; @line = 1; ]
+<init> {
+}

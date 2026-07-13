@@ -1,51 +1,240 @@
-{
-    "label": "Training",
-    "date": "2026-03-25",
-    "duration": 1506,
-    "distance": 4933,
-    "blocks": [
-        {
-            "label": "Warm Up",
-            "fields": [
-                {
-                    "distance": 1500,
-                    "pace": 2.78
-                },
-                {
-                    "duration": 150,
-                    "pace": 3.33
-                }
-            ]
-        },
-        {
-            "label": "Cardio",
-            "fields": [
-                {
-                    "distance": 400,
-                    "pace": 4.17
-                },
-                {
-                    "duration": 72,
-                    "pace": 5.56
-                },
-                {
-                    "distance": 400,
-                    "pace": 4.17
-                },
-                {
-                    "duration": 72,
-                    "pace": 5.56
-                }
-            ]
-        },
-        {
-            "label": "Calm Down",
-            "fields": [
-                {
-                    "duration": 480,
-                    "pace": 2.78
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "id": 1571,
+        "label": "Tempo",
+        "date": "July 15",
+        "blocks": [
+            {
+                "id": 5908,
+                "label": "warm-up",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DISTANCE",
+                        "targetValue": 2000,
+                        "pace": "06:09 - 06:40"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1572,
+        "label": "Short Intervals",
+        "date": "July 16",
+        "blocks": [
+            {
+                "id": 5909,
+                "label": "warm-up",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DISTANCE",
+                        "targetValue": 2000,
+                        "pace": "06:40 - 07:16"
+                    }
+                ]
+            },
+            {
+                "id": 5912,
+                "label": "cooling down",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DISTANCE",
+                        "targetValue": 2000,
+                        "pace": "06:09 - 06:40"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1577,
+        "label": "Intervals",
+        "date": "July 25",
+        "blocks": [
+            {
+                "id": 5922,
+                "label": "warm-up",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DISTANCE",
+                        "targetValue": 2000,
+                        "pace": "06:09 - 06:40"
+                    }
+                ]
+            },
+            {
+                "id": 5923,
+                "label": "duration repetition",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "06:09 - 06:40"
+                    },
+                    {
+                        "index": 2,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "04:26 - 04:42"
+                    },
+                    {
+                        "index": 3,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "06:09 - 06:40"
+                    },
+                    {
+                        "index": 4,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "04:26 - 04:42"
+                    },
+                    {
+                        "index": 5,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "06:09 - 06:40"
+                    },
+                    {
+                        "index": 6,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "04:26 - 04:42"
+                    },
+                    {
+                        "index": 7,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "06:09 - 06:40"
+                    },
+                    {
+                        "index": 8,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "04:26 - 04:42"
+                    },
+                    {
+                        "index": 9,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "06:09 - 06:40"
+                    },
+                    {
+                        "index": 10,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "04:26 - 04:42"
+                    },
+                    {
+                        "index": 11,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "06:09 - 06:40"
+                    },
+                    {
+                        "index": 12,
+                        "targetType": "DURATION",
+                        "targetValue": 120,
+                        "pace": "04:26 - 04:42"
+                    }
+                ]
+            },
+            {
+                "id": 5924,
+                "label": "cooling down",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DISTANCE",
+                        "targetValue": 2000,
+                        "pace": "06:40 - 07:16"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1570,
+        "label": "VMA Test",
+        "date": "July 13",
+        "blocks": [
+            {
+                "id": 5900,
+                "label": "warm-up",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DURATION",
+                        "targetValue": 720,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 5902,
+                "label": "intense effort",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DURATION",
+                        "targetValue": 180,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 5903,
+                "label": "walk",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DURATION",
+                        "targetValue": 180,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 5904,
+                "label": "jogging",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DURATION",
+                        "targetValue": 540,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 5905,
+                "label": "intense effort",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DURATION",
+                        "targetValue": 540,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 5906,
+                "label": "recovery",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DURATION",
+                        "targetValue": 360,
+                        "pace": "--:--"
+                    }
+                ]
+            }
+        ]
+    }
+]

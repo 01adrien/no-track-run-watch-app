@@ -7,31 +7,33 @@ enum BlockGoal {
     GOAL_DURATION
 }
 
+// 0 = très lisse/lent, 1 = pas de lissage
+const SPEED_SMOOTHING_ALPHA as Float = 0.3; 
+const MOVING_THRESHOLD_MS   as Float = 0.3;
+
 class RunManager {
     var currentSpeed    as Float       = 0.0;
+    var smoothedSpeed   as Float       = 0.0;
     var currentBlockIdx as Number      = 0;
     var currentFieldIdx as Number      = 0;
     var fieldElapsed    as Number      = 0;
     var fieldMovingTime as Number      = 0;
     var fieldDistance   as Float       = 0.0;
     var results         as Array       = [];
-    var avgPace         as Float       = 0.0;
+    var avgSpeed        as Float       = 0.0;
     var sessionData     as Dictionary  = {};
     var countdown       as Number      = 0;
     var sm              as StateManager;
+    
 
-    function initialize(_sm as StateManager) {
-        sm = _sm;
-    }
+    function initialize(_sm as StateManager) { sm = _sm;}
 
-    function init(data as Dictionary) {
-        sessionData = data;
-    }
+    function init(data as Dictionary) { sessionData = data; }
 
     function initRunning() as Void {
         currentBlockIdx = 0;
         currentFieldIdx = 0;
-        avgPace         = 0.0;
+        avgSpeed         = 0.0;
         fieldElapsed    = 0;
         fieldDistance   = 0.0;
         fieldMovingTime = 0;
@@ -39,16 +41,30 @@ class RunManager {
         currentSpeed    = 0.0;
     }
 
-   function running() {
-        var moving = currentSpeed > 0.3;
+    // EMA (moyenne mobile exponentielle) : lisse une valeur bruitée sans
+    // garder d'historique, juste 1 variable mise à jour à chaque tick.
+    //
+    // nouvelle_moyenne = α × mesure_brute + (1 - α) × ancienne_moyenne
+    //
+    // α proche de 1 → très réactif mais garde le bruit
+    // α proche de 0 → très lisse mais réagit lentement aux vrais changements
+    // α = 0.3 → la mesure brute pèse 30%, l'historique lissé pèse 70%
+    function setSpeed(rawSpeed as Float) as Void {
+        currentSpeed = rawSpeed;
+        smoothedSpeed = (SPEED_SMOOTHING_ALPHA * rawSpeed)
+                    + ((1.0 - SPEED_SMOOTHING_ALPHA) * smoothedSpeed);
+    }
+    
+    function running() as Void {
+        var moving = smoothedSpeed > MOVING_THRESHOLD_MS;
         fieldElapsed  += 1; // sec
-        fieldDistance += moving ? currentSpeed : 0.0 ; // m / s
-        fieldMovingTime += moving ? 1 : 0;  
+        fieldDistance += moving ? smoothedSpeed : 0.0; // m / s
+        fieldMovingTime += moving ? 1 : 0;
         if (fieldMovingTime > 0) {
-            avgPace = fieldDistance / fieldMovingTime; // m/s sur temps réel
+            avgSpeed = fieldDistance / fieldMovingTime;
         }
 
-        if (fieldRemaining() <= 0) { advanceField();}
+        if (fieldRemaining() <= 0) { advanceField(); }
     }
 
     function resetCountDown() as Void {
@@ -74,17 +90,17 @@ class RunManager {
     }
 
     function getGoal() as BlockGoal {
-        return getCurrentField().hasKey("distance") ? GOAL_DISTANCE : GOAL_DURATION;
+        return getCurrentField()["targetType"] == "DISTANCE" ? GOAL_DISTANCE : GOAL_DURATION;
     }   
 
     function fieldRemaining() as Number {
         var field = getCurrentField();
         if (getGoal() == GOAL_DISTANCE) {
-            var dist = (field["distance"] as Number);
+            var dist = (field["targetValue"] as Number);
             var rem  = dist - fieldDistance;
             return (rem < 0) ? 0 : rem;
         } else {
-            var dur = (field["duration"] as Number);
+            var dur = (field["targetValue"] as Number);
             var rem = dur - fieldElapsed;
             return (rem < 0) ? 0 : rem;
         }
@@ -94,28 +110,23 @@ class RunManager {
         saveFieldResult();
 
         fieldElapsed  = 0;
+        fieldMovingTime = 0;
         fieldDistance = 0.0;
-        avgPace   = 0.0;
+        avgSpeed   = 0.0;
 
         var block  = getCurrentBlock();
         var fields = block["fields"] as Array;
 
-        if (currentFieldIdx < fields.size() - 1) {
-            currentFieldIdx += 1;
-        } else {
-            advanceBlock();
-        }
+        if (currentFieldIdx < fields.size() - 1) { currentFieldIdx += 1; } 
+        else { advanceBlock(); }
     }
 
     function advanceBlock() as Void {
         var blocks = sessionData["blocks"] as Array;
         currentFieldIdx = 0;
 
-        if (currentBlockIdx < blocks.size() - 1) {
-            currentBlockIdx += 1;
-        } else {
-            sm.handle(EVENT_SESSION_END);
-        }
+        if (currentBlockIdx < blocks.size() - 1) { currentBlockIdx += 1; } 
+        else { sm.handle(EVENT_SESSION_END); }
     }
 
     function saveSessionLocally() as Void {
@@ -130,22 +141,11 @@ class RunManager {
 
     function saveFieldResult() as Void {
         var block = getCurrentBlock();
-        var field = getCurrentField();
-
-        var targetPace = field["pace"];
-        var realPace   = 0;
-
-        if (fieldElapsed > 0) {
-            realPace = fieldDistance / fieldElapsed; 
-        }
-
-
         results.add({
             "blockId"  => block["id"],
-            "index"    => currentFieldIdx,
+            "index"    => currentFieldIdx + 1,
             "distance" => fieldDistance,
             "duration" => fieldElapsed,
-            "realPace" => realPace
         });
         saveSessionLocally();
     }

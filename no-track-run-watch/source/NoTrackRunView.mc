@@ -2,12 +2,18 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
 import Toybox.Timer;
-  
+using Toybox.System;
+
 class NoTrackRunView extends WatchUi.View {
     
+    var cachedBlockIdx     as Number = -1;
+    var cachedBlockLabel   as String = "";
+    var cachedSessionLabel as String = ""; 
+
     function initialize() {
         View.initialize();
     }
+
 
     function onLayout(dc as Dc) as Void {}
 
@@ -68,13 +74,18 @@ class NoTrackRunView extends WatchUi.View {
     // -- SESSION SUMMARY VIEW -- 
     //---------------------------
     function drawSummary(dc as Dc, app as NoTrackRunApp) as Void {
-        var cx = dc.getWidth()  / 2;
+        var cx = dc.getWidth() / 2;
         var y  = 50;
+        
+
+        if (cachedSessionLabel.length() == 0) {
+            var maxWidth = getUsableWidth(dc, y) - 20;
+            cachedSessionLabel = truncateText(dc, app.rm.sessionData["label"] as String, Graphics.FONT_MEDIUM, maxWidth);
+        }
 
         // ── Titre session ──
         dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        var label = app.rm.sessionData["label"] as String;
-        dc.drawText(cx, y, Graphics.FONT_MEDIUM, label, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(cx, y, Graphics.FONT_MEDIUM, cachedSessionLabel, Graphics.TEXT_JUSTIFY_CENTER);
         y += 35;
 
         // ── Date ──
@@ -85,20 +96,33 @@ class NoTrackRunView extends WatchUi.View {
 
         // ── Blocs ──
         var blocks = app.rm.sessionData["blocks"] as Array;
-        var totalDistance = app.rm.sessionData["distance"];
-        var totalDuration = app.rm.sessionData["duration"];
+
+        var blockCount = blocks.size();
+        var fieldCount = 0;
+
+        for (var i = 0; i < blockCount; i++) {
+            var fields = blocks[i]["fields"] as Array;
+            fieldCount += fields.size();
+        }
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_SMALL, blocks.size().toString() + " blocks", Graphics.TEXT_JUSTIFY_CENTER);
+
+        dc.drawText(
+            cx,
+            y,
+            Graphics.FONT_SMALL,
+            blockCount.toString() + " blocks",
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
         y += 28;
 
-        dc.drawText(cx, y, Graphics.FONT_SMALL, formatDistance(totalDistance)
-                        , Graphics.TEXT_JUSTIFY_CENTER);
-        y += 28;
-
-        dc.drawText(cx, y, Graphics.FONT_SMALL, formatTime(totalDuration)
-                        , Graphics.TEXT_JUSTIFY_CENTER);
-        y += 40;
+        dc.drawText(
+            cx,
+            y,
+            Graphics.FONT_SMALL,
+            fieldCount.toString() + " steps",
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
     }
 
 
@@ -133,7 +157,7 @@ class NoTrackRunView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
         dc.drawText(
             cx,
-            cy - 30,
+            cy - 20,
             Graphics.FONT_LARGE,
             "Error",
             Graphics.TEXT_JUSTIFY_CENTER
@@ -141,7 +165,7 @@ class NoTrackRunView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.drawText(
             cx,
-            cy + 10,
+            cy + 20,
             Graphics.FONT_SMALL,
             app.errorMsg,
             Graphics.TEXT_JUSTIFY_CENTER
@@ -173,12 +197,18 @@ class NoTrackRunView extends WatchUi.View {
         var y  = 40;
 
         var block = app.rm.getCurrentBlock();
+
+        if (app.rm.currentBlockIdx != cachedBlockIdx) {
+            cachedBlockIdx = app.rm.currentBlockIdx;
+            var maxWidth = getUsableWidth(dc, y) - 20;
+            cachedBlockLabel = truncateText(dc, block["label"] as String, Graphics.FONT_MEDIUM, maxWidth);
+        }
+
         var field = app.rm.getCurrentField();
 
         // ── Nom du bloc ──
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-        var blkLabel = block["label"] as String;
-        dc.drawText(cx, y, Graphics.FONT_MEDIUM, blkLabel, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(cx, y, Graphics.FONT_MEDIUM, cachedBlockLabel, Graphics.TEXT_JUSTIFY_CENTER);
         y += 40;
 
         // ── Pastilles de progression des fields ──
@@ -223,14 +253,14 @@ class NoTrackRunView extends WatchUi.View {
         // ── Pace courant ──
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, y, Graphics.FONT_TINY,
-            formatPace(app.rm.avgPace), Graphics.TEXT_JUSTIFY_CENTER);
+            formatPace(app.rm.smoothedSpeed), Graphics.TEXT_JUSTIFY_CENTER);
         y += 28;
 
         // ── Pace cible ──
-        var targetPace = field["pace"];
+    
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, y, Graphics.FONT_TINY,
-            "target " + formatPace(targetPace), Graphics.TEXT_JUSTIFY_CENTER);
+            field["pace"], Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     // -------------------------
@@ -264,12 +294,6 @@ class NoTrackRunView extends WatchUi.View {
             formatTime(totalTime), Graphics.TEXT_JUSTIFY_CENTER);
         y += 28;
 
-        var avgPace = (totalTime > 0) ? totalDist / totalTime : 0.0;
-        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_SMALL,
-            formatPace(avgPace), Graphics.TEXT_JUSTIFY_CENTER);
-        y += 35;
-
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, y, Graphics.FONT_SMALL, "press start to send", Graphics.TEXT_JUSTIFY_CENTER);
 
@@ -291,16 +315,50 @@ class NoTrackRunView extends WatchUi.View {
 
     }
 
+    function truncateText(dc as Dc, text as String, font as FontType, maxWidth as Number) as String {
+        if (dc.getTextWidthInPixels(text, font) <= maxWidth) {
+            return text;
+        }
+
+        var ellipsis = "...";
+        var truncated = text;
+
+        while (truncated.length() > 0) {
+            truncated = truncated.substring(0, truncated.length() - 1);
+            var candidate = truncated + ellipsis;
+            if (dc.getTextWidthInPixels(candidate, font) <= maxWidth) {
+                return candidate;
+            }
+        }
+
+        return ellipsis; // fallback si même "..." ne rentre pas
+    }
+
+function getUsableWidth(dc as Dc, y as Number) as Number {
+    var settings = System.getDeviceSettings();
+    if (settings.screenShape == System.SCREEN_SHAPE_ROUND) {
+        var r = dc.getWidth() / 2;
+        var centerY = dc.getHeight() / 2;
+        var dy = (y - centerY).abs();
+        if (dy >= r) { return 0; }
+        // largeur de la corde du cercle à cette hauteur
+        var halfChord = Math.sqrt((r * r - dy * dy).toFloat());
+        return (halfChord * 2).toNumber();
+    }
+    return dc.getWidth();
+}   
+
 
     // ─────────────────────────────────────────
     //  FORMATERS
     // ─────────────────────────────────────────
     
     function formatPace(speedMs as Float) as String {
-        if (speedMs <= 0.0) { return "-- min/km"; }
+        if (speedMs <= MOVING_THRESHOLD_MS) { return "-- min/km"; } // même seuil que RunManager.running()
         var paceSkm = 1000.0 / speedMs;
-        var minutes = (paceSkm / 60).toNumber();
-        var seconds = (paceSkm - minutes * 60).toNumber();
+        var totalSeconds = Math.round(paceSkm).toNumber();
+        var minutes = totalSeconds / 60;
+        var seconds = totalSeconds % 60;
         return minutes + ":" + (seconds < 10 ? "0" : "") + seconds + " min/km";
     }
 
