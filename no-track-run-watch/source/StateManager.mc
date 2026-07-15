@@ -1,4 +1,5 @@
 import Toybox.WatchUi;
+import Toybox.Lang;
 
 enum AppState {
     STATE_IDLE,
@@ -33,21 +34,22 @@ enum AppEvent {
 
 class StateManager {
 
-    var state as AppState = STATE_IDLE;
+    var _state as AppState = STATE_IDLE;
 
     function transition(next as AppState) as Void {
-        onExit(state);
-        state = next;
-        onEnter(state);
+        var previous = _state;
+        onExit(previous);
+        _state = next;
+        onEnter(next, previous);
         WatchUi.requestUpdate();
     }
 
     function handle(event as AppEvent) as Void {
-        onEvent(state, event);
+        onEvent(_state, event);
     }
 
     function tick() as Void { 
-        onTick(state);
+        onTick(_state);
         WatchUi.requestUpdate();
     }
 
@@ -111,9 +113,9 @@ class StateManager {
 
    
 
-    function onEnter(state as AppState) as Void {
+    function onEnter(next as AppState, prev as AppState) as Void {
         var app = getApp();
-        switch (state) {
+        switch (next) {
             case STATE_COUNTDOWN:
                 app.rm.resetCountDown();
                 break;
@@ -130,11 +132,16 @@ class StateManager {
                 app.startSession();
                 break;
             case STATE_QUIT:
+                if (prev == STATE_SENDING || prev == STATE_RUNNING) {
+                    app.deleteSession();
+                }
                 app.exit();
+                break;
+            case STATE_FINISHED:
+                app.rm.sessionData = {} as Dictionary;
                 break;
             case STATE_IDLE:
             case STATE_SUMMARY:
-            case STATE_FINISHED:
             case STATE_NEED_SYNC:
             case STATE_ERROR:
                 break;

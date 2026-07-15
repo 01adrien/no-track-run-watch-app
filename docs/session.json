@@ -1,240 +1,352 @@
-[
-    {
-        "id": 1571,
-        "label": "Tempo",
-        "date": "July 15",
+{
+    "type": "SEND_SESSION",
+    "payload": {
+        "id": 46,
+        "label": "Grosse ddd",
+        "date": "2026-07-15",
         "blocks": [
             {
-                "id": 5908,
-                "label": "warm-up",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DISTANCE",
-                        "targetValue": 2000,
-                        "pace": "06:09 - 06:40"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 1572,
-        "label": "Short Intervals",
-        "date": "July 16",
-        "blocks": [
-            {
-                "id": 5909,
-                "label": "warm-up",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DISTANCE",
-                        "targetValue": 2000,
-                        "pace": "06:40 - 07:16"
-                    }
-                ]
-            },
-            {
-                "id": 5912,
-                "label": "cooling down",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DISTANCE",
-                        "targetValue": 2000,
-                        "pace": "06:09 - 06:40"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 1577,
-        "label": "Intervals",
-        "date": "July 25",
-        "blocks": [
-            {
-                "id": 5922,
-                "label": "warm-up",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DISTANCE",
-                        "targetValue": 2000,
-                        "pace": "06:09 - 06:40"
-                    }
-                ]
-            },
-            {
-                "id": 5923,
-                "label": "duration repetition",
+                "id": 1,
+                "label": "Echauffement ",
                 "fields": [
                     {
                         "index": 1,
                         "targetType": "DURATION",
-                        "targetValue": 120,
-                        "pace": "06:09 - 06:40"
+                        "targetValue": 900,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "label": "12x400m R9",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 2,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 3,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 4,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 5,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 6,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 7,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 8,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 9,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 10,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 11,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 12,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 13,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 14,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 15,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 16,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 17,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 18,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 19,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 20,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 21,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 22,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    },
+                    {
+                        "index": 23,
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "minSpeed": 4.63,
+                        "maxSpeed": 4.94,
+                        "pace": "03:22 - 03:36"
+                    },
+                    {
+                        "index": 24,
+                        "targetType": "DURATION",
+                        "targetValue": 90,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "label": "Recuperatio",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DURATION",
+                        "targetValue": 480,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "label": "6x300m scscscs",
+                "fields": [
+                    {
+                        "index": 1,
+                        "targetType": "DISTANCE",
+                        "targetValue": 300,
+                        "minSpeed": 3.8,
+                        "maxSpeed": 4.2,
+                        "pace": "03:58 - 04:23"
                     },
                     {
                         "index": 2,
                         "targetType": "DURATION",
                         "targetValue": 120,
-                        "pace": "04:26 - 04:42"
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
                     },
                     {
                         "index": 3,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "pace": "06:09 - 06:40"
+                        "targetType": "DISTANCE",
+                        "targetValue": 300,
+                        "minSpeed": 3.8,
+                        "maxSpeed": 4.2,
+                        "pace": "03:58 - 04:23"
                     },
                     {
                         "index": 4,
                         "targetType": "DURATION",
                         "targetValue": 120,
-                        "pace": "04:26 - 04:42"
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
                     },
                     {
                         "index": 5,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "pace": "06:09 - 06:40"
+                        "targetType": "DISTANCE",
+                        "targetValue": 300,
+                        "minSpeed": 3.8,
+                        "maxSpeed": 4.2,
+                        "pace": "03:58 - 04:23"
                     },
                     {
                         "index": 6,
                         "targetType": "DURATION",
                         "targetValue": 120,
-                        "pace": "04:26 - 04:42"
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
                     },
                     {
                         "index": 7,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "pace": "06:09 - 06:40"
+                        "targetType": "DISTANCE",
+                        "targetValue": 300,
+                        "minSpeed": 3.8,
+                        "maxSpeed": 4.2,
+                        "pace": "03:58 - 04:23"
                     },
                     {
                         "index": 8,
                         "targetType": "DURATION",
                         "targetValue": 120,
-                        "pace": "04:26 - 04:42"
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
                     },
                     {
                         "index": 9,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "pace": "06:09 - 06:40"
+                        "targetType": "DISTANCE",
+                        "targetValue": 300,
+                        "minSpeed": 3.8,
+                        "maxSpeed": 4.2,
+                        "pace": "03:58 - 04:23"
                     },
                     {
                         "index": 10,
                         "targetType": "DURATION",
                         "targetValue": 120,
-                        "pace": "04:26 - 04:42"
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
+                        "pace": "--:--"
                     },
                     {
                         "index": 11,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "pace": "06:09 - 06:40"
+                        "targetType": "DISTANCE",
+                        "targetValue": 300,
+                        "minSpeed": 3.8,
+                        "maxSpeed": 4.2,
+                        "pace": "03:58 - 04:23"
                     },
                     {
                         "index": 12,
                         "targetType": "DURATION",
                         "targetValue": 120,
-                        "pace": "04:26 - 04:42"
-                    }
-                ]
-            },
-            {
-                "id": 5924,
-                "label": "cooling down",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DISTANCE",
-                        "targetValue": 2000,
-                        "pace": "06:40 - 07:16"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 1570,
-        "label": "VMA Test",
-        "date": "July 13",
-        "blocks": [
-            {
-                "id": 5900,
-                "label": "warm-up",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DURATION",
-                        "targetValue": 720,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
                         "pace": "--:--"
                     }
                 ]
             },
             {
-                "id": 5902,
-                "label": "intense effort",
+                "id": 5,
+                "label": "Retour a",
                 "fields": [
                     {
                         "index": 1,
                         "targetType": "DURATION",
-                        "targetValue": 180,
-                        "pace": "--:--"
-                    }
-                ]
-            },
-            {
-                "id": 5903,
-                "label": "walk",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DURATION",
-                        "targetValue": 180,
-                        "pace": "--:--"
-                    }
-                ]
-            },
-            {
-                "id": 5904,
-                "label": "jogging",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DURATION",
-                        "targetValue": 540,
-                        "pace": "--:--"
-                    }
-                ]
-            },
-            {
-                "id": 5905,
-                "label": "intense effort",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DURATION",
-                        "targetValue": 540,
-                        "pace": "--:--"
-                    }
-                ]
-            },
-            {
-                "id": 5906,
-                "label": "recovery",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DURATION",
-                        "targetValue": 360,
+                        "targetValue": 600,
+                        "minSpeed": 0.0,
+                        "maxSpeed": 0.0,
                         "pace": "--:--"
                     }
                 ]
             }
         ]
     }
-]
+}

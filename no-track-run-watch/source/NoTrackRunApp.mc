@@ -7,6 +7,8 @@ using Toybox.Position;
 using Toybox.System;
 
 
+const SENDING_TIMEOUT as Number = 8;
+
 class NoTrackRunApp extends Application.AppBase {
 
     var sm              as StateManager = new StateManager();
@@ -42,26 +44,34 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function onPhoneMessage(msg as Communications.PhoneAppMessage) as Void {
-        var data = msg.data;
-        var type = data["type"] as String;
+        // TODO valider format de session payload
+        if (canReceiveMsg() && msg.data != null) {
+            var data = msg.data;
+            var type = data["type"] as String;
 
-        var event = EVENT_ERROR;
-        if (type.equals("SESSION_SEND")) {
-             if (getSession() == null) {
-                rm.init(data["payload"] as Dictionary);
-                event = EVENT_SESSION_RECEIVED;
-                sendAck("SESSION_ACK", true, null);
+            var event = EVENT_ERROR;
+            if (type.equals("SEND_SESSION")) {
+                if (getSession() == null) {
+                    rm.init(data["payload"] as Dictionary);
+                    event = EVENT_SESSION_RECEIVED;
+                    sendAck("ACK_SESSION", true, null);
+                }
+                else  { 
+                    sendAck("ACK_SESSION", false, "Already a session on the watch");
+                }
+                
+            } else if (type.equals("ACK_RESULTS")) {
+                var payload = data["payload"] as Dictionary;
+                if (payload["status"].equals("OK")) {
+                    event = EVENT_SYNCED_OK;
+                } else {
+                    errorMsg = "Invalid session";
+                }
             } else { 
-                event = EVENT_NEED_SYNC; 
-                sendAck("SESSION_ACK", false, "Already a session on the watch");
+                errorMsg = type;
             }
-            
-        } else if (type.equals("RESULTS_ACK")) {
-            event = EVENT_SYNCED_OK;
-        } else { 
-            errorMsg = type;
+            sm.handle(event);
         }
-        sm.handle(event);
     }
 
 
@@ -80,7 +90,7 @@ class NoTrackRunApp extends Application.AppBase {
 
     function isGpsReady() as Boolean {
         // TODO remove 
-        return true;
+        //return true;
         var info = Position.getInfo();
         if (info == null)           { return false; }
         if (info.accuracy == null)  { return false; }
@@ -88,8 +98,8 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function isTimeoutSending() as Boolean {
-        if (sendingTime >= 10) {
-            errorMsg = "Sync timeout";
+        if (sendingTime >= SENDING_TIMEOUT) {
+            errorMsg = "Send timeout";
             return true;
         }
         sendingTime += 1;
@@ -97,28 +107,39 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function needQuitConfirm() as Boolean {
-        switch (sm.state) {
+        switch (sm._state) {
             case STATE_IDLE:
             case STATE_ERROR:
             case STATE_SYNCED:
             case STATE_NEED_SYNC:
                 return false;
-
             default:
                 return true;
         }
     }
 
+    function canReceiveMsg() as Boolean {
+         switch (sm._state) {
+            case STATE_IDLE:
+            case STATE_SENDING:
+                return true;
+            default:
+                return false;
+        }
+    }
+
     function sendSession() as Void {
         sendingTime = 0;
+        /*
         Communications.transmit(
             {
-                "type"    =>  "RESULTS_SEND",
+                "type"    =>  "SEND_RESULTS",
                 "payload" => getSession(), 
             },
             null, 
             new TransmitCallback(self)
         );
+        */
     }
 
     function sendAck(type as String, ok as Boolean, error as String?) as Void {

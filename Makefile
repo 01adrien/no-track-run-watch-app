@@ -4,7 +4,7 @@ SDK=/root/.Garmin/ConnectIQ/Sdks/connectiq-sdk-lin-9.1.0-2026-03-09-6a872a80b/bi
 PRG=/workspace/no-track-run-watch/bin/notrackrunwatch.prg
 JUNGLE=/workspace/no-track-run-watch/monkey.jungle
 KEY=/workspace/developer_key
-DEVICE=fr245
+DEVICE=epix2pro47mm
 
 sim:
 	$(SDK)/simulator

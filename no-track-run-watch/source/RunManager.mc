@@ -8,8 +8,8 @@ enum BlockGoal {
 }
 
 // 0 = très lisse/lent, 1 = pas de lissage
-const SPEED_SMOOTHING_ALPHA as Float = 0.3; 
-const MOVING_THRESHOLD_MS   as Float = 0.3;
+const SPEED_SMOOTHING_ALPHA as Float = 0.1; 
+const MOVING_THRESHOLD_MS   as Float = 0.5;
 
 class RunManager {
     var currentSpeed    as Float       = 0.0;
@@ -90,7 +90,7 @@ class RunManager {
     }
 
     function getGoal() as BlockGoal {
-        return getCurrentField()["targetType"] == "DISTANCE" ? GOAL_DISTANCE : GOAL_DURATION;
+        return getCurrentField()["targetType"].equals("DISTANCE") ? GOAL_DISTANCE : GOAL_DURATION;
     }   
 
     function fieldRemaining() as Number {
@@ -134,20 +134,58 @@ class RunManager {
         var store = Application.Storage;
         store.setValue("session@notrackrun", {
             "sessionId" => sessionData["id"],
-            "date"      => sessionData["date"],
             "results"   => results
         });
     }
 
     function saveFieldResult() as Void {
         var block = getCurrentBlock();
+        var field = getCurrentField();
+
+        var success = evaluateFieldSuccess(field, fieldDistance, fieldElapsed);
+
         results.add({
             "blockId"  => block["id"],
             "index"    => currentFieldIdx + 1,
             "distance" => fieldDistance,
             "duration" => fieldElapsed,
+            "success"  => success,
         });
         saveSessionLocally();
+    }
+
+    function evaluateFieldSuccess(field as Dictionary, distance as Float, duration as Number) as Boolean {
+        // seulement utile parce qu'on peut skipper les blocspour l'instant
+        if (!targetReached(field, distance, duration)) {
+            return false;
+        }
+        return paceIsValid(field, distance, duration);
+    }
+
+    function targetReached(field as Dictionary, distance as Float, duration as Number) as Boolean {
+        if (getGoal() == GOAL_DISTANCE) {
+            var target = field["targetValue"] as Number;
+            return distance >= target;
+        } else {
+            var target = field["targetValue"] as Number;
+            return duration >= target;
+        }
+    }
+
+    function paceIsValid(field as Dictionary, distance as Float, duration as Number) as Boolean {
+        var minSpeed = field["minSpeed"] as Float;
+        var maxSpeed = field["maxSpeed"] as Float;
+
+        if (minSpeed == 0.0 && maxSpeed == 0.0) {
+            return true; 
+        }
+
+        if (duration <= 0) {
+            return false; 
+        }
+
+        var avgSpeed = distance / duration.toFloat();
+        return avgSpeed >= minSpeed && avgSpeed <= maxSpeed;
     }
 
 }

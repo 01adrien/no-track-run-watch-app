@@ -64,8 +64,8 @@ _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_52_4_start:
         symbol [ state %state.4 15 12 17 ];
         %tmp.9 = lgetv %sm.3;
         symbol [ sm %tmp.9 15 20 22 ];
-        symbol [ state %tmp.10 15 23 28 ];
-        %tmp.10 = getv %tmp.9 :state;
+        symbol [ _state %tmp.10 15 23 29 ];
+        %tmp.10 = getv %tmp.9 :_state;
         lputv %state.4 %tmp.10;
         symbol [ state %state.4 15 12 17 ];
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 17 8 ]

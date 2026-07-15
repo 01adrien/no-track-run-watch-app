@@ -12,7 +12,7 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
         var key = keyEvent.getKey();
         var app = getApp();
         var sm = app.sm;
-        var state = sm.state;
+        var state = sm._state;
 
         if (key == WatchUi.KEY_ESC && app.needQuitConfirm()) {
             showQuitConfirmation();
