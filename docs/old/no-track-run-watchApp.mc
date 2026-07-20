@@ -94,7 +94,6 @@ class NoTrackRunWatchApp extends Application.AppBase {
     function onStart(state as Dictionary?) as Void {
         Communications.registerForPhoneAppMessages(method(:onPhoneMessage));
         _retrySendIfPending();
-        // Sensor.enableSensorEvents(method(:onSensor));
         Position.enableLocationEvents(
             {
                 :acquisitionType => Position.LOCATION_CONTINUOUS,
@@ -106,7 +105,6 @@ class NoTrackRunWatchApp extends Application.AppBase {
 
     function onStop(state as Dictionary?) as Void {
         _timer.stop();
-        // Sensor.setEnabledSensors([] as Array);
         Position.enableLocationEvents(Position.LOCATION_DISABLE, null);
         System.println("Session terminée : " + results.toString());
     }

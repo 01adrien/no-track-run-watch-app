@@ -80,13 +80,14 @@ class NoTrackRunView extends WatchUi.View {
     // -- SESSION SUMMARY VIEW -- 
     //---------------------------
     function drawSummary(dc as Dc, app as NoTrackRunApp) as Void {
+
         var cx = dc.getWidth()  / 2;
         var h  = dc.getHeight();
         var y  = (h * RATIO_TOP_Y).toNumber();
 
         if (cachedSessionLabel.length() == 0) {
             var maxWidth = getUsableWidth(dc, y) - 20;
-            cachedSessionLabel = truncateText(dc, app.rm.sessionData["label"] as String, Graphics.FONT_MEDIUM, maxWidth);
+            cachedSessionLabel = truncateText(dc, app.rm.getSessionLabel(), Graphics.FONT_MEDIUM, maxWidth);
         }
 
         // ── Titre session ──
@@ -96,19 +97,12 @@ class NoTrackRunView extends WatchUi.View {
 
         // ── Date ──
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        var date = app.rm.sessionData["date"] as String;
+        var date = app.rm.getSessionDate();
         dc.drawText(cx, y, Graphics.FONT_SMALL, date, Graphics.TEXT_JUSTIFY_CENTER);
         y += dc.getFontHeight(Graphics.FONT_SMALL) + LINE_GAP_PADDING;
 
-        // ── Blocs ──
-        var blocks = app.rm.sessionData["blocks"] as Array;
-        var blockCount = blocks.size();
-        var fieldCount = 0;
-
-        for (var i = 0; i < blockCount; i++) {
-            var fields = blocks[i]["fields"] as Array;
-            fieldCount += fields.size();
-        }
+        var blockCount = app.rm.getBlocksCount();
+        var fieldCount = app.rm.getFieldsCount();
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, y, Graphics.FONT_SMALL,
@@ -144,7 +138,7 @@ class NoTrackRunView extends WatchUi.View {
     // ----------------
     function drawError(dc as Dc, app as NoTrackRunApp) as Void {
         var cx = dc.getWidth()  / 2;
-        var cy = dc.getHeight() / 3;
+        var cy = dc.getHeight() / 2;
         var halfGapLarge = (dc.getFontHeight(Graphics.FONT_LARGE) / 2) + LINE_GAP_PADDING;
 
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
@@ -156,11 +150,13 @@ class NoTrackRunView extends WatchUi.View {
             Graphics.TEXT_JUSTIFY_CENTER
         );
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        var maxWidth = getUsableWidth(dc, cy) - 20;
+        var err = truncateText(dc, app.errorMsg , Graphics.FONT_XTINY, maxWidth);
         dc.drawText(
             cx,
             cy + halfGapLarge,
-            Graphics.FONT_SMALL,
-            app.errorMsg,
+            Graphics.FONT_XTINY,
+            err,
             Graphics.TEXT_JUSTIFY_CENTER
         );
     }
@@ -195,20 +191,23 @@ class NoTrackRunView extends WatchUi.View {
 
         var block = app.rm.getCurrentBlock();
 
+        /*
         if (app.rm.currentBlockIdx != cachedBlockIdx) {
             cachedBlockIdx = app.rm.currentBlockIdx;
             var maxWidth = getUsableWidth(dc, y) - 20;
             cachedBlockLabel = truncateText(dc, block["label"] as String, Graphics.FONT_MEDIUM, maxWidth);
         }
+        */
 
-        var field = app.rm.getCurrentField();
-
-        // ── Nom du bloc ──
+        
+        // ── numero du bloc ──
+        var label = (app.rm.currentBlockIdx + 1).toString() + "/" + app.rm.getBlocksCount().toString();
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_MEDIUM, cachedBlockLabel, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(cx, y, Graphics.FONT_MEDIUM, label, Graphics.TEXT_JUSTIFY_CENTER);
         y += dc.getFontHeight(Graphics.FONT_MEDIUM) + LINE_GAP_PADDING;
 
         // ── Pastilles de progression des fields ──
+        var field = app.rm.getCurrentField();
         var fields     = block["fields"] as Array;
         var dotSize    = (w * RATIO_DOT_SIZE).toNumber();
         var dotSpacing = (w * RATIO_DOT_SPACING).toNumber();
@@ -249,7 +248,7 @@ class NoTrackRunView extends WatchUi.View {
         // ── Pace courant ──
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, y, Graphics.FONT_TINY,
-            formatPace(app.rm.smoothedSpeed), Graphics.TEXT_JUSTIFY_CENTER);
+            formatPace(app.rm.currentSpeed), Graphics.TEXT_JUSTIFY_CENTER);
         y += dc.getFontHeight(Graphics.FONT_TINY) + LINE_GAP_PADDING;
 
         // ── Pace cible ──
@@ -300,15 +299,25 @@ class NoTrackRunView extends WatchUi.View {
     //--------------------------
     function drawSynced(dc as Dc, app as NoTrackRunApp) as Void {
         var cx = dc.getWidth()  / 2;
-        var h  = dc.getHeight();
-        var y  = (h * RATIO_TOP_Y).toNumber();
+        var cy = dc.getHeight() / 2;
+        var halfGapLarge = (dc.getFontHeight(Graphics.FONT_LARGE) / 2) + LINE_GAP_PADDING;
 
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_LARGE, "Session Send", Graphics.TEXT_JUSTIFY_CENTER);
-        y += dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING;
-
+        dc.drawText(
+            cx,
+            cy - halfGapLarge,
+            Graphics.FONT_LARGE,
+            "Session send",
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_XTINY, "You can close the App", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(
+            cx,
+            cy + halfGapLarge,
+            Graphics.FONT_XTINY,
+            "You can close the app",
+            Graphics.TEXT_JUSTIFY_CENTER
+        );
     }
 
     function truncateText(dc as Dc, text as String, font as FontType, maxWidth as Number) as String {
@@ -337,7 +346,6 @@ function getUsableWidth(dc as Dc, y as Number) as Number {
         var centerY = dc.getHeight() / 2;
         var dy = (y - centerY).abs();
         if (dy >= r) { return 0; }
-        // largeur de la corde du cercle à cette hauteur
         var halfChord = Math.sqrt((r * r - dy * dy).toFloat());
         return (halfChord * 2).toNumber();
     }
@@ -350,7 +358,7 @@ function getUsableWidth(dc as Dc, y as Number) as Number {
     // ─────────────────────────────────────────
     
     function formatPace(speedMs as Float) as String {
-        if (speedMs <= MOVING_THRESHOLD_MS) { return "-- min/km"; } // même seuil que RunManager.running()
+        if (speedMs <= 0.2) { return "-- min/km"; } // même seuil que RunManager.running()
         var paceSkm = 1000.0 / speedMs;
         var totalSeconds = Math.round(paceSkm).toNumber();
         var minutes = totalSeconds / 60;

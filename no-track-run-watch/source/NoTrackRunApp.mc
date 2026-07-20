@@ -5,9 +5,30 @@ import Toybox.Timer;
 import Toybox.Application;
 using Toybox.Position;
 using Toybox.System;
+import Toybox.Attention;
 
 
-const SENDING_TIMEOUT as Number = 8;
+const SENDING_TIMEOUT  as Number  = 5;
+const GPS_STABLE_TICKS as Number  = 5;
+const SIMULATOR        as Boolean = false;
+
+const VIBE_BLOCK_CHANGE as Array<Attention.VibeProfile> = [
+    new Attention.VibeProfile(50, 300),
+    new Attention.VibeProfile(0, 200),
+    new Attention.VibeProfile(50, 300)
+];
+
+const VIBE_FIELD_CHANGE as Array<Attention.VibeProfile> = [
+    new Attention.VibeProfile(50, 300),
+];
+
+const VIBE_SESSION_END as Array<Attention.VibeProfile> = [
+    new Attention.VibeProfile(50, 300),
+    new Attention.VibeProfile(0, 200),
+    new Attention.VibeProfile(50, 300),
+    new Attention.VibeProfile(0, 200),
+    new Attention.VibeProfile(50, 300)
+];
 
 class NoTrackRunApp extends Application.AppBase {
 
@@ -16,14 +37,18 @@ class NoTrackRunApp extends Application.AppBase {
     var timer           as Timer.Timer  = new Timer.Timer();
     var sendingTime     as Number       = 0;
     var errorMsg        as String       = "";
-    var lastRawSpeed    as Float        = 0.0;
+    var gpsGoodStreak   as Number       = 0;
 
-    function initialize() {
-        AppBase.initialize();
-    }
+    function initialize() { AppBase.initialize();}
+
+    function exit() as Void {  System.exit();}
 
     function onStart(state as Dictionary?) as Void {
         Communications.registerForPhoneAppMessages(method(:onPhoneMessage));
+        timer.start(method(:onTick), 1000, true);
+        rm.onBlockAdvance = method(:onBlockChanged);
+        rm.onFieldAdvance = method(:onFieldChanged);
+        rm.onSessionEnd = method(:onSessionEnded); 
         if (getSession() != null) {sm.handle(EVENT_NEED_SYNC);}
         Position.enableLocationEvents(
             {
@@ -39,62 +64,86 @@ class NoTrackRunApp extends Application.AppBase {
         Position.enableLocationEvents(Position.LOCATION_DISABLE, null);
     }
 
-    function exit() as Void { 
-        System.exit(); 
-    }
 
     function onPhoneMessage(msg as Communications.PhoneAppMessage) as Void {
-        // TODO valider format de session payload
-        if (canReceiveMsg() && msg.data != null) {
-            var data = msg.data;
-            var type = data["type"] as String;
+        if (!canReceiveMsg() || !Validator.isValidMsg(msg.data)) {
+            return;
+        }
+        var data = msg.data as Dictionary;
+        var type = data["type"] as String;
 
-            var event = EVENT_ERROR;
-            if (type.equals("SEND_SESSION")) {
-                if (getSession() == null) {
-                    rm.init(data["payload"] as Dictionary);
-                    event = EVENT_SESSION_RECEIVED;
-                    sendAck("ACK_SESSION", true, null);
-                }
-                else  { 
-                    sendAck("ACK_SESSION", false, "Already a session on the watch");
-                }
-                
-            } else if (type.equals("ACK_RESULTS")) {
-                var payload = data["payload"] as Dictionary;
-                if (payload["status"].equals("OK")) {
-                    event = EVENT_SYNCED_OK;
-                } else {
-                    errorMsg = "Invalid session";
-                }
-            } else { 
-                errorMsg = type;
-            }
-            sm.handle(event);
+        if (type.equals("SEND_SESSION")) {
+            sm.handle(handleSendSession(data));
+        } else if (type.equals("ACK_RESULTS")) {
+            sm.handle(handleAckResults(data));
+        } else {
+            errorMsg = type;
+            sm.handle(EVENT_ERROR);
         }
     }
 
+    function handleAckResults(data as Dictionary) as AppEvent {
+        var payload = data["payload"] as Dictionary;
+        if (!Validator.isValidAckPayload(payload)) {
+            errorMsg = "Invalid msg format";
+            return EVENT_ERROR;
+        }
 
-    function onPosition(info as Position.Info) as Void {
-        lastRawSpeed = (info != null && info.speed != null) ? info.speed : 0.0;
+        if (payload["status"].equals("OK")) {
+            return EVENT_SYNCED_OK;
+        }
+
+        errorMsg = "Invalid session";
+        return EVENT_ERROR;
     }
-    
+
+    function handleSendSession(data as Dictionary) as AppEvent {
+        if (getSession() != null || rm.hasSessionData()) {
+            sendAck("ACK_SESSION", false, "Already a session on the watch");
+            return EVENT_NONE; 
+        }
+
+        var payload = data["payload"] as Dictionary;
+        if (!Validator.isValidSessionPayload(payload)) {
+            errorMsg = "Invalid msg format";
+            return EVENT_ERROR;
+        }
+
+        rm.init(payload);
+        sendAck("ACK_SESSION", true, null);
+        return EVENT_SESSION_RECEIVED;
+    }
+
+    function onPosition(info as Position.Info) as Void { 
+        // Keep alive GPS 
+    }
+
     function startSession() as Void {
-        timer.start(method(:onTick), 1000, true);
+        gpsGoodStreak = 0;
+        rm.initRunning();
     }
 
-    function onTick() as Void {
-        sm.tick();
-        rm.setSpeed(lastRawSpeed);
-    }
+    function onTick() as Void { sm.tick();}
 
     function isGpsReady() as Boolean {
-        // TODO remove 
-        //return true;
-        var info = Position.getInfo();
-        if (info == null)           { return false; }
-        if (info.accuracy == null)  { return false; }
-        return info.accuracy >= Position.QUALITY_POOR; 
+        if (SIMULATOR){ return true;}
+        var info = Activity.getActivityInfo();
+
+        if (info == null ||
+            info.currentLocation == null ||
+            info.currentLocationAccuracy == null
+        ) {
+            gpsGoodStreak = 0;
+            return false;
+        }
+
+        if (info.currentLocationAccuracy >= Position.QUALITY_GOOD) {
+            gpsGoodStreak += 1;
+        } else {
+            gpsGoodStreak = 0;
+        }
+
+        return gpsGoodStreak >= GPS_STABLE_TICKS;
     }
 
     function isTimeoutSending() as Boolean {
@@ -130,7 +179,7 @@ class NoTrackRunApp extends Application.AppBase {
 
     function sendSession() as Void {
         sendingTime = 0;
-        /*
+        if (SIMULATOR) {return;}
         Communications.transmit(
             {
                 "type"    =>  "SEND_RESULTS",
@@ -139,10 +188,10 @@ class NoTrackRunApp extends Application.AppBase {
             null, 
             new TransmitCallback(self)
         );
-        */
     }
 
     function sendAck(type as String, ok as Boolean, error as String?) as Void {
+        if (SIMULATOR) {return;}
         var payload = { "status" => ok ? "OK" : "ERROR" };
         if (error != null) { payload["error"] = error; }
 
@@ -160,10 +209,21 @@ class NoTrackRunApp extends Application.AppBase {
     function deleteSession() as Void {
         Application.Storage.deleteValue("session@notrackrun");
     }
+
+    function vibe(pattern as Array<Attention.VibeProfile>) as Void {
+        if (Attention has :vibrate) { Attention.vibrate(pattern);}
+    }
+
+    function onBlockChanged() as Void { vibe(VIBE_BLOCK_CHANGE);}
     
+    function onFieldChanged() as Void { vibe(VIBE_FIELD_CHANGE);}
+
+    function onSessionEnded() as Void { vibe(VIBE_SESSION_END);}
+
     function getInitialView() as [Views] or [Views, InputDelegates] {
         return [ new NoTrackRunView(), new NoTrackRunDelegate() ];
     }
+
 }
 
 function getApp() as NoTrackRunApp {
@@ -180,9 +240,7 @@ class TransmitCallback extends Communications.ConnectionListener {
             app = a;
         }
 
-        function onComplete() as Void {
-            // app.sm.handle(EVENT_SYNCED_OK);
-        }
+        function onComplete() as Void {}
 
         function onError() as Void {
             // If bluetooth is off on the mobile

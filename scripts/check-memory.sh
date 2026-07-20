@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DEVICES_DIR=/root/.Garmin/ConnectIQ/Devices
-RESULTS=/workspace/scripts/results.txt
+RESULTS=/workspace/scripts/tests.txt
 
 for DEVICE in $(grep -oP '(?<=✅ )\S+' "$RESULTS"); do
   JSON="$DEVICES_DIR/$DEVICE/compiler.json"

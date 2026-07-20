@@ -1,0 +1,6 @@
+{
+    "type": "ACK_RESULTS",
+    "payload": {
+        "status": "OK"
+    }
+}

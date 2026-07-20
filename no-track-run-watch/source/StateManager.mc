@@ -29,7 +29,8 @@ enum AppEvent {
     EVENT_SYNCED_OK,
     EVENT_NEED_SYNC,
     EVENT_ERROR,
-    EVENT_QUIT_APP
+    EVENT_QUIT_APP,
+    EVENT_NONE,
 }
 
 class StateManager {
@@ -56,6 +57,7 @@ class StateManager {
 
     function onEvent(state as AppState, e as AppEvent) as Void {
         var app = getApp();
+        if (e == EVENT_NONE) { return;}
         if (e == EVENT_ERROR) { transition(STATE_ERROR); return;}
         if (e == EVENT_QUIT_APP) { transition(STATE_QUIT); return;}
         switch (state) {
@@ -119,9 +121,6 @@ class StateManager {
             case STATE_COUNTDOWN:
                 app.rm.resetCountDown();
                 break;
-            case STATE_RUNNING:
-                app.rm.initRunning();
-                break;
              case STATE_SYNCED:
                 app.deleteSession();
                 break;
@@ -135,11 +134,11 @@ class StateManager {
                 if (prev == STATE_SENDING || prev == STATE_RUNNING) {
                     app.deleteSession();
                 }
+                app.rm.stopActivitySession(false);
                 app.exit();
                 break;
             case STATE_FINISHED:
-                app.rm.sessionData = {} as Dictionary;
-                break;
+            case STATE_RUNNING:
             case STATE_IDLE:
             case STATE_SUMMARY:
             case STATE_NEED_SYNC:

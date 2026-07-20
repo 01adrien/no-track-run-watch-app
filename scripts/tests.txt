@@ -1,0 +1,59 @@
+✅ fr245
+✅ fr245m
+✅ fr255
+✅ fr255s
+✅ fr255sm
+✅ fr255m
+✅ fr265
+✅ fr265s
+✅ fr745
+✅ fr945
+✅ fr945lte
+✅ fr955
+✅ fr965
+✅ fr970
+✅ fenix5plus
+✅ fenix5splus
+✅ fenix5xplus
+✅ fenix6
+✅ fenix6pro
+✅ fenix6s
+✅ fenix6spro
+✅ fenix6xpro
+✅ fenix7
+✅ fenix7pro
+✅ fenix7pronowifi
+✅ fenix7s
+✅ fenix7spro
+✅ fenix7x
+✅ fenix7xpro
+✅ fenix7xpronowifi
+✅ fenix843mm
+✅ fenix847mm
+✅ fenix8pro47mm
+❌ fenix8solar47mm  -> ERROR: fenix8solar47mm: /workspace/no-track-run-watch/source/NoTrackRunView.mc:250,8: Undefined symbol ':avgSpeed' detected.
+✅ fenix8solar51mm
+✅ fenixe
+❌ epix2  -> ERROR: epix2: /workspace/no-track-run-watch/source/RunManager.mc:91,12: Undefined symbol ':avgSpeed' detected.
+❌ epix2pro42mm  -> ERROR: epix2pro42mm: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ epix2pro47mm  -> ERROR: epix2pro47mm: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ epix2pro51mm  -> ERROR: epix2pro51mm: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ instinct3amoled45mm  -> ERROR: instinct3amoled45mm: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ instinct3amoled50mm  -> ERROR: instinct3amoled50mm: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ instinct3solar45mm  -> ERROR: instinct3solar45mm: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ instinctcrossoveramoled  -> ERROR: instinctcrossoveramoled: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ enduro  -> ERROR: enduro: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ enduro3  -> ERROR: enduro3: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marq2  -> ERROR: marq2: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marq2aviator  -> ERROR: marq2aviator: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marqadventurer  -> ERROR: marqadventurer: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marqathlete  -> ERROR: marqathlete: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marqaviator  -> ERROR: marqaviator: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marqcaptain  -> ERROR: marqcaptain: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marqcommander  -> ERROR: marqcommander: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marqdriver  -> ERROR: marqdriver: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marqexpedition  -> ERROR: marqexpedition: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ marqgolfer  -> ERROR: marqgolfer: /workspace/no-track-run-watch/source/RunManager.mc:170,8: Undefined symbol ':avgSpeed' detected.
+❌ d2airx10  -> ERROR: d2airx10: /workspace/no-track-run-watch/source/RunManager.mc:91,12: Undefined symbol ':avgSpeed' detected.
+❌ d2mach1  -> ERROR: d2mach1: /workspace/no-track-run-watch/source/RunManager.mc:91,12: Undefined symbol ':avgSpeed' detected.
+❌ d2mach2  -> ERROR: d2mach2: /workspace/no-track-run-watch/source/RunManager.mc:91,12: Undefined symbol ':avgSpeed' detected.
