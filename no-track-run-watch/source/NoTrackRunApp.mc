@@ -126,6 +126,7 @@ class NoTrackRunApp extends Application.AppBase {
     function onTick() as Void { sm.tick();}
 
     function isGpsReady() as Boolean {
+        return true;
         if (SIMULATOR){ return true;}
         var info = Activity.getActivityInfo();
 

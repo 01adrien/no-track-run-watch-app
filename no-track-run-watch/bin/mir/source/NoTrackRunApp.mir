@@ -552,274 +552,277 @@ _workspace_no_track_run_watch_source_NoTrackRunApp_mc_126_30_126_42_stop:
     }
     [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 128; @symbol_functiondef = [isGpsReady,128,13,23]; @symbol_return<0> = [Boolean,128,29,36]; ]
     function isGpsReady() as Boolean {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_128_37_147_4_start:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_128_37_148_4_start:
 [ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 129 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_129_8_129_36_if_stmt:
-        symbol [ SIMULATOR %tmp.2 129 12 21 ];
-        %tmp.2 = getv ? :SIMULATOR;
-        bf %tmp.2 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_129_8_129_36_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_129_8_129_36_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_129_22_129_36_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 129 24 ]
-        %tmp.3 = true;
-        ret %tmp.3;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_129_22_129_36_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_129_8_129_36_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_129_8_129_36_if_end:
+        %tmp.1 = true;
+        ret %tmp.1;
 [ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 130 8 ]
-        [ "_workspace_no_track_run_watch_source_NoTrackRunApp_mc_128_37_147_4_start" "_workspace_no_track_run_watch_source_NoTrackRunApp_mc_128_37_147_4_stop" ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_130_8_130_36_if_stmt:
+        symbol [ SIMULATOR %tmp.3 130 12 21 ];
+        %tmp.3 = getv ? :SIMULATOR;
+        bf %tmp.3 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_130_8_130_36_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_130_8_130_36_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_130_22_130_36_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 130 24 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_130_22_130_36_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_130_8_130_36_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_130_8_130_36_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 131 8 ]
+        [ "_workspace_no_track_run_watch_source_NoTrackRunApp_mc_128_37_148_4_start" "_workspace_no_track_run_watch_source_NoTrackRunApp_mc_128_37_148_4_stop" ]
         %info.1 = local;
-        symbol [ info %info.1 130 12 16 ];
-        symbol [ Activity %tmp.5 130 19 27 ];
-        %tmp.5 = getv ? :Activity;
-        symbol [ getActivityInfo %tmp.6 130 28 43 ];
-        %tmp.6 = getv function %tmp.5 :getActivityInfo;
-        %tmp.7 = invoke %tmp.5 %tmp.6();
-        lputv %info.1 %tmp.7;
-        symbol [ info %info.1 130 12 16 ];
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 132 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_8_138_8_if_stmt:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_12_134_44_begin:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_12_133_36_begin:
-        %tmp.8 = lgetv %info.1;
-        symbol [ info %tmp.8 132 12 16 ];
-        %tmp.9 = null;
-        %tmp.10 = eq %tmp.8 %tmp.9;
-        bt %tmp.10 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_8_138_8_if_true;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_12_133_36_false:
-        %tmp.11 = lgetv %info.1;
-        symbol [ info %tmp.11 133 12 16 ];
-        %tmp.12 = as %tmp.11 { (!Null) };
-        symbol [ currentLocation %tmp.13 133 17 32 ];
-        %tmp.13 = getv %tmp.12 :currentLocation;
-        %tmp.14 = null;
-        %tmp.15 = eq %tmp.13 %tmp.14;
-        push %tmp.15;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_12_133_36_end:
-        %tmp.16 = phi [%tmp.10 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_12_133_36_begin] [%tmp.15 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_12_133_36_false] [%tmp.16 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_12_133_36_end];
-        bt %tmp.16 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_8_138_8_if_true;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_134_12_134_44_false:
-        %tmp.17 = lgetv %info.1;
-        symbol [ info %tmp.17 134 12 16 ];
-        %tmp.18 = as %tmp.17 { (!Null) };
-        symbol [ currentLocationAccuracy %tmp.19 134 17 40 ];
-        %tmp.19 = getv %tmp.18 :currentLocationAccuracy;
-        %tmp.20 = null;
-        %tmp.21 = eq %tmp.19 %tmp.20;
-        push %tmp.21;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_134_12_134_44_end:
-        %tmp.22 = phi [%tmp.16 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_12_134_44_begin] [%tmp.21 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_134_12_134_44_false] [%tmp.22 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_134_12_134_44_end];
-        bf %tmp.22 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_8_138_8_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_8_138_8_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_135_10_138_8_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 136 12 ]
-        %tmp.23 = 0;
-        symbol [ gpsGoodStreak ? 136 12 25 ];
-        putv self :gpsGoodStreak %tmp.23;
+        symbol [ info %info.1 131 12 16 ];
+        symbol [ Activity %tmp.6 131 19 27 ];
+        %tmp.6 = getv ? :Activity;
+        symbol [ getActivityInfo %tmp.7 131 28 43 ];
+        %tmp.7 = getv function %tmp.6 :getActivityInfo;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %info.1 %tmp.8;
+        symbol [ info %info.1 131 12 16 ];
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 133 8 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_8_139_8_if_stmt:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_12_135_44_begin:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_12_134_36_begin:
+        %tmp.9 = lgetv %info.1;
+        symbol [ info %tmp.9 133 12 16 ];
+        %tmp.10 = null;
+        %tmp.11 = eq %tmp.9 %tmp.10;
+        bt %tmp.11 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_8_139_8_if_true;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_134_12_134_36_false:
+        %tmp.12 = lgetv %info.1;
+        symbol [ info %tmp.12 134 12 16 ];
+        %tmp.13 = as %tmp.12 { (!Null) };
+        symbol [ currentLocation %tmp.14 134 17 32 ];
+        %tmp.14 = getv %tmp.13 :currentLocation;
+        %tmp.15 = null;
+        %tmp.16 = eq %tmp.14 %tmp.15;
+        push %tmp.16;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_134_12_134_36_end:
+        %tmp.17 = phi [%tmp.11 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_12_134_36_begin] [%tmp.16 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_134_12_134_36_false] [%tmp.17 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_134_12_134_36_end];
+        bt %tmp.17 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_8_139_8_if_true;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_135_12_135_44_false:
+        %tmp.18 = lgetv %info.1;
+        symbol [ info %tmp.18 135 12 16 ];
+        %tmp.19 = as %tmp.18 { (!Null) };
+        symbol [ currentLocationAccuracy %tmp.20 135 17 40 ];
+        %tmp.20 = getv %tmp.19 :currentLocationAccuracy;
+        %tmp.21 = null;
+        %tmp.22 = eq %tmp.20 %tmp.21;
+        push %tmp.22;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_135_12_135_44_end:
+        %tmp.23 = phi [%tmp.17 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_12_135_44_begin] [%tmp.22 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_135_12_135_44_false] [%tmp.23 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_135_12_135_44_end];
+        bf %tmp.23 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_8_139_8_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_8_139_8_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_136_10_139_8_start:
 [ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 137 12 ]
-        %tmp.24 = false;
-        ret %tmp.24;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_135_10_138_8_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_8_138_8_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_132_8_138_8_if_end:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 140 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_140_8_144_8_if_stmt:
-        %tmp.25 = lgetv %info.1;
-        symbol [ info %tmp.25 140 12 16 ];
-        symbol [ currentLocationAccuracy %tmp.26 140 17 40 ];
-        %tmp.26 = getv %tmp.25 :currentLocationAccuracy;
-        symbol [ Position %tmp.27 140 44 52 ];
-        %tmp.27 = getm $.Toybox.Position;
-        symbol [ QUALITY_GOOD %tmp.28 140 53 65 ];
-        %tmp.28 = getv %tmp.27 :QUALITY_GOOD;
-        %tmp.29 = gte %tmp.26 %tmp.28;
-        bf %tmp.29 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_140_8_144_8_if_else_false;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_140_8_144_8_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_140_67_142_8_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 141 12 ]
-        symbol [ gpsGoodStreak %tmp.30 141 12 25 ];
-        %tmp.30 = getv self :gpsGoodStreak;
-        %tmp.31 = 1;
-        %tmp.32 = add %tmp.30 %tmp.31;
-        symbol [ gpsGoodStreak ? 141 12 25 ];
-        putv self :gpsGoodStreak dup %tmp.32;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_140_67_142_8_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_140_8_144_8_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_140_8_144_8_if_else_false:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_142_15_144_8_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 143 12 ]
-        %tmp.33 = 0;
-        symbol [ gpsGoodStreak ? 143 12 25 ];
-        putv self :gpsGoodStreak %tmp.33;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_142_15_144_8_stop:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_140_8_144_8_if_end:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 146 8 ]
-        symbol [ gpsGoodStreak %tmp.35 146 15 28 ];
-        %tmp.35 = getv ? :gpsGoodStreak;
-        symbol [ GPS_STABLE_TICKS %tmp.37 146 32 48 ];
-        %tmp.37 = getv ? :GPS_STABLE_TICKS;
-        %tmp.38 = gte %tmp.35 %tmp.37;
-        ret %tmp.38;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_128_37_147_4_stop:
+        %tmp.24 = 0;
+        symbol [ gpsGoodStreak ? 137 12 25 ];
+        putv self :gpsGoodStreak %tmp.24;
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 138 12 ]
+        %tmp.25 = false;
+        ret %tmp.25;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_136_10_139_8_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_8_139_8_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_133_8_139_8_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 141 8 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_141_8_145_8_if_stmt:
+        %tmp.26 = lgetv %info.1;
+        symbol [ info %tmp.26 141 12 16 ];
+        symbol [ currentLocationAccuracy %tmp.27 141 17 40 ];
+        %tmp.27 = getv %tmp.26 :currentLocationAccuracy;
+        symbol [ Position %tmp.28 141 44 52 ];
+        %tmp.28 = getm $.Toybox.Position;
+        symbol [ QUALITY_GOOD %tmp.29 141 53 65 ];
+        %tmp.29 = getv %tmp.28 :QUALITY_GOOD;
+        %tmp.30 = gte %tmp.27 %tmp.29;
+        bf %tmp.30 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_141_8_145_8_if_else_false;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_141_8_145_8_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_141_67_143_8_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 142 12 ]
+        symbol [ gpsGoodStreak %tmp.31 142 12 25 ];
+        %tmp.31 = getv self :gpsGoodStreak;
+        %tmp.32 = 1;
+        %tmp.33 = add %tmp.31 %tmp.32;
+        symbol [ gpsGoodStreak ? 142 12 25 ];
+        putv self :gpsGoodStreak dup %tmp.33;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_141_67_143_8_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_141_8_145_8_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_141_8_145_8_if_else_false:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_143_15_145_8_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 144 12 ]
+        %tmp.34 = 0;
+        symbol [ gpsGoodStreak ? 144 12 25 ];
+        putv self :gpsGoodStreak %tmp.34;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_143_15_145_8_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_141_8_145_8_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 147 8 ]
+        symbol [ gpsGoodStreak %tmp.36 147 15 28 ];
+        %tmp.36 = getv ? :gpsGoodStreak;
+        symbol [ GPS_STABLE_TICKS %tmp.38 147 32 48 ];
+        %tmp.38 = getv ? :GPS_STABLE_TICKS;
+        %tmp.39 = gte %tmp.36 %tmp.38;
+        ret %tmp.39;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_128_37_148_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 149; @symbol_functiondef = [isTimeoutSending,149,13,29]; @symbol_return<0> = [Boolean,149,35,42]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 150; @symbol_functiondef = [isTimeoutSending,150,13,29]; @symbol_return<0> = [Boolean,150,35,42]; ]
     function isTimeoutSending() as Boolean {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_149_43_156_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 150 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_8_153_8_if_stmt:
-        symbol [ sendingTime %tmp.2 150 12 23 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_43_157_4_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 151 8 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_151_8_154_8_if_stmt:
+        symbol [ sendingTime %tmp.2 151 12 23 ];
         %tmp.2 = getv ? :sendingTime;
-        symbol [ SENDING_TIMEOUT %tmp.4 150 27 42 ];
+        symbol [ SENDING_TIMEOUT %tmp.4 151 27 42 ];
         %tmp.4 = getv ? :SENDING_TIMEOUT;
         %tmp.5 = gte %tmp.2 %tmp.4;
-        bf %tmp.5 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_8_153_8_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_8_153_8_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_44_153_8_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 151 12 ]
-        %tmp.6 = "Send timeout";
-        symbol [ errorMsg ? 151 12 20 ];
-        putv self :errorMsg %tmp.6;
+        bf %tmp.5 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_151_8_154_8_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_151_8_154_8_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_151_44_154_8_start:
 [ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 152 12 ]
+        %tmp.6 = "Send timeout";
+        symbol [ errorMsg ? 152 12 20 ];
+        putv self :errorMsg %tmp.6;
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 153 12 ]
         %tmp.7 = true;
         ret %tmp.7;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_44_153_8_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_8_153_8_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_8_153_8_if_end:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 154 8 ]
-        symbol [ sendingTime %tmp.8 154 8 19 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_151_44_154_8_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_151_8_154_8_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_151_8_154_8_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 155 8 ]
+        symbol [ sendingTime %tmp.8 155 8 19 ];
         %tmp.8 = getv self :sendingTime;
         %tmp.9 = 1;
         %tmp.10 = add %tmp.8 %tmp.9;
-        symbol [ sendingTime ? 154 8 19 ];
+        symbol [ sendingTime ? 155 8 19 ];
         putv self :sendingTime dup %tmp.10;
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 155 8 ]
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 156 8 ]
         %tmp.11 = false;
         ret %tmp.11;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_149_43_156_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_150_43_157_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 158; @symbol_functiondef = [needQuitConfirm,158,13,28]; @symbol_return<0> = [Boolean,158,34,41]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 159; @symbol_functiondef = [needQuitConfirm,159,13,28]; @symbol_return<0> = [Boolean,159,34,41]; ]
     function needQuitConfirm() as Boolean {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_158_42_168_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 159 8 ]
-        symbol [ sm %tmp.2 159 16 18 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_159_42_169_4_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 160 8 ]
+        symbol [ sm %tmp.2 160 16 18 ];
         %tmp.2 = getv ? :sm;
-        symbol [ _state %tmp.3 159 19 25 ];
+        symbol [ _state %tmp.3 160 19 25 ];
         %tmp.3 = getv %tmp.2 :_state;
         push %tmp.3;
-        switch %tmp.3 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_159_8_167_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_159_8_167_8_switchStmtBegin:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 160 12 ]
+        switch %tmp.3 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_160_8_168_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_160_8_168_8_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 161 12 ]
         %tmp.4 = dup %tmp.3;
-        symbol [ STATE_IDLE %tmp.6 160 17 27 ];
+        symbol [ STATE_IDLE %tmp.6 161 17 27 ];
         %tmp.6 = getv ? :STATE_IDLE;
         %tmp.7 = getv function %tmp.4 :equals;
         %tmp.8 = invoke %tmp.4 %tmp.7 (%tmp.6);
-        bt %tmp.8 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_160_12_160_27_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 161 12 ]
+        bt %tmp.8 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_161_12_161_27_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 162 12 ]
         %tmp.9 = dup %tmp.3;
-        symbol [ STATE_ERROR %tmp.11 161 17 28 ];
+        symbol [ STATE_ERROR %tmp.11 162 17 28 ];
         %tmp.11 = getv ? :STATE_ERROR;
         %tmp.12 = getv function %tmp.9 :equals;
         %tmp.13 = invoke %tmp.9 %tmp.12 (%tmp.11);
-        bt %tmp.13 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_161_12_161_28_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 162 12 ]
+        bt %tmp.13 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_162_12_162_28_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 163 12 ]
         %tmp.14 = dup %tmp.3;
-        symbol [ STATE_SYNCED %tmp.16 162 17 29 ];
+        symbol [ STATE_SYNCED %tmp.16 163 17 29 ];
         %tmp.16 = getv ? :STATE_SYNCED;
         %tmp.17 = getv function %tmp.14 :equals;
         %tmp.18 = invoke %tmp.14 %tmp.17 (%tmp.16);
-        bt %tmp.18 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_162_12_162_29_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 163 12 ]
+        bt %tmp.18 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_163_12_163_29_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 164 12 ]
         %tmp.19 = dup %tmp.3;
-        symbol [ STATE_NEED_SYNC %tmp.21 163 17 32 ];
+        symbol [ STATE_NEED_SYNC %tmp.21 164 17 32 ];
         %tmp.21 = getv ? :STATE_NEED_SYNC;
         %tmp.22 = getv function %tmp.19 :equals;
         %tmp.23 = invoke %tmp.19 %tmp.22 (%tmp.21);
-        bt %tmp.23 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_163_12_164_28_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 165 12 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_159_8_167_8_switchStmtDefault:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_159_8_167_8_defaultCodeBegin;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_160_12_160_27_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_161_12_161_28_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_162_12_162_29_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_163_12_164_28_switchCase:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 164 16 ]
+        bt %tmp.23 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_164_12_165_28_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 166 12 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_160_8_168_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_160_8_168_8_defaultCodeBegin;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_161_12_161_27_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_162_12_162_28_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_163_12_163_29_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_164_12_165_28_switchCase:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 165 16 ]
         %tmp.24 = false;
         ret %tmp.24;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_165_12_166_27_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_159_8_167_8_defaultCodeBegin:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 166 16 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_166_12_167_27_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_160_8_168_8_defaultCodeBegin:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 167 16 ]
         %tmp.25 = true;
         ret %tmp.25;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_159_8_167_8_switchStmtEnd:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_160_8_168_8_switchStmtEnd:
         pop;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_158_42_168_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_159_42_169_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 170; @symbol_functiondef = [canReceiveMsg,170,13,26]; @symbol_return<0> = [Boolean,170,32,39]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 171; @symbol_functiondef = [canReceiveMsg,171,13,26]; @symbol_return<0> = [Boolean,171,32,39]; ]
     function canReceiveMsg() as Boolean {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_170_40_178_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 171 9 ]
-        symbol [ sm %tmp.2 171 17 19 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_171_40_179_4_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 172 9 ]
+        symbol [ sm %tmp.2 172 17 19 ];
         %tmp.2 = getv ? :sm;
-        symbol [ _state %tmp.3 171 20 26 ];
+        symbol [ _state %tmp.3 172 20 26 ];
         %tmp.3 = getv %tmp.2 :_state;
         push %tmp.3;
-        switch %tmp.3 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_171_9_177_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_171_9_177_8_switchStmtBegin:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 172 12 ]
+        switch %tmp.3 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_172_9_178_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_172_9_178_8_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 173 12 ]
         %tmp.4 = dup %tmp.3;
-        symbol [ STATE_IDLE %tmp.6 172 17 27 ];
+        symbol [ STATE_IDLE %tmp.6 173 17 27 ];
         %tmp.6 = getv ? :STATE_IDLE;
         %tmp.7 = getv function %tmp.4 :equals;
         %tmp.8 = invoke %tmp.4 %tmp.7 (%tmp.6);
-        bt %tmp.8 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_172_12_172_27_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 173 12 ]
+        bt %tmp.8 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_173_12_173_27_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 174 12 ]
         %tmp.9 = dup %tmp.3;
-        symbol [ STATE_SENDING %tmp.11 173 17 30 ];
+        symbol [ STATE_SENDING %tmp.11 174 17 30 ];
         %tmp.11 = getv ? :STATE_SENDING;
         %tmp.12 = getv function %tmp.9 :equals;
         %tmp.13 = invoke %tmp.9 %tmp.12 (%tmp.11);
-        bt %tmp.13 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_173_12_174_27_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 175 12 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_171_9_177_8_switchStmtDefault:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_171_9_177_8_defaultCodeBegin;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_172_12_172_27_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_173_12_174_27_switchCase:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 174 16 ]
+        bt %tmp.13 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_174_12_175_27_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 176 12 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_172_9_178_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_172_9_178_8_defaultCodeBegin;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_173_12_173_27_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_174_12_175_27_switchCase:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 175 16 ]
         %tmp.14 = true;
         ret %tmp.14;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_175_12_176_28_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_171_9_177_8_defaultCodeBegin:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 176 16 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_176_12_177_28_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_172_9_178_8_defaultCodeBegin:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 177 16 ]
         %tmp.15 = false;
         ret %tmp.15;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_171_9_177_8_switchStmtEnd:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_172_9_178_8_switchStmtEnd:
         pop;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_170_40_178_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_171_40_179_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 180; @symbol_functiondef = [sendSession,180,13,24]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 181; @symbol_functiondef = [sendSession,181,13,24]; ]
     function sendSession() as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_180_35_191_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 181 8 ]
-        %tmp.1 = 0;
-        symbol [ sendingTime ? 181 8 19 ];
-        putv self :sendingTime %tmp.1;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_181_35_192_4_start:
 [ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 182 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_182_8_182_31_if_stmt:
-        symbol [ SIMULATOR %tmp.3 182 12 21 ];
-        %tmp.3 = getv ? :SIMULATOR;
-        bf %tmp.3 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_182_8_182_31_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_182_8_182_31_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_182_23_182_31_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 182 24 ]
-        ret ?;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_182_23_182_31_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_182_8_182_31_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_182_8_182_31_if_end:
+        %tmp.1 = 0;
+        symbol [ sendingTime ? 182 8 19 ];
+        putv self :sendingTime %tmp.1;
 [ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 183 8 ]
-        symbol [ Communications %tmp.4 183 8 22 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_183_8_183_31_if_stmt:
+        symbol [ SIMULATOR %tmp.3 183 12 21 ];
+        %tmp.3 = getv ? :SIMULATOR;
+        bf %tmp.3 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_183_8_183_31_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_183_8_183_31_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_183_23_183_31_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 183 24 ]
+        ret ?;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_183_23_183_31_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_183_8_183_31_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_183_8_183_31_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 184 8 ]
+        symbol [ Communications %tmp.4 184 8 22 ];
         %tmp.4 = getm $.Toybox.Communications;
-        symbol [ transmit %tmp.5 183 23 31 ];
+        symbol [ transmit %tmp.5 184 23 31 ];
         %tmp.5 = getv function %tmp.4 :transmit;
         %tmp.6 = newd 2;
         %tmp.7 = "type";
@@ -828,277 +831,277 @@ _workspace_no_track_run_watch_source_NoTrackRunApp_mc_182_8_182_31_if_end:
         %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
         %tmp.11 = "payload";
         %tmp.12 = self;
-        symbol [ getSession %tmp.13 186 29 39 ];
+        symbol [ getSession %tmp.13 187 29 39 ];
         %tmp.13 = getv function %tmp.12 :getSession;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         %tmp.15 = dup %tmp.10;
         %tmp.16 = aputv %tmp.15 %tmp.11 %tmp.14;
         %tmp.17 = null;
-        symbol [ TransmitCallback %tmp.21 189 16 32 ];
+        symbol [ TransmitCallback %tmp.21 190 16 32 ];
         %tmp.21 = getv ? :TransmitCallback;
         %tmp.22 = self;
-        symbol [ self %tmp.22 189 33 37 ];
+        symbol [ self %tmp.22 190 33 37 ];
         %tmp.18 = newc %tmp.21 (%tmp.22);
         invoke %tmp.4 %tmp.5(%tmp.16, %tmp.17, %tmp.18);
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_180_35_191_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_181_35_192_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 193; @symbol_functiondef = [sendAck,193,13,20]; @symbol_param<0> = [type,193,21,25]; @symbol_param<0>_type<0> = [String,193,29,35]; @symbol_param<1> = [ok,193,37,39]; @symbol_param<1>_type<0> = [Boolean,193,43,50]; @symbol_param<2> = [error,193,52,57]; @symbol_param<2>_type<0> = [String,193,61,67]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 194; @symbol_functiondef = [sendAck,194,13,20]; @symbol_param<0> = [type,194,21,25]; @symbol_param<0>_type<0> = [String,194,29,35]; @symbol_param<1> = [ok,194,37,39]; @symbol_param<1>_type<0> = [Boolean,194,43,50]; @symbol_param<2> = [error,194,52,57]; @symbol_param<2>_type<0> = [String,194,61,67]; ]
     function sendAck(type as String, ok as Boolean, error as String or Null) as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_193_78_203_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 194 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_8_194_31_if_stmt:
-        symbol [ SIMULATOR %tmp.2 194 12 21 ];
-        %tmp.2 = getv ? :SIMULATOR;
-        bf %tmp.2 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_8_194_31_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_8_194_31_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_23_194_31_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 194 24 ]
-        ret ?;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_23_194_31_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_8_194_31_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_8_194_31_if_end:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_78_204_4_start:
 [ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 195 8 ]
-        [ "_workspace_no_track_run_watch_source_NoTrackRunApp_mc_193_78_203_4_start" "_workspace_no_track_run_watch_source_NoTrackRunApp_mc_193_78_203_4_stop" ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_8_195_31_if_stmt:
+        symbol [ SIMULATOR %tmp.2 195 12 21 ];
+        %tmp.2 = getv ? :SIMULATOR;
+        bf %tmp.2 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_8_195_31_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_8_195_31_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_23_195_31_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 195 24 ]
+        ret ?;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_23_195_31_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_8_195_31_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_8_195_31_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 196 8 ]
+        [ "_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_78_204_4_start" "_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_78_204_4_stop" ]
         %payload.1 = local;
-        symbol [ payload %payload.1 195 12 19 ];
+        symbol [ payload %payload.1 196 12 19 ];
         %tmp.3 = newd 1;
         %tmp.4 = "status";
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_begin:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_begin:
         %tmp.5 = lgetv %ok;
-        symbol [ ok %tmp.5 195 36 38 ];
-        bf %tmp.5 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_else_false;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_true:
+        symbol [ ok %tmp.5 196 36 38 ];
+        bf %tmp.5 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_else_false;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_true:
         %tmp.6 = "OK";
         push %tmp.6;
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_else_false:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_else_false:
         %tmp.7 = "ERROR";
         push %tmp.7;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_end:
-        %tmp.8 = phi [%tmp.5 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_begin] [%tmp.6 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_true] [%tmp.7 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_else_false] [%tmp.8 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_195_36_195_48_end];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_end:
+        %tmp.8 = phi [%tmp.5 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_begin] [%tmp.6 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_true] [%tmp.7 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_else_false] [%tmp.8 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_36_196_48_end];
         %tmp.9 = dup %tmp.3;
         %tmp.10 = aputv %tmp.9 %tmp.4 %tmp.8;
         lputv %payload.1 %tmp.10;
-        symbol [ payload %payload.1 195 12 19 ];
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 196 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_8_196_55_if_stmt:
+        symbol [ payload %payload.1 196 12 19 ];
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 197 8 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_197_8_197_55_if_stmt:
         %tmp.11 = lgetv %error;
-        symbol [ error %tmp.11 196 12 17 ];
+        symbol [ error %tmp.11 197 12 17 ];
         %tmp.12 = null;
         %tmp.13 = ne %tmp.11 %tmp.12;
-        bf %tmp.13 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_8_196_55_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_8_196_55_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_27_196_55_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 196 29 ]
+        bf %tmp.13 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_197_8_197_55_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_197_8_197_55_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_197_27_197_55_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 197 29 ]
         %tmp.14 = lgetv %payload.1;
-        symbol [ payload %tmp.14 196 29 36 ];
+        symbol [ payload %tmp.14 197 29 36 ];
         %tmp.15 = lgetv %error;
-        symbol [ error %tmp.15 196 48 53 ];
+        symbol [ error %tmp.15 197 48 53 ];
         %tmp.16 = as %tmp.15 { (!Null) };
         %tmp.17 = "error";
         aputv %tmp.14 %tmp.17 %tmp.16;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_27_196_55_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_8_196_55_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_196_8_196_55_if_end:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 198 8 ]
-        symbol [ Communications %tmp.18 198 8 22 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_197_27_197_55_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_197_8_197_55_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_197_8_197_55_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 199 8 ]
+        symbol [ Communications %tmp.18 199 8 22 ];
         %tmp.18 = getm $.Toybox.Communications;
-        symbol [ transmit %tmp.19 198 23 31 ];
+        symbol [ transmit %tmp.19 199 23 31 ];
         %tmp.19 = getv function %tmp.18 :transmit;
         %tmp.20 = newd 2;
         %tmp.21 = "type";
         %tmp.22 = lgetv %type;
-        symbol [ type %tmp.22 199 24 28 ];
+        symbol [ type %tmp.22 200 24 28 ];
         %tmp.23 = dup %tmp.20;
         %tmp.24 = aputv %tmp.23 %tmp.21 %tmp.22;
         %tmp.25 = "payload";
         %tmp.26 = lgetv %payload.1;
-        symbol [ payload %tmp.26 199 43 50 ];
+        symbol [ payload %tmp.26 200 43 50 ];
         %tmp.27 = dup %tmp.24;
         %tmp.28 = aputv %tmp.27 %tmp.25 %tmp.26;
         %tmp.29 = null;
-        symbol [ TransmitCallback %tmp.33 201 16 32 ];
+        symbol [ TransmitCallback %tmp.33 202 16 32 ];
         %tmp.33 = getv ? :TransmitCallback;
         %tmp.34 = self;
-        symbol [ self %tmp.34 201 33 37 ];
+        symbol [ self %tmp.34 202 33 37 ];
         %tmp.30 = newc %tmp.33 (%tmp.34);
         invoke %tmp.18 %tmp.19(%tmp.28, %tmp.29, %tmp.30);
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_193_78_203_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_194_78_204_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 205; @symbol_functiondef = [getSession,205,13,23]; @symbol_return<0> = [Dictionary,205,29,39]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 206; @symbol_functiondef = [getSession,206,13,23]; @symbol_return<0> = [Dictionary,206,29,39]; ]
     function getSession() as Dictionary or Null {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_205_41_207_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 206 8 ]
-        symbol [ Application %tmp.1 206 15 26 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_206_41_208_4_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 207 8 ]
+        symbol [ Application %tmp.1 207 15 26 ];
         %tmp.1 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.2 206 27 34 ];
+        symbol [ Storage %tmp.2 207 27 34 ];
         %tmp.2 = getv %tmp.1 :Storage;
-        symbol [ getValue %tmp.3 206 35 43 ];
+        symbol [ getValue %tmp.3 207 35 43 ];
         %tmp.3 = getv function %tmp.2 :getValue;
         %tmp.4 = "session@notrackrun";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         ret %tmp.5;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_205_41_207_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_206_41_208_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 209; @symbol_functiondef = [deleteSession,209,13,26]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 210; @symbol_functiondef = [deleteSession,210,13,26]; ]
     function deleteSession() as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_209_37_211_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 210 8 ]
-        symbol [ Application %tmp.1 210 8 19 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_210_37_212_4_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 211 8 ]
+        symbol [ Application %tmp.1 211 8 19 ];
         %tmp.1 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.2 210 20 27 ];
+        symbol [ Storage %tmp.2 211 20 27 ];
         %tmp.2 = getv %tmp.1 :Storage;
-        symbol [ deleteValue %tmp.3 210 28 39 ];
+        symbol [ deleteValue %tmp.3 211 28 39 ];
         %tmp.3 = getv function %tmp.2 :deleteValue;
         %tmp.4 = "session@notrackrun";
         invoke %tmp.2 %tmp.3(%tmp.4);
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_209_37_211_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_210_37_212_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 213; @symbol_functiondef = [vibe,213,13,17]; @symbol_param<0> = [pattern,213,18,25]; @symbol_param<0>_type<0> = [Array,213,29,34]; @symbol_param<0>_type<1> = [Attention,213,35,44]; @symbol_param<0>_type<2> = [VibeProfile,213,45,56]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 214; @symbol_functiondef = [vibe,214,13,17]; @symbol_param<0> = [pattern,214,18,25]; @symbol_param<0>_type<0> = [Array,214,29,34]; @symbol_param<0>_type<1> = [Attention,214,35,44]; @symbol_param<0>_type<2> = [VibeProfile,214,45,56]; ]
     function vibe(pattern as Array<Attention.VibeProfile>) as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_213_67_215_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 214 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_8_214_65_if_stmt:
-        symbol [ Attention %tmp.1 214 12 21 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_67_216_4_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 215 8 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_215_8_215_65_if_stmt:
+        symbol [ Attention %tmp.1 215 12 21 ];
         %tmp.1 = getm $.Toybox.Attention;
         %tmp.3 = const :vibrate;
-        symbol [ vibrate %tmp.3 214 27 34 const ];
+        symbol [ vibrate %tmp.3 215 27 34 const ];
         %tmp.4 = canhazplz %tmp.1 %tmp.3;
-        bf %tmp.4 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_8_214_65_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_8_214_65_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_36_214_65_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 214 38 ]
-        symbol [ Attention %tmp.5 214 38 47 ];
+        bf %tmp.4 @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_215_8_215_65_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_215_8_215_65_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_215_36_215_65_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 215 38 ]
+        symbol [ Attention %tmp.5 215 38 47 ];
         %tmp.5 = getm $.Toybox.Attention;
-        symbol [ vibrate %tmp.6 214 48 55 ];
+        symbol [ vibrate %tmp.6 215 48 55 ];
         %tmp.6 = getv function %tmp.5 :vibrate;
         %tmp.7 = lgetv %pattern;
-        symbol [ pattern %tmp.7 214 56 63 ];
+        symbol [ pattern %tmp.7 215 56 63 ];
         invoke %tmp.5 %tmp.6(%tmp.7);
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_36_214_65_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_8_214_65_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_8_214_65_if_end:
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_213_67_215_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_215_36_215_65_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunApp_mc_215_8_215_65_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_215_8_215_65_if_end:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_214_67_216_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 217; @symbol_functiondef = [onBlockChanged,217,13,27]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 218; @symbol_functiondef = [onBlockChanged,218,13,27]; ]
     function onBlockChanged() as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_217_38_217_64_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 217 40 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_218_38_218_64_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 218 40 ]
         %tmp.1 = self;
-        symbol [ vibe %tmp.2 217 40 44 ];
+        symbol [ vibe %tmp.2 218 40 44 ];
         %tmp.2 = getv function %tmp.1 :vibe;
-        symbol [ VIBE_BLOCK_CHANGE %tmp.4 217 45 62 ];
+        symbol [ VIBE_BLOCK_CHANGE %tmp.4 218 45 62 ];
         %tmp.4 = getv ? :VIBE_BLOCK_CHANGE;
         invoke %tmp.1 %tmp.2(%tmp.4);
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_217_38_217_64_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_218_38_218_64_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 219; @symbol_functiondef = [onFieldChanged,219,13,27]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 220; @symbol_functiondef = [onFieldChanged,220,13,27]; ]
     function onFieldChanged() as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_219_38_219_64_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 219 40 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_220_38_220_64_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 220 40 ]
         %tmp.1 = self;
-        symbol [ vibe %tmp.2 219 40 44 ];
+        symbol [ vibe %tmp.2 220 40 44 ];
         %tmp.2 = getv function %tmp.1 :vibe;
-        symbol [ VIBE_FIELD_CHANGE %tmp.4 219 45 62 ];
+        symbol [ VIBE_FIELD_CHANGE %tmp.4 220 45 62 ];
         %tmp.4 = getv ? :VIBE_FIELD_CHANGE;
         invoke %tmp.1 %tmp.2(%tmp.4);
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_219_38_219_64_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_220_38_220_64_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 221; @symbol_functiondef = [onSessionEnded,221,13,27]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 222; @symbol_functiondef = [onSessionEnded,222,13,27]; ]
     function onSessionEnded() as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_221_38_221_63_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 221 40 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_222_38_222_63_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 222 40 ]
         %tmp.1 = self;
-        symbol [ vibe %tmp.2 221 40 44 ];
+        symbol [ vibe %tmp.2 222 40 44 ];
         %tmp.2 = getv function %tmp.1 :vibe;
-        symbol [ VIBE_SESSION_END %tmp.4 221 45 61 ];
+        symbol [ VIBE_SESSION_END %tmp.4 222 45 61 ];
         %tmp.4 = getv ? :VIBE_SESSION_END;
         invoke %tmp.1 %tmp.2(%tmp.4);
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_221_38_221_63_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_222_38_222_63_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 223; @symbol_functiondef = [getInitialView,223,13,27]; @symbol_return<0> = [Views,223,34,39]; @symbol_return<1> = [Views,223,45,50]; @symbol_return<2> = [InputDelegates,223,52,66]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 224; @symbol_functiondef = [getInitialView,224,13,27]; @symbol_return<0> = [Views,224,34,39]; @symbol_return<1> = [Views,224,45,50]; @symbol_return<2> = [InputDelegates,224,52,66]; ]
     function getInitialView() as [Views] or [Views, InputDelegates] {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_223_68_225_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 224 8 ]
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_224_68_226_4_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 225 8 ]
         %tmp.1 = newa 2;
-        symbol [ NoTrackRunView %tmp.5 224 21 35 ];
+        symbol [ NoTrackRunView %tmp.5 225 21 35 ];
         %tmp.5 = getv ? :NoTrackRunView;
         %tmp.2 = newc %tmp.5 ();
         %tmp.6 = dup %tmp.1;
         %tmp.7 = aputv %tmp.6 0 %tmp.2;
-        symbol [ NoTrackRunDelegate %tmp.11 224 43 61 ];
+        symbol [ NoTrackRunDelegate %tmp.11 225 43 61 ];
         %tmp.11 = getv ? :NoTrackRunDelegate;
         %tmp.8 = newc %tmp.11 ();
         %tmp.12 = dup %tmp.7;
         %tmp.13 = aputv %tmp.12 1 %tmp.8;
         ret %tmp.13;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_223_68_225_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_224_68_226_4_stop:
     }
 }
-[ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 229; @symbol_functiondef = [getApp,229,9,15]; @symbol_return<0> = [NoTrackRunApp,229,21,34]; ]
+[ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 230; @symbol_functiondef = [getApp,230,9,15]; @symbol_return<0> = [NoTrackRunApp,230,21,34]; ]
 function getApp() as NoTrackRunApp {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_229_35_231_0_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 230 4 ]
-    symbol [ Application %tmp.1 230 11 22 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_230_35_232_0_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 231 4 ]
+    symbol [ Application %tmp.1 231 11 22 ];
     %tmp.1 = getm $.Toybox.Application;
-    symbol [ getApp %tmp.2 230 23 29 ];
+    symbol [ getApp %tmp.2 231 23 29 ];
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 NoTrackRunApp;
-    symbol [ NoTrackRunApp %tmp.4 230 35 48 ];
+    symbol [ NoTrackRunApp %tmp.4 231 35 48 ];
     ret %tmp.4;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_229_35_231_0_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_230_35_232_0_stop:
 }
-[ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 234; @symbol_classdef = [TransmitCallback,234,6,22]; @symbol_extends<0> = [Communications,234,31,45]; @symbol_extends<1> = [ConnectionListener,234,46,64]; ]
+[ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 235; @symbol_classdef = [TransmitCallback,235,6,22]; @symbol_extends<0> = [Communications,235,31,45]; @symbol_extends<1> = [ConnectionListener,235,46,64]; ]
 class TransmitCallback extends Communications.ConnectionListener {
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 234; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 235; ]
     <init> {
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 234; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 235; ]
     static
     <init> {
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 236; @position = 12; @symbol_vardef = [app,236,12,15]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 237; @position = 12; @symbol_vardef = [app,237,12,15]; ]
     var app;
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 238; @symbol_functiondef = [initialize,238,17,27]; @symbol_param<0> = [a,238,28,29]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 239; @symbol_functiondef = [initialize,239,17,27]; @symbol_param<0> = [a,239,28,29]; ]
     function initialize(a) as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_238_31_241_8_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 239 12 ]
-        symbol [ ConnectionListener %tmp.2 239 12 30 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_239_31_242_8_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 240 12 ]
+        symbol [ ConnectionListener %tmp.2 240 12 30 ];
         %tmp.2 = getv ? :ConnectionListener;
-        symbol [ initialize %tmp.3 239 31 41 ];
+        symbol [ initialize %tmp.3 240 31 41 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 240 12 ]
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 241 12 ]
         %tmp.4 = lgetv %a;
-        symbol [ a %tmp.4 240 18 19 ];
-        symbol [ app ? 240 12 15 ];
+        symbol [ a %tmp.4 241 18 19 ];
+        symbol [ app ? 241 12 15 ];
         putv self :app %tmp.4;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_238_31_241_8_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_239_31_242_8_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 243; @symbol_functiondef = [onComplete,243,17,27]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 244; @symbol_functiondef = [onComplete,244,17,27]; ]
     function onComplete() as Void {
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 245; @symbol_functiondef = [onError,245,17,24]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 246; @symbol_functiondef = [onError,246,17,24]; ]
     function onError() as Void {
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_245_35_249_8_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 247 12 ]
-        symbol [ app %tmp.2 247 12 15 ];
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_246_35_250_8_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 248 12 ]
+        symbol [ app %tmp.2 248 12 15 ];
         %tmp.2 = getv ? :app;
-        symbol [ sm %tmp.3 247 16 18 ];
+        symbol [ sm %tmp.3 248 16 18 ];
         %tmp.3 = getv %tmp.2 :sm;
-        symbol [ handle %tmp.4 247 19 25 ];
+        symbol [ handle %tmp.4 248 19 25 ];
         %tmp.4 = getv function %tmp.3 :handle;
-        symbol [ EVENT_SYNCED_KO %tmp.6 247 26 41 ];
+        symbol [ EVENT_SYNCED_KO %tmp.6 248 26 41 ];
         %tmp.6 = getv ? :EVENT_SYNCED_KO;
         invoke %tmp.3 %tmp.4(%tmp.6);
-[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 248 12 ]
-        symbol [ app %tmp.7 248 12 15 ];
+[ "/workspace/no-track-run-watch/source/NoTrackRunApp.mc" 249 12 ]
+        symbol [ app %tmp.7 249 12 15 ];
         %tmp.7 = getv self :app;
         %tmp.8 = "Phone unreachable";
-        symbol [ errorMsg ? 248 16 24 ];
+        symbol [ errorMsg ? 249 16 24 ];
         putv %tmp.7 :errorMsg %tmp.8;
-_workspace_no_track_run_watch_source_NoTrackRunApp_mc_245_35_249_8_stop:
+_workspace_no_track_run_watch_source_NoTrackRunApp_mc_246_35_250_8_stop:
     }
 }
 [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 1; ]
