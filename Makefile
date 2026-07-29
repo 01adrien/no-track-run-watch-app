@@ -11,7 +11,7 @@ sim:
 
 build:
 	java -Xms1g -Dfile.encoding=UTF-8 -jar $(SDK)/monkeybrains.jar -o $(PRG) -f $(JUNGLE) -y $(KEY) -d $(DEVICE) -w
-
+	
 run:
 	$(SDK)/monkeydo $(PRG) $(DEVICE)
 
