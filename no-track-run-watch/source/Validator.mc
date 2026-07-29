@@ -60,7 +60,7 @@ module Validator {
 
         // targetType doit être une valeur connue
         var type = f["targetType"] as String;
-        if (!(type.equals("DURATION") || type.equals("DISTANCE"))) { return false;}
+        if (!(type.equals("DURATION") || type.equals("DISTANCE") || type.equals("NONE"))) { return false;}
 
         return true;
     }

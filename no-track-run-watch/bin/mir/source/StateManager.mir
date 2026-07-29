@@ -675,9 +675,9 @@ _workspace_no_track_run_watch_source_StateManager_mc_91_47_114_4_stop:
     }
     [ @file = "/workspace/no-track-run-watch/source/StateManager.mc"; @line = 118; @symbol_functiondef = [onEnter,118,13,20]; @symbol_param<0> = [next,118,21,25]; @symbol_param<0>_type<0> = [AppState,118,29,37]; @symbol_param<1> = [prev,118,39,43]; @symbol_param<1>_type<0> = [AppState,118,47,55]; ]
     function onEnter(next as AppState, prev as AppState) as Void {
-_workspace_no_track_run_watch_source_StateManager_mc_118_65_148_4_start:
+_workspace_no_track_run_watch_source_StateManager_mc_118_65_154_4_start:
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 119 8 ]
-        [ "_workspace_no_track_run_watch_source_StateManager_mc_118_65_148_4_start" "_workspace_no_track_run_watch_source_StateManager_mc_118_65_148_4_stop" ]
+        [ "_workspace_no_track_run_watch_source_StateManager_mc_118_65_154_4_start" "_workspace_no_track_run_watch_source_StateManager_mc_118_65_154_4_stop" ]
         %app.1 = local;
         symbol [ app %app.1 119 12 15 ];
         %tmp.1 = self;
@@ -690,8 +690,8 @@ _workspace_no_track_run_watch_source_StateManager_mc_118_65_148_4_start:
         %tmp.4 = lgetv %next;
         symbol [ next %tmp.4 120 16 20 ];
         push %tmp.4;
-        switch %tmp.4 @_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtBegin:
+        switch %tmp.4 @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtBegin:
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 121 12 ]
         %tmp.5 = dup %tmp.4;
         symbol [ STATE_COUNTDOWN %tmp.7 121 17 32 ];
@@ -726,51 +726,51 @@ _workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtBegin
         %tmp.27 = getv ? :STATE_QUIT;
         %tmp.28 = getv function %tmp.25 :equals;
         %tmp.29 = invoke %tmp.25 %tmp.28 (%tmp.27);
-        bt %tmp.29 @_workspace_no_track_run_watch_source_StateManager_mc_133_12_139_21_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 140 12 ]
+        bt %tmp.29 @_workspace_no_track_run_watch_source_StateManager_mc_133_12_140_21_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 141 12 ]
         %tmp.30 = dup %tmp.4;
-        symbol [ STATE_FINISHED %tmp.32 140 17 31 ];
-        %tmp.32 = getv ? :STATE_FINISHED;
+        symbol [ STATE_IDLE %tmp.32 141 17 27 ];
+        %tmp.32 = getv ? :STATE_IDLE;
         %tmp.33 = getv function %tmp.30 :equals;
         %tmp.34 = invoke %tmp.30 %tmp.33 (%tmp.32);
-        bt %tmp.34 @_workspace_no_track_run_watch_source_StateManager_mc_140_12_140_31_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 141 12 ]
+        bt %tmp.34 @_workspace_no_track_run_watch_source_StateManager_mc_141_12_146_21_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 147 12 ]
         %tmp.35 = dup %tmp.4;
-        symbol [ STATE_RUNNING %tmp.37 141 17 30 ];
-        %tmp.37 = getv ? :STATE_RUNNING;
+        symbol [ STATE_FINISHED %tmp.37 147 17 31 ];
+        %tmp.37 = getv ? :STATE_FINISHED;
         %tmp.38 = getv function %tmp.35 :equals;
         %tmp.39 = invoke %tmp.35 %tmp.38 (%tmp.37);
-        bt %tmp.39 @_workspace_no_track_run_watch_source_StateManager_mc_141_12_141_30_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 142 12 ]
+        bt %tmp.39 @_workspace_no_track_run_watch_source_StateManager_mc_147_12_147_31_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 148 12 ]
         %tmp.40 = dup %tmp.4;
-        symbol [ STATE_IDLE %tmp.42 142 17 27 ];
-        %tmp.42 = getv ? :STATE_IDLE;
+        symbol [ STATE_RUNNING %tmp.42 148 17 30 ];
+        %tmp.42 = getv ? :STATE_RUNNING;
         %tmp.43 = getv function %tmp.40 :equals;
         %tmp.44 = invoke %tmp.40 %tmp.43 (%tmp.42);
-        bt %tmp.44 @_workspace_no_track_run_watch_source_StateManager_mc_142_12_142_27_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 143 12 ]
+        bt %tmp.44 @_workspace_no_track_run_watch_source_StateManager_mc_148_12_148_30_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 149 12 ]
         %tmp.45 = dup %tmp.4;
-        symbol [ STATE_SUMMARY %tmp.47 143 17 30 ];
+        symbol [ STATE_SUMMARY %tmp.47 149 17 30 ];
         %tmp.47 = getv ? :STATE_SUMMARY;
         %tmp.48 = getv function %tmp.45 :equals;
         %tmp.49 = invoke %tmp.45 %tmp.48 (%tmp.47);
-        bt %tmp.49 @_workspace_no_track_run_watch_source_StateManager_mc_143_12_143_30_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 144 12 ]
+        bt %tmp.49 @_workspace_no_track_run_watch_source_StateManager_mc_149_12_149_30_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 150 12 ]
         %tmp.50 = dup %tmp.4;
-        symbol [ STATE_NEED_SYNC %tmp.52 144 17 32 ];
+        symbol [ STATE_NEED_SYNC %tmp.52 150 17 32 ];
         %tmp.52 = getv ? :STATE_NEED_SYNC;
         %tmp.53 = getv function %tmp.50 :equals;
         %tmp.54 = invoke %tmp.50 %tmp.53 (%tmp.52);
-        bt %tmp.54 @_workspace_no_track_run_watch_source_StateManager_mc_144_12_144_32_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 145 12 ]
+        bt %tmp.54 @_workspace_no_track_run_watch_source_StateManager_mc_150_12_150_32_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 151 12 ]
         %tmp.55 = dup %tmp.4;
-        symbol [ STATE_ERROR %tmp.57 145 17 28 ];
+        symbol [ STATE_ERROR %tmp.57 151 17 28 ];
         %tmp.57 = getv ? :STATE_ERROR;
         %tmp.58 = getv function %tmp.55 :equals;
         %tmp.59 = invoke %tmp.55 %tmp.58 (%tmp.57);
-        bt %tmp.59 @_workspace_no_track_run_watch_source_StateManager_mc_145_12_146_21_switchCase;
-_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtDefault:
-        goto @_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_defaultCodeBegin;
+        bt %tmp.59 @_workspace_no_track_run_watch_source_StateManager_mc_151_12_152_21_switchCase;
+_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_defaultCodeBegin;
 _workspace_no_track_run_watch_source_StateManager_mc_121_12_123_21_switchCase:
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 122 16 ]
         %tmp.60 = lgetv %app.1;
@@ -781,7 +781,7 @@ _workspace_no_track_run_watch_source_StateManager_mc_121_12_123_21_switchCase:
         %tmp.62 = getv function %tmp.61 :resetCountDown;
         invoke %tmp.61 %tmp.62();
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 123 16 ]
-        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtEnd;
+        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd;
 _workspace_no_track_run_watch_source_StateManager_mc_124_13_126_21_switchCase:
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 125 16 ]
         %tmp.63 = lgetv %app.1;
@@ -790,7 +790,7 @@ _workspace_no_track_run_watch_source_StateManager_mc_124_13_126_21_switchCase:
         %tmp.64 = getv function %tmp.63 :deleteSession;
         invoke %tmp.63 %tmp.64();
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 126 16 ]
-        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtEnd;
+        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd;
 _workspace_no_track_run_watch_source_StateManager_mc_127_12_129_21_switchCase:
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 128 16 ]
         %tmp.65 = lgetv %app.1;
@@ -799,7 +799,7 @@ _workspace_no_track_run_watch_source_StateManager_mc_127_12_129_21_switchCase:
         %tmp.66 = getv function %tmp.65 :sendSession;
         invoke %tmp.65 %tmp.66();
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 129 16 ]
-        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtEnd;
+        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd;
 _workspace_no_track_run_watch_source_StateManager_mc_130_12_132_21_switchCase:
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 131 16 ]
         %tmp.67 = lgetv %app.1;
@@ -808,8 +808,8 @@ _workspace_no_track_run_watch_source_StateManager_mc_130_12_132_21_switchCase:
         %tmp.68 = getv function %tmp.67 :startSession;
         invoke %tmp.67 %tmp.68();
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 132 16 ]
-        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_StateManager_mc_133_12_139_21_switchCase:
+        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_StateManager_mc_133_12_140_21_switchCase:
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 134 16 ]
 _workspace_no_track_run_watch_source_StateManager_mc_134_16_136_16_if_stmt:
 _workspace_no_track_run_watch_source_StateManager_mc_134_20_134_53_begin:
@@ -850,135 +850,194 @@ _workspace_no_track_run_watch_source_StateManager_mc_134_16_136_16_if_end:
         %tmp.83 = false;
         invoke %tmp.81 %tmp.82(%tmp.83);
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 138 16 ]
-        %tmp.84 = lgetv %app.1;
-        symbol [ app %tmp.84 138 16 19 ];
-        symbol [ exit %tmp.85 138 20 24 ];
-        %tmp.85 = getv function %tmp.84 :exit;
-        invoke %tmp.84 %tmp.85();
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 139 16 ]
-        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_StateManager_mc_140_12_140_31_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_141_12_141_30_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_142_12_142_27_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_143_12_143_30_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_144_12_144_32_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_145_12_146_21_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_138_16_139_33_if_stmt:
+        symbol [ DEBUG %tmp.85 138 20 25 ];
+        %tmp.85 = getv ? :DEBUG;
+        bf %tmp.85 @_workspace_no_track_run_watch_source_StateManager_mc_138_16_139_33_if_else_false;
+_workspace_no_track_run_watch_source_StateManager_mc_138_16_139_33_if_true:
+_workspace_no_track_run_watch_source_StateManager_mc_138_27_138_51_start:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 138 28 ]
+        %tmp.86 = self;
+        symbol [ transition %tmp.87 138 28 38 ];
+        %tmp.87 = getv function %tmp.86 :transition;
+        symbol [ STATE_IDLE %tmp.89 138 39 49 ];
+        %tmp.89 = getv ? :STATE_IDLE;
+        invoke %tmp.86 %tmp.87(%tmp.89);
+_workspace_no_track_run_watch_source_StateManager_mc_138_27_138_51_stop:
+        goto @_workspace_no_track_run_watch_source_StateManager_mc_138_16_139_33_if_end;
+_workspace_no_track_run_watch_source_StateManager_mc_138_16_139_33_if_else_false:
+_workspace_no_track_run_watch_source_StateManager_mc_139_21_139_33_start:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 139 22 ]
+        %tmp.90 = lgetv %app.1;
+        symbol [ app %tmp.90 139 22 25 ];
+        symbol [ exit %tmp.91 139 26 30 ];
+        %tmp.91 = getv function %tmp.90 :exit;
+        invoke %tmp.90 %tmp.91();
+_workspace_no_track_run_watch_source_StateManager_mc_139_21_139_33_stop:
+_workspace_no_track_run_watch_source_StateManager_mc_138_16_139_33_if_end:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 140 16 ]
+        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_StateManager_mc_141_12_146_21_switchCase:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 142 16 ]
+_workspace_no_track_run_watch_source_StateManager_mc_142_16_145_16_if_stmt:
+        symbol [ DEBUG %tmp.93 142 20 25 ];
+        %tmp.93 = getv ? :DEBUG;
+        bf %tmp.93 @_workspace_no_track_run_watch_source_StateManager_mc_142_16_145_16_if_end;
+_workspace_no_track_run_watch_source_StateManager_mc_142_16_145_16_if_true:
+_workspace_no_track_run_watch_source_StateManager_mc_142_27_145_16_start:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 143 20 ]
+        %tmp.94 = lgetv %app.1;
+        symbol [ app %tmp.94 143 20 23 ];
+        symbol [ deleteSession %tmp.95 143 24 37 ];
+        %tmp.95 = getv function %tmp.94 :deleteSession;
+        invoke %tmp.94 %tmp.95();
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 144 20 ]
+        %tmp.96 = lgetv %app.1;
+        symbol [ app %tmp.96 144 20 23 ];
+        symbol [ rm %tmp.97 144 24 26 ];
+        %tmp.97 = getv %tmp.96 :rm;
+        symbol [ stopActivitySession %tmp.98 144 27 46 ];
+        %tmp.98 = getv function %tmp.97 :stopActivitySession;
+        %tmp.99 = false;
+        invoke %tmp.97 %tmp.98(%tmp.99);
+_workspace_no_track_run_watch_source_StateManager_mc_142_27_145_16_stop:
+        goto @_workspace_no_track_run_watch_source_StateManager_mc_142_16_145_16_if_end;
+_workspace_no_track_run_watch_source_StateManager_mc_142_16_145_16_if_end:
 [ "/workspace/no-track-run-watch/source/StateManager.mc" 146 16 ]
-        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_defaultCodeBegin:
-_workspace_no_track_run_watch_source_StateManager_mc_120_8_147_8_switchStmtEnd:
+        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_StateManager_mc_147_12_147_31_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_148_12_148_30_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_149_12_149_30_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_150_12_150_32_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_151_12_152_21_switchCase:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 152 16 ]
+        goto break @_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_defaultCodeBegin:
+_workspace_no_track_run_watch_source_StateManager_mc_120_8_153_8_switchStmtEnd:
         pop;
-_workspace_no_track_run_watch_source_StateManager_mc_118_65_148_4_stop:
+_workspace_no_track_run_watch_source_StateManager_mc_118_65_154_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/StateManager.mc"; @line = 150; @symbol_functiondef = [onExit,150,13,19]; @symbol_param<0> = [state,150,20,25]; @symbol_param<0>_type<0> = [AppState,150,29,37]; ]
+    [ @file = "/workspace/no-track-run-watch/source/StateManager.mc"; @line = 156; @symbol_functiondef = [onExit,156,13,19]; @symbol_param<0> = [state,156,20,25]; @symbol_param<0>_type<0> = [AppState,156,29,37]; ]
     function onExit(state as AppState) as Void {
-_workspace_no_track_run_watch_source_StateManager_mc_150_47_166_4_start:
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 151 8 ]
+_workspace_no_track_run_watch_source_StateManager_mc_156_47_172_4_start:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 157 8 ]
         ret ?;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 152 8 ]
-        [ "_workspace_no_track_run_watch_source_StateManager_mc_150_47_166_4_start" "_workspace_no_track_run_watch_source_StateManager_mc_150_47_166_4_stop" ]
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 158 8 ]
+        [ "_workspace_no_track_run_watch_source_StateManager_mc_156_47_172_4_start" "_workspace_no_track_run_watch_source_StateManager_mc_156_47_172_4_stop" ]
         %app.1 = local;
-        symbol [ app %app.1 152 12 15 ];
+        symbol [ app %app.1 158 12 15 ];
         %tmp.1 = self;
-        symbol [ getApp %tmp.2 152 18 24 ];
+        symbol [ getApp %tmp.2 158 18 24 ];
         %tmp.2 = getv function %tmp.1 :getApp;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %app.1 %tmp.3;
-        symbol [ app %app.1 152 12 15 ];
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 153 8 ]
+        symbol [ app %app.1 158 12 15 ];
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 159 8 ]
         %tmp.4 = lgetv %state;
-        symbol [ state %tmp.4 153 16 21 ];
+        symbol [ state %tmp.4 159 16 21 ];
         push %tmp.4;
-        switch %tmp.4 @_workspace_no_track_run_watch_source_StateManager_mc_153_8_165_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_StateManager_mc_153_8_165_8_switchStmtBegin:
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 154 12 ]
+        switch %tmp.4 @_workspace_no_track_run_watch_source_StateManager_mc_159_8_171_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_StateManager_mc_159_8_171_8_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 160 12 ]
         %tmp.5 = dup %tmp.4;
-        symbol [ STATE_IDLE %tmp.7 154 17 27 ];
+        symbol [ STATE_IDLE %tmp.7 160 17 27 ];
         %tmp.7 = getv ? :STATE_IDLE;
         %tmp.8 = getv function %tmp.5 :equals;
         %tmp.9 = invoke %tmp.5 %tmp.8 (%tmp.7);
-        bt %tmp.9 @_workspace_no_track_run_watch_source_StateManager_mc_154_12_154_27_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 155 12 ]
+        bt %tmp.9 @_workspace_no_track_run_watch_source_StateManager_mc_160_12_160_27_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 161 12 ]
         %tmp.10 = dup %tmp.4;
-        symbol [ STATE_SUMMARY %tmp.12 155 17 30 ];
+        symbol [ STATE_SUMMARY %tmp.12 161 17 30 ];
         %tmp.12 = getv ? :STATE_SUMMARY;
         %tmp.13 = getv function %tmp.10 :equals;
         %tmp.14 = invoke %tmp.10 %tmp.13 (%tmp.12);
-        bt %tmp.14 @_workspace_no_track_run_watch_source_StateManager_mc_155_12_155_30_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 156 12 ]
+        bt %tmp.14 @_workspace_no_track_run_watch_source_StateManager_mc_161_12_161_30_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 162 12 ]
         %tmp.15 = dup %tmp.4;
-        symbol [ STATE_COUNTDOWN %tmp.17 156 17 32 ];
+        symbol [ STATE_COUNTDOWN %tmp.17 162 17 32 ];
         %tmp.17 = getv ? :STATE_COUNTDOWN;
         %tmp.18 = getv function %tmp.15 :equals;
         %tmp.19 = invoke %tmp.15 %tmp.18 (%tmp.17);
-        bt %tmp.19 @_workspace_no_track_run_watch_source_StateManager_mc_156_12_156_32_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 157 12 ]
+        bt %tmp.19 @_workspace_no_track_run_watch_source_StateManager_mc_162_12_162_32_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 163 12 ]
         %tmp.20 = dup %tmp.4;
-        symbol [ STATE_RUNNING %tmp.22 157 17 30 ];
+        symbol [ STATE_RUNNING %tmp.22 163 17 30 ];
         %tmp.22 = getv ? :STATE_RUNNING;
         %tmp.23 = getv function %tmp.20 :equals;
         %tmp.24 = invoke %tmp.20 %tmp.23 (%tmp.22);
-        bt %tmp.24 @_workspace_no_track_run_watch_source_StateManager_mc_157_12_157_30_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 158 12 ]
+        bt %tmp.24 @_workspace_no_track_run_watch_source_StateManager_mc_163_12_163_30_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 164 12 ]
         %tmp.25 = dup %tmp.4;
-        symbol [ STATE_FINISHED %tmp.27 158 17 31 ];
+        symbol [ STATE_FINISHED %tmp.27 164 17 31 ];
         %tmp.27 = getv ? :STATE_FINISHED;
         %tmp.28 = getv function %tmp.25 :equals;
         %tmp.29 = invoke %tmp.25 %tmp.28 (%tmp.27);
-        bt %tmp.29 @_workspace_no_track_run_watch_source_StateManager_mc_158_12_158_31_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 159 12 ]
+        bt %tmp.29 @_workspace_no_track_run_watch_source_StateManager_mc_164_12_164_31_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 165 12 ]
         %tmp.30 = dup %tmp.4;
-        symbol [ STATE_NEED_SYNC %tmp.32 159 17 32 ];
+        symbol [ STATE_NEED_SYNC %tmp.32 165 17 32 ];
         %tmp.32 = getv ? :STATE_NEED_SYNC;
         %tmp.33 = getv function %tmp.30 :equals;
         %tmp.34 = invoke %tmp.30 %tmp.33 (%tmp.32);
-        bt %tmp.34 @_workspace_no_track_run_watch_source_StateManager_mc_159_12_159_32_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 160 12 ]
+        bt %tmp.34 @_workspace_no_track_run_watch_source_StateManager_mc_165_12_165_32_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 166 12 ]
         %tmp.35 = dup %tmp.4;
-        symbol [ STATE_SYNCED %tmp.37 160 17 29 ];
+        symbol [ STATE_SYNCED %tmp.37 166 17 29 ];
         %tmp.37 = getv ? :STATE_SYNCED;
         %tmp.38 = getv function %tmp.35 :equals;
         %tmp.39 = invoke %tmp.35 %tmp.38 (%tmp.37);
-        bt %tmp.39 @_workspace_no_track_run_watch_source_StateManager_mc_160_12_160_29_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 161 12 ]
+        bt %tmp.39 @_workspace_no_track_run_watch_source_StateManager_mc_166_12_166_29_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 167 12 ]
         %tmp.40 = dup %tmp.4;
-        symbol [ STATE_SENDING %tmp.42 161 17 30 ];
+        symbol [ STATE_SENDING %tmp.42 167 17 30 ];
         %tmp.42 = getv ? :STATE_SENDING;
         %tmp.43 = getv function %tmp.40 :equals;
         %tmp.44 = invoke %tmp.40 %tmp.43 (%tmp.42);
-        bt %tmp.44 @_workspace_no_track_run_watch_source_StateManager_mc_161_12_161_30_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 162 12 ]
+        bt %tmp.44 @_workspace_no_track_run_watch_source_StateManager_mc_167_12_167_30_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 168 12 ]
         %tmp.45 = dup %tmp.4;
-        symbol [ STATE_GPS_FIXING %tmp.47 162 17 33 ];
+        symbol [ STATE_GPS_FIXING %tmp.47 168 17 33 ];
         %tmp.47 = getv ? :STATE_GPS_FIXING;
         %tmp.48 = getv function %tmp.45 :equals;
         %tmp.49 = invoke %tmp.45 %tmp.48 (%tmp.47);
-        bt %tmp.49 @_workspace_no_track_run_watch_source_StateManager_mc_162_12_162_33_switchCase;
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 163 12 ]
+        bt %tmp.49 @_workspace_no_track_run_watch_source_StateManager_mc_168_12_168_33_switchCase;
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 169 12 ]
         %tmp.50 = dup %tmp.4;
-        symbol [ STATE_ERROR %tmp.52 163 17 28 ];
+        symbol [ STATE_ERROR %tmp.52 169 17 28 ];
         %tmp.52 = getv ? :STATE_ERROR;
         %tmp.53 = getv function %tmp.50 :equals;
         %tmp.54 = invoke %tmp.50 %tmp.53 (%tmp.52);
-        bt %tmp.54 @_workspace_no_track_run_watch_source_StateManager_mc_163_12_164_21_switchCase;
-_workspace_no_track_run_watch_source_StateManager_mc_153_8_165_8_switchStmtDefault:
-        goto @_workspace_no_track_run_watch_source_StateManager_mc_153_8_165_8_defaultCodeBegin;
-_workspace_no_track_run_watch_source_StateManager_mc_154_12_154_27_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_155_12_155_30_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_156_12_156_32_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_157_12_157_30_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_158_12_158_31_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_159_12_159_32_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_160_12_160_29_switchCase:
+        bt %tmp.54 @_workspace_no_track_run_watch_source_StateManager_mc_169_12_170_21_switchCase;
+_workspace_no_track_run_watch_source_StateManager_mc_159_8_171_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_StateManager_mc_159_8_171_8_defaultCodeBegin;
+_workspace_no_track_run_watch_source_StateManager_mc_160_12_160_27_switchCase:
 _workspace_no_track_run_watch_source_StateManager_mc_161_12_161_30_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_162_12_162_33_switchCase:
-_workspace_no_track_run_watch_source_StateManager_mc_163_12_164_21_switchCase:
-[ "/workspace/no-track-run-watch/source/StateManager.mc" 164 16 ]
-        goto break @_workspace_no_track_run_watch_source_StateManager_mc_153_8_165_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_StateManager_mc_153_8_165_8_defaultCodeBegin:
-_workspace_no_track_run_watch_source_StateManager_mc_153_8_165_8_switchStmtEnd:
+_workspace_no_track_run_watch_source_StateManager_mc_162_12_162_32_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_163_12_163_30_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_164_12_164_31_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_165_12_165_32_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_166_12_166_29_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_167_12_167_30_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_168_12_168_33_switchCase:
+_workspace_no_track_run_watch_source_StateManager_mc_169_12_170_21_switchCase:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 170 16 ]
+        goto break @_workspace_no_track_run_watch_source_StateManager_mc_159_8_171_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_StateManager_mc_159_8_171_8_defaultCodeBegin:
+_workspace_no_track_run_watch_source_StateManager_mc_159_8_171_8_switchStmtEnd:
         pop;
-_workspace_no_track_run_watch_source_StateManager_mc_150_47_166_4_stop:
+_workspace_no_track_run_watch_source_StateManager_mc_156_47_172_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/StateManager.mc"; @line = 174; @symbol_functiondef = [backIdle,174,13,21]; ]
+    function backIdle() as Void {
+_workspace_no_track_run_watch_source_StateManager_mc_174_32_177_4_start:
+[ "/workspace/no-track-run-watch/source/StateManager.mc" 176 8 ]
+        %tmp.1 = self;
+        symbol [ transition %tmp.2 176 8 18 ];
+        %tmp.2 = getv function %tmp.1 :transition;
+        symbol [ STATE_IDLE %tmp.4 176 19 29 ];
+        %tmp.4 = getv ? :STATE_IDLE;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+_workspace_no_track_run_watch_source_StateManager_mc_174_32_177_4_stop:
     }
 }
 [ @file = "/workspace/no-track-run-watch/source/StateManager.mc"; @line = 1; ]

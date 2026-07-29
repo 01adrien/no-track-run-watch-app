@@ -135,11 +135,17 @@ class StateManager {
                     app.deleteSession();
                 }
                 app.rm.stopActivitySession(false);
-                app.exit();
+                if (DEBUG) {transition(STATE_IDLE);}
+                else {app.exit();}
+                break;
+            case STATE_IDLE:
+                if (DEBUG) {
+                    app.deleteSession();
+                    app.rm.stopActivitySession(false);
+                }
                 break;
             case STATE_FINISHED:
             case STATE_RUNNING:
-            case STATE_IDLE:
             case STATE_SUMMARY:
             case STATE_NEED_SYNC:
             case STATE_ERROR:
@@ -163,5 +169,10 @@ class StateManager {
             case STATE_ERROR:
                 break;
         }
+    }
+
+    function backIdle() as Void {
+        
+        transition(STATE_IDLE);
     }
 }

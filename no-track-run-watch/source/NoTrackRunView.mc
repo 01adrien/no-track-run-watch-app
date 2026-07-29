@@ -191,13 +191,6 @@ class NoTrackRunView extends WatchUi.View {
 
         var block = app.rm.getCurrentBlock();
 
-        /*
-        if (app.rm.currentBlockIdx != cachedBlockIdx) {
-            cachedBlockIdx = app.rm.currentBlockIdx;
-            var maxWidth = getUsableWidth(dc, y) - 20;
-            cachedBlockLabel = truncateText(dc, block["label"] as String, Graphics.FONT_MEDIUM, maxWidth);
-        }
-        */
 
         
         // ── numero du bloc ──
@@ -236,25 +229,54 @@ class NoTrackRunView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         var rem = app.rm.fieldRemaining();
 
-        if (app.rm.getGoal() == GOAL_DISTANCE) {
+        var goal = app.rm.getGoal();
+
+        if (goal == GOAL_DISTANCE) {
             dc.drawText(cx, y, Graphics.FONT_LARGE,
                 formatDistance(rem * 1.0), Graphics.TEXT_JUSTIFY_CENTER);
-        } else {
+        } else if (goal == GOAL_DURATION)  {
             dc.drawText(cx, y, Graphics.FONT_LARGE,
                 formatTime(rem), Graphics.TEXT_JUSTIFY_CENTER);
+        }  else {
+            dc.drawText(cx, y, Graphics.FONT_LARGE,
+                formatTime(app.rm.fieldElapsed), Graphics.TEXT_JUSTIFY_CENTER);
         }
+
         y += dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING;
+        
 
-        // ── Pace courant ──
-        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_TINY,
-            formatPace(app.rm.currentSpeed), Graphics.TEXT_JUSTIFY_CENTER);
-        y += dc.getFontHeight(Graphics.FONT_TINY) + LINE_GAP_PADDING;
+        if (app.rm.isRunningBlock()) {
+            // ── Fréquence cardiaque (à gauche, entre valeur primaire et pace) ──
+            var hrY = y - ((dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING));
+            var hrMargin = w - (w * 0.1).toNumber();
+            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(hrMargin, hrY, Graphics.FONT_MEDIUM,
+                    app.rm.getHeartRateFormatted(), 
+                    Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        // ── Pace cible ──
-        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_TINY,
-            field["pace"], Graphics.TEXT_JUSTIFY_CENTER);
+            // ── Pace courant ──
+            dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(cx, y, Graphics.FONT_TINY,
+                formatPace(app.rm.currentSpeed), Graphics.TEXT_JUSTIFY_CENTER);
+            y += dc.getFontHeight(Graphics.FONT_TINY) + LINE_GAP_PADDING;
+
+
+            // ── Pace cible ──
+            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(cx, y, Graphics.FONT_TINY,
+                field["pace"], Graphics.TEXT_JUSTIFY_CENTER);
+            
+        } else {
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(cx, y, Graphics.FONT_TINY,
+                "EXERCICES", Graphics.TEXT_JUSTIFY_CENTER);
+            y += dc.getFontHeight(Graphics.FONT_TINY) + LINE_GAP_PADDING;
+
+            // même ligne que "pace cible"
+            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(cx, y, Graphics.FONT_MEDIUM,
+                app.rm.getHeartRateFormatted(), Graphics.TEXT_JUSTIFY_CENTER);
+        }
     }
 
 

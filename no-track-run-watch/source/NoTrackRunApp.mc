@@ -11,7 +11,7 @@ import Toybox.Attention;
 const SENDING_TIMEOUT  as Number  = 5;
 const GPS_STABLE_TICKS as Number  = 5;
 const SIMULATOR        as Boolean = false;
-const DEBUG            as Boolean = false;
+const DEBUG            as Boolean = true;
 
 const VIBE_BLOCK_CHANGE as Array<Attention.VibeProfile> = [
     new Attention.VibeProfile(50, 300),
