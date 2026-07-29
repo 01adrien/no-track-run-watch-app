@@ -788,7 +788,8 @@ _workspace_no_track_run_watch_source_Validator_mc_59_8_59_87_if_end:
         lputv %type.2 %tmp.88;
         symbol [ type %type.2 62 12 16 ];
 [ "/workspace/no-track-run-watch/source/Validator.mc" 63 8 ]
-_workspace_no_track_run_watch_source_Validator_mc_63_8_63_82_if_stmt:
+_workspace_no_track_run_watch_source_Validator_mc_63_8_63_105_if_stmt:
+_workspace_no_track_run_watch_source_Validator_mc_63_14_63_86_begin:
 _workspace_no_track_run_watch_source_Validator_mc_63_14_63_63_begin:
         %tmp.89 = lgetv %type.2;
         symbol [ type %tmp.89 63 14 18 ];
@@ -809,19 +810,32 @@ _workspace_no_track_run_watch_source_Validator_mc_63_41_63_63_false:
         push %tmp.98;
 _workspace_no_track_run_watch_source_Validator_mc_63_41_63_63_end:
         %tmp.99 = phi [%tmp.93 @_workspace_no_track_run_watch_source_Validator_mc_63_14_63_63_begin] [%tmp.98 @_workspace_no_track_run_watch_source_Validator_mc_63_41_63_63_false] [%tmp.99 @_workspace_no_track_run_watch_source_Validator_mc_63_41_63_63_end];
-        %tmp.100 = not %tmp.99;
-        bf %tmp.100 @_workspace_no_track_run_watch_source_Validator_mc_63_8_63_82_if_end;
-_workspace_no_track_run_watch_source_Validator_mc_63_8_63_82_if_true:
-_workspace_no_track_run_watch_source_Validator_mc_63_67_63_82_start:
-[ "/workspace/no-track-run-watch/source/Validator.mc" 63 69 ]
-        %tmp.101 = false;
-        ret %tmp.101;
-_workspace_no_track_run_watch_source_Validator_mc_63_67_63_82_stop:
-        goto @_workspace_no_track_run_watch_source_Validator_mc_63_8_63_82_if_end;
-_workspace_no_track_run_watch_source_Validator_mc_63_8_63_82_if_end:
+        %tmp.100 = dup %tmp.99;
+        bt %tmp.100 @_workspace_no_track_run_watch_source_Validator_mc_63_68_63_86_end;
+_workspace_no_track_run_watch_source_Validator_mc_63_68_63_86_false:
+        %tmp.101 = lgetv %type.2;
+        symbol [ type %tmp.101 63 68 72 ];
+        symbol [ equals %tmp.102 63 73 79 ];
+        %tmp.102 = getv function %tmp.101 :equals;
+        %tmp.103 = "NONE";
+        %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
+        %tmp.105 = or %tmp.99 %tmp.104;
+        push %tmp.105;
+_workspace_no_track_run_watch_source_Validator_mc_63_68_63_86_end:
+        %tmp.106 = phi [%tmp.100 @_workspace_no_track_run_watch_source_Validator_mc_63_14_63_86_begin] [%tmp.105 @_workspace_no_track_run_watch_source_Validator_mc_63_68_63_86_false] [%tmp.106 @_workspace_no_track_run_watch_source_Validator_mc_63_68_63_86_end];
+        %tmp.107 = not %tmp.106;
+        bf %tmp.107 @_workspace_no_track_run_watch_source_Validator_mc_63_8_63_105_if_end;
+_workspace_no_track_run_watch_source_Validator_mc_63_8_63_105_if_true:
+_workspace_no_track_run_watch_source_Validator_mc_63_90_63_105_start:
+[ "/workspace/no-track-run-watch/source/Validator.mc" 63 92 ]
+        %tmp.108 = false;
+        ret %tmp.108;
+_workspace_no_track_run_watch_source_Validator_mc_63_90_63_105_stop:
+        goto @_workspace_no_track_run_watch_source_Validator_mc_63_8_63_105_if_end;
+_workspace_no_track_run_watch_source_Validator_mc_63_8_63_105_if_end:
 [ "/workspace/no-track-run-watch/source/Validator.mc" 65 8 ]
-        %tmp.102 = true;
-        ret %tmp.102;
+        %tmp.109 = true;
+        ret %tmp.109;
 _workspace_no_track_run_watch_source_Validator_mc_50_54_66_4_stop:
     }
     [ @file = "/workspace/no-track-run-watch/source/Validator.mc"; @line = 69; @symbol_functiondef = [isNumeric,69,13,22]; @symbol_param<0> = [val,69,23,26]; @symbol_param<0>_type<0> = [Object,69,30,36]; @symbol_return<0> = [Boolean,69,41,48]; ]

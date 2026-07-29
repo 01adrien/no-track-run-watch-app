@@ -17,7 +17,12 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
         if (key == WatchUi.KEY_ESC && app.needQuitConfirm()) {
             showQuitConfirmation();
             return true;
+        } else if (key == WatchUi.KEY_ESC && DEBUG) {
+            sm.backIdle();
+            return true;
         }
+
+
 
         switch (state) {
             case STATE_SUMMARY:
@@ -27,7 +32,11 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                 }
                 break;
             case STATE_RUNNING:
-                if ((key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) && DEBUG) {
+                if (
+                       (key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) && 
+                       (DEBUG || !app.rm.isRunningBlock())
+                    ) 
+                {
                     sm.handle(EVENT_NEXT_FIELD);
                     return true;
                 }

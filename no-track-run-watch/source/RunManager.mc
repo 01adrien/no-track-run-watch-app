@@ -6,7 +6,8 @@ import Toybox.Attention;
 
 enum BlockGoal {
     GOAL_DISTANCE,
-    GOAL_DURATION
+    GOAL_DURATION,
+    GOAL_NONE,
 }
 
 
@@ -30,6 +31,7 @@ class RunManager {
     var elevationGain         as Float      = 0.0;
     var averageSpeed          as Float      = 0.0;
     var runDateSec            as Number     = 0;
+    var currentHeartRate      as Number?    = null;
 
     function initialize(_sm as StateManager) { sm = _sm; }
 
@@ -89,6 +91,8 @@ class RunManager {
             ? info.totalAscent
             : elevationGain;
 
+        currentHeartRate = info.currentHeartRate;  
+
         totalDistance = info.elapsedDistance;   
 
         totalDuration = info.timerTime != null
@@ -130,7 +134,17 @@ class RunManager {
     }
 
     function getGoal() as BlockGoal {
-        return getCurrentField()["targetType"].equals("DISTANCE") ? GOAL_DISTANCE : GOAL_DURATION;
+        var target = getCurrentField()["targetType"];
+        switch (target) {
+            case "DISTANCE":
+                return GOAL_DISTANCE;
+            case "DURATION":
+                return GOAL_DURATION;
+            case "NONE":
+                return GOAL_NONE;    
+        }
+        return GOAL_NONE;
+        
     }
 
     function getSessionLabel() as String {
@@ -175,8 +189,6 @@ class RunManager {
 
     function advanceField() as Void {
         saveFieldResult();
-
-
         var info = Activity.getActivityInfo();
         fieldStartDistance = (info != null && info.elapsedDistance != null) 
             ? info.elapsedDistance 
@@ -226,6 +238,16 @@ class RunManager {
         return minutes.toString() + ":" + seconds.format("%02d");
     }
 
+    function getHeartRateFormatted() as String {
+        return (currentHeartRate != null) ? currentHeartRate.toString() : "---";
+    }
+
+
+    function isRunningBlock() as Boolean {
+        return true;
+        // return getCurrentBlock["type"] == "RUNNING";
+    }
+
 
     function saveSessionLocally() as Void {
         if (results.size() == 0) { return; }
@@ -245,8 +267,10 @@ class RunManager {
         var block = getCurrentBlock();
         var field = getCurrentField();
 
-        var success = evaluateFieldSuccess(field, fieldDistance, fieldElapsed);
-
+        var success = isRunningBlock 
+            ? evaluateFieldSuccess(field, fieldDistance, fieldElapsed)
+            : true;
+            
         results.add({
             "blockId"  => block["id"],
             "index"    => currentFieldIdx + 1,

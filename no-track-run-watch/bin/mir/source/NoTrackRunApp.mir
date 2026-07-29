@@ -21,7 +21,7 @@ const GPS_STABLE_TICKS as Number = 5;
 [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 13; @position = 6; @symbol_constdef = [SIMULATOR,13,6,15]; @symbol_type<0> = [Boolean,13,26,33]; ]
 const SIMULATOR as Boolean = false;
 [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 14; @position = 6; @symbol_constdef = [DEBUG,14,6,11]; @symbol_type<0> = [Boolean,14,26,33]; ]
-const DEBUG as Boolean = false;
+const DEBUG as Boolean = true;
 [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 16; @position = 6; @symbol_constdef = [VIBE_BLOCK_CHANGE,16,6,23]; @symbol_type<0> = [Array,16,27,32]; @symbol_type<1> = [Attention,16,33,42]; @symbol_type<2> = [VibeProfile,16,43,54]; ]
 const VIBE_BLOCK_CHANGE as Array<Attention.VibeProfile>;
 [ @file = "/workspace/no-track-run-watch/source/NoTrackRunApp.mc"; @line = 22; @position = 6; @symbol_constdef = [VIBE_FIELD_CHANGE,22,6,23]; @symbol_type<0> = [Array,22,27,32]; @symbol_type<1> = [Attention,22,33,42]; @symbol_type<2> = [VibeProfile,22,43,54]; ]

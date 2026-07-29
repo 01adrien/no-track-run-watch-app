@@ -25,15 +25,15 @@
                 "fields": [
                     {
                         "index": 1,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
+                        "targetType": "NONE",
+                        "targetValue": 40000,
                         "minSpeed": 4.63,
                         "maxSpeed": 4.94,
                         "pace": "03:22 - 03:36"
                     },
                     {
                         "index": 2,
-                        "targetType": "DURATION",
+                        "targetType": "NONE",
                         "targetValue": 90,
                         "minSpeed": 0.0,
                         "maxSpeed": 0.0,
@@ -49,166 +49,6 @@
                     },
                     {
                         "index": 4,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 5,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 6,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 7,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 8,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 9,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 10,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 11,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 12,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 13,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 14,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 15,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 16,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 17,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 18,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 19,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 20,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 21,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 22,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 23,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 24,
                         "targetType": "DURATION",
                         "targetValue": 90,
                         "minSpeed": 0.0,
@@ -247,100 +87,6 @@
                         "index": 2,
                         "targetType": "DURATION",
                         "targetValue": 120,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 3,
-                        "targetType": "DISTANCE",
-                        "targetValue": 300,
-                        "minSpeed": 3.8,
-                        "maxSpeed": 4.2,
-                        "pace": "03:58 - 04:23"
-                    },
-                    {
-                        "index": 4,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 5,
-                        "targetType": "DISTANCE",
-                        "targetValue": 300,
-                        "minSpeed": 3.8,
-                        "maxSpeed": 4.2,
-                        "pace": "03:58 - 04:23"
-                    },
-                    {
-                        "index": 6,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 7,
-                        "targetType": "DISTANCE",
-                        "targetValue": 300,
-                        "minSpeed": 3.8,
-                        "maxSpeed": 4.2,
-                        "pace": "03:58 - 04:23"
-                    },
-                    {
-                        "index": 8,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 9,
-                        "targetType": "DISTANCE",
-                        "targetValue": 300,
-                        "minSpeed": 3.8,
-                        "maxSpeed": 4.2,
-                        "pace": "03:58 - 04:23"
-                    },
-                    {
-                        "index": 10,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 11,
-                        "targetType": "DISTANCE",
-                        "targetValue": 300,
-                        "minSpeed": 3.8,
-                        "maxSpeed": 4.2,
-                        "pace": "03:58 - 04:23"
-                    },
-                    {
-                        "index": 12,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    }
-                ]
-            },
-            {
-                "id": 5,
-                "label": "Retour a",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DURATION",
-                        "targetValue": 600,
                         "minSpeed": 0.0,
                         "maxSpeed": 0.0,
                         "pace": "--:--"
