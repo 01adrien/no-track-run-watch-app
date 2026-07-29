@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/tmp/export7425859709641951249/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="1" lineNum="15" parent="globals" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="1" lineNum="21" parent="globals" pc="268435603" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="1" lineNum="25" parent="globals" pc="268435661" symbol="&lt;init&gt;"/>
+        <entry filename="/tmp/export7425859709641951249/gen/006-B3766-00/source/Rez.mcgen" id="9" lineNum="7" parent="globals/Rez" pc="268435896" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="10" lineNum="13" parent="globals/NoTrackRunView" pc="268435920" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="11" lineNum="33" parent="globals/NoTrackRunApp" pc="268435939" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="11" lineNum="35" parent="globals/NoTrackRunApp" pc="268435957" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="11" lineNum="36" parent="globals/NoTrackRunApp" pc="268435987" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="11" lineNum="37" parent="globals/NoTrackRunApp" pc="268436025" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/QuitConfirmationDelegate.mc" id="12" lineNum="5" parent="globals/QuitConfirmationDelegate" pc="268436060" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="13" lineNum="22" parent="globals/RunManager" pc="268436079" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="13" lineNum="23" parent="globals/RunManager" pc="268436093" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="14" lineNum="229" parent="globals" pc="268436108" symbol="getApp"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="14" lineNum="230" parent="globals" pc="268436118" symbol="getApp"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="15" lineNum="5" parent="globals/NoTrackRunDelegate" pc="268436134" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="16" lineNum="234" parent="globals/TransmitCallback" pc="268436153" symbol="&lt;init&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="17" lineNum="360" parent="globals/NoTrackRunView" pc="268436172" symbol="formatPace"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="17" lineNum="361" parent="globals/NoTrackRunView" pc="268436176" symbol="formatPace"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="17" lineNum="361" parent="globals/NoTrackRunView" pc="268436187" symbol="formatPace"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="17" lineNum="362" parent="globals/NoTrackRunView" pc="268436193" symbol="formatPace"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="17" lineNum="363" parent="globals/NoTrackRunView" pc="268436203" symbol="formatPace"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="17" lineNum="364" parent="globals/NoTrackRunView" pc="268436231" symbol="formatPace"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="17" lineNum="365" parent="globals/NoTrackRunView" pc="268436241" symbol="formatPace"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="17" lineNum="366" parent="globals/NoTrackRunView" pc="268436251" symbol="formatPace"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="18" lineNum="377" parent="globals/NoTrackRunView" pc="268436294" symbol="formatDistance"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="18" lineNum="378" parent="globals/NoTrackRunView" pc="268436296" symbol="formatDistance"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="18" lineNum="379" parent="globals/NoTrackRunView" pc="268436307" symbol="formatDistance"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="18" lineNum="381" parent="globals/NoTrackRunView" pc="268436336" symbol="formatDistance"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="82" parent="globals/NoTrackRunView" pc="268436359" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="84" parent="globals/NoTrackRunView" pc="268436363" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="85" parent="globals/NoTrackRunView" pc="268436382" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="86" parent="globals/NoTrackRunView" pc="268436395" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="88" parent="globals/NoTrackRunView" pc="268436414" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="89" parent="globals/NoTrackRunView" pc="268436440" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="90" parent="globals/NoTrackRunView" pc="268436463" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="94" parent="globals/NoTrackRunView" pc="268436508" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="95" parent="globals/NoTrackRunView" pc="268436530" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="96" parent="globals/NoTrackRunView" pc="268436564" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="99" parent="globals/NoTrackRunView" pc="268436591" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="100" parent="globals/NoTrackRunView" pc="268436613" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="101" parent="globals/NoTrackRunView" pc="268436632" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="102" parent="globals/NoTrackRunView" pc="268436660" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="104" parent="globals/NoTrackRunView" pc="268436687" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="105" parent="globals/NoTrackRunView" pc="268436706" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="107" parent="globals/NoTrackRunView" pc="268436725" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="108" parent="globals/NoTrackRunView" pc="268436747" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="110" parent="globals/NoTrackRunView" pc="268436790" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="19" lineNum="112" parent="globals/NoTrackRunView" pc="268436817" symbol="drawSummary"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="20" lineNum="120" parent="globals/NoTrackRunView" pc="268436861" symbol="drawMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="20" lineNum="121" parent="globals/NoTrackRunView" pc="268436865" symbol="drawMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="20" lineNum="122" parent="globals/NoTrackRunView" pc="268436884" symbol="drawMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="20" lineNum="123" parent="globals/NoTrackRunView" pc="268436903" symbol="drawMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="20" lineNum="125" parent="globals/NoTrackRunView" pc="268436933" symbol="drawMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="20" lineNum="126" parent="globals/NoTrackRunView" pc="268436955" symbol="drawMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="264" parent="globals/NoTrackRunView" pc="268436987" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="265" parent="globals/NoTrackRunView" pc="268436991" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="266" parent="globals/NoTrackRunView" pc="268437010" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="267" parent="globals/NoTrackRunView" pc="268437023" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="269" parent="globals/NoTrackRunView" pc="268437042" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="270" parent="globals/NoTrackRunView" pc="268437064" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="271" parent="globals/NoTrackRunView" pc="268437095" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="274" parent="globals/NoTrackRunView" pc="268437122" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="275" parent="globals/NoTrackRunView" pc="268437129" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="276" parent="globals/NoTrackRunView" pc="268437136" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="277" parent="globals/NoTrackRunView" pc="268437152" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="278" parent="globals/NoTrackRunView" pc="268437176" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="279" parent="globals/NoTrackRunView" pc="268437183" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="280" parent="globals/NoTrackRunView" pc="268437196" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="283" parent="globals/NoTrackRunView" pc="268437222" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="284" parent="globals/NoTrackRunView" pc="268437244" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="286" parent="globals/NoTrackRunView" pc="268437283" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="288" parent="globals/NoTrackRunView" pc="268437310" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="290" parent="globals/NoTrackRunView" pc="268437349" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="292" parent="globals/NoTrackRunView" pc="268437376" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="21" lineNum="293" parent="globals/NoTrackRunView" pc="268437398" symbol="drawFinished"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="342" parent="globals/NoTrackRunView" pc="268437430" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="343" parent="globals/NoTrackRunView" pc="268437434" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="344" parent="globals/NoTrackRunView" pc="268437451" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="345" parent="globals/NoTrackRunView" pc="268437468" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="346" parent="globals/NoTrackRunView" pc="268437487" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="347" parent="globals/NoTrackRunView" pc="268437506" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="348" parent="globals/NoTrackRunView" pc="268437522" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="348" parent="globals/NoTrackRunView" pc="268437530" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="349" parent="globals/NoTrackRunView" pc="268437536" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="350" parent="globals/NoTrackRunView" pc="268437573" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="23" lineNum="352" parent="globals/NoTrackRunView" pc="268437591" symbol="getUsableWidth"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="24" lineNum="369" parent="globals/NoTrackRunView" pc="268437603" symbol="formatTime"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="24" lineNum="370" parent="globals/NoTrackRunView" pc="268437607" symbol="formatTime"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="24" lineNum="370" parent="globals/NoTrackRunView" pc="268437618" symbol="formatTime"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="24" lineNum="371" parent="globals/NoTrackRunView" pc="268437624" symbol="formatTime"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="24" lineNum="372" parent="globals/NoTrackRunView" pc="268437643" symbol="formatTime"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="24" lineNum="373" parent="globals/NoTrackRunView" pc="268437665" symbol="formatTime"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="24" lineNum="374" parent="globals/NoTrackRunView" pc="268437709" symbol="formatTime"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="25" lineNum="68" parent="globals/NoTrackRunView" pc="268437730" symbol="drawIdle"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="25" lineNum="69" parent="globals/NoTrackRunView" pc="268437734" symbol="drawIdle"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="25" lineNum="70" parent="globals/NoTrackRunView" pc="268437753" symbol="drawIdle"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="25" lineNum="71" parent="globals/NoTrackRunView" pc="268437772" symbol="drawIdle"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="25" lineNum="73" parent="globals/NoTrackRunView" pc="268437802" symbol="drawIdle"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="25" lineNum="74" parent="globals/NoTrackRunView" pc="268437824" symbol="drawIdle"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="26" lineNum="168" parent="globals/NoTrackRunView" pc="268437859" symbol="drawCountdown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="26" lineNum="169" parent="globals/NoTrackRunView" pc="268437863" symbol="drawCountdown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="26" lineNum="170" parent="globals/NoTrackRunView" pc="268437882" symbol="drawCountdown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="26" lineNum="171" parent="globals/NoTrackRunView" pc="268437895" symbol="drawCountdown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="26" lineNum="173" parent="globals/NoTrackRunView" pc="268437914" symbol="drawCountdown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="26" lineNum="174" parent="globals/NoTrackRunView" pc="268437936" symbol="drawCountdown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="26" lineNum="175" parent="globals/NoTrackRunView" pc="268437959" symbol="drawCountdown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="26" lineNum="177" parent="globals/NoTrackRunView" pc="268437997" symbol="drawCountdown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="186" parent="globals/NoTrackRunView" pc="268438047" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="187" parent="globals/NoTrackRunView" pc="268438051" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="188" parent="globals/NoTrackRunView" pc="268438070" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="189" parent="globals/NoTrackRunView" pc="268438083" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="190" parent="globals/NoTrackRunView" pc="268438096" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="192" parent="globals/NoTrackRunView" pc="268438115" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="204" parent="globals/NoTrackRunView" pc="268438134" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="205" parent="globals/NoTrackRunView" pc="268438198" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="206" parent="globals/NoTrackRunView" pc="268438220" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="207" parent="globals/NoTrackRunView" pc="268438248" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="210" parent="globals/NoTrackRunView" pc="268438275" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="211" parent="globals/NoTrackRunView" pc="268438294" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="212" parent="globals/NoTrackRunView" pc="268438304" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="213" parent="globals/NoTrackRunView" pc="268438323" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="214" parent="globals/NoTrackRunView" pc="268438342" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="215" parent="globals/NoTrackRunView" pc="268438355" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="216" parent="globals/NoTrackRunView" pc="268438368" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="218" parent="globals/NoTrackRunView" pc="268438381" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="219" parent="globals/NoTrackRunView" pc="268438396" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="220" parent="globals/NoTrackRunView" pc="268438416" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="221" parent="globals/NoTrackRunView" pc="268438441" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="222" parent="globals/NoTrackRunView" pc="268438461" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="223" parent="globals/NoTrackRunView" pc="268438490" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="225" parent="globals/NoTrackRunView" pc="268438515" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="228" parent="globals/NoTrackRunView" pc="268438540" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="230" parent="globals/NoTrackRunView" pc="268438562" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="231" parent="globals/NoTrackRunView" pc="268438604" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="233" parent="globals/NoTrackRunView" pc="268438624" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="236" parent="globals/NoTrackRunView" pc="268438643" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="237" parent="globals/NoTrackRunView" pc="268438665" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="239" parent="globals/NoTrackRunView" pc="268438684" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="240" parent="globals/NoTrackRunView" pc="268438710" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="243" parent="globals/NoTrackRunView" pc="268438758" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="246" parent="globals/NoTrackRunView" pc="268438797" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="249" parent="globals/NoTrackRunView" pc="268438824" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="250" parent="globals/NoTrackRunView" pc="268438846" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="252" parent="globals/NoTrackRunView" pc="268438897" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="255" parent="globals/NoTrackRunView" pc="268438924" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="27" lineNum="256" parent="globals/NoTrackRunView" pc="268438946" symbol="drawRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="139" parent="globals/NoTrackRunView" pc="268438981" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="140" parent="globals/NoTrackRunView" pc="268438985" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="141" parent="globals/NoTrackRunView" pc="268439004" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="142" parent="globals/NoTrackRunView" pc="268439023" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="144" parent="globals/NoTrackRunView" pc="268439053" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="145" parent="globals/NoTrackRunView" pc="268439075" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="152" parent="globals/NoTrackRunView" pc="268439109" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="153" parent="globals/NoTrackRunView" pc="268439131" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="154" parent="globals/NoTrackRunView" pc="268439154" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="28" lineNum="155" parent="globals/NoTrackRunView" pc="268439184" symbol="drawError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="29" lineNum="19" parent="globals/NoTrackRunView" pc="268439216" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="29" lineNum="20" parent="globals/NoTrackRunView" pc="268439218" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="323" parent="globals/NoTrackRunView" pc="268439237" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="324" parent="globals/NoTrackRunView" pc="268439241" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="325" parent="globals/NoTrackRunView" pc="268439262" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="328" parent="globals/NoTrackRunView" pc="268439265" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="329" parent="globals/NoTrackRunView" pc="268439272" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="331" parent="globals/NoTrackRunView" pc="268439276" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="332" parent="globals/NoTrackRunView" pc="268439296" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="333" parent="globals/NoTrackRunView" pc="268439331" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="334" parent="globals/NoTrackRunView" pc="268439338" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="335" parent="globals/NoTrackRunView" pc="268439359" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="30" lineNum="339" parent="globals/NoTrackRunView" pc="268439362" symbol="truncateText"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="26" parent="globals/NoTrackRunView" pc="268439365" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="27" parent="globals/NoTrackRunView" pc="268439369" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="28" parent="globals/NoTrackRunView" pc="268439391" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="29" parent="globals/NoTrackRunView" pc="268439403" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="30" parent="globals/NoTrackRunView" pc="268439416" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="31" parent="globals/NoTrackRunView" pc="268439432" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="32" parent="globals/NoTrackRunView" pc="268439434" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="35" parent="globals/NoTrackRunView" pc="268439454" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="38" parent="globals/NoTrackRunView" pc="268439474" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="41" parent="globals/NoTrackRunView" pc="268439494" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="44" parent="globals/NoTrackRunView" pc="268439514" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="47" parent="globals/NoTrackRunView" pc="268439534" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="49" parent="globals/NoTrackRunView" pc="268439554" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="52" parent="globals/NoTrackRunView" pc="268439574" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="55" parent="globals/NoTrackRunView" pc="268439594" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="58" parent="globals/NoTrackRunView" pc="268439614" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="33" parent="globals/NoTrackRunView" pc="268439637" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="34" parent="globals/NoTrackRunView" pc="268439653" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="36" parent="globals/NoTrackRunView" pc="268439656" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="37" parent="globals/NoTrackRunView" pc="268439672" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="39" parent="globals/NoTrackRunView" pc="268439675" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="40" parent="globals/NoTrackRunView" pc="268439691" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="42" parent="globals/NoTrackRunView" pc="268439694" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="43" parent="globals/NoTrackRunView" pc="268439710" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="45" parent="globals/NoTrackRunView" pc="268439713" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="46" parent="globals/NoTrackRunView" pc="268439729" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="50" parent="globals/NoTrackRunView" pc="268439732" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="51" parent="globals/NoTrackRunView" pc="268439748" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="53" parent="globals/NoTrackRunView" pc="268439751" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="54" parent="globals/NoTrackRunView" pc="268439772" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="56" parent="globals/NoTrackRunView" pc="268439775" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="57" parent="globals/NoTrackRunView" pc="268439796" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="59" parent="globals/NoTrackRunView" pc="268439799" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="31" lineNum="60" parent="globals/NoTrackRunView" pc="268439815" symbol="onUpdate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="32" lineNum="300" parent="globals/NoTrackRunView" pc="268439820" symbol="drawSynced"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="32" lineNum="301" parent="globals/NoTrackRunView" pc="268439824" symbol="drawSynced"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="32" lineNum="302" parent="globals/NoTrackRunView" pc="268439843" symbol="drawSynced"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="32" lineNum="303" parent="globals/NoTrackRunView" pc="268439862" symbol="drawSynced"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="32" lineNum="305" parent="globals/NoTrackRunView" pc="268439892" symbol="drawSynced"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="32" lineNum="306" parent="globals/NoTrackRunView" pc="268439914" symbol="drawSynced"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="32" lineNum="313" parent="globals/NoTrackRunView" pc="268439948" symbol="drawSynced"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunView.mc" id="32" lineNum="314" parent="globals/NoTrackRunView" pc="268439970" symbol="drawSynced"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="118" parent="globals/StateManager" pc="268440005" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="119" parent="globals/StateManager" pc="268440009" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="120" parent="globals/StateManager" pc="268440022" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="121" parent="globals/StateManager" pc="268440024" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="124" parent="globals/StateManager" pc="268440044" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="127" parent="globals/StateManager" pc="268440064" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="130" parent="globals/StateManager" pc="268440084" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="133" parent="globals/StateManager" pc="268440104" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="140" parent="globals/StateManager" pc="268440124" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="141" parent="globals/StateManager" pc="268440144" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="142" parent="globals/StateManager" pc="268440164" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="143" parent="globals/StateManager" pc="268440184" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="144" parent="globals/StateManager" pc="268440204" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="145" parent="globals/StateManager" pc="268440224" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="122" parent="globals/StateManager" pc="268440247" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="123" parent="globals/StateManager" pc="268440265" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="125" parent="globals/StateManager" pc="268440268" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="126" parent="globals/StateManager" pc="268440280" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="128" parent="globals/StateManager" pc="268440283" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="129" parent="globals/StateManager" pc="268440295" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="131" parent="globals/StateManager" pc="268440298" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="132" parent="globals/StateManager" pc="268440310" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="134" parent="globals/StateManager" pc="268440313" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="135" parent="globals/StateManager" pc="268440335" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="137" parent="globals/StateManager" pc="268440347" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="138" parent="globals/StateManager" pc="268440367" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="33" lineNum="139" parent="globals/StateManager" pc="268440379" symbol="onEnter"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="91" parent="globals/StateManager" pc="268440384" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="92" parent="globals/StateManager" pc="268440388" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="93" parent="globals/StateManager" pc="268440401" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="94" parent="globals/StateManager" pc="268440403" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="97" parent="globals/StateManager" pc="268440423" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="100" parent="globals/StateManager" pc="268440443" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="103" parent="globals/StateManager" pc="268440463" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="106" parent="globals/StateManager" pc="268440483" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="107" parent="globals/StateManager" pc="268440503" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="108" parent="globals/StateManager" pc="268440523" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="109" parent="globals/StateManager" pc="268440543" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="110" parent="globals/StateManager" pc="268440563" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="111" parent="globals/StateManager" pc="268440583" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="95" parent="globals/StateManager" pc="268440606" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="95" parent="globals/StateManager" pc="268440626" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="96" parent="globals/StateManager" pc="268440643" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="98" parent="globals/StateManager" pc="268440646" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="99" parent="globals/StateManager" pc="268440664" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="101" parent="globals/StateManager" pc="268440667" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="101" parent="globals/StateManager" pc="268440681" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="102" parent="globals/StateManager" pc="268440698" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="104" parent="globals/StateManager" pc="268440701" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="104" parent="globals/StateManager" pc="268440715" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="34" lineNum="105" parent="globals/StateManager" pc="268440732" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="58" parent="globals/StateManager" pc="268440737" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="59" parent="globals/StateManager" pc="268440741" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="60" parent="globals/StateManager" pc="268440754" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="60" parent="globals/StateManager" pc="268440765" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="61" parent="globals/StateManager" pc="268440766" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="61" parent="globals/StateManager" pc="268440777" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="61" parent="globals/StateManager" pc="268440794" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="62" parent="globals/StateManager" pc="268440795" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="62" parent="globals/StateManager" pc="268440806" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="62" parent="globals/StateManager" pc="268440823" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="63" parent="globals/StateManager" pc="268440824" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="64" parent="globals/StateManager" pc="268440826" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="68" parent="globals/StateManager" pc="268440846" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="71" parent="globals/StateManager" pc="268440866" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="75" parent="globals/StateManager" pc="268440886" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="78" parent="globals/StateManager" pc="268440906" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="82" parent="globals/StateManager" pc="268440926" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="83" parent="globals/StateManager" pc="268440946" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="84" parent="globals/StateManager" pc="268440966" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="85" parent="globals/StateManager" pc="268440986" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="86" parent="globals/StateManager" pc="268441006" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="65" parent="globals/StateManager" pc="268441029" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="65" parent="globals/StateManager" pc="268441040" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="66" parent="globals/StateManager" pc="268441057" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="66" parent="globals/StateManager" pc="268441068" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="67" parent="globals/StateManager" pc="268441085" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="69" parent="globals/StateManager" pc="268441088" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="69" parent="globals/StateManager" pc="268441099" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="70" parent="globals/StateManager" pc="268441116" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="72" parent="globals/StateManager" pc="268441119" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="72" parent="globals/StateManager" pc="268441130" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="73" parent="globals/StateManager" pc="268441151" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="73" parent="globals/StateManager" pc="268441162" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="74" parent="globals/StateManager" pc="268441179" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="76" parent="globals/StateManager" pc="268441182" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="76" parent="globals/StateManager" pc="268441193" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="77" parent="globals/StateManager" pc="268441210" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="79" parent="globals/StateManager" pc="268441213" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="79" parent="globals/StateManager" pc="268441224" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="80" parent="globals/StateManager" pc="268441244" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="80" parent="globals/StateManager" pc="268441255" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="36" lineNum="81" parent="globals/StateManager" pc="268441272" symbol="onEvent"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="37" lineNum="48" parent="globals/StateManager" pc="268441277" symbol="handle"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="37" lineNum="49" parent="globals/StateManager" pc="268441279" symbol="handle"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="38" lineNum="52" parent="globals/StateManager" pc="268441302" symbol="tick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="38" lineNum="53" parent="globals/StateManager" pc="268441304" symbol="tick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="38" lineNum="54" parent="globals/StateManager" pc="268441324" symbol="tick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="40" lineNum="40" parent="globals/StateManager" pc="268441341" symbol="transition"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="40" lineNum="41" parent="globals/StateManager" pc="268441345" symbol="transition"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="40" lineNum="42" parent="globals/StateManager" pc="268441355" symbol="transition"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="40" lineNum="43" parent="globals/StateManager" pc="268441369" symbol="transition"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="40" lineNum="44" parent="globals/StateManager" pc="268441379" symbol="transition"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/StateManager.mc" id="40" lineNum="45" parent="globals/StateManager" pc="268441395" symbol="transition"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="41" lineNum="213" parent="globals/NoTrackRunApp" pc="268441412" symbol="vibe"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="41" lineNum="214" parent="globals/NoTrackRunApp" pc="268441414" symbol="vibe"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="41" lineNum="214" parent="globals/NoTrackRunApp" pc="268441429" symbol="vibe"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="42" lineNum="126" parent="globals/NoTrackRunApp" pc="268441448" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="42" lineNum="126" parent="globals/NoTrackRunApp" pc="268441450" symbol="onTick"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="44" lineNum="170" parent="globals/NoTrackRunApp" pc="268441469" symbol="canReceiveMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="44" lineNum="171" parent="globals/NoTrackRunApp" pc="268441471" symbol="canReceiveMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="44" lineNum="172" parent="globals/NoTrackRunApp" pc="268441485" symbol="canReceiveMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="44" lineNum="173" parent="globals/NoTrackRunApp" pc="268441505" symbol="canReceiveMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="44" lineNum="175" parent="globals/NoTrackRunApp" pc="268441525" symbol="canReceiveMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="44" lineNum="174" parent="globals/NoTrackRunApp" pc="268441528" symbol="canReceiveMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="44" lineNum="176" parent="globals/NoTrackRunApp" pc="268441531" symbol="canReceiveMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="45" lineNum="223" parent="globals/NoTrackRunApp" pc="268441536" symbol="getInitialView"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="45" lineNum="224" parent="globals/NoTrackRunApp" pc="268441538" symbol="getInitialView"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="46" lineNum="217" parent="globals/NoTrackRunApp" pc="268441605" symbol="onBlockChanged"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="46" lineNum="217" parent="globals/NoTrackRunApp" pc="268441607" symbol="onBlockChanged"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="46" parent="globals/NoTrackRunApp" pc="268441628" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="47" parent="globals/NoTrackRunApp" pc="268441630" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="48" parent="globals/NoTrackRunApp" pc="268441662" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="49" parent="globals/NoTrackRunApp" pc="268441703" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="50" parent="globals/NoTrackRunApp" pc="268441733" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="51" parent="globals/NoTrackRunApp" pc="268441763" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="52" parent="globals/NoTrackRunApp" pc="268441793" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="52" parent="globals/NoTrackRunApp" pc="268441809" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="47" lineNum="53" parent="globals/NoTrackRunApp" pc="268441832" symbol="onStart"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="48" lineNum="121" parent="globals/NoTrackRunApp" pc="268441897" symbol="startSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="48" lineNum="122" parent="globals/NoTrackRunApp" pc="268441899" symbol="startSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="48" lineNum="123" parent="globals/NoTrackRunApp" pc="268441912" symbol="startSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="128" parent="globals/NoTrackRunApp" pc="268441931" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="130" parent="globals/NoTrackRunApp" pc="268441935" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="132" parent="globals/NoTrackRunApp" pc="268441952" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="136" parent="globals/NoTrackRunApp" pc="268441982" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="137" parent="globals/NoTrackRunApp" pc="268441995" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="140" parent="globals/NoTrackRunApp" pc="268441998" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="141" parent="globals/NoTrackRunApp" pc="268442015" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="143" parent="globals/NoTrackRunApp" pc="268442037" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="49" lineNum="146" parent="globals/NoTrackRunApp" pc="268442050" symbol="isGpsReady"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="50" lineNum="62" parent="globals/NoTrackRunApp" pc="268442065" symbol="onStop"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="50" lineNum="63" parent="globals/NoTrackRunApp" pc="268442067" symbol="onStop"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="50" lineNum="64" parent="globals/NoTrackRunApp" pc="268442085" symbol="onStop"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="85" parent="globals/NoTrackRunApp" pc="268442108" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="86" parent="globals/NoTrackRunApp" pc="268442112" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="87" parent="globals/NoTrackRunApp" pc="268442122" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="88" parent="globals/NoTrackRunApp" pc="268442143" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="89" parent="globals/NoTrackRunApp" pc="268442156" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="92" parent="globals/NoTrackRunApp" pc="268442162" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="93" parent="globals/NoTrackRunApp" pc="268442187" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="96" parent="globals/NoTrackRunApp" pc="268442193" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="51" lineNum="97" parent="globals/NoTrackRunApp" pc="268442206" symbol="handleAckResults"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="52" lineNum="193" parent="globals/NoTrackRunApp" pc="268442212" symbol="sendAck"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="52" lineNum="195" parent="globals/NoTrackRunApp" pc="268442216" symbol="sendAck"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="52" lineNum="196" parent="globals/NoTrackRunApp" pc="268442250" symbol="sendAck"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="52" lineNum="196" parent="globals/NoTrackRunApp" pc="268442257" symbol="sendAck"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="52" lineNum="198" parent="globals/NoTrackRunApp" pc="268442267" symbol="sendAck"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="68" parent="globals/NoTrackRunApp" pc="268442335" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="69" parent="globals/NoTrackRunApp" pc="268442339" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="70" parent="globals/NoTrackRunApp" pc="268442381" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="72" parent="globals/NoTrackRunApp" pc="268442382" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="73" parent="globals/NoTrackRunApp" pc="268442392" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="75" parent="globals/NoTrackRunApp" pc="268442402" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="76" parent="globals/NoTrackRunApp" pc="268442421" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="77" parent="globals/NoTrackRunApp" pc="268442453" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="78" parent="globals/NoTrackRunApp" pc="268442472" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="80" parent="globals/NoTrackRunApp" pc="268442504" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="53" lineNum="81" parent="globals/NoTrackRunApp" pc="268442514" symbol="onPhoneMessage"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="54" lineNum="221" parent="globals/NoTrackRunApp" pc="268442538" symbol="onSessionEnded"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="54" lineNum="221" parent="globals/NoTrackRunApp" pc="268442540" symbol="onSessionEnded"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="55" lineNum="149" parent="globals/NoTrackRunApp" pc="268442561" symbol="isTimeoutSending"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="55" lineNum="150" parent="globals/NoTrackRunApp" pc="268442563" symbol="isTimeoutSending"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="55" lineNum="151" parent="globals/NoTrackRunApp" pc="268442580" symbol="isTimeoutSending"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="55" lineNum="152" parent="globals/NoTrackRunApp" pc="268442593" symbol="isTimeoutSending"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="55" lineNum="154" parent="globals/NoTrackRunApp" pc="268442596" symbol="isTimeoutSending"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="55" lineNum="155" parent="globals/NoTrackRunApp" pc="268442615" symbol="isTimeoutSending"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="56" lineNum="209" parent="globals/NoTrackRunApp" pc="268442618" symbol="deleteSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="56" lineNum="210" parent="globals/NoTrackRunApp" pc="268442620" symbol="deleteSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="57" lineNum="219" parent="globals/NoTrackRunApp" pc="268442642" symbol="onFieldChanged"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="57" lineNum="219" parent="globals/NoTrackRunApp" pc="268442644" symbol="onFieldChanged"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="58" lineNum="44" parent="globals/NoTrackRunApp" pc="268442665" symbol="exit"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="58" lineNum="44" parent="globals/NoTrackRunApp" pc="268442667" symbol="exit"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="100" parent="globals/NoTrackRunApp" pc="268442684" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="101" parent="globals/NoTrackRunApp" pc="268442688" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="102" parent="globals/NoTrackRunApp" pc="268442724" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="103" parent="globals/NoTrackRunApp" pc="268442748" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="106" parent="globals/NoTrackRunApp" pc="268442754" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="107" parent="globals/NoTrackRunApp" pc="268442764" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="108" parent="globals/NoTrackRunApp" pc="268442785" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="109" parent="globals/NoTrackRunApp" pc="268442798" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="112" parent="globals/NoTrackRunApp" pc="268442804" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="113" parent="globals/NoTrackRunApp" pc="268442824" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="59" lineNum="114" parent="globals/NoTrackRunApp" pc="268442844" symbol="handleSendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="60" lineNum="180" parent="globals/NoTrackRunApp" pc="268442850" symbol="sendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="60" lineNum="181" parent="globals/NoTrackRunApp" pc="268442852" symbol="sendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="60" lineNum="183" parent="globals/NoTrackRunApp" pc="268442865" symbol="sendSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="158" parent="globals/NoTrackRunApp" pc="268442945" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="159" parent="globals/NoTrackRunApp" pc="268442947" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="160" parent="globals/NoTrackRunApp" pc="268442961" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="161" parent="globals/NoTrackRunApp" pc="268442981" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="162" parent="globals/NoTrackRunApp" pc="268443001" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="163" parent="globals/NoTrackRunApp" pc="268443021" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="165" parent="globals/NoTrackRunApp" pc="268443041" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="164" parent="globals/NoTrackRunApp" pc="268443044" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="61" lineNum="166" parent="globals/NoTrackRunApp" pc="268443047" symbol="needQuitConfirm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="62" lineNum="42" parent="globals/NoTrackRunApp" pc="268443052" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="62" lineNum="42" parent="globals/NoTrackRunApp" pc="268443054" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="63" lineNum="205" parent="globals/NoTrackRunApp" pc="268443073" symbol="getSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="63" lineNum="206" parent="globals/NoTrackRunApp" pc="268443075" symbol="getSession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/QuitConfirmationDelegate.mc" id="64" lineNum="15" parent="globals/QuitConfirmationDelegate" pc="268443096" symbol="onResponse"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/QuitConfirmationDelegate.mc" id="64" lineNum="18" parent="globals/QuitConfirmationDelegate" pc="268443098" symbol="onResponse"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/QuitConfirmationDelegate.mc" id="64" lineNum="19" parent="globals/QuitConfirmationDelegate" pc="268443109" symbol="onResponse"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/QuitConfirmationDelegate.mc" id="64" lineNum="22" parent="globals/QuitConfirmationDelegate" pc="268443132" symbol="onResponse"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/QuitConfirmationDelegate.mc" id="65" lineNum="10" parent="globals/QuitConfirmationDelegate" pc="268443135" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/QuitConfirmationDelegate.mc" id="65" lineNum="11" parent="globals/QuitConfirmationDelegate" pc="268443137" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/QuitConfirmationDelegate.mc" id="65" lineNum="12" parent="globals/QuitConfirmationDelegate" pc="268443155" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="66" lineNum="136" parent="globals/RunManager" pc="268443166" symbol="getSessionLabel"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="66" lineNum="137" parent="globals/RunManager" pc="268443168" symbol="getSessionLabel"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="67" lineNum="221" parent="globals/RunManager" pc="268443183" symbol="getAveragePaceFormatted"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="67" lineNum="222" parent="globals/RunManager" pc="268443187" symbol="getAveragePaceFormatted"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="67" lineNum="223" parent="globals/RunManager" pc="268443200" symbol="getAveragePaceFormatted"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="67" lineNum="223" parent="globals/RunManager" pc="268443211" symbol="getAveragePaceFormatted"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="67" lineNum="224" parent="globals/RunManager" pc="268443217" symbol="getAveragePaceFormatted"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="67" lineNum="225" parent="globals/RunManager" pc="268443227" symbol="getAveragePaceFormatted"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="67" lineNum="226" parent="globals/RunManager" pc="268443237" symbol="getAveragePaceFormatted"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="68" lineNum="108" parent="globals/RunManager" pc="268443272" symbol="resetCountDown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="68" lineNum="109" parent="globals/RunManager" pc="268443274" symbol="resetCountDown"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="69" lineNum="148" parent="globals/RunManager" pc="268443288" symbol="getFieldsCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="69" lineNum="149" parent="globals/RunManager" pc="268443292" symbol="getFieldsCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="69" lineNum="150" parent="globals/RunManager" pc="268443299" symbol="getFieldsCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="69" lineNum="151" parent="globals/RunManager" pc="268443312" symbol="getFieldsCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="69" lineNum="152" parent="globals/RunManager" pc="268443325" symbol="getFieldsCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="69" lineNum="153" parent="globals/RunManager" pc="268443340" symbol="getFieldsCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="69" lineNum="154" parent="globals/RunManager" pc="268443353" symbol="getFieldsCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="69" lineNum="156" parent="globals/RunManager" pc="268443382" symbol="getFieldsCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="176" parent="globals/RunManager" pc="268443385" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="177" parent="globals/RunManager" pc="268443389" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="180" parent="globals/RunManager" pc="268443401" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="181" parent="globals/RunManager" pc="268443418" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="185" parent="globals/RunManager" pc="268443465" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="186" parent="globals/RunManager" pc="268443478" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="188" parent="globals/RunManager" pc="268443491" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="189" parent="globals/RunManager" pc="268443504" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="191" parent="globals/RunManager" pc="268443514" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="192" parent="globals/RunManager" pc="268443543" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="192" parent="globals/RunManager" pc="268443556" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="193" parent="globals/RunManager" pc="268443574" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="70" lineNum="195" parent="globals/RunManager" pc="268443594" symbol="advanceField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="71" lineNum="159" parent="globals/RunManager" pc="268443607" symbol="getBlocksCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="71" lineNum="160" parent="globals/RunManager" pc="268443609" symbol="getBlocksCount"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="72" lineNum="112" parent="globals/RunManager" pc="268443630" symbol="isCountDownOver"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="72" lineNum="113" parent="globals/RunManager" pc="268443632" symbol="isCountDownOver"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="72" lineNum="114" parent="globals/RunManager" pc="268443651" symbol="isCountDownOver"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="73" lineNum="144" parent="globals/RunManager" pc="268443666" symbol="getBlocks"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="73" lineNum="145" parent="globals/RunManager" pc="268443668" symbol="getBlocks"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="198" parent="globals/RunManager" pc="268443683" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="199" parent="globals/RunManager" pc="268443687" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="200" parent="globals/RunManager" pc="268443703" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="203" parent="globals/RunManager" pc="268443716" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="204" parent="globals/RunManager" pc="268443745" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="205" parent="globals/RunManager" pc="268443764" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="205" parent="globals/RunManager" pc="268443777" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="208" parent="globals/RunManager" pc="268443796" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="209" parent="globals/RunManager" pc="268443810" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="209" parent="globals/RunManager" pc="268443823" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="74" lineNum="210" parent="globals/RunManager" pc="268443841" symbol="advanceBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="75" lineNum="260" parent="globals/RunManager" pc="268443865" symbol="evaluateFieldSuccess"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="75" lineNum="261" parent="globals/RunManager" pc="268443867" symbol="evaluateFieldSuccess"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="75" lineNum="262" parent="globals/RunManager" pc="268443888" symbol="evaluateFieldSuccess"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="75" lineNum="264" parent="globals/RunManager" pc="268443891" symbol="evaluateFieldSuccess"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="77" parent="globals/RunManager" pc="268443909" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="78" parent="globals/RunManager" pc="268443913" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="80" parent="globals/RunManager" pc="268443930" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="81" parent="globals/RunManager" pc="268443948" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="84" parent="globals/RunManager" pc="268443949" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="88" parent="globals/RunManager" pc="268443986" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="92" parent="globals/RunManager" pc="268444026" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="94" parent="globals/RunManager" pc="268444042" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="99" parent="globals/RunManager" pc="268444088" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="101" parent="globals/RunManager" pc="268444113" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="101" parent="globals/RunManager" pc="268444130" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="103" parent="globals/RunManager" pc="268444143" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="105" parent="globals/RunManager" pc="268444162" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="76" lineNum="105" parent="globals/RunManager" pc="268444182" symbol="running"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="38" parent="globals/RunManager" pc="268444195" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="39" parent="globals/RunManager" pc="268444197" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="40" parent="globals/RunManager" pc="268444210" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="41" parent="globals/RunManager" pc="268444223" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="42" parent="globals/RunManager" pc="268444236" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="43" parent="globals/RunManager" pc="268444249" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="44" parent="globals/RunManager" pc="268444262" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="45" parent="globals/RunManager" pc="268444276" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="46" parent="globals/RunManager" pc="268444289" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="47" parent="globals/RunManager" pc="268444302" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="48" parent="globals/RunManager" pc="268444315" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="49" parent="globals/RunManager" pc="268444328" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="50" parent="globals/RunManager" pc="268444341" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="77" lineNum="51" parent="globals/RunManager" pc="268444373" symbol="initRunning"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="78" lineNum="230" parent="globals/RunManager" pc="268444386" symbol="saveSessionLocally"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="78" lineNum="231" parent="globals/RunManager" pc="268444390" symbol="saveSessionLocally"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="78" lineNum="231" parent="globals/RunManager" pc="268444416" symbol="saveSessionLocally"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="78" lineNum="232" parent="globals/RunManager" pc="268444417" symbol="saveSessionLocally"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="78" lineNum="233" parent="globals/RunManager" pc="268444425" symbol="saveSessionLocally"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="79" lineNum="140" parent="globals/RunManager" pc="268444570" symbol="getSessionDate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="79" lineNum="141" parent="globals/RunManager" pc="268444572" symbol="getSessionDate"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="80" lineNum="56" parent="globals/RunManager" pc="268444587" symbol="startActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="80" lineNum="57" parent="globals/RunManager" pc="268444589" symbol="startActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="80" lineNum="58" parent="globals/RunManager" pc="268444622" symbol="startActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="80" lineNum="60" parent="globals/RunManager" pc="268444623" symbol="startActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="80" lineNum="65" parent="globals/RunManager" pc="268444691" symbol="startActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="81" lineNum="36" parent="globals/RunManager" pc="268444710" symbol="init"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="81" lineNum="36" parent="globals/RunManager" pc="268444712" symbol="init"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="277" parent="globals/RunManager" pc="268444723" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="278" parent="globals/RunManager" pc="268444727" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="279" parent="globals/RunManager" pc="268444737" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="281" parent="globals/RunManager" pc="268444747" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="282" parent="globals/RunManager" pc="268444769" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="284" parent="globals/RunManager" pc="268444772" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="285" parent="globals/RunManager" pc="268444783" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="288" parent="globals/RunManager" pc="268444786" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="82" lineNum="289" parent="globals/RunManager" pc="268444802" symbol="paceIsValid"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="83" lineNum="244" parent="globals/RunManager" pc="268444819" symbol="saveFieldResult"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="83" lineNum="245" parent="globals/RunManager" pc="268444823" symbol="saveFieldResult"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="83" lineNum="246" parent="globals/RunManager" pc="268444836" symbol="saveFieldResult"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="83" lineNum="248" parent="globals/RunManager" pc="268444849" symbol="saveFieldResult"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="83" lineNum="250" parent="globals/RunManager" pc="268444880" symbol="saveFieldResult"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="83" lineNum="257" parent="globals/RunManager" pc="268444984" symbol="saveFieldResult"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="84" lineNum="126" parent="globals/RunManager" pc="268444997" symbol="getCurrentField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="84" lineNum="127" parent="globals/RunManager" pc="268445001" symbol="getCurrentField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="84" lineNum="128" parent="globals/RunManager" pc="268445014" symbol="getCurrentField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="84" lineNum="129" parent="globals/RunManager" pc="268445024" symbol="getCurrentField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="85" lineNum="121" parent="globals/RunManager" pc="268445036" symbol="getCurrentBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="85" lineNum="122" parent="globals/RunManager" pc="268445040" symbol="getCurrentBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="85" lineNum="123" parent="globals/RunManager" pc="268445056" symbol="getCurrentBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="86" lineNum="117" parent="globals/RunManager" pc="268445068" symbol="hasSessionData"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="86" lineNum="118" parent="globals/RunManager" pc="268445070" symbol="hasSessionData"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="68" parent="globals/RunManager" pc="268445110" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="69" parent="globals/RunManager" pc="268445112" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="69" parent="globals/RunManager" pc="268445124" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="70" parent="globals/RunManager" pc="268445125" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="70" parent="globals/RunManager" pc="268445145" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="71" parent="globals/RunManager" pc="268445163" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="71" parent="globals/RunManager" pc="268445168" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="72" parent="globals/RunManager" pc="268445189" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="73" parent="globals/RunManager" pc="268445207" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="87" lineNum="74" parent="globals/RunManager" pc="268445216" symbol="stopActivitySession"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="163" parent="globals/RunManager" pc="268445231" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="164" parent="globals/RunManager" pc="268445235" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="165" parent="globals/RunManager" pc="268445248" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="166" parent="globals/RunManager" pc="268445268" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="167" parent="globals/RunManager" pc="268445278" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="168" parent="globals/RunManager" pc="268445291" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="170" parent="globals/RunManager" pc="268445313" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="171" parent="globals/RunManager" pc="268445323" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="88" lineNum="172" parent="globals/RunManager" pc="268445336" symbol="fieldRemaining"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="89" lineNum="132" parent="globals/RunManager" pc="268445358" symbol="getGoal"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="89" lineNum="133" parent="globals/RunManager" pc="268445360" symbol="getGoal"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="90" lineNum="267" parent="globals/RunManager" pc="268445408" symbol="targetReached"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="90" lineNum="268" parent="globals/RunManager" pc="268445412" symbol="targetReached"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="90" lineNum="269" parent="globals/RunManager" pc="268445432" symbol="targetReached"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="90" lineNum="270" parent="globals/RunManager" pc="268445442" symbol="targetReached"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="90" lineNum="272" parent="globals/RunManager" pc="268445448" symbol="targetReached"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="90" lineNum="273" parent="globals/RunManager" pc="268445458" symbol="targetReached"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="91" lineNum="34" parent="globals/RunManager" pc="268445464" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="91" lineNum="34" parent="globals/RunManager" pc="268445466" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="92" lineNum="215" parent="globals/RunManager" pc="268445477" symbol="getAveragePaceSecPerKm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="92" lineNum="216" parent="globals/RunManager" pc="268445479" symbol="getAveragePaceSecPerKm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="92" lineNum="216" parent="globals/RunManager" pc="268445496" symbol="getAveragePaceSecPerKm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/RunManager.mc" id="92" lineNum="217" parent="globals/RunManager" pc="268445502" symbol="getAveragePaceSecPerKm"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="93" lineNum="54" parent="globals/NoTrackRunDelegate" pc="268445526" symbol="&lt;globals/NoTrackRunDelegate/&lt;&gt;showQuitConfirmation&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="93" lineNum="55" parent="globals/NoTrackRunDelegate" pc="268445530" symbol="&lt;globals/NoTrackRunDelegate/&lt;&gt;showQuitConfirmation&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="93" lineNum="59" parent="globals/NoTrackRunDelegate" pc="268445563" symbol="&lt;globals/NoTrackRunDelegate/&lt;&gt;showQuitConfirmation&gt;"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="94" lineNum="7" parent="globals/NoTrackRunDelegate" pc="268445626" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="94" lineNum="8" parent="globals/NoTrackRunDelegate" pc="268445628" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="11" parent="globals/NoTrackRunDelegate" pc="268445647" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="12" parent="globals/NoTrackRunDelegate" pc="268445651" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="13" parent="globals/NoTrackRunDelegate" pc="268445664" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="14" parent="globals/NoTrackRunDelegate" pc="268445677" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="15" parent="globals/NoTrackRunDelegate" pc="268445687" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="17" parent="globals/NoTrackRunDelegate" pc="268445697" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="18" parent="globals/NoTrackRunDelegate" pc="268445722" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="19" parent="globals/NoTrackRunDelegate" pc="268445734" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="22" parent="globals/NoTrackRunDelegate" pc="268445737" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="23" parent="globals/NoTrackRunDelegate" pc="268445739" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="29" parent="globals/NoTrackRunDelegate" pc="268445759" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="35" parent="globals/NoTrackRunDelegate" pc="268445779" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="41" parent="globals/NoTrackRunDelegate" pc="268445799" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="42" parent="globals/NoTrackRunDelegate" pc="268445819" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="43" parent="globals/NoTrackRunDelegate" pc="268445839" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="44" parent="globals/NoTrackRunDelegate" pc="268445859" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="45" parent="globals/NoTrackRunDelegate" pc="268445879" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="46" parent="globals/NoTrackRunDelegate" pc="268445899" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="47" parent="globals/NoTrackRunDelegate" pc="268445919" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="24" parent="globals/NoTrackRunDelegate" pc="268445942" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="25" parent="globals/NoTrackRunDelegate" pc="268445964" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="26" parent="globals/NoTrackRunDelegate" pc="268445981" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="30" parent="globals/NoTrackRunDelegate" pc="268445984" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="31" parent="globals/NoTrackRunDelegate" pc="268446006" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="32" parent="globals/NoTrackRunDelegate" pc="268446023" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="36" parent="globals/NoTrackRunDelegate" pc="268446026" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="37" parent="globals/NoTrackRunDelegate" pc="268446048" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="38" parent="globals/NoTrackRunDelegate" pc="268446065" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunDelegate.mc" id="95" lineNum="51" parent="globals/NoTrackRunDelegate" pc="268446069" symbol="onKey"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="96" lineNum="245" parent="globals/TransmitCallback" pc="268446072" symbol="onError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="96" lineNum="247" parent="globals/TransmitCallback" pc="268446074" symbol="onError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="96" lineNum="248" parent="globals/TransmitCallback" pc="268446103" symbol="onError"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="98" lineNum="238" parent="globals/TransmitCallback" pc="268446123" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="98" lineNum="239" parent="globals/TransmitCallback" pc="268446125" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/NoTrackRunApp.mc" id="98" lineNum="240" parent="globals/TransmitCallback" pc="268446143" symbol="initialize"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="17" parent="globals/Validator" pc="268446154" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="19" parent="globals/Validator" pc="268446166" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="19" parent="globals/Validator" pc="268446211" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="20" parent="globals/Validator" pc="268446214" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="20" parent="globals/Validator" pc="268446259" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="21" parent="globals/Validator" pc="268446262" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="21" parent="globals/Validator" pc="268446307" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="22" parent="globals/Validator" pc="268446310" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="22" parent="globals/Validator" pc="268446355" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="24" parent="globals/Validator" pc="268446358" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="25" parent="globals/Validator" pc="268446368" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="25" parent="globals/Validator" pc="268446388" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="27" parent="globals/Validator" pc="268446391" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="28" parent="globals/Validator" pc="268446415" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="28" parent="globals/Validator" pc="268446435" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="99" lineNum="30" parent="globals/Validator" pc="268446451" symbol="isValidSessionPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="34" parent="globals/Validator" pc="268446454" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="35" parent="globals/Validator" pc="268446466" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="35" parent="globals/Validator" pc="268446485" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="36" parent="globals/Validator" pc="268446488" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="37" parent="globals/Validator" pc="268446492" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="37" parent="globals/Validator" pc="268446537" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="38" parent="globals/Validator" pc="268446540" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="38" parent="globals/Validator" pc="268446585" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="39" parent="globals/Validator" pc="268446588" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="39" parent="globals/Validator" pc="268446633" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="40" parent="globals/Validator" pc="268446636" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="41" parent="globals/Validator" pc="268446646" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="41" parent="globals/Validator" pc="268446666" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="43" parent="globals/Validator" pc="268446669" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="44" parent="globals/Validator" pc="268446693" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="44" parent="globals/Validator" pc="268446713" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="100" lineNum="46" parent="globals/Validator" pc="268446729" symbol="isValidBlock"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="101" lineNum="69" parent="globals/Validator" pc="268446732" symbol="isNumeric"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="101" lineNum="70" parent="globals/Validator" pc="268446742" symbol="isNumeric"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="50" parent="globals/Validator" pc="268446779" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="51" parent="globals/Validator" pc="268446791" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="51" parent="globals/Validator" pc="268446810" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="52" parent="globals/Validator" pc="268446813" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="54" parent="globals/Validator" pc="268446817" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="54" parent="globals/Validator" pc="268446862" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="55" parent="globals/Validator" pc="268446865" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="55" parent="globals/Validator" pc="268446910" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="56" parent="globals/Validator" pc="268446913" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="56" parent="globals/Validator" pc="268446933" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="57" parent="globals/Validator" pc="268446936" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="57" parent="globals/Validator" pc="268446979" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="58" parent="globals/Validator" pc="268446982" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="58" parent="globals/Validator" pc="268447025" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="59" parent="globals/Validator" pc="268447028" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="59" parent="globals/Validator" pc="268447073" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="62" parent="globals/Validator" pc="268447076" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="63" parent="globals/Validator" pc="268447086" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="63" parent="globals/Validator" pc="268447128" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="102" lineNum="65" parent="globals/Validator" pc="268447131" symbol="isValidField"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="103" lineNum="12" parent="globals/Validator" pc="268447134" symbol="isValidAckPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="103" lineNum="13" parent="globals/Validator" pc="268447144" symbol="isValidAckPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="103" lineNum="13" parent="globals/Validator" pc="268447189" symbol="isValidAckPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="103" lineNum="14" parent="globals/Validator" pc="268447192" symbol="isValidAckPayload"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="104" lineNum="4" parent="globals/Validator" pc="268447195" symbol="isValidMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="104" lineNum="5" parent="globals/Validator" pc="268447205" symbol="isValidMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="104" lineNum="5" parent="globals/Validator" pc="268447224" symbol="isValidMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="104" lineNum="6" parent="globals/Validator" pc="268447227" symbol="isValidMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="104" lineNum="6" parent="globals/Validator" pc="268447272" symbol="isValidMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="104" lineNum="7" parent="globals/Validator" pc="268447275" symbol="isValidMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="104" lineNum="7" parent="globals/Validator" pc="268447320" symbol="isValidMsg"/>
+        <entry filename="/home/adrien/Bureau/garmin/no-track-run-watch/source/Validator.mc" id="104" lineNum="8" parent="globals/Validator" pc="268447323" symbol="isValidMsg"/>
+        <entry filename="/tmp/export7425859709641951249/gen/006-B3766-00/source/Rez.mcgen" id="105" lineNum="13" parent="globals/Rez/Layouts" pc="268447326" symbol="MainLayout"/>
+        <entry filename="/tmp/export7425859709641951249/gen/006-B3766-00/source/Rez.mcgen" id="105" lineNum="14" parent="globals/Rez/Layouts" pc="268447336" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="16" symbol="VIBE_SESSION_END"/>
+        <entry field="true" id="94" symbol="onSessionEnd"/>
+        <entry field="true" id="72" symbol="elevationGain"/>
+        <entry id="89" method="true" symbol="init"/>
+        <entry id="87" method="true" symbol="getSessionLabel"/>
+        <entry id="67" method="true" symbol="advanceBlock"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="19" symbol="cachedBlockIdx"/>
+        <entry id="8391715" symbol="acquisitionType"/>
+        <entry id="8388638" module="true" symbol="ActivityRecording"/>
+        <entry field="true" id="47" symbol="gpsGoodStreak"/>
+        <entry id="118" method="true" symbol="MainLayout"/>
+        <entry field="true" id="64" symbol="timer"/>
+        <entry id="113" method="true" symbol="isValidBlock"/>
+        <entry field="true" id="8388890" symbol="sport"/>
+        <entry id="111" method="true" symbol="isNumeric"/>
+        <entry id="39" method="true" symbol="onExit"/>
+        <entry id="95" method="true" symbol="paceIsValid"/>
+        <entry field="true" id="108" symbol="totalDuration"/>
+        <entry id="63" method="true" symbol="startSession"/>
+        <entry id="54" method="true" symbol="onFieldChanged"/>
+        <entry id="78" method="true" symbol="getAveragePaceFormatted"/>
+        <entry id="84" method="true" symbol="getFieldsCount"/>
+        <entry id="56" method="true" symbol="onPosition"/>
+        <entry field="true" id="92" symbol="onBlockAdvance"/>
+        <entry id="43" method="true" symbol="canReceiveMsg"/>
+        <entry id="38" method="true" symbol="onEvent"/>
+        <entry id="29" method="true" symbol="drawSynced"/>
+        <entry field="true" id="14" symbol="VIBE_BLOCK_CHANGE"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="88" method="true" symbol="hasSessionData"/>
+        <entry id="8389108" method="true" symbol="onResponse"/>
+        <entry id="105" method="true" symbol="stopActivitySession"/>
+        <entry id="42" method="true" symbol="transition"/>
+        <entry id="44" method="true" symbol="deleteSession"/>
+        <entry field="true" id="103" symbol="sessionData"/>
+        <entry field="true" id="110" symbol="app"/>
+        <entry id="28" method="true" symbol="drawSummary"/>
+        <entry field="true" id="69" symbol="countdown"/>
+        <entry id="33" method="true" symbol="getUsableWidth"/>
+        <entry field="true" id="119" symbol="AppName"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="32" method="true" symbol="formatTime"/>
+        <entry field="true" id="35" symbol="_state"/>
+        <entry id="49" method="true" symbol="handleSendSession"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="51" method="true" symbol="isTimeoutSending"/>
+        <entry id="115" method="true" symbol="isValidMsg"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="76" method="true" symbol="fieldRemaining"/>
+        <entry field="true" id="107" symbol="totalDistance"/>
+        <entry id="11" object="true" symbol="RunManager"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="20" symbol="cachedBlockLabel"/>
+        <entry id="25" method="true" symbol="drawIdle"/>
+        <entry id="91" method="true" symbol="isCountDownOver"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="62" symbol="sm"/>
+        <entry field="true" id="58" symbol="rm"/>
+        <entry field="true" id="71" symbol="currentFieldIdx"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="96" method="true" symbol="resetCountDown"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="70" symbol="currentBlockIdx"/>
+        <entry id="80" method="true" symbol="getBlocks"/>
+        <entry id="6" module="true" symbol="globals/Validator"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="83" method="true" symbol="getCurrentField"/>
+        <entry field="true" id="8388738" symbol="currentSpeed"/>
+        <entry field="true" id="74" symbol="fieldDistance"/>
+        <entry field="true" id="21" symbol="cachedSessionLabel"/>
+        <entry id="8388987" method="true" symbol="vibrate"/>
+        <entry id="73" method="true" symbol="evaluateFieldSuccess"/>
+        <entry id="22" method="true" symbol="drawCountdown"/>
+        <entry id="109" method="true" symbol="&lt;globals/NoTrackRunDelegate/&lt;&gt;showQuitConfirmation&gt;"/>
+        <entry id="41" method="true" symbol="tick"/>
+        <entry id="17" module="true" symbol="Validator"/>
+        <entry field="true" id="8390041" method="true" symbol="mode"/>
+        <entry id="81" method="true" symbol="getBlocksCount"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="53" method="true" symbol="onBlockChanged"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8388828" method="true" symbol="onError"/>
+        <entry id="9" object="true" symbol="NoTrackRunView"/>
+        <entry field="true" id="93" symbol="onFieldAdvance"/>
+        <entry id="8" object="true" symbol="NoTrackRunDelegate"/>
+        <entry id="86" method="true" symbol="getSessionDate"/>
+        <entry field="true" id="77" symbol="fieldStartDistance"/>
+        <entry id="24" method="true" symbol="drawFinished"/>
+        <entry id="13" object="true" symbol="TransmitCallback"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="106" method="true" symbol="targetReached"/>
+        <entry id="60" method="true" symbol="sendSession"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="57" method="true" symbol="onSessionEnded"/>
+        <entry field="true" id="61" symbol="sendingTime"/>
+        <entry id="116" method="true" symbol="isValidSessionPayload"/>
+        <entry field="true" id="45" symbol="errorMsg"/>
+        <entry id="99" method="true" symbol="running"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="55" method="true" symbol="onPhoneMessage"/>
+        <entry id="37" method="true" symbol="onEnter"/>
+        <entry field="true" id="117" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="30" method="true" symbol="formatDistance"/>
+        <entry id="59" method="true" symbol="sendAck"/>
+        <entry id="79" method="true" symbol="getAveragePaceSecPerKm"/>
+        <entry id="82" method="true" symbol="getCurrentBlock"/>
+        <entry id="52" method="true" symbol="needQuitConfirm"/>
+        <entry field="true" id="75" symbol="fieldElapsed"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="98" symbol="runDateSec"/>
+        <entry id="101" method="true" symbol="saveSessionLocally"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="97" symbol="results"/>
+        <entry id="40" method="true" symbol="onTick"/>
+        <entry id="68" method="true" symbol="advanceField"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="104" method="true" symbol="startActivitySession"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="23" method="true" symbol="drawError"/>
+        <entry field="true" id="8388891" symbol="subSport"/>
+        <entry id="85" method="true" symbol="getGoal"/>
+        <entry id="50" method="true" symbol="isGpsReady"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="65" method="true" symbol="vibe"/>
+        <entry id="27" method="true" symbol="drawRunning"/>
+        <entry field="true" id="15" symbol="VIBE_FIELD_CHANGE"/>
+        <entry id="114" method="true" symbol="isValidField"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="26" method="true" symbol="drawMessage"/>
+        <entry id="12" object="true" symbol="StateManager"/>
+        <entry id="10" object="true" symbol="QuitConfirmationDelegate"/>
+        <entry id="8389097" method="true" symbol="onKey"/>
+        <entry id="8388717" method="true" symbol="exit"/>
+        <entry id="8388829" method="true" symbol="onComplete"/>
+        <entry field="true" id="66" symbol="&lt;globals/QuitConfirmationDelegate/&lt;&gt;_stateMachine&gt;"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="90" method="true" symbol="initRunning"/>
+        <entry id="18" module="true" symbol="Layouts"/>
+        <entry id="46" method="true" symbol="getSession"/>
+        <entry id="8388636" module="true" symbol="Attention"/>
+        <entry id="8388642" module="true" symbol="Position"/>
+        <entry id="112" method="true" symbol="isValidAckPayload"/>
+        <entry field="true" id="8388739" symbol="averageSpeed"/>
+        <entry id="34" method="true" symbol="truncateText"/>
+        <entry id="100" method="true" symbol="saveFieldResult"/>
+        <entry id="48" method="true" symbol="handleAckResults"/>
+        <entry id="36" method="true" symbol="handle"/>
+        <entry field="true" id="102" symbol="session"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="31" method="true" symbol="formatPace"/>
+        <entry id="7" object="true" symbol="NoTrackRunApp"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436293" name="speedMs" stackId="1" startPc="268436172"/>
+        <entry arg="true" endPc="268436358" name="dist" stackId="1" startPc="268436294"/>
+        <entry arg="true" endPc="268436860" name="dc" stackId="1" startPc="268436359"/>
+        <entry arg="true" endPc="268436860" name="app" stackId="2" startPc="268436359"/>
+        <entry endPc="268436859" name="cx" stackId="3" startPc="268436363"/>
+        <entry endPc="268436859" name="h" stackId="4" startPc="268436363"/>
+        <entry endPc="268436859" name="y" stackId="5" startPc="268436363"/>
+        <entry endPc="268436507" name="maxWidth" stackId="6" startPc="268436440"/>
+        <entry endPc="268436859" name="date" stackId="7" startPc="268436363"/>
+        <entry endPc="268436859" name="blockCount" stackId="8" startPc="268436363"/>
+        <entry endPc="268436859" name="fieldCount" stackId="9" startPc="268436363"/>
+        <entry arg="true" endPc="268436986" name="dc" stackId="1" startPc="268436861"/>
+        <entry arg="true" endPc="268436986" name="app" stackId="2" startPc="268436861"/>
+        <entry arg="true" endPc="268436986" name="msg" stackId="3" startPc="268436861"/>
+        <entry endPc="268436985" name="cx" stackId="4" startPc="268436865"/>
+        <entry endPc="268436985" name="cy" stackId="5" startPc="268436865"/>
+        <entry endPc="268436985" name="offset" stackId="6" startPc="268436865"/>
+        <entry arg="true" endPc="268437429" name="dc" stackId="1" startPc="268436987"/>
+        <entry arg="true" endPc="268437429" name="app" stackId="2" startPc="268436987"/>
+        <entry endPc="268437428" name="cx" stackId="3" startPc="268436991"/>
+        <entry endPc="268437428" name="h" stackId="4" startPc="268436991"/>
+        <entry endPc="268437428" name="y" stackId="5" startPc="268436991"/>
+        <entry endPc="268437428" name="totalDist" stackId="6" startPc="268436991"/>
+        <entry endPc="268437428" name="totalTime" stackId="7" startPc="268436991"/>
+        <entry endPc="268437428" name="results" stackId="8" startPc="268436991"/>
+        <entry endPc="268437221" name="i" stackId="9" startPc="268437176"/>
+        <entry endPc="268437208" name="r" stackId="10" startPc="268437176"/>
+        <entry arg="true" endPc="268437602" name="dc" stackId="1" startPc="268437430"/>
+        <entry arg="true" endPc="268437602" name="y" stackId="2" startPc="268437430"/>
+        <entry arg="true" endPc="268437729" name="seconds" stackId="1" startPc="268437603"/>
+        <entry arg="true" endPc="268437858" name="dc" stackId="1" startPc="268437730"/>
+        <entry arg="true" endPc="268437858" name="app" stackId="2" startPc="268437730"/>
+        <entry endPc="268437857" name="cx" stackId="3" startPc="268437734"/>
+        <entry endPc="268437857" name="cy" stackId="4" startPc="268437734"/>
+        <entry endPc="268437857" name="offset" stackId="5" startPc="268437734"/>
+        <entry arg="true" endPc="268438046" name="dc" stackId="1" startPc="268437859"/>
+        <entry arg="true" endPc="268438046" name="app" stackId="2" startPc="268437859"/>
+        <entry endPc="268438045" name="cx" stackId="3" startPc="268437863"/>
+        <entry endPc="268438045" name="h" stackId="4" startPc="268437863"/>
+        <entry endPc="268438045" name="y" stackId="5" startPc="268437863"/>
+        <entry arg="true" endPc="268438980" name="dc" stackId="1" startPc="268438047"/>
+        <entry arg="true" endPc="268438980" name="app" stackId="2" startPc="268438047"/>
+        <entry endPc="268438979" name="cx" stackId="3" startPc="268438051"/>
+        <entry endPc="268438979" name="w" stackId="4" startPc="268438051"/>
+        <entry endPc="268438979" name="h" stackId="5" startPc="268438051"/>
+        <entry endPc="268438979" name="y" stackId="6" startPc="268438051"/>
+        <entry endPc="268438979" name="block" stackId="7" startPc="268438051"/>
+        <entry endPc="268438979" name="label" stackId="8" startPc="268438051"/>
+        <entry endPc="268438979" name="field" stackId="9" startPc="268438051"/>
+        <entry endPc="268438979" name="fields" stackId="10" startPc="268438051"/>
+        <entry endPc="268438979" name="dotSize" stackId="11" startPc="268438051"/>
+        <entry endPc="268438979" name="dotSpacing" stackId="12" startPc="268438051"/>
+        <entry endPc="268438979" name="totalDots" stackId="13" startPc="268438051"/>
+        <entry endPc="268438979" name="dotsWidth" stackId="14" startPc="268438051"/>
+        <entry endPc="268438979" name="dotX" stackId="15" startPc="268438051"/>
+        <entry endPc="268438623" name="i" stackId="16" startPc="268438396"/>
+        <entry endPc="268438979" name="rem" stackId="17" startPc="268438051"/>
+        <entry arg="true" endPc="268439215" name="dc" stackId="1" startPc="268438981"/>
+        <entry arg="true" endPc="268439215" name="app" stackId="2" startPc="268438981"/>
+        <entry endPc="268439214" name="cx" stackId="3" startPc="268438985"/>
+        <entry endPc="268439214" name="cy" stackId="4" startPc="268438985"/>
+        <entry endPc="268439214" name="halfGapLarge" stackId="5" startPc="268438985"/>
+        <entry endPc="268439214" name="maxWidth" stackId="6" startPc="268438985"/>
+        <entry endPc="268439214" name="err" stackId="7" startPc="268438985"/>
+        <entry arg="true" endPc="268439364" name="dc" stackId="1" startPc="268439237"/>
+        <entry arg="true" endPc="268439364" name="text" stackId="2" startPc="268439237"/>
+        <entry arg="true" endPc="268439364" name="font" stackId="3" startPc="268439237"/>
+        <entry arg="true" endPc="268439364" name="maxWidth" stackId="4" startPc="268439237"/>
+        <entry arg="true" endPc="268439819" name="dc" stackId="1" startPc="268439365"/>
+        <entry endPc="268439818" name="app" stackId="2" startPc="268439369"/>
+        <entry endPc="268439818" name="state" stackId="3" startPc="268439369"/>
+        <entry arg="true" endPc="268440004" name="dc" stackId="1" startPc="268439820"/>
+        <entry arg="true" endPc="268440004" name="app" stackId="2" startPc="268439820"/>
+        <entry endPc="268440003" name="cx" stackId="3" startPc="268439824"/>
+        <entry endPc="268440003" name="cy" stackId="4" startPc="268439824"/>
+        <entry endPc="268440003" name="halfGapLarge" stackId="5" startPc="268439824"/>
+        <entry arg="true" endPc="268440383" name="next" stackId="1" startPc="268440005"/>
+        <entry arg="true" endPc="268440383" name="prev" stackId="2" startPc="268440005"/>
+        <entry endPc="268440382" name="app" stackId="3" startPc="268440009"/>
+        <entry arg="true" endPc="268440736" name="state" stackId="1" startPc="268440384"/>
+        <entry endPc="268440735" name="app" stackId="2" startPc="268440388"/>
+        <entry arg="true" endPc="268441276" name="state" stackId="1" startPc="268440737"/>
+        <entry arg="true" endPc="268441276" name="e" stackId="2" startPc="268440737"/>
+        <entry endPc="268441275" name="app" stackId="3" startPc="268440741"/>
+        <entry arg="true" endPc="268441301" name="event" stackId="1" startPc="268441277"/>
+        <entry arg="true" endPc="268441411" name="next" stackId="1" startPc="268441341"/>
+        <entry endPc="268441410" name="previous" stackId="2" startPc="268441345"/>
+        <entry arg="true" endPc="268441447" name="pattern" stackId="1" startPc="268441412"/>
+        <entry arg="true" endPc="268441896" name="state" stackId="1" startPc="268441628"/>
+        <entry arg="true" endPc="268442107" name="state" stackId="1" startPc="268442065"/>
+        <entry arg="true" endPc="268442211" name="data" stackId="1" startPc="268442108"/>
+        <entry arg="true" endPc="268442334" name="type" stackId="1" startPc="268442212"/>
+        <entry arg="true" endPc="268442334" name="ok" stackId="2" startPc="268442212"/>
+        <entry arg="true" endPc="268442334" name="error" stackId="3" startPc="268442212"/>
+        <entry endPc="268442333" name="payload" stackId="4" startPc="268442216"/>
+        <entry arg="true" endPc="268442537" name="msg" stackId="1" startPc="268442335"/>
+        <entry endPc="268442536" name="data" stackId="2" startPc="268442339"/>
+        <entry endPc="268442536" name="type" stackId="3" startPc="268442339"/>
+        <entry arg="true" endPc="268442849" name="data" stackId="1" startPc="268442684"/>
+        <entry arg="true" endPc="268443134" name="response" stackId="1" startPc="268443096"/>
+        <entry arg="true" endPc="268443165" name="stateMachine" stackId="1" startPc="268443135"/>
+        <entry endPc="268443381" name="i" stackId="4" startPc="268443340"/>
+        <entry endPc="268443368" name="fields" stackId="5" startPc="268443340"/>
+        <entry endPc="268443605" name="info" stackId="1" startPc="268443389"/>
+        <entry endPc="268443605" name="block" stackId="2" startPc="268443389"/>
+        <entry endPc="268443605" name="fields" stackId="3" startPc="268443389"/>
+        <entry endPc="268443863" name="blocks" stackId="1" startPc="268443687"/>
+        <entry arg="true" endPc="268443908" name="field" stackId="1" startPc="268443865"/>
+        <entry arg="true" endPc="268443908" name="distance" stackId="2" startPc="268443865"/>
+        <entry arg="true" endPc="268443908" name="duration" stackId="3" startPc="268443865"/>
+        <entry endPc="268444193" name="info" stackId="1" startPc="268443913"/>
+        <entry endPc="268444568" name="store" stackId="1" startPc="268444390"/>
+        <entry arg="true" endPc="268444722" name="data" stackId="1" startPc="268444710"/>
+        <entry arg="true" endPc="268444818" name="field" stackId="1" startPc="268444723"/>
+        <entry arg="true" endPc="268444818" name="distance" stackId="2" startPc="268444723"/>
+        <entry arg="true" endPc="268444818" name="duration" stackId="3" startPc="268444723"/>
+        <entry endPc="268444995" name="block" stackId="1" startPc="268444823"/>
+        <entry endPc="268444995" name="field" stackId="2" startPc="268444823"/>
+        <entry endPc="268444995" name="success" stackId="3" startPc="268444823"/>
+        <entry arg="true" endPc="268445230" name="save" stackId="1" startPc="268445110"/>
+        <entry arg="true" endPc="268445463" name="field" stackId="1" startPc="268445408"/>
+        <entry arg="true" endPc="268445463" name="distance" stackId="2" startPc="268445408"/>
+        <entry arg="true" endPc="268445463" name="duration" stackId="3" startPc="268445408"/>
+        <entry arg="true" endPc="268445476" name="_sm" stackId="1" startPc="268445464"/>
+        <entry endPc="268445624" name="confirmation" stackId="1" startPc="268445530"/>
+        <entry arg="true" endPc="268446071" name="keyEvent" stackId="1" startPc="268445647"/>
+        <entry arg="true" endPc="268446153" name="a" stackId="1" startPc="268446123"/>
+        <entry arg="true" endPc="268446453" name="payload" stackId="1" startPc="268446154"/>
+        <entry endPc="268446450" name="i" stackId="3" startPc="268446415"/>
+        <entry arg="true" endPc="268446731" name="block" stackId="1" startPc="268446454"/>
+        <entry endPc="268446728" name="i" stackId="4" startPc="268446693"/>
+        <entry arg="true" endPc="268446778" name="val" stackId="1" startPc="268446732"/>
+        <entry arg="true" endPc="268447133" name="field" stackId="1" startPc="268446779"/>
+        <entry arg="true" endPc="268447194" name="payload" stackId="1" startPc="268447134"/>
+        <entry arg="true" endPc="268447325" name="msg" stackId="1" startPc="268447195"/>
+        <entry arg="true" endPc="268447342" name="dc" stackId="1" startPc="268447326"/>
+    </localVars>
+    <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3766-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="214" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/NoTrackRunView" offset="269" parentId="globals" symbolId="NoTrackRunView" type="class"/>
+        <dataEntry label="globals/StateManager" offset="460" parentId="globals" symbolId="StateManager" type="class"/>
+        <dataEntry label="globals/NoTrackRunApp" offset="571" parentId="globals" symbolId="NoTrackRunApp" type="class"/>
+        <dataEntry label="globals/QuitConfirmationDelegate" offset="842" parentId="globals" symbolId="QuitConfirmationDelegate" type="class"/>
+        <dataEntry label="globals/RunManager" offset="905" parentId="globals" symbolId="RunManager" type="class"/>
+        <dataEntry label="globals/NoTrackRunDelegate" offset="1312" parentId="globals" symbolId="NoTrackRunDelegate" type="class"/>
+        <dataEntry label="globals/TransmitCallback" offset="1375" parentId="globals" symbolId="TransmitCallback" type="class"/>
+        <dataEntry label="globals/Validator" offset="1446" parentId="globals" symbolId="Validator" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1525" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1564" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1603" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435919" name="&lt;init&gt;" parent="Rez" startPc="268435896">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435938" name="&lt;init&gt;" parent="NoTrackRunView" startPc="268435920">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="StateManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436059" name="&lt;init&gt;" parent="NoTrackRunApp" startPc="268435939">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436078" name="&lt;init&gt;" parent="QuitConfirmationDelegate" startPc="268436060">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436107" name="&lt;init&gt;" parent="RunManager" startPc="268436079">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436133" name="getApp" startPc="268436108">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436152" name="&lt;init&gt;" parent="NoTrackRunDelegate" startPc="268436134">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436171" name="&lt;init&gt;" parent="TransmitCallback" startPc="268436153">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Validator">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436293" name="formatPace" parent="NoTrackRunView" startPc="268436172">
+            <param id="speedMs"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436358" name="formatDistance" parent="NoTrackRunView" startPc="268436294">
+            <param id="dist"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436860" name="drawSummary" parent="NoTrackRunView" startPc="268436359">
+            <param id="dc"/>
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436986" name="drawMessage" parent="NoTrackRunView" startPc="268436861">
+            <param id="dc"/>
+            <param id="app"/>
+            <param id="msg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437429" name="drawFinished" parent="NoTrackRunView" startPc="268436987">
+            <param id="dc"/>
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="NoTrackRunView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437602" name="getUsableWidth" parent="NoTrackRunView" startPc="268437430">
+            <param id="dc"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437729" name="formatTime" parent="NoTrackRunView" startPc="268437603">
+            <param id="seconds"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437858" name="drawIdle" parent="NoTrackRunView" startPc="268437730">
+            <param id="dc"/>
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438046" name="drawCountdown" parent="NoTrackRunView" startPc="268437859">
+            <param id="dc"/>
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438980" name="drawRunning" parent="NoTrackRunView" startPc="268438047">
+            <param id="dc"/>
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439215" name="drawError" parent="NoTrackRunView" startPc="268438981">
+            <param id="dc"/>
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439236" name="initialize" parent="NoTrackRunView" startPc="268439216">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439364" name="truncateText" parent="NoTrackRunView" startPc="268439237">
+            <param id="dc"/>
+            <param id="text"/>
+            <param id="font"/>
+            <param id="maxWidth"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439819" name="onUpdate" parent="NoTrackRunView" startPc="268439365">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440004" name="drawSynced" parent="NoTrackRunView" startPc="268439820">
+            <param id="dc"/>
+            <param id="app"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440383" name="onEnter" parent="StateManager" startPc="268440005">
+            <param id="next"/>
+            <param id="prev"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440736" name="onTick" parent="StateManager" startPc="268440384">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExit" parent="StateManager">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441276" name="onEvent" parent="StateManager" startPc="268440737">
+            <param id="state"/>
+            <param id="e"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441301" name="handle" parent="StateManager" startPc="268441277">
+            <param id="event"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441340" name="tick" parent="StateManager" startPc="268441302">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="StateManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441411" name="transition" parent="StateManager" startPc="268441341">
+            <param id="next"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441447" name="vibe" parent="NoTrackRunApp" startPc="268441412">
+            <param id="pattern"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441468" name="onTick" parent="NoTrackRunApp" startPc="268441448">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onPosition" parent="NoTrackRunApp">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441535" name="canReceiveMsg" parent="NoTrackRunApp" startPc="268441469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441604" name="getInitialView" parent="NoTrackRunApp" startPc="268441536">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441627" name="onBlockChanged" parent="NoTrackRunApp" startPc="268441605">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441896" name="onStart" parent="NoTrackRunApp" startPc="268441628">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441930" name="startSession" parent="NoTrackRunApp" startPc="268441897">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442064" name="isGpsReady" parent="NoTrackRunApp" startPc="268441931">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442107" name="onStop" parent="NoTrackRunApp" startPc="268442065">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442211" name="handleAckResults" parent="NoTrackRunApp" startPc="268442108">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442334" name="sendAck" parent="NoTrackRunApp" startPc="268442212">
+            <param id="type"/>
+            <param id="ok"/>
+            <param id="error"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442537" name="onPhoneMessage" parent="NoTrackRunApp" startPc="268442335">
+            <param id="msg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442560" name="onSessionEnded" parent="NoTrackRunApp" startPc="268442538">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442617" name="isTimeoutSending" parent="NoTrackRunApp" startPc="268442561">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442641" name="deleteSession" parent="NoTrackRunApp" startPc="268442618">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442664" name="onFieldChanged" parent="NoTrackRunApp" startPc="268442642">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442683" name="exit" parent="NoTrackRunApp" startPc="268442665">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442849" name="handleSendSession" parent="NoTrackRunApp" startPc="268442684">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442944" name="sendSession" parent="NoTrackRunApp" startPc="268442850">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443051" name="needQuitConfirm" parent="NoTrackRunApp" startPc="268442945">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443072" name="initialize" parent="NoTrackRunApp" startPc="268443052">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443095" name="getSession" parent="NoTrackRunApp" startPc="268443073">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443134" name="onResponse" parent="QuitConfirmationDelegate" startPc="268443096">
+            <param id="response"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443165" name="initialize" parent="QuitConfirmationDelegate" startPc="268443135">
+            <param id="stateMachine"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443182" name="getSessionLabel" parent="RunManager" startPc="268443166">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443271" name="getAveragePaceFormatted" parent="RunManager" startPc="268443183">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443287" name="resetCountDown" parent="RunManager" startPc="268443272">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443384" name="getFieldsCount" parent="RunManager" startPc="268443288">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443606" name="advanceField" parent="RunManager" startPc="268443385">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443629" name="getBlocksCount" parent="RunManager" startPc="268443607">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443665" name="isCountDownOver" parent="RunManager" startPc="268443630">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443682" name="getBlocks" parent="RunManager" startPc="268443666">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443864" name="advanceBlock" parent="RunManager" startPc="268443683">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443908" name="evaluateFieldSuccess" parent="RunManager" startPc="268443865">
+            <param id="field"/>
+            <param id="distance"/>
+            <param id="duration"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444194" name="running" parent="RunManager" startPc="268443909">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444385" name="initRunning" parent="RunManager" startPc="268444195">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444569" name="saveSessionLocally" parent="RunManager" startPc="268444386">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444586" name="getSessionDate" parent="RunManager" startPc="268444570">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444709" name="startActivitySession" parent="RunManager" startPc="268444587">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444722" name="init" parent="RunManager" startPc="268444710">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444818" name="paceIsValid" parent="RunManager" startPc="268444723">
+            <param id="field"/>
+            <param id="distance"/>
+            <param id="duration"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444996" name="saveFieldResult" parent="RunManager" startPc="268444819">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445035" name="getCurrentField" parent="RunManager" startPc="268444997">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445067" name="getCurrentBlock" parent="RunManager" startPc="268445036">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445109" name="hasSessionData" parent="RunManager" startPc="268445068">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445230" name="stopActivitySession" parent="RunManager" startPc="268445110">
+            <param id="save"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445357" name="fieldRemaining" parent="RunManager" startPc="268445231">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445407" name="getGoal" parent="RunManager" startPc="268445358">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445463" name="targetReached" parent="RunManager" startPc="268445408">
+            <param id="field"/>
+            <param id="distance"/>
+            <param id="duration"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445476" name="initialize" parent="RunManager" startPc="268445464">
+            <param id="_sm"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445525" name="getAveragePaceSecPerKm" parent="RunManager" startPc="268445477">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268445625" name="&lt;globals/NoTrackRunDelegate/&lt;&gt;showQuitConfirmation&gt;" parent="NoTrackRunDelegate" startPc="268445526">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445646" name="initialize" parent="NoTrackRunDelegate" startPc="268445626">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446071" name="onKey" parent="NoTrackRunDelegate" startPc="268445647">
+            <param id="keyEvent"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446122" name="onError" parent="TransmitCallback" startPc="268446072">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onComplete" parent="TransmitCallback">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446153" name="initialize" parent="TransmitCallback" startPc="268446123">
+            <param id="a"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446453" name="isValidSessionPayload" parent="Validator" startPc="268446154">
+            <param id="payload"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446731" name="isValidBlock" parent="Validator" startPc="268446454">
+            <param id="block"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446778" name="isNumeric" parent="Validator" startPc="268446732">
+            <param id="val"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447133" name="isValidField" parent="Validator" startPc="268446779">
+            <param id="field"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447194" name="isValidAckPayload" parent="Validator" startPc="268447134">
+            <param id="payload"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447325" name="isValidMsg" parent="Validator" startPc="268447195">
+            <param id="msg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447342" name="MainLayout" parent="Layouts" startPc="268447326">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

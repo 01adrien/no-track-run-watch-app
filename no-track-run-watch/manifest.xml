@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <iq:manifest version="3" xmlns:iq="http://www.garmin.com/xml/connectiq">
 
     <iq:application id="035256c7-63a3-4412-9850-adbcb108a925" type="watch-app" name="@Strings.AppName" entry="NoTrackRunApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.3.0">
@@ -26,9 +25,7 @@
             <iq:product id="fr970"/>
 
             <!-- Fenix -->
-            <iq:product id="fenix5plus"/>
-            <iq:product id="fenix5splus"/>
-            <iq:product id="fenix5xplus"/>
+  
             <iq:product id="fenix6"/>
             <iq:product id="fenix6pro"/>
             <iq:product id="fenix6s"/>
@@ -87,7 +84,8 @@
             <iq:uses-permission id="Positioning"/>
             <iq:uses-permission id="Fit"/>
         </iq:permissions>
-        <iq:languages/>
-        <iq:barrels/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
     </iq:application>
 </iq:manifest>

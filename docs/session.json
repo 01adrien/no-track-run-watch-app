@@ -2,7 +2,7 @@
     "type": "SEND_SESSION",
     "payload": {
         "id": 46,
-        "label": "Grosse ddd",
+        "label": "Tempo",
         "date": "2026-07-15",
         "blocks": [
             {
@@ -21,7 +21,7 @@
             },
             {
                 "id": 2,
-                "label": "12x400m R9",
+                "label": "12x400m E6",
                 "fields": [
                     {
                         "index": 1,

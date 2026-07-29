@@ -27,7 +27,7 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                 }
                 break;
             case STATE_RUNNING:
-                if (key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) {
+                if ((key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) && DEBUG) {
                     sm.handle(EVENT_NEXT_FIELD);
                     return true;
                 }
