@@ -1,98 +1,101 @@
 {
-    "type": "SEND_SESSION",
-    "payload": {
-        "id": 46,
-        "label": "Tempo",
-        "date": "2026-07-15",
-        "blocks": [
-            {
-                "id": 1,
-                "label": "Echauffement ",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DURATION",
-                        "targetValue": 900,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "label": "12x400m E6",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "NONE",
-                        "targetValue": 40000,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 2,
-                        "targetType": "NONE",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    },
-                    {
-                        "index": 3,
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "minSpeed": 4.63,
-                        "maxSpeed": 4.94,
-                        "pace": "03:22 - 03:36"
-                    },
-                    {
-                        "index": 4,
-                        "targetType": "DURATION",
-                        "targetValue": 90,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    }
-                ]
-            },
-            {
-                "id": 3,
-                "label": "Recuperatio",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DURATION",
-                        "targetValue": 480,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    }
-                ]
-            },
-            {
-                "id": 4,
-                "label": "6x300m scscscs",
-                "fields": [
-                    {
-                        "index": 1,
-                        "targetType": "DISTANCE",
-                        "targetValue": 300,
-                        "minSpeed": 3.8,
-                        "maxSpeed": 4.2,
-                        "pace": "03:58 - 04:23"
-                    },
-                    {
-                        "index": 2,
-                        "targetType": "DURATION",
-                        "targetValue": 120,
-                        "minSpeed": 0.0,
-                        "maxSpeed": 0.0,
-                        "pace": "--:--"
-                    }
-                ]
-            }
-        ]
-    }
+    "id": 1,
+    "label": "Tempo",
+    "date": "2026-07-15",
+    "blocks": [
+        {
+            "id": 1,
+            "order": 1,
+            "label": "duration / repetitions",
+            "type": "RUNNING",
+            "repetitions": 2,
+            "fields": [
+                {
+                    "role": "EFFORT",
+                    "targetType": "DURATION",
+                    "targetValue": 400,
+                    "pace": "--:--"
+                },
+                {
+                    "role": "RECOVERY",
+                    "targetType": "DURATION",
+                    "targetValue": 400,
+                    "pace": "--:--"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "order": 2,
+            "label": "simple",
+            "type": "RUNNING",
+            "repetitions": 1,
+            "exercices": [],
+            "fields": [
+                {
+                    "role": "EFFORT",
+                    "targetType": "DISTANCE",
+                    "targetValue": 400,
+                    "pace": "--:--"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "order": 3,
+            "label": "exercices with duration",
+            "type": "CONDITIONNING",
+            "repetitions": 1,
+            "exercices": [
+                {
+                    "order": 1,
+                    "label": "Push up",
+                    "reps": 10
+                },
+                {
+                    "order": 2,
+                    "label": "Squat",
+                    "reps": 20
+                },
+                {
+                    "order": 3,
+                    "label": "Abdo",
+                    "reps": 10
+                }
+            ],
+            "fields": [
+                {
+                    "role": "EFFORT",
+                    "targetType": "DURATION",
+                    "targetValue": 400,
+                    "pace": "--:--"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "order": 3,
+            "label": "exercices",
+            "type": "CONDITIONNING",
+            "repetitions": 1,
+            "exercices": [
+                {
+                    "order": 1,
+                    "label": "Push up",
+                    "reps": 10
+                },
+                {
+                    "order": 2,
+                    "label": "Squat",
+                    "reps": 20
+                },
+                {
+                    "order": 3,
+                    "label": "Abdo",
+                    "reps": 10
+                }
+            ],
+            "fields": []
+        }
+    ]
 }

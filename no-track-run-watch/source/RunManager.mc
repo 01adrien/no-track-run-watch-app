@@ -10,6 +10,10 @@ enum BlockGoal {
     GOAL_NONE,
 }
 
+enum BlockType {
+    RUNNING,
+    CONDITIONNING,
+}
 
 class RunManager {
     var session               as ActivityRecording.Session?;
@@ -32,28 +36,29 @@ class RunManager {
     var averageSpeed          as Float      = 0.0;
     var runDateSec            as Number     = 0;
     var currentHeartRate      as Number?    = null;
+    var repCount              as Number     = 0;
 
     function initialize(_sm as StateManager) { sm = _sm; }
 
     function init(data as Dictionary) { sessionData = data; }
 
     function initRunning() as Void {
-        currentBlockIdx  = 0;
-        currentFieldIdx  = 0;
-        fieldElapsed     = 0;
-        fieldDistance    = 0.0;
+        currentBlockIdx    = 0;
+        currentFieldIdx    = 0;
+        fieldElapsed       = 0;
+        fieldDistance      = 0.0;
         fieldStartDistance = 0.0;
-        results          = [];
-        currentSpeed     = 0.0;
-        elevationGain    = 0.0;
-        totalDistance    = 0.0;   
-        totalDuration    = 0;      
-        averageSpeed     = 0.0;
-        runDateSec       = Time.now().value();
+        results            = [];
+        currentSpeed       = 0.0;
+        elevationGain      = 0.0;
+        totalDistance      = 0.0;   
+        totalDuration      = 0;      
+        averageSpeed       = 0.0;
+        runDateSec         = Time.now().value();
+        repCount           = 1;
         startActivitySession();
     }
 
-    // ── Gestion du cycle de vie ActivityRecording ──
 
     function startActivitySession() as Void {
         if (session != null && session.isRecording()) {
@@ -123,7 +128,7 @@ class RunManager {
     }
 
     function getCurrentBlock() as Dictionary {
-        var blocks = sessionData["blocks"] as Array;
+        var blocks = getBlocks();
         return blocks[currentBlockIdx] as Dictionary;
     }
 
@@ -143,12 +148,19 @@ class RunManager {
             case "NONE":
                 return GOAL_NONE;    
         }
-        return GOAL_NONE;
-        
+        return GOAL_NONE; 
+    }
+
+    function getTrainingType() as BlockType {
+        var type = getCurrentBlock()["type"];
+        return type.equals("RUNNING")
+            ? RUNNING
+            : CONDITIONNING;
+
     }
 
     function getSessionLabel() as String {
-        return sessionData["label"] as String;
+        return  sessionData["label"] as String;
     }
 
     function getSessionDate() as String {
@@ -165,7 +177,7 @@ class RunManager {
         var count = blocks.size();
         for (var i = 0; i < count; i++) {
             var fields = blocks[i]["fields"] as Array;
-            fieldsCount += fields.size();
+            fieldsCount += fields.size() * blocks[i]["repetitions"];
         }
         return fieldsCount;
     }
@@ -189,30 +201,32 @@ class RunManager {
 
     function advanceField() as Void {
         saveFieldResult();
+
         var info = Activity.getActivityInfo();
+
         fieldStartDistance = (info != null && info.elapsedDistance != null) 
             ? info.elapsedDistance 
             : fieldStartDistance;
 
-        fieldElapsed    = 0;
-        fieldDistance   = 0.0;
+        fieldElapsed    = 0; // time in sec
+        
+        fieldDistance   = 0.0; // distance in meters ??
 
-        var block  = getCurrentBlock();
-        var fields = block["fields"] as Array;
 
-        if (currentFieldIdx < fields.size() - 1) { 
-            if (onFieldAdvance != null) { onFieldAdvance.invoke();}
-            currentFieldIdx += 1;
+
+        if (hasRemainingFields()) {
+            nextField(currentFieldIdx + 1);
+        } else if (repCount < getTargetReps()) {
+            nextField(0);
         }
         else { advanceBlock(); }
     }
 
     function advanceBlock() as Void {
-        var blocks = sessionData["blocks"] as Array;
         currentFieldIdx = 0;
+        repCount = 1;
 
-
-        if (currentBlockIdx < blocks.size() - 1) { 
+        if (hasRemainingBlocks()) { 
             currentBlockIdx += 1;
             if (onBlockAdvance != null) { onBlockAdvance.invoke();} 
         }
@@ -230,6 +244,7 @@ class RunManager {
     }
 
 
+
     function getAveragePaceFormatted() as String {
         var paceSec = getAveragePaceSecPerKm();
         if (paceSec <= 0) { return "--:--";}
@@ -242,12 +257,29 @@ class RunManager {
         return (currentHeartRate != null) ? currentHeartRate.toString() : "---";
     }
 
-
     function isRunningBlock() as Boolean {
-        return true;
-        // return getCurrentBlock["type"] == "RUNNING";
+        return getTrainingType() == RUNNING;
     }
 
+    function getTargetReps() as Number {
+        return getCurrentBlock()["repetitions"];
+    }
+
+    function nextField(index as Number) { 
+        if (onFieldAdvance != null) { onFieldAdvance.invoke();}
+        if (index == 0) {repCount += 1;}
+        currentFieldIdx = index;
+    }
+
+    function hasRemainingFields() as Boolean {
+        var block  = getCurrentBlock();
+        var fields = block["fields"] as Array;
+        return currentFieldIdx < (fields.size() - 1);
+    }
+
+    function hasRemainingBlocks() as Boolean {
+        return currentBlockIdx < (getBlocksCount() - 1);
+    }
 
     function saveSessionLocally() as Void {
         if (results.size() == 0) { return; }
@@ -267,20 +299,24 @@ class RunManager {
         var block = getCurrentBlock();
         var field = getCurrentField();
 
+        /*
         var success = isRunningBlock 
             ? evaluateFieldSuccess(field, fieldDistance, fieldElapsed)
             : true;
-            
+        */
+        // FIELD ROLE (EFFORT || RECOVERY)
         results.add({
             "blockId"  => block["id"],
-            "index"    => currentFieldIdx + 1,
+            "index"    => repCount,
             "distance" => fieldDistance,
             "duration" => fieldElapsed,
-            "success"  => success,
+            "role"     => field["role"],
+            // "success"  => success,
         });
         saveSessionLocally();
     }
 
+    /*
     function evaluateFieldSuccess(field as Dictionary, distance as Float, duration as Number) as Boolean {
         if (!targetReached(field, distance, duration)) {
             return false;
@@ -312,5 +348,6 @@ class RunManager {
         var avgFieldSpeed = distance / duration.toFloat();
         return avgFieldSpeed >= minSpeed && avgFieldSpeed <= maxSpeed;
     }
+    */
 }
 

@@ -188,10 +188,6 @@ class NoTrackRunView extends WatchUi.View {
         var w  = dc.getWidth();
         var h  = dc.getHeight();
         var y  = (h * RATIO_TOP_Y).toNumber();
-
-        var block = app.rm.getCurrentBlock();
-
-
         
         // ── numero du bloc ──
         var label = (app.rm.currentBlockIdx + 1).toString() + "/" + app.rm.getBlocksCount().toString();
@@ -200,18 +196,19 @@ class NoTrackRunView extends WatchUi.View {
         y += dc.getFontHeight(Graphics.FONT_MEDIUM) + LINE_GAP_PADDING;
 
         // ── Pastilles de progression des fields ──
-        var field = app.rm.getCurrentField();
+        var block      = app.rm.getCurrentBlock();
         var fields     = block["fields"] as Array;
         var dotSize    = (w * RATIO_DOT_SIZE).toNumber();
         var dotSpacing = (w * RATIO_DOT_SPACING).toNumber();
-        var totalDots  = fields.size();
+        var totalDots  = fields.size() * app.rm.getTargetReps();
         var dotsWidth  = totalDots * dotSpacing - (dotSpacing - dotSize);
         var dotX       = (w - dotsWidth) / 2;
+        var fieldIndex = ((app.rm.repCount - 1) * fields.size()) + app.rm.currentFieldIdx;
 
         for (var i = 0; i < totalDots; i++) {
-            if (i < app.rm.currentFieldIdx) {
+            if (i < fieldIndex) {
                 dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-            } else if (i == app.rm.currentFieldIdx) {
+            } else if (i == fieldIndex) {
                 if (app.rm.fieldElapsed % 2 == 0) {
                     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
                 } else {
@@ -225,10 +222,11 @@ class NoTrackRunView extends WatchUi.View {
         }
         y += dotSize + LINE_GAP_PADDING + 4;
 
-        // ── Valeur primaire restante (temps OU distance) ──
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        var rem = app.rm.fieldRemaining();
 
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        
+        var rem = app.rm.fieldRemaining();
+        var field = app.rm.getCurrentField();    
         var goal = app.rm.getGoal();
 
         if (goal == GOAL_DISTANCE) {
@@ -243,7 +241,7 @@ class NoTrackRunView extends WatchUi.View {
         }
 
         y += dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING;
-        
+
 
         if (app.rm.isRunningBlock()) {
             // ── Fréquence cardiaque (à gauche, entre valeur primaire et pace) ──
@@ -380,7 +378,7 @@ function getUsableWidth(dc as Dc, y as Number) as Number {
     // ─────────────────────────────────────────
     
     function formatPace(speedMs as Float) as String {
-        if (speedMs <= 0.2) { return "-- min/km"; } // même seuil que RunManager.running()
+        if (speedMs <= 0.2) { return "-- min/km"; } // même seuil que RunManager.²²²()
         var paceSkm = 1000.0 / speedMs;
         var totalSeconds = Math.round(paceSkm).toNumber();
         var minutes = totalSeconds / 60;

@@ -10,8 +10,9 @@ import Toybox.Attention;
 
 const SENDING_TIMEOUT  as Number  = 5;
 const GPS_STABLE_TICKS as Number  = 5;
-const SIMULATOR        as Boolean = false;
+const SIMULATOR        as Boolean = true;
 const DEBUG            as Boolean = true;
+const WITH_VALIDATION  as Boolean = false;
 
 const VIBE_BLOCK_CHANGE as Array<Attention.VibeProfile> = [
     new Attention.VibeProfile(50, 300),
@@ -67,13 +68,15 @@ class NoTrackRunApp extends Application.AppBase {
 
 
     function onPhoneMessage(msg as Communications.PhoneAppMessage) as Void {
-        if (!canReceiveMsg() || !Validator.isValidMsg(msg.data)) {
-            return;
+        if (WITH_VALIDATION) {
+            if (!canReceiveMsg() || !Validator.isValidMsg(msg.data)) {
+                return;
+            }
         }
         var data = msg.data as Dictionary;
         var type = data["type"] as String;
 
-        if (type.equals("SEND_SESSION")) {
+        if (type.equals("SESSION_PAYLOAD")) {
             sm.handle(handleSendSession(data));
         } else if (type.equals("ACK_RESULTS")) {
             sm.handle(handleAckResults(data));
@@ -105,9 +108,11 @@ class NoTrackRunApp extends Application.AppBase {
         }
 
         var payload = data["payload"] as Dictionary;
-        if (!Validator.isValidSessionPayload(payload)) {
-            errorMsg = "Invalid msg format";
-            return EVENT_ERROR;
+        if (WITH_VALIDATION) {
+            if (!Validator.isValidSessionPayload(payload)) {
+                errorMsg = "Invalid msg format";
+                return EVENT_ERROR;
+            }
         }
 
         rm.init(payload);
@@ -179,6 +184,7 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function sendSession() as Void {
+        System.println("results");
         sendingTime = 0;
         if (SIMULATOR) {return;}
         Communications.transmit(
