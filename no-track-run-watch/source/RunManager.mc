@@ -21,6 +21,7 @@ class RunManager {
     var currentSpeed          as Float      = 0.0;
     var currentBlockIdx       as Number     = 0;
     var currentFieldIdx       as Number     = 0;
+    var currentExoIdx         as Number     = 0;
     var fieldElapsed          as Number     = 0;
     var fieldDistance         as Float      = 0.0;
     var fieldStartDistance    as Float      = 0.0;  
@@ -45,6 +46,7 @@ class RunManager {
     function initRunning() as Void {
         currentBlockIdx    = 0;
         currentFieldIdx    = 0;
+        currentExoIdx      = 0;
         fieldElapsed       = 0;
         fieldDistance      = 0.0;
         fieldStartDistance = 0.0;
@@ -111,7 +113,56 @@ class RunManager {
 
         fieldElapsed += 1;
 
-        if (fieldRemaining() <= 0) { advanceField();}
+        // if fieldRemaining() == -1 => exercices with no target to advance manually
+        if (fieldRemaining() == 0) { advanceField();}
+    }
+
+      function advanceField() as Void {
+        if (
+            !isRunningBlock() && 
+            (fieldRemaining() > 0) && 
+            !isLastExercice()
+        ) {
+            currentExoIdx ++;
+            return;
+        }
+
+        saveFieldResult();
+
+        fieldElapsed  = 0; 
+        fieldDistance = 0.0;
+        
+        var info = Activity.getActivityInfo();
+        fieldStartDistance = (info != null && info.elapsedDistance != null) 
+            ? info.elapsedDistance 
+            : fieldStartDistance;
+
+        if (isRunningBlock()) {
+            
+            if (hasRemainingFields()) {
+                nextField(currentFieldIdx + 1);
+            } else if (repCount < getTargetReps()) {
+                nextField(0);
+            }
+            else { advanceBlock(); }
+
+        } else {advanceBlock();}
+    }
+
+    function advanceBlock() as Void {
+        currentFieldIdx = 0;
+        repCount = 1;
+        currentExoIdx = 0;
+
+        if (hasRemainingBlocks()) { 
+            currentBlockIdx += 1;
+            if (onBlockAdvance != null) { onBlockAdvance.invoke();} 
+        }
+        else {
+            stopActivitySession(false);
+            if (onSessionEnd != null) { onSessionEnd.invoke();}
+            sm.handle(EVENT_SESSION_END);
+        }
     }
 
     function resetCountDown() as Void {
@@ -135,18 +186,23 @@ class RunManager {
     function getCurrentField() as Dictionary {
         var block  = getCurrentBlock();
         var fields = block["fields"] as Array;
+        // exercices whithout field
+        if (fields.size() == 0) { return {} as Dictionary ;}
         return fields[currentFieldIdx] as Dictionary;
     }
 
     function getGoal() as BlockGoal {
-        var target = getCurrentField()["targetType"];
-        switch (target) {
-            case "DISTANCE":
-                return GOAL_DISTANCE;
-            case "DURATION":
-                return GOAL_DURATION;
-            case "NONE":
-                return GOAL_NONE;    
+        var field = getCurrentField();
+        if (field.size()) {
+            var target = getCurrentField()["targetType"];
+            switch (target) {
+                case "DISTANCE":
+                    return GOAL_DISTANCE;
+                case "DURATION":
+                    return GOAL_DURATION;
+                case "NONE":
+                    return GOAL_NONE;    
+            }
         }
         return GOAL_NONE; 
     }
@@ -160,7 +216,7 @@ class RunManager {
     }
 
     function getSessionLabel() as String {
-        return  sessionData["label"] as String;
+        return sessionData["label"] as String;
     }
 
     function getSessionDate() as String {
@@ -188,6 +244,7 @@ class RunManager {
 
     function fieldRemaining() as Number {
         var field = getCurrentField();
+        if (field.size() == 0) { return -1 ;}
         if (getGoal() == GOAL_DISTANCE) {
             var dist = (field["targetValue"] as Number);
             var rem  = dist - fieldDistance;
@@ -196,44 +253,6 @@ class RunManager {
             var dur = (field["targetValue"] as Number);
             var rem = dur - fieldElapsed;
             return (rem < 0) ? 0 : rem;
-        }
-    }
-
-    function advanceField() as Void {
-        saveFieldResult();
-
-        var info = Activity.getActivityInfo();
-
-        fieldStartDistance = (info != null && info.elapsedDistance != null) 
-            ? info.elapsedDistance 
-            : fieldStartDistance;
-
-        fieldElapsed    = 0; // time in sec
-        
-        fieldDistance   = 0.0; // distance in meters ??
-
-
-
-        if (hasRemainingFields()) {
-            nextField(currentFieldIdx + 1);
-        } else if (repCount < getTargetReps()) {
-            nextField(0);
-        }
-        else { advanceBlock(); }
-    }
-
-    function advanceBlock() as Void {
-        currentFieldIdx = 0;
-        repCount = 1;
-
-        if (hasRemainingBlocks()) { 
-            currentBlockIdx += 1;
-            if (onBlockAdvance != null) { onBlockAdvance.invoke();} 
-        }
-        else {
-            stopActivitySession(false);
-            if (onSessionEnd != null) { onSessionEnd.invoke();}
-            sm.handle(EVENT_SESSION_END);
         }
     }
 
@@ -254,7 +273,9 @@ class RunManager {
     }
 
     function getHeartRateFormatted() as String {
-        return (currentHeartRate != null) ? currentHeartRate.toString() : "---";
+        return (currentHeartRate != null) 
+            ? currentHeartRate.toString() 
+            : "---";
     }
 
     function isRunningBlock() as Boolean {
@@ -281,6 +302,11 @@ class RunManager {
         return currentBlockIdx < (getBlocksCount() - 1);
     }
 
+    function isLastExercice() as Boolean {
+        var exos = getCurrentBlock()["exercices"];
+        return exos.size() == currentExoIdx + 1;
+    }
+
     function saveSessionLocally() as Void {
         if (results.size() == 0) { return; }
         var store = Application.Storage;
@@ -295,25 +321,29 @@ class RunManager {
         });
     }
 
-    function saveFieldResult() as Void {
-        var block = getCurrentBlock();
-        var field = getCurrentField();
 
-        /*
-        var success = isRunningBlock 
-            ? evaluateFieldSuccess(field, fieldDistance, fieldElapsed)
-            : true;
-        */
-        // FIELD ROLE (EFFORT || RECOVERY)
-        results.add({
-            "blockId"  => block["id"],
-            "index"    => repCount,
-            "distance" => fieldDistance,
-            "duration" => fieldElapsed,
-            "role"     => field["role"],
-            // "success"  => success,
-        });
-        saveSessionLocally();
+    function saveFieldResult() as Void {
+        
+        if (fieldRemaining() == 0 || isLastExercice()) {
+        
+          var block = getCurrentBlock();
+          var field = getCurrentField();
+
+            /*
+            var success = isRunningBlock 
+                ? evaluateFieldSuccess(field, fieldDistance, fieldElapsed)
+                : true;
+            */
+            results.add({
+                "blockId"  => block["id"],
+                "index"    => repCount,
+                "distance" => fieldDistance,
+                "duration" => fieldElapsed,
+                "role"     => isLastExercice() ? "EXERCICES" : field["role"],
+                // "success"  => success,
+            });
+            saveSessionLocally();
+        }
     }
 
     /*

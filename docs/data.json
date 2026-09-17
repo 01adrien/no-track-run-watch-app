@@ -6,39 +6,34 @@
         "date": "2026-07-15",
         "blocks": [
             {
-                "id": 1,
+                "id": 3,
                 "order": 1,
-                "label": "duration / repetitions",
-                "type": "RUNNING",
+                "label": "exercices",
+                "type": "CONDITIONNING",
                 "repetitions": 1,
-                "fields": [
+                "exercices": [
                     {
-                        "role": "EFFORT",
-                        "targetType": "DURATION",
-                        "targetValue": 400,
-                        "pace": "06:50"
+                        "order": 1,
+                        "label": "Push up",
+                        "reps": 10
                     },
                     {
-                        "role": "RECOVERY",
-                        "targetType": "DURATION",
-                        "targetValue": 400,
-                        "pace": "08:50"
+                        "order": 2,
+                        "label": "Squat",
+                        "reps": 20
+                    },
+                    {
+                        "order": 3,
+                        "label": "Abdo",
+                        "reps": 10
                     }
-                ]
-            },
-            {
-                "id": 2,
-                "order": 2,
-                "label": "simple",
-                "type": "RUNNING",
-                "repetitions": 1,
-                "exercices": [],
+                ],
                 "fields": [
                     {
                         "role": "EFFORT",
-                        "targetType": "DISTANCE",
-                        "targetValue": 400,
-                        "pace": "05:50"
+                        "targetType": "DURATION",
+                        "targetValue": 60,
+                        "pace": "--:--"
                     }
                 ]
             }

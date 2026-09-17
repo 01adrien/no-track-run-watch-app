@@ -46,6 +46,7 @@ class NoTrackRunApp extends Application.AppBase {
     function exit() as Void {  System.exit();}
 
     function onStart(state as Dictionary?) as Void {
+        System.println("ON_START");
         Communications.registerForPhoneAppMessages(method(:onPhoneMessage));
         timer.start(method(:onTick), 1000, true);
         rm.onBlockAdvance = method(:onBlockChanged);
@@ -184,7 +185,7 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function sendSession() as Void {
-        System.println("results");
+        System.println(rm.results);
         sendingTime = 0;
         if (SIMULATOR) {return;}
         Communications.transmit(

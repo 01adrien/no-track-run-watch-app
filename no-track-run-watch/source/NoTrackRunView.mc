@@ -109,8 +109,6 @@ class NoTrackRunView extends WatchUi.View {
             blockCount.toString() + " blocks", Graphics.TEXT_JUSTIFY_CENTER);
         y += dc.getFontHeight(Graphics.FONT_SMALL) + LINE_GAP_PADDING;
 
-        dc.drawText(cx, y, Graphics.FONT_SMALL,
-            fieldCount.toString() + " steps", Graphics.TEXT_JUSTIFY_CENTER);
     }
 
 
@@ -188,6 +186,7 @@ class NoTrackRunView extends WatchUi.View {
         var w  = dc.getWidth();
         var h  = dc.getHeight();
         var y  = (h * RATIO_TOP_Y).toNumber();
+
         
         // ── numero du bloc ──
         var label = (app.rm.currentBlockIdx + 1).toString() + "/" + app.rm.getBlocksCount().toString();
@@ -196,19 +195,26 @@ class NoTrackRunView extends WatchUi.View {
         y += dc.getFontHeight(Graphics.FONT_MEDIUM) + LINE_GAP_PADDING;
 
         // ── Pastilles de progression des fields ──
-        var block      = app.rm.getCurrentBlock();
-        var fields     = block["fields"] as Array;
-        var dotSize    = (w * RATIO_DOT_SIZE).toNumber();
-        var dotSpacing = (w * RATIO_DOT_SPACING).toNumber();
-        var totalDots  = fields.size() * app.rm.getTargetReps();
-        var dotsWidth  = totalDots * dotSpacing - (dotSpacing - dotSize);
-        var dotX       = (w - dotsWidth) / 2;
-        var fieldIndex = ((app.rm.repCount - 1) * fields.size()) + app.rm.currentFieldIdx;
+        var isRunningBlock = app.rm.isRunningBlock();
+        var block          = app.rm.getCurrentBlock();
+        var fields         = block["fields"] as Array;
+        var exercices      = block["exercices"];
+        var dotSize        = (w * RATIO_DOT_SIZE).toNumber();
+        var dotSpacing     = (w * RATIO_DOT_SPACING).toNumber();
+        var totalDots      = isRunningBlock
+                            ? fields.size() * app.rm.getTargetReps()
+                            : exercices.size();
+        var dotsWidth      = totalDots * dotSpacing - (dotSpacing - dotSize);
+        var dotX           = (w - dotsWidth) / 2;
+        var fieldIndex     = isRunningBlock 
+                            ? ((app.rm.repCount - 1) * fields.size()) + app.rm.currentFieldIdx
+                            : app.rm.currentExoIdx;
 
         for (var i = 0; i < totalDots; i++) {
             if (i < fieldIndex) {
                 dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
             } else if (i == fieldIndex) {
+                // blink each sec
                 if (app.rm.fieldElapsed % 2 == 0) {
                     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
                 } else {
@@ -243,19 +249,20 @@ class NoTrackRunView extends WatchUi.View {
         y += dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING;
 
 
-        if (app.rm.isRunningBlock()) {
-            // ── Fréquence cardiaque (à gauche, entre valeur primaire et pace) ──
-            var hrY = y - ((dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING));
-            var hrMargin = w - (w * 0.1).toNumber();
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(hrMargin, hrY, Graphics.FONT_MEDIUM,
+        // ── Heart rate ──
+        var hrY = y - ((dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING));
+        var hrMargin = w - (w * 0.1).toNumber();
+        dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(hrMargin, hrY, Graphics.FONT_MEDIUM,
                     app.rm.getHeartRateFormatted(), 
                     Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
+                    
+        if (app.rm.isRunningBlock()) {
 
             // ── Pace courant ──
             dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(cx, y, Graphics.FONT_TINY,
-                formatPace(app.rm.currentSpeed), Graphics.TEXT_JUSTIFY_CENTER);
+                        formatPace(app.rm.currentSpeed), Graphics.TEXT_JUSTIFY_CENTER);
             y += dc.getFontHeight(Graphics.FONT_TINY) + LINE_GAP_PADDING;
 
 
@@ -265,15 +272,15 @@ class NoTrackRunView extends WatchUi.View {
                 field["pace"], Graphics.TEXT_JUSTIFY_CENTER);
             
         } else {
+            // ── Current exercice ──
+            var exercice = block["exercices"][app.rm.currentExoIdx];
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(cx, y, Graphics.FONT_TINY,
-                "EXERCICES", Graphics.TEXT_JUSTIFY_CENTER);
+                exercice["label"], Graphics.TEXT_JUSTIFY_CENTER);
             y += dc.getFontHeight(Graphics.FONT_TINY) + LINE_GAP_PADDING;
 
-            // même ligne que "pace cible"
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, y, Graphics.FONT_MEDIUM,
-                app.rm.getHeartRateFormatted(), Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(cx, y, Graphics.FONT_TINY,
+                exercice["reps"], Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
 
@@ -400,7 +407,5 @@ function getUsableWidth(dc as Dc, y as Number) as Number {
         }    
         return dist.format("%.0f") + " m";
     }
-
-
 
 }
