@@ -12,7 +12,7 @@ const SENDING_TIMEOUT  as Number  = 5;
 const GPS_STABLE_TICKS as Number  = 5;
 const SIMULATOR        as Boolean = true;
 const DEBUG            as Boolean = true;
-const WITH_VALIDATION  as Boolean = false;
+const WITH_VALIDATION  as Boolean = true;
 
 const VIBE_BLOCK_CHANGE as Array<Attention.VibeProfile> = [
     new Attention.VibeProfile(50, 300),
@@ -46,13 +46,11 @@ class NoTrackRunApp extends Application.AppBase {
     function exit() as Void {  System.exit();}
 
     function onStart(state as Dictionary?) as Void {
-        System.println("ON_START");
         Communications.registerForPhoneAppMessages(method(:onPhoneMessage));
         timer.start(method(:onTick), 1000, true);
         rm.onBlockAdvance = method(:onBlockChanged);
         rm.onFieldAdvance = method(:onFieldChanged);
         rm.onSessionEnd = method(:onSessionEnded); 
-        if (getSession() != null) {sm.handle(EVENT_NEED_SYNC);}
         Position.enableLocationEvents(
             {
                 :acquisitionType => Position.LOCATION_CONTINUOUS,
@@ -87,10 +85,11 @@ class NoTrackRunApp extends Application.AppBase {
         }
     }
 
+        
     function handleAckResults(data as Dictionary) as AppEvent {
         var payload = data["payload"] as Dictionary;
         if (!Validator.isValidAckPayload(payload)) {
-            errorMsg = "Invalid msg format";
+            errorMsg = DEBUG ? "Invalid msg format" : "Error";
             return EVENT_ERROR;
         }
 
@@ -103,7 +102,7 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function handleSendSession(data as Dictionary) as AppEvent {
-        if (getSession() != null || rm.hasSessionData()) {
+        if (getSession() != null) {
             sendAck("ACK_SESSION", false, "Already a session on the watch");
             return EVENT_NONE; 
         }
@@ -111,7 +110,7 @@ class NoTrackRunApp extends Application.AppBase {
         var payload = data["payload"] as Dictionary;
         if (WITH_VALIDATION) {
             if (!Validator.isValidSessionPayload(payload)) {
-                errorMsg = "Invalid msg format";
+                errorMsg = DEBUG ? "Invalid msg format" : "Error";
                 return EVENT_ERROR;
             }
         }
@@ -162,18 +161,6 @@ class NoTrackRunApp extends Application.AppBase {
         return false;
     }
 
-    function needQuitConfirm() as Boolean {
-        switch (sm._state) {
-            case STATE_IDLE:
-            case STATE_ERROR:
-            case STATE_SYNCED:
-            case STATE_NEED_SYNC:
-                return false;
-            default:
-                return true;
-        }
-    }
-
     function canReceiveMsg() as Boolean {
          switch (sm._state) {
             case STATE_IDLE:
@@ -185,7 +172,7 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function sendSession() as Void {
-        System.println(rm.results);
+        System.println(getSession());
         sendingTime = 0;
         if (SIMULATOR) {return;}
         Communications.transmit(

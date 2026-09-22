@@ -14,11 +14,27 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
         var sm = app.sm;
         var state = sm._state;
 
-        if (key == WatchUi.KEY_ESC && app.needQuitConfirm()) {
-            showQuitConfirmation();
-            return true;
-        } else if (key == WatchUi.KEY_ESC && DEBUG) {
-            sm.backIdle();
+        if (key == WatchUi.KEY_ESC) {
+            switch (state) {
+                case STATE_RUNNING : 
+                    showConfirmation("Quit Run ?", STATE_SENDING);
+                    break;
+                case STATE_SUMMARY :
+                    sm.backIdle();
+                    break;
+                case STATE_IDLE:
+                case STATE_COUNTDOWN:
+                case STATE_GPS_FIXING:
+                    showConfirmation("False Start ?", STATE_SUMMARY);
+                    break;
+                case STATE_IDLE:
+                case STATE_ERROR:
+                case STATE_FINISHED:
+                case STATE_NEED_SYNC:
+                case STATE_SENDING:
+                    showConfirmation("Quit App ?", STATE_QUIT);
+                    break;
+            }
             return true;
         }
 
@@ -60,14 +76,11 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
         return false;
     }
 
-    private function showQuitConfirmation() as Void {
-        var confirmation = new WatchUi.Confirmation(
-            "Stop session?\nProgress will be lost"
-        );
-
+    private function showConfirmation(msg as String, nextState as AppState) as Void {
+        var confirmation = new WatchUi.Confirmation(msg);
         WatchUi.pushView(
             confirmation,
-            new QuitConfirmationDelegate(getApp().sm),
+            new QuitConfirmationDelegate(nextState),
             WatchUi.SLIDE_IMMEDIATE
         );
     }

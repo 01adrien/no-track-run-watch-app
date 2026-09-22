@@ -2,6 +2,7 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
 import Toybox.Timer;
+import Toybox.Math;
 using Toybox.System;
 
 const RATIO_TOP_Y       = 0.20;  // position de départ (header)
@@ -182,108 +183,137 @@ class NoTrackRunView extends WatchUi.View {
     // -- RUNNING VIEW -- 
     //-------------------
     function drawRunning(dc as Dc, app as NoTrackRunApp) as Void {
-        var cx = dc.getWidth()  / 2;
-        var w  = dc.getWidth();
-        var h  = dc.getHeight();
-        var y  = (h * RATIO_TOP_Y).toNumber();
+    var cx = dc.getWidth()  / 2;
+    var cy = dc.getHeight() / 2;
+    var w  = dc.getWidth();
 
-        
-        // ── numero du bloc ──
-        var label = (app.rm.currentBlockIdx + 1).toString() + "/" + app.rm.getBlocksCount().toString();
-        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_MEDIUM, label, Graphics.TEXT_JUSTIFY_CENTER);
-        y += dc.getFontHeight(Graphics.FONT_MEDIUM) + LINE_GAP_PADDING;
+    var isRunningBlock = app.rm.isRunningBlock();
+    var block          = app.rm.getCurrentBlock();
+    var fields         = block["fields"] as Array;
+    var exercices      = block["exercices"] as Array;
+    var totalDots      = isRunningBlock
+                        ? fields.size() * app.rm.getTargetReps()
+                        : exercices.size();
+    var fieldIndex     = isRunningBlock
+                        ? ((app.rm.repCount - 1) * fields.size()) + app.rm.currentFieldIdx
+                        : app.rm.currentExoIdx;
 
-        // ── Pastilles de progression des fields ──
-        var isRunningBlock = app.rm.isRunningBlock();
-        var block          = app.rm.getCurrentBlock();
-        var fields         = block["fields"] as Array;
-        var exercices      = block["exercices"];
-        var dotSize        = (w * RATIO_DOT_SIZE).toNumber();
-        var dotSpacing     = (w * RATIO_DOT_SPACING).toNumber();
-        var totalDots      = isRunningBlock
-                            ? fields.size() * app.rm.getTargetReps()
-                            : exercices.size();
-        var dotsWidth      = totalDots * dotSpacing - (dotSpacing - dotSize);
-        var dotX           = (w - dotsWidth) / 2;
-        var fieldIndex     = isRunningBlock 
-                            ? ((app.rm.repCount - 1) * fields.size()) + app.rm.currentFieldIdx
-                            : app.rm.currentExoIdx;
+    // ── Arc de progression (autour de tout l'écran) ──
+    var radius   = (w / 2) - 8;
+    var penWidth = 5;
+    dc.setPenWidth(penWidth);
+
+    dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+    dc.drawArc(cx, cy, radius, Graphics.ARC_CLOCKWISE, 90, 90 - 359);
+
+    if (totalDots > 0) {
+        var progress   = fieldIndex.toFloat() / totalDots.toFloat();
+        var sweepAngle = (progress * 360).toNumber();
+        var endAngle   = 90 - sweepAngle;
+
+        if (sweepAngle > 0) {
+            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+            dc.drawArc(cx, cy, radius, Graphics.ARC_CLOCKWISE, 90, endAngle);
+        }
+
+        var cursorSweep = (1.0 / totalDots) * 360;
+        var cursorStart = endAngle;
+        var cursorEnd   = endAngle - cursorSweep;
+        var blinkColor  = (app.rm.fieldElapsed % 2 == 0) ? Graphics.COLOR_WHITE : Graphics.COLOR_YELLOW;
+        dc.setColor(blinkColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawArc(cx, cy, radius, Graphics.ARC_CLOCKWISE, cursorStart, cursorEnd);
+    }
+
+    // ── Séparateurs noirs entre segments ──
+    if (totalDots > 1) {
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(2);
+        var innerR = radius - (penWidth / 2);
+        var outerR = radius + (penWidth / 2);
 
         for (var i = 0; i < totalDots; i++) {
-            if (i < fieldIndex) {
-                dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-            } else if (i == fieldIndex) {
-                // blink each sec
-                if (app.rm.fieldElapsed % 2 == 0) {
-                    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                } else {
-                    dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-                }
-            } else {
-                dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-            }
-            dc.fillCircle(dotX + dotSize / 2, y + dotSize / 2, dotSize / 2);
-            dotX += dotSpacing;
-        }
-        y += dotSize + LINE_GAP_PADDING + 4;
-
-
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        
-        var rem = app.rm.fieldRemaining();
-        var field = app.rm.getCurrentField();    
-        var goal = app.rm.getGoal();
-
-        if (goal == GOAL_DISTANCE) {
-            dc.drawText(cx, y, Graphics.FONT_LARGE,
-                formatDistance(rem * 1.0), Graphics.TEXT_JUSTIFY_CENTER);
-        } else if (goal == GOAL_DURATION)  {
-            dc.drawText(cx, y, Graphics.FONT_LARGE,
-                formatTime(rem), Graphics.TEXT_JUSTIFY_CENTER);
-        }  else {
-            dc.drawText(cx, y, Graphics.FONT_LARGE,
-                formatTime(app.rm.fieldElapsed), Graphics.TEXT_JUSTIFY_CENTER);
-        }
-
-        y += dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING;
-
-
-        // ── Heart rate ──
-        var hrY = y - ((dc.getFontHeight(Graphics.FONT_LARGE) + LINE_GAP_PADDING));
-        var hrMargin = w - (w * 0.1).toNumber();
-        dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(hrMargin, hrY, Graphics.FONT_MEDIUM,
-                    app.rm.getHeartRateFormatted(), 
-                    Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
-                    
-        if (app.rm.isRunningBlock()) {
-
-            // ── Pace courant ──
-            dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, y, Graphics.FONT_TINY,
-                        formatPace(app.rm.currentSpeed), Graphics.TEXT_JUSTIFY_CENTER);
-            y += dc.getFontHeight(Graphics.FONT_TINY) + LINE_GAP_PADDING;
-
-
-            // ── Pace cible ──
-            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, y, Graphics.FONT_TINY,
-                field["pace"], Graphics.TEXT_JUSTIFY_CENTER);
-            
-        } else {
-            // ── Current exercice ──
-            var exercice = block["exercices"][app.rm.currentExoIdx];
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(cx, y, Graphics.FONT_TINY,
-                exercice["label"], Graphics.TEXT_JUSTIFY_CENTER);
-            y += dc.getFontHeight(Graphics.FONT_TINY) + LINE_GAP_PADDING;
-
-            dc.drawText(cx, y, Graphics.FONT_TINY,
-                exercice["reps"], Graphics.TEXT_JUSTIFY_CENTER);
+            var angleDeg = 90 - (i * (360.0 / totalDots));
+            var angleRad = Math.toRadians(angleDeg);
+            var x1 = cx + (innerR * Math.cos(angleRad));
+            var y1 = cy - (innerR * Math.sin(angleRad));
+            var x2 = cx + (outerR * Math.cos(angleRad));
+            var y2 = cy - (outerR * Math.sin(angleRad));
+            dc.drawLine(x1, y1, x2, y2);
         }
     }
 
+    dc.setPenWidth(1);
+
+    // ── Préparation des textes ──
+    var blockLabel = (app.rm.currentBlockIdx + 1).toString() + "/" + app.rm.getBlocksCount().toString();
+    var hrLabel    = app.rm.getHeartRateFormatted();
+
+    var rem   = app.rm.fieldRemaining();
+    var field = app.rm.getCurrentField();
+    var goal  = app.rm.getGoal();
+    var mainLabel = "";
+    if (goal == GOAL_DISTANCE) {
+        mainLabel = formatDistance(rem * 1.0);
+    } else if (goal == GOAL_DURATION) {
+        mainLabel = formatTime(rem);
+    } else {
+        mainLabel = formatTime(app.rm.fieldElapsed);
+    }
+
+    var line3Label = "";
+    var line4Label = "";
+    if (isRunningBlock) {
+        line3Label = formatPace(app.rm.currentSpeed);
+        line4Label = field["pace"] as String;
+    } else {
+        var exercice = exercices[app.rm.currentExoIdx] as Dictionary;
+        line3Label = exercice["label"] as String;
+        line4Label = (exercice["reps"] as Number).toString() + " reps";
+    }
+
+    // ── Hauteurs des polices utilisées ──
+    var hBlock = dc.getFontHeight(Graphics.FONT_TINY);
+    var hMain  = dc.getFontHeight(Graphics.FONT_LARGE);
+    var hLine3 = dc.getFontHeight(Graphics.FONT_TINY);
+    var hLine4 = dc.getFontHeight(Graphics.FONT_TINY);
+    var hHR    = dc.getFontHeight(Graphics.FONT_TINY);
+    var gap    = LINE_GAP_PADDING;
+
+    var totalHeight = hBlock + gap + hMain + gap + hLine3 + gap + hLine4 + gap + hHR;
+    var y = cy - (totalHeight / 2);
+
+    // ── Numéro de bloc (centré, en haut) ──
+    dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(cx, y, Graphics.FONT_TINY, blockLabel, Graphics.TEXT_JUSTIFY_CENTER);
+    y += hBlock + gap;
+
+    // ── Métrique principale ──
+    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(cx, y, Graphics.FONT_LARGE, mainLabel, Graphics.TEXT_JUSTIFY_CENTER);
+    y += hMain + gap;
+
+    // ── Ligne secondaire ──
+    dc.setColor(isRunningBlock ? Graphics.COLOR_BLUE : Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(cx, y, Graphics.FONT_TINY, line3Label, Graphics.TEXT_JUSTIFY_CENTER);
+    y += hLine3 + gap;
+
+    // ── Ligne tertiaire ──
+    dc.setColor(isRunningBlock ? Graphics.COLOR_DK_GRAY : Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    dc.drawText(cx, y, Graphics.FONT_TINY, line4Label, Graphics.TEXT_JUSTIFY_CENTER);
+    y += hLine4 + gap;
+
+    // ── HR en bas, avec pastille ronde ──
+    var hrTextWidth  = dc.getTextWidthInPixels(hrLabel, Graphics.FONT_TINY);
+    var dotRadius    = 4;
+    var dotTextGap   = 4;
+    var totalHrWidth = (dotRadius * 2) + dotTextGap + hrTextWidth;
+    var hrStartX     = cx - (totalHrWidth / 2);
+
+    dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+    dc.fillCircle(hrStartX + dotRadius, y + (hHR / 2), dotRadius);
+    dc.drawText(hrStartX + (dotRadius * 2) + dotTextGap, y, Graphics.FONT_TINY,
+                hrLabel, Graphics.TEXT_JUSTIFY_LEFT);
+}
 
     // -------------------------
     // -- SESSION FINISH VIEW -- 
@@ -317,7 +347,7 @@ class NoTrackRunView extends WatchUi.View {
         y += dc.getFontHeight(Graphics.FONT_SMALL) + LINE_GAP_PADDING;
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_SMALL, "press start to send", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(cx, y, Graphics.FONT_TINY, "press start to send", Graphics.TEXT_JUSTIFY_CENTER);
     }
 
 

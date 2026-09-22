@@ -1,0 +1,2 @@
+checker que les type de messages (ACCK ou SESSION)
+correspondent bien a l'etat de la montre (IDLE, SENDING)

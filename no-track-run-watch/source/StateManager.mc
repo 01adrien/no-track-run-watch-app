@@ -31,6 +31,7 @@ enum AppEvent {
     EVENT_ERROR,
     EVENT_QUIT_APP,
     EVENT_NONE,
+    EVENT_STOP_RUN,
 }
 
 class StateManager {
@@ -131,18 +132,13 @@ class StateManager {
                 app.startSession();
                 break;
             case STATE_QUIT:
-                if (prev == STATE_SENDING || prev == STATE_RUNNING) {
-                    app.deleteSession();
-                }
+                if (prev == STATE_SENDING) { app.deleteSession();}
                 app.rm.stopActivitySession(false);
                 if (DEBUG) {transition(STATE_IDLE);}
                 else {app.exit();}
                 break;
             case STATE_IDLE:
-                if (DEBUG) {
-                    app.deleteSession();
-                    app.rm.stopActivitySession(false);
-                }
+                if (app.getSession() != null) {sm.handle(EVENT_NEED_SYNC);}
                 break;
             case STATE_FINISHED:
             case STATE_RUNNING:
@@ -172,7 +168,12 @@ class StateManager {
     }
 
     function backIdle() as Void {
-        
+        var app = getApp();
+        app.rm.sessionData = {};
         transition(STATE_IDLE);
+    }
+
+    function in(state as AppState) as Boolean {
+        return _state == state;
     }
 }

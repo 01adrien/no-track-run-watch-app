@@ -71,6 +71,8 @@ class RunManager {
             :sport    => Activity.SPORT_RUNNING,
             :subSport => Activity.SUB_SPORT_GENERIC
         });
+        var store = Application.Storage;
+        store.setValue("session@notrackrun", {});
         session.start();
     }
 
@@ -118,11 +120,7 @@ class RunManager {
     }
 
       function advanceField() as Void {
-        if (
-            !isRunningBlock() && 
-            (fieldRemaining() > 0) && 
-            !isLastExercice()
-        ) {
+        if (!isRunningBlock() && !isLastExercice()) {
             currentExoIdx ++;
             return;
         }
@@ -147,6 +145,28 @@ class RunManager {
             else { advanceBlock(); }
 
         } else {advanceBlock();}
+    }
+    
+
+    function saveFieldResult() as Void {
+        
+        var block = getCurrentBlock();
+        var field = getCurrentField();
+
+            /*
+            var success = isRunningBlock 
+                ? evaluateFieldSuccess(field, fieldDistance, fieldElapsed)
+                : true;
+            */
+        results.add({
+            "blockId"  => block["id"],
+            "index"    => repCount,
+            "distance" => fieldDistance,
+            "duration" => fieldElapsed,
+            "role"     => !isRunningBlock() ? "EXERCICES" : field["role"],
+            // "success"  => success,
+        });
+        saveSessionLocally();
     }
 
     function advanceBlock() as Void {
@@ -303,8 +323,9 @@ class RunManager {
     }
 
     function isLastExercice() as Boolean {
-        var exos = getCurrentBlock()["exercices"];
-        return exos.size() == currentExoIdx + 1;
+        var b = getCurrentBlock();
+        if (!b.hasKey("exercices")) {return false ;}
+        return b["exercices"].size() == currentExoIdx + 1;
     }
 
     function saveSessionLocally() as Void {
@@ -322,29 +343,7 @@ class RunManager {
     }
 
 
-    function saveFieldResult() as Void {
-        
-        if (fieldRemaining() == 0 || isLastExercice()) {
-        
-          var block = getCurrentBlock();
-          var field = getCurrentField();
 
-            /*
-            var success = isRunningBlock 
-                ? evaluateFieldSuccess(field, fieldDistance, fieldElapsed)
-                : true;
-            */
-            results.add({
-                "blockId"  => block["id"],
-                "index"    => repCount,
-                "distance" => fieldDistance,
-                "duration" => fieldElapsed,
-                "role"     => isLastExercice() ? "EXERCICES" : field["role"],
-                // "success"  => success,
-            });
-            saveSessionLocally();
-        }
-    }
 
     /*
     function evaluateFieldSuccess(field as Dictionary, distance as Float, duration as Number) as Boolean {

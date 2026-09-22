@@ -13,12 +13,12 @@ class QuitConfirmationDelegate extends WatchUi.ConfirmationDelegate {
     static
     <init> {
     }
-    [ @file = "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc"; @line = 8; @position = 16; @symbol_vardef = [_stateMachine,8,16,29]; ]
+    [ @file = "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc"; @line = 8; @position = 16; @symbol_vardef = [_state,8,16,22]; ]
     private
-    var _stateMachine;
-    [ @file = "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; @symbol_param<0> = [stateMachine,10,24,36]; ]
-    function initialize(stateMachine) as Void {
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_10_38_13_4_start:
+    var _state;
+    [ @file = "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc"; @line = 10; @symbol_functiondef = [initialize,10,13,23]; @symbol_param<0> = [state,10,24,29]; @symbol_param<0>_type<0> = [AppState,10,33,41]; ]
+    function initialize(state as AppState) as Void {
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_10_43_13_4_start:
 [ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 11 8 ]
         symbol [ ConfirmationDelegate %tmp.2 11 8 28 ];
         %tmp.2 = getv ? :ConfirmationDelegate;
@@ -26,42 +26,54 @@ _workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_10_38_13_4_star
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
 [ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 12 8 ]
-        %tmp.4 = lgetv %stateMachine;
-        symbol [ stateMachine %tmp.4 12 24 36 ];
-        symbol [ _stateMachine ? 12 8 21 ];
-        putv self :_stateMachine %tmp.4;
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_10_38_13_4_stop:
+        %tmp.4 = lgetv %state;
+        symbol [ state %tmp.4 12 17 22 ];
+        symbol [ _state ? 12 8 14 ];
+        putv self :_state %tmp.4;
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_10_43_13_4_stop:
     }
     [ @file = "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc"; @line = 15; @symbol_functiondef = [onResponse,15,13,23]; @symbol_param<0> = [response,15,24,32]; @symbol_param<0>_type<0> = [WatchUi,15,36,43]; @symbol_param<0>_type<1> = [Confirm,15,44,51]; @symbol_return<0> = [Boolean,15,56,63]; ]
     function onResponse(response as WatchUi.Confirm) as Boolean {
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_15_64_23_4_start:
-[ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 18 8 ]
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_18_8_20_8_if_stmt:
-        %tmp.1 = lgetv %response;
-        symbol [ response %tmp.1 18 12 20 ];
-        symbol [ WatchUi %tmp.2 18 24 31 ];
-        %tmp.2 = getm $.Toybox.WatchUi;
-        symbol [ CONFIRM_YES %tmp.3 18 32 43 ];
-        %tmp.3 = getv %tmp.2 :CONFIRM_YES;
-        %tmp.4 = eq %tmp.1 %tmp.3;
-        bf %tmp.4 @_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_18_8_20_8_if_end;
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_18_8_20_8_if_true:
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_18_45_20_8_start:
-[ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 19 12 ]
-        symbol [ _stateMachine %tmp.6 19 12 25 ];
-        %tmp.6 = getv ? :_stateMachine;
-        symbol [ handle %tmp.7 19 26 32 ];
-        %tmp.7 = getv function %tmp.6 :handle;
-        symbol [ EVENT_QUIT_APP %tmp.9 19 33 47 ];
-        %tmp.9 = getv ? :EVENT_QUIT_APP;
-        invoke %tmp.6 %tmp.7(%tmp.9);
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_18_45_20_8_stop:
-        goto @_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_18_8_20_8_if_end;
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_18_8_20_8_if_end:
-[ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 22 8 ]
-        %tmp.10 = true;
-        ret %tmp.10;
-_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_15_64_23_4_stop:
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_15_64_22_4_start:
+[ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 16 8 ]
+        [ "_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_15_64_22_4_start" "_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_15_64_22_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 16 12 15 ];
+        %tmp.1 = self;
+        symbol [ getApp %tmp.2 16 18 24 ];
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %app.1 %tmp.3;
+        symbol [ app %app.1 16 12 15 ];
+[ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 17 8 ]
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_17_8_19_8_if_stmt:
+        %tmp.4 = lgetv %response;
+        symbol [ response %tmp.4 17 12 20 ];
+        symbol [ WatchUi %tmp.5 17 24 31 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ CONFIRM_YES %tmp.6 17 32 43 ];
+        %tmp.6 = getv %tmp.5 :CONFIRM_YES;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_17_8_19_8_if_end;
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_17_8_19_8_if_true:
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_17_45_19_8_start:
+[ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 18 12 ]
+        %tmp.8 = lgetv %app.1;
+        symbol [ app %tmp.8 18 12 15 ];
+        symbol [ sm %tmp.9 18 16 18 ];
+        %tmp.9 = getv %tmp.8 :sm;
+        symbol [ transition %tmp.10 18 19 29 ];
+        %tmp.10 = getv function %tmp.9 :transition;
+        symbol [ _state %tmp.12 18 30 36 ];
+        %tmp.12 = getv ? :_state;
+        invoke %tmp.9 %tmp.10(%tmp.12);
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_17_45_19_8_stop:
+        goto @_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_17_8_19_8_if_end;
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_17_8_19_8_if_end:
+[ "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc" 21 8 ]
+        %tmp.13 = true;
+        ret %tmp.13;
+_workspace_no_track_run_watch_source_QuitConfirmationDelegate_mc_15_64_22_4_stop:
     }
 }
 [ @file = "/workspace/no-track-run-watch/source/QuitConfirmationDelegate.mc"; @line = 1; ]

@@ -5,18 +5,17 @@ using Toybox.System;
 class QuitConfirmationDelegate
     extends WatchUi.ConfirmationDelegate {
 
-    private var _stateMachine;
+    private var _state;
 
-    function initialize(stateMachine) {
+    function initialize(state as AppState) {
         ConfirmationDelegate.initialize();
-        _stateMachine = stateMachine;
+        _state = state;
     }
 
     function onResponse(response as WatchUi.Confirm) as Boolean {
-
-        
+        var app = getApp();
         if (response == WatchUi.CONFIRM_YES) {
-            _stateMachine.handle(EVENT_QUIT_APP);
+            app.sm.transition(_state);
         }
         
         return true;

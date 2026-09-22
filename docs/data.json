@@ -11,6 +11,7 @@
                 "label": "exercices",
                 "type": "CONDITIONNING",
                 "repetitions": 1,
+                "fields": [],
                 "exercices": [
                     {
                         "order": 1,
@@ -26,14 +27,6 @@
                         "order": 3,
                         "label": "Abdo",
                         "reps": 10
-                    }
-                ],
-                "fields": [
-                    {
-                        "role": "EFFORT",
-                        "targetType": "DURATION",
-                        "targetValue": 60,
-                        "pace": "--:--"
                     }
                 ]
             }
@@ -51,29 +44,8 @@
         "date": "2026-07-15",
         "blocks": [
             {
-                "id": 1,
-                "order": 1,
-                "label": "duration / repetitions",
-                "type": "RUNNING",
-                "repetitions": 4,
-                "fields": [
-                    {
-                        "role": "EFFORT",
-                        "targetType": "DURATION",
-                        "targetValue": 400,
-                        "pace": "06:50"
-                    },
-                    {
-                        "role": "RECOVERY",
-                        "targetType": "DURATION",
-                        "targetValue": 400,
-                        "pace": "08:50"
-                    }
-                ]
-            },
-            {
-                "id": 1,
-                "order": 1,
+                "id": 2,
+                "order": 2,
                 "label": "duration / repetitions",
                 "type": "RUNNING",
                 "repetitions": 2,
@@ -107,7 +79,97 @@
                         "pace": "05:50"
                     }
                 ]
+            },
+            {
+                "id": 3,
+                "order": 1,
+                "label": "exercices",
+                "type": "CONDITIONNING",
+                "repetitions": 1,
+                "exercices": [
+                    {
+                        "order": 1,
+                        "label": "Push up",
+                        "reps": 10
+                    },
+                    {
+                        "order": 2,
+                        "label": "Squat",
+                        "reps": 20
+                    },
+                    {
+                        "order": 3,
+                        "label": "Abdo",
+                        "reps": 10
+                    }
+                ],
+                "fields": [
+                    {
+                        "role": "EFFORT",
+                        "targetType": "DURATION",
+                        "targetValue": 60,
+                        "pace": "--:--"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "order": 1,
+                "label": "exercices",
+                "type": "CONDITIONNING",
+                "repetitions": 1,
+                "fields": [],
+                "exercices": [
+                    {
+                        "order": 1,
+                        "label": "Push up",
+                        "reps": 10
+                    },
+                    {
+                        "order": 2,
+                        "label": "Squat",
+                        "reps": 20
+                    },
+                    {
+                        "order": 3,
+                        "label": "Abdo",
+                        "reps": 10
+                    }
+                ]
             }
+        ]
+    }
+}
+
+
+{
+    "type": "SESSION_PAYLOAD",
+    "payload": {
+        "id": 1,
+        "label": "Tempo",
+        "date": "2026-07-15",
+        "blocks": [
+            {
+                "id": 1,
+                "order": 1,
+                "label": "duration / repetitions",
+                "type": "RUNNING",
+                "repetitions": 4,
+                "fields": [
+                    {
+                        "role": "EFFORT",
+                        "targetType": "DURATION",
+                        "targetValue": 400,
+                        "pace": "06:50"
+                    },
+                    {
+                        "role": "RECOVERY",
+                        "targetType": "DISTANCE",
+                        "targetValue": 400,
+                        "pace": "08:50"
+                    }
+                ]
+            },
         ]
     }
 }
