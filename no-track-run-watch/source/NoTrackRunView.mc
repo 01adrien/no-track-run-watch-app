@@ -17,21 +17,30 @@ class NoTrackRunView extends WatchUi.View {
     var cachedBlockLabel   as String = "";
     var cachedSessionLabel as String = ""; 
 
+    var runnerIcon as BitmapResource?;
+    var uploadIcon as BitmapResource?;
+    var compassIcon as BitmapResource?;
+    var sendIcon   as BitmapResource?;
+
     function initialize() {
         View.initialize();
+        runnerIcon  = WatchUi.loadResource(Rez.Drawables.RunnerIcon) as BitmapResource;
+        compassIcon = WatchUi.loadResource(Rez.Drawables.CompassIcon) as BitmapResource;
+        uploadIcon  = WatchUi.loadResource(Rez.Drawables.UploadIcon) as BitmapResource;
+        sendIcon    = WatchUi.loadResource(Rez.Drawables.SendIcon) as BitmapResource;
     }
 
 
     function onLayout(dc as Dc) as Void {}
 
     function onUpdate(dc as Dc) as Void {
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
         var app = getApp();
         var state = app.sm._state;
         switch (state) {
             case STATE_IDLE:
-                drawIdle(dc, app);
+                drawMessage(dc, app, "Upload a session", runnerIcon);
                 break;
             case STATE_SUMMARY:
                 drawSummary(dc, app);
@@ -51,29 +60,15 @@ class NoTrackRunView extends WatchUi.View {
                 drawSynced(dc, app);
                 break;
             case STATE_SENDING:
-                drawMessage(dc, app, "Sending session...");
+                drawMessage(dc, app, "Sending session", sendIcon);
                 break;
             case STATE_GPS_FIXING:
-                drawMessage(dc, app, "Acquiring GPS...");
+                drawMessage(dc, app, "Acquiring GPS", compassIcon);
                 break;
             case STATE_ERROR:
                 drawError(dc, app);
                 break;
         }
-    }
-
-
-    // ---------------
-    // -- IDLE VIEW -- 
-    //----------------
-    function drawIdle(dc as Dc, app as NoTrackRunApp) as Void {
-        var cx = dc.getWidth()  / 2;
-        var cy = dc.getHeight() / 2;
-        var offset = (dc.getFontHeight(Graphics.FONT_SMALL) / 2) + LINE_GAP_PADDING;
-
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy - offset, Graphics.FONT_SMALL, 
-                        "Waiting for session..", Graphics.TEXT_JUSTIFY_CENTER);
     }
 
 
@@ -107,7 +102,7 @@ class NoTrackRunView extends WatchUi.View {
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, y, Graphics.FONT_SMALL,
-            blockCount.toString() + " blocks", Graphics.TEXT_JUSTIFY_CENTER);
+            blockCount.toString() + " block" + (blockCount > 1 ? "s" : ""), Graphics.TEXT_JUSTIFY_CENTER);
         y += dc.getFontHeight(Graphics.FONT_SMALL) + LINE_GAP_PADDING;
 
     }
@@ -116,19 +111,34 @@ class NoTrackRunView extends WatchUi.View {
     // ------------------
     // -- MESSAGE VIEW -- 
     // ------------------
-    function drawMessage(dc as Dc, app as NoTrackRunApp, msg as String) as Void {
+    function drawMessage(dc as Dc, app as NoTrackRunApp, msg as String, icon as BitmapResource?) as Void {
         var cx = dc.getWidth()  / 2;
         var cy = dc.getHeight() / 2;
         var offset = (dc.getFontHeight(Graphics.FONT_SMALL) / 2) + LINE_GAP_PADDING;
 
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(
-            cx,
-            cy - offset,
-            Graphics.FONT_SMALL,
-            msg,
-            Graphics.TEXT_JUSTIFY_CENTER
-        );
+        if (icon != null) {
+            var iconWidth  = icon.getWidth();
+            var iconHeight = icon.getHeight();
+            var iconY = dc.getHeight() / 6 ; 
+
+            dc.drawBitmap(cx - (iconWidth / 2), iconY, icon);
+
+            dc.drawText(
+                cx,
+                iconY + iconHeight + LINE_GAP_PADDING,
+                Graphics.FONT_TINY,
+                msg,
+                Graphics.TEXT_JUSTIFY_CENTER
+            );
+        } else {
+            dc.drawText(
+                cx,
+                cy - offset,
+                Graphics.FONT_SMALL,
+                msg,
+                Graphics.TEXT_JUSTIFY_CENTER
+            );
+        }
     }
 
 
@@ -313,6 +323,7 @@ class NoTrackRunView extends WatchUi.View {
     dc.fillCircle(hrStartX + dotRadius, y + (hHR / 2), dotRadius);
     dc.drawText(hrStartX + (dotRadius * 2) + dotTextGap, y, Graphics.FONT_TINY,
                 hrLabel, Graphics.TEXT_JUSTIFY_LEFT);
+
 }
 
     // -------------------------
@@ -347,7 +358,7 @@ class NoTrackRunView extends WatchUi.View {
         y += dc.getFontHeight(Graphics.FONT_SMALL) + LINE_GAP_PADDING;
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, y, Graphics.FONT_TINY, "press start to send", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(cx, y, Graphics.FONT_XTINY, "press start to send", Graphics.TEXT_JUSTIFY_CENTER);
     }
 
 

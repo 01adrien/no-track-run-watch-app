@@ -138,7 +138,7 @@ class StateManager {
                 else {app.exit();}
                 break;
             case STATE_IDLE:
-                if (app.getSession() != null) {sm.handle(EVENT_NEED_SYNC);}
+                if (app.getSession() != null) {app.sm.handle(EVENT_NEED_SYNC);}
                 break;
             case STATE_FINISHED:
             case STATE_RUNNING:

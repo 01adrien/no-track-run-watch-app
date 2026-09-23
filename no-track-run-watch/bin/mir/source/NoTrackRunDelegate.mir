@@ -26,9 +26,9 @@ _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_7_26_9_4_stop:
     }
     [ @file = "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc"; @line = 11; @symbol_functiondef = [onKey,11,13,18]; @symbol_param<0> = [keyEvent,11,19,27]; @symbol_param<0>_type<0> = [KeyEvent,11,31,39]; @symbol_return<0> = [Boolean,11,44,51]; ]
     function onKey(keyEvent as KeyEvent) as Boolean {
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_start:
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 12 8 ]
-        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_stop" ]
+        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_stop" ]
         %key.1 = local;
         symbol [ key %key.1 12 12 15 ];
         %tmp.1 = lgetv %keyEvent;
@@ -39,7 +39,7 @@ _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start:
         lputv %key.1 %tmp.3;
         symbol [ key %key.1 12 12 15 ];
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 13 8 ]
-        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_stop" ]
+        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_stop" ]
         %app.2 = local;
         symbol [ app %app.2 13 12 15 ];
         %tmp.4 = self;
@@ -49,7 +49,7 @@ _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start:
         lputv %app.2 %tmp.6;
         symbol [ app %app.2 13 12 15 ];
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 14 8 ]
-        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_stop" ]
+        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_stop" ]
         %sm.3 = local;
         symbol [ sm %sm.3 14 12 14 ];
         %tmp.7 = lgetv %app.2;
@@ -59,7 +59,7 @@ _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start:
         lputv %sm.3 %tmp.8;
         symbol [ sm %sm.3 14 12 14 ];
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 15 8 ]
-        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_stop" ]
+        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_stop" ]
         %state.4 = local;
         symbol [ state %state.4 15 12 17 ];
         %tmp.9 = lgetv %sm.3;
@@ -69,7 +69,7 @@ _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_start:
         lputv %state.4 %tmp.10;
         symbol [ state %state.4 15 12 17 ];
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 17 8 ]
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_39_8_if_stmt:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_38_8_if_stmt:
         %tmp.11 = lgetv %key.1;
         symbol [ key %tmp.11 17 12 15 ];
         symbol [ WatchUi %tmp.12 17 19 26 ];
@@ -77,15 +77,15 @@ _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_39_8_if_stmt:
         symbol [ KEY_ESC %tmp.13 17 27 34 ];
         %tmp.13 = getv %tmp.12 :KEY_ESC;
         %tmp.14 = eq %tmp.11 %tmp.13;
-        bf %tmp.14 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_39_8_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_39_8_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_36_39_8_start:
+        bf %tmp.14 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_38_8_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_38_8_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_36_38_8_start:
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 18 12 ]
         %tmp.15 = lgetv %state.4;
         symbol [ state %tmp.15 18 20 25 ];
         push %tmp.15;
-        switch %tmp.15 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStmtBegin:
+        switch %tmp.15 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_switchStmtBegin:
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 19 16 ]
         %tmp.16 = dup %tmp.15;
         symbol [ STATE_RUNNING %tmp.18 19 21 34 ];
@@ -102,397 +102,389 @@ _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStm
         bt %tmp.25 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_22_16_24_25_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 25 16 ]
         %tmp.26 = dup %tmp.15;
-        symbol [ STATE_IDLE %tmp.28 25 21 31 ];
-        %tmp.28 = getv ? :STATE_IDLE;
+        symbol [ STATE_COUNTDOWN %tmp.28 25 21 36 ];
+        %tmp.28 = getv ? :STATE_COUNTDOWN;
         %tmp.29 = getv function %tmp.26 :equals;
         %tmp.30 = invoke %tmp.26 %tmp.29 (%tmp.28);
-        bt %tmp.30 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_25_16_25_31_switchCase;
+        bt %tmp.30 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_25_16_25_36_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 26 16 ]
         %tmp.31 = dup %tmp.15;
-        symbol [ STATE_COUNTDOWN %tmp.33 26 21 36 ];
-        %tmp.33 = getv ? :STATE_COUNTDOWN;
+        symbol [ STATE_GPS_FIXING %tmp.33 26 21 37 ];
+        %tmp.33 = getv ? :STATE_GPS_FIXING;
         %tmp.34 = getv function %tmp.31 :equals;
         %tmp.35 = invoke %tmp.31 %tmp.34 (%tmp.33);
-        bt %tmp.35 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_26_16_26_36_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 27 16 ]
+        bt %tmp.35 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_26_16_28_25_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 29 16 ]
         %tmp.36 = dup %tmp.15;
-        symbol [ STATE_GPS_FIXING %tmp.38 27 21 37 ];
-        %tmp.38 = getv ? :STATE_GPS_FIXING;
+        symbol [ STATE_IDLE %tmp.38 29 21 31 ];
+        %tmp.38 = getv ? :STATE_IDLE;
         %tmp.39 = getv function %tmp.36 :equals;
         %tmp.40 = invoke %tmp.36 %tmp.39 (%tmp.38);
-        bt %tmp.40 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_27_16_29_25_switchCase;
+        bt %tmp.40 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_29_16_29_31_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 30 16 ]
         %tmp.41 = dup %tmp.15;
-        symbol [ STATE_IDLE %tmp.43 30 21 31 ];
-        %tmp.43 = getv ? :STATE_IDLE;
+        symbol [ STATE_ERROR %tmp.43 30 21 32 ];
+        %tmp.43 = getv ? :STATE_ERROR;
         %tmp.44 = getv function %tmp.41 :equals;
         %tmp.45 = invoke %tmp.41 %tmp.44 (%tmp.43);
-        bt %tmp.45 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_30_16_30_31_switchCase;
+        bt %tmp.45 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_30_16_30_32_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 31 16 ]
         %tmp.46 = dup %tmp.15;
-        symbol [ STATE_ERROR %tmp.48 31 21 32 ];
-        %tmp.48 = getv ? :STATE_ERROR;
+        symbol [ STATE_FINISHED %tmp.48 31 21 35 ];
+        %tmp.48 = getv ? :STATE_FINISHED;
         %tmp.49 = getv function %tmp.46 :equals;
         %tmp.50 = invoke %tmp.46 %tmp.49 (%tmp.48);
-        bt %tmp.50 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_31_16_31_32_switchCase;
+        bt %tmp.50 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_31_16_31_35_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 32 16 ]
         %tmp.51 = dup %tmp.15;
-        symbol [ STATE_FINISHED %tmp.53 32 21 35 ];
-        %tmp.53 = getv ? :STATE_FINISHED;
+        symbol [ STATE_NEED_SYNC %tmp.53 32 21 36 ];
+        %tmp.53 = getv ? :STATE_NEED_SYNC;
         %tmp.54 = getv function %tmp.51 :equals;
         %tmp.55 = invoke %tmp.51 %tmp.54 (%tmp.53);
-        bt %tmp.55 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_32_16_32_35_switchCase;
+        bt %tmp.55 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_32_16_32_36_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 33 16 ]
         %tmp.56 = dup %tmp.15;
-        symbol [ STATE_NEED_SYNC %tmp.58 33 21 36 ];
-        %tmp.58 = getv ? :STATE_NEED_SYNC;
+        symbol [ STATE_SENDING %tmp.58 33 21 34 ];
+        %tmp.58 = getv ? :STATE_SENDING;
         %tmp.59 = getv function %tmp.56 :equals;
         %tmp.60 = invoke %tmp.56 %tmp.59 (%tmp.58);
-        bt %tmp.60 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_33_16_33_36_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 34 16 ]
-        %tmp.61 = dup %tmp.15;
-        symbol [ STATE_SENDING %tmp.63 34 21 34 ];
-        %tmp.63 = getv ? :STATE_SENDING;
-        %tmp.64 = getv function %tmp.61 :equals;
-        %tmp.65 = invoke %tmp.61 %tmp.64 (%tmp.63);
-        bt %tmp.65 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_34_16_36_25_switchCase;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStmtDefault:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_defaultCodeBegin;
+        bt %tmp.60 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_33_16_35_25_switchCase;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_defaultCodeBegin;
 _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_19_16_21_25_switchCase:
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 20 20 ]
-        %tmp.66 = self;
-        symbol [ showConfirmation %tmp.67 20 20 36 ];
-        %tmp.67 = getv function %tmp.66 :showConfirmation;
-        %tmp.68 = "Quit Run ?";
-        symbol [ STATE_SENDING %tmp.70 20 51 64 ];
-        %tmp.70 = getv ? :STATE_SENDING;
-        invoke %tmp.66 %tmp.67(%tmp.68, %tmp.70);
+        %tmp.61 = self;
+        symbol [ showConfirmation %tmp.62 20 20 36 ];
+        %tmp.62 = getv function %tmp.61 :showConfirmation;
+        %tmp.63 = "Quit Run ?";
+        symbol [ STATE_SENDING %tmp.65 20 51 64 ];
+        %tmp.65 = getv ? :STATE_SENDING;
+        invoke %tmp.61 %tmp.62(%tmp.63, %tmp.65);
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 21 20 ]
-        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStmtEnd;
+        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_switchStmtEnd;
 _workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_22_16_24_25_switchCase:
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 23 20 ]
-        %tmp.71 = lgetv %sm.3;
-        symbol [ sm %tmp.71 23 20 22 ];
-        symbol [ backIdle %tmp.72 23 23 31 ];
-        %tmp.72 = getv function %tmp.71 :backIdle;
-        invoke %tmp.71 %tmp.72();
+        %tmp.66 = lgetv %sm.3;
+        symbol [ sm %tmp.66 23 20 22 ];
+        symbol [ backIdle %tmp.67 23 23 31 ];
+        %tmp.67 = getv function %tmp.66 :backIdle;
+        invoke %tmp.66 %tmp.67();
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 24 20 ]
-        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_25_16_25_31_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_26_16_26_36_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_27_16_29_25_switchCase:
+        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_25_16_25_36_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_26_16_28_25_switchCase:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 27 20 ]
+        %tmp.68 = self;
+        symbol [ showConfirmation %tmp.69 27 20 36 ];
+        %tmp.69 = getv function %tmp.68 :showConfirmation;
+        %tmp.70 = "False Start ?";
+        symbol [ STATE_SUMMARY %tmp.72 27 54 67 ];
+        %tmp.72 = getv ? :STATE_SUMMARY;
+        invoke %tmp.68 %tmp.69(%tmp.70, %tmp.72);
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 28 20 ]
+        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_29_16_29_31_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_30_16_30_32_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_31_16_31_35_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_32_16_32_36_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_33_16_35_25_switchCase:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 34 20 ]
         %tmp.73 = self;
-        symbol [ showConfirmation %tmp.74 28 20 36 ];
+        symbol [ showConfirmation %tmp.74 34 20 36 ];
         %tmp.74 = getv function %tmp.73 :showConfirmation;
-        %tmp.75 = "False Start ?";
-        symbol [ STATE_SUMMARY %tmp.77 28 54 67 ];
-        %tmp.77 = getv ? :STATE_SUMMARY;
+        %tmp.75 = "Quit App ?";
+        symbol [ STATE_QUIT %tmp.77 34 51 61 ];
+        %tmp.77 = getv ? :STATE_QUIT;
         invoke %tmp.73 %tmp.74(%tmp.75, %tmp.77);
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 29 20 ]
-        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_30_16_30_31_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_31_16_31_32_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_32_16_32_35_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_33_16_33_36_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_34_16_36_25_switchCase:
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 35 20 ]
-        %tmp.78 = self;
-        symbol [ showConfirmation %tmp.79 35 20 36 ];
-        %tmp.79 = getv function %tmp.78 :showConfirmation;
-        %tmp.80 = "Quit App ?";
-        symbol [ STATE_QUIT %tmp.82 35 51 61 ];
-        %tmp.82 = getv ? :STATE_QUIT;
-        invoke %tmp.78 %tmp.79(%tmp.80, %tmp.82);
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 36 20 ]
-        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_defaultCodeBegin:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_37_12_switchStmtEnd:
+        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_defaultCodeBegin:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_18_12_36_12_switchStmtEnd:
         pop;
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 38 12 ]
-        %tmp.83 = true;
-        ret %tmp.83;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_36_39_8_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_39_8_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_39_8_if_end:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 43 8 ]
-        %tmp.84 = lgetv %state.4;
-        symbol [ state %tmp.84 43 16 21 ];
-        push %tmp.84;
-        switch %tmp.84 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_switchStmtBegin:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 44 12 ]
-        %tmp.85 = dup %tmp.84;
-        symbol [ STATE_SUMMARY %tmp.87 44 17 30 ];
-        %tmp.87 = getv ? :STATE_SUMMARY;
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 37 12 ]
+        %tmp.78 = true;
+        ret %tmp.78;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_36_38_8_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_38_8_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_17_8_38_8_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 42 8 ]
+        %tmp.79 = lgetv %state.4;
+        symbol [ state %tmp.79 42 16 21 ];
+        push %tmp.79;
+        switch %tmp.79 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 43 12 ]
+        %tmp.80 = dup %tmp.79;
+        symbol [ STATE_SUMMARY %tmp.82 43 17 30 ];
+        %tmp.82 = getv ? :STATE_SUMMARY;
+        %tmp.83 = getv function %tmp.80 :equals;
+        %tmp.84 = invoke %tmp.80 %tmp.83 (%tmp.82);
+        bt %tmp.84 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_12_48_21_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 49 12 ]
+        %tmp.85 = dup %tmp.79;
+        symbol [ STATE_RUNNING %tmp.87 49 17 30 ];
+        %tmp.87 = getv ? :STATE_RUNNING;
         %tmp.88 = getv function %tmp.85 :equals;
         %tmp.89 = invoke %tmp.85 %tmp.88 (%tmp.87);
-        bt %tmp.89 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_12_49_21_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 50 12 ]
-        %tmp.90 = dup %tmp.84;
-        symbol [ STATE_RUNNING %tmp.92 50 17 30 ];
-        %tmp.92 = getv ? :STATE_RUNNING;
+        bt %tmp.89 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_49_12_58_21_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 59 12 ]
+        %tmp.90 = dup %tmp.79;
+        symbol [ STATE_FINISHED %tmp.92 59 17 31 ];
+        %tmp.92 = getv ? :STATE_FINISHED;
         %tmp.93 = getv function %tmp.90 :equals;
         %tmp.94 = invoke %tmp.90 %tmp.93 (%tmp.92);
-        bt %tmp.94 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_12_59_21_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 60 12 ]
-        %tmp.95 = dup %tmp.84;
-        symbol [ STATE_FINISHED %tmp.97 60 17 31 ];
-        %tmp.97 = getv ? :STATE_FINISHED;
+        bt %tmp.94 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_59_12_64_21_switchCase;
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 65 12 ]
+        %tmp.95 = dup %tmp.79;
+        symbol [ STATE_NEED_SYNC %tmp.97 65 17 32 ];
+        %tmp.97 = getv ? :STATE_NEED_SYNC;
         %tmp.98 = getv function %tmp.95 :equals;
         %tmp.99 = invoke %tmp.95 %tmp.98 (%tmp.97);
-        bt %tmp.99 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_12_65_21_switchCase;
+        bt %tmp.99 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_65_12_65_32_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 66 12 ]
-        %tmp.100 = dup %tmp.84;
-        symbol [ STATE_NEED_SYNC %tmp.102 66 17 32 ];
-        %tmp.102 = getv ? :STATE_NEED_SYNC;
+        %tmp.100 = dup %tmp.79;
+        symbol [ STATE_SYNCED %tmp.102 66 17 29 ];
+        %tmp.102 = getv ? :STATE_SYNCED;
         %tmp.103 = getv function %tmp.100 :equals;
         %tmp.104 = invoke %tmp.100 %tmp.103 (%tmp.102);
-        bt %tmp.104 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_66_12_66_32_switchCase;
+        bt %tmp.104 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_66_12_66_29_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 67 12 ]
-        %tmp.105 = dup %tmp.84;
-        symbol [ STATE_SYNCED %tmp.107 67 17 29 ];
-        %tmp.107 = getv ? :STATE_SYNCED;
+        %tmp.105 = dup %tmp.79;
+        symbol [ STATE_SENDING %tmp.107 67 17 30 ];
+        %tmp.107 = getv ? :STATE_SENDING;
         %tmp.108 = getv function %tmp.105 :equals;
         %tmp.109 = invoke %tmp.105 %tmp.108 (%tmp.107);
-        bt %tmp.109 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_67_12_67_29_switchCase;
+        bt %tmp.109 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_67_12_67_30_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 68 12 ]
-        %tmp.110 = dup %tmp.84;
-        symbol [ STATE_SENDING %tmp.112 68 17 30 ];
-        %tmp.112 = getv ? :STATE_SENDING;
+        %tmp.110 = dup %tmp.79;
+        symbol [ STATE_GPS_FIXING %tmp.112 68 17 33 ];
+        %tmp.112 = getv ? :STATE_GPS_FIXING;
         %tmp.113 = getv function %tmp.110 :equals;
         %tmp.114 = invoke %tmp.110 %tmp.113 (%tmp.112);
-        bt %tmp.114 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_68_12_68_30_switchCase;
+        bt %tmp.114 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_68_12_68_33_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 69 12 ]
-        %tmp.115 = dup %tmp.84;
-        symbol [ STATE_GPS_FIXING %tmp.117 69 17 33 ];
-        %tmp.117 = getv ? :STATE_GPS_FIXING;
+        %tmp.115 = dup %tmp.79;
+        symbol [ STATE_ERROR %tmp.117 69 17 28 ];
+        %tmp.117 = getv ? :STATE_ERROR;
         %tmp.118 = getv function %tmp.115 :equals;
         %tmp.119 = invoke %tmp.115 %tmp.118 (%tmp.117);
-        bt %tmp.119 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_69_12_69_33_switchCase;
+        bt %tmp.119 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_69_12_69_28_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 70 12 ]
-        %tmp.120 = dup %tmp.84;
-        symbol [ STATE_ERROR %tmp.122 70 17 28 ];
-        %tmp.122 = getv ? :STATE_ERROR;
+        %tmp.120 = dup %tmp.79;
+        symbol [ STATE_IDLE %tmp.122 70 17 27 ];
+        %tmp.122 = getv ? :STATE_IDLE;
         %tmp.123 = getv function %tmp.120 :equals;
         %tmp.124 = invoke %tmp.120 %tmp.123 (%tmp.122);
-        bt %tmp.124 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_70_12_70_28_switchCase;
+        bt %tmp.124 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_70_12_70_27_switchCase;
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 71 12 ]
-        %tmp.125 = dup %tmp.84;
-        symbol [ STATE_IDLE %tmp.127 71 17 27 ];
-        %tmp.127 = getv ? :STATE_IDLE;
+        %tmp.125 = dup %tmp.79;
+        symbol [ STATE_COUNTDOWN %tmp.127 71 17 32 ];
+        %tmp.127 = getv ? :STATE_COUNTDOWN;
         %tmp.128 = getv function %tmp.125 :equals;
         %tmp.129 = invoke %tmp.125 %tmp.128 (%tmp.127);
-        bt %tmp.129 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_71_12_71_27_switchCase;
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 72 12 ]
-        %tmp.130 = dup %tmp.84;
-        symbol [ STATE_COUNTDOWN %tmp.132 72 17 32 ];
-        %tmp.132 = getv ? :STATE_COUNTDOWN;
-        %tmp.133 = getv function %tmp.130 :equals;
-        %tmp.134 = invoke %tmp.130 %tmp.133 (%tmp.132);
-        bt %tmp.134 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_72_12_73_21_switchCase;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_switchStmtDefault:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_defaultCodeBegin;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_12_49_21_switchCase:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 45 16 ]
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_16_48_16_if_stmt:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_20_45_63_begin:
-        %tmp.135 = lgetv %key.1;
-        symbol [ key %tmp.135 45 20 23 ];
-        symbol [ WatchUi %tmp.136 45 27 34 ];
-        %tmp.136 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ENTER %tmp.137 45 35 44 ];
-        %tmp.137 = getv %tmp.136 :KEY_ENTER;
-        %tmp.138 = eq %tmp.135 %tmp.137;
-        bt %tmp.138 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_16_48_16_if_true;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_48_45_63_false:
-        %tmp.139 = lgetv %key.1;
-        symbol [ key %tmp.139 45 48 51 ];
-        symbol [ WatchUi %tmp.140 45 55 62 ];
-        %tmp.140 = getm $.Toybox.WatchUi;
-        symbol [ KEY_START %tmp.141 45 63 72 ];
-        %tmp.141 = getv %tmp.140 :KEY_START;
-        %tmp.142 = eq %tmp.139 %tmp.141;
-        push %tmp.142;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_48_45_63_end:
-        %tmp.143 = phi [%tmp.138 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_20_45_63_begin] [%tmp.142 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_48_45_63_false] [%tmp.143 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_48_45_63_end];
-        bf %tmp.143 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_16_48_16_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_16_48_16_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_74_48_16_start:
+        bt %tmp.129 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_71_12_72_21_switchCase;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_defaultCodeBegin;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_12_48_21_switchCase:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 44 16 ]
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_16_47_16_if_stmt:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_20_44_63_begin:
+        %tmp.130 = lgetv %key.1;
+        symbol [ key %tmp.130 44 20 23 ];
+        symbol [ WatchUi %tmp.131 44 27 34 ];
+        %tmp.131 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.132 44 35 44 ];
+        %tmp.132 = getv %tmp.131 :KEY_ENTER;
+        %tmp.133 = eq %tmp.130 %tmp.132;
+        bt %tmp.133 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_16_47_16_if_true;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_48_44_63_false:
+        %tmp.134 = lgetv %key.1;
+        symbol [ key %tmp.134 44 48 51 ];
+        symbol [ WatchUi %tmp.135 44 55 62 ];
+        %tmp.135 = getm $.Toybox.WatchUi;
+        symbol [ KEY_START %tmp.136 44 63 72 ];
+        %tmp.136 = getv %tmp.135 :KEY_START;
+        %tmp.137 = eq %tmp.134 %tmp.136;
+        push %tmp.137;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_48_44_63_end:
+        %tmp.138 = phi [%tmp.133 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_20_44_63_begin] [%tmp.137 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_48_44_63_false] [%tmp.138 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_48_44_63_end];
+        bf %tmp.138 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_16_47_16_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_16_47_16_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_74_47_16_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 45 20 ]
+        %tmp.139 = lgetv %sm.3;
+        symbol [ sm %tmp.139 45 20 22 ];
+        symbol [ handle %tmp.140 45 23 29 ];
+        %tmp.140 = getv function %tmp.139 :handle;
+        symbol [ EVENT_SESSION_START %tmp.142 45 30 49 ];
+        %tmp.142 = getv ? :EVENT_SESSION_START;
+        invoke %tmp.139 %tmp.140(%tmp.142);
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 46 20 ]
-        %tmp.144 = lgetv %sm.3;
-        symbol [ sm %tmp.144 46 20 22 ];
-        symbol [ handle %tmp.145 46 23 29 ];
-        %tmp.145 = getv function %tmp.144 :handle;
-        symbol [ EVENT_SESSION_START %tmp.147 46 30 49 ];
-        %tmp.147 = getv ? :EVENT_SESSION_START;
-        invoke %tmp.144 %tmp.145(%tmp.147);
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 47 20 ]
-        %tmp.148 = true;
-        ret %tmp.148;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_74_48_16_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_16_48_16_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_45_16_48_16_if_end:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 49 16 ]
-        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_12_59_21_switchCase:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 51 16 ]
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_16_58_16_if_stmt:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_23_53_57_begin:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_24_52_67_begin:
-        %tmp.149 = lgetv %key.1;
-        symbol [ key %tmp.149 52 24 27 ];
-        symbol [ WatchUi %tmp.150 52 31 38 ];
-        %tmp.150 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ENTER %tmp.151 52 39 48 ];
-        %tmp.151 = getv %tmp.150 :KEY_ENTER;
-        %tmp.152 = eq %tmp.149 %tmp.151;
-        bt %tmp.152 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_23_53_57_true;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_52_52_67_false:
-        %tmp.153 = lgetv %key.1;
-        symbol [ key %tmp.153 52 52 55 ];
-        symbol [ WatchUi %tmp.154 52 59 66 ];
-        %tmp.154 = getm $.Toybox.WatchUi;
-        symbol [ KEY_START %tmp.155 52 67 76 ];
-        %tmp.155 = getv %tmp.154 :KEY_START;
-        %tmp.156 = eq %tmp.153 %tmp.155;
-        push %tmp.156;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_52_52_67_end:
-        %tmp.157 = phi [%tmp.152 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_24_52_67_begin] [%tmp.156 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_52_52_67_false] [%tmp.157 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_52_52_67_end];
-        bf %tmp.157 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_16_58_16_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_23_53_57_true:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_24_53_56_begin:
-        symbol [ DEBUG %tmp.159 53 24 29 ];
-        %tmp.159 = getv ? :DEBUG;
-        bt %tmp.159 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_16_58_16_if_true;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_33_53_56_false:
-        %tmp.160 = lgetv %app.2;
-        symbol [ app %tmp.160 53 34 37 ];
-        symbol [ rm %tmp.161 53 38 40 ];
-        %tmp.161 = getv %tmp.160 :rm;
-        symbol [ isRunningBlock %tmp.162 53 41 55 ];
-        %tmp.162 = getv function %tmp.161 :isRunningBlock;
-        %tmp.163 = invoke %tmp.161 %tmp.162();
-        %tmp.164 = not %tmp.163;
-        push %tmp.164;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_33_53_56_end:
-        %tmp.165 = phi [%tmp.159 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_24_53_56_begin] [%tmp.164 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_33_53_56_false] [%tmp.165 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_33_53_56_end];
-        push %tmp.165;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_23_53_57_end:
-        %tmp.166 = phi [%tmp.157 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_23_53_57_begin] [%tmp.165 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_23_53_57_true] [%tmp.166 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_53_23_53_57_end];
-        bf %tmp.166 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_16_58_16_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_16_58_16_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_55_16_58_16_start:
+        %tmp.143 = true;
+        ret %tmp.143;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_74_47_16_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_16_47_16_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_44_16_47_16_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 48 16 ]
+        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_49_12_58_21_switchCase:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 50 16 ]
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_16_57_16_if_stmt:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_23_52_57_begin:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_24_51_67_begin:
+        %tmp.144 = lgetv %key.1;
+        symbol [ key %tmp.144 51 24 27 ];
+        symbol [ WatchUi %tmp.145 51 31 38 ];
+        %tmp.145 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.146 51 39 48 ];
+        %tmp.146 = getv %tmp.145 :KEY_ENTER;
+        %tmp.147 = eq %tmp.144 %tmp.146;
+        bt %tmp.147 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_23_52_57_true;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_52_51_67_false:
+        %tmp.148 = lgetv %key.1;
+        symbol [ key %tmp.148 51 52 55 ];
+        symbol [ WatchUi %tmp.149 51 59 66 ];
+        %tmp.149 = getm $.Toybox.WatchUi;
+        symbol [ KEY_START %tmp.150 51 67 76 ];
+        %tmp.150 = getv %tmp.149 :KEY_START;
+        %tmp.151 = eq %tmp.148 %tmp.150;
+        push %tmp.151;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_52_51_67_end:
+        %tmp.152 = phi [%tmp.147 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_24_51_67_begin] [%tmp.151 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_52_51_67_false] [%tmp.152 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_52_51_67_end];
+        bf %tmp.152 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_16_57_16_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_23_52_57_true:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_24_52_56_begin:
+        symbol [ DEBUG %tmp.154 52 24 29 ];
+        %tmp.154 = getv ? :DEBUG;
+        bt %tmp.154 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_16_57_16_if_true;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_33_52_56_false:
+        %tmp.155 = lgetv %app.2;
+        symbol [ app %tmp.155 52 34 37 ];
+        symbol [ rm %tmp.156 52 38 40 ];
+        %tmp.156 = getv %tmp.155 :rm;
+        symbol [ isRunningBlock %tmp.157 52 41 55 ];
+        %tmp.157 = getv function %tmp.156 :isRunningBlock;
+        %tmp.158 = invoke %tmp.156 %tmp.157();
+        %tmp.159 = not %tmp.158;
+        push %tmp.159;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_33_52_56_end:
+        %tmp.160 = phi [%tmp.154 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_24_52_56_begin] [%tmp.159 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_33_52_56_false] [%tmp.160 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_33_52_56_end];
+        push %tmp.160;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_23_52_57_end:
+        %tmp.161 = phi [%tmp.152 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_23_52_57_begin] [%tmp.160 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_23_52_57_true] [%tmp.161 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_52_23_52_57_end];
+        bf %tmp.161 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_16_57_16_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_16_57_16_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_54_16_57_16_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 55 20 ]
+        %tmp.162 = lgetv %sm.3;
+        symbol [ sm %tmp.162 55 20 22 ];
+        symbol [ handle %tmp.163 55 23 29 ];
+        %tmp.163 = getv function %tmp.162 :handle;
+        symbol [ EVENT_NEXT_FIELD %tmp.165 55 30 46 ];
+        %tmp.165 = getv ? :EVENT_NEXT_FIELD;
+        invoke %tmp.162 %tmp.163(%tmp.165);
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 56 20 ]
-        %tmp.167 = lgetv %sm.3;
-        symbol [ sm %tmp.167 56 20 22 ];
-        symbol [ handle %tmp.168 56 23 29 ];
-        %tmp.168 = getv function %tmp.167 :handle;
-        symbol [ EVENT_NEXT_FIELD %tmp.170 56 30 46 ];
-        %tmp.170 = getv ? :EVENT_NEXT_FIELD;
-        invoke %tmp.167 %tmp.168(%tmp.170);
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 57 20 ]
-        %tmp.171 = true;
-        ret %tmp.171;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_55_16_58_16_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_16_58_16_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_51_16_58_16_if_end:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 59 16 ]
-        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_12_65_21_switchCase:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 61 16 ]
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_16_64_16_if_stmt:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_20_61_63_begin:
-        %tmp.172 = lgetv %key.1;
-        symbol [ key %tmp.172 61 20 23 ];
-        symbol [ WatchUi %tmp.173 61 27 34 ];
-        %tmp.173 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ENTER %tmp.174 61 35 44 ];
-        %tmp.174 = getv %tmp.173 :KEY_ENTER;
-        %tmp.175 = eq %tmp.172 %tmp.174;
-        bt %tmp.175 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_16_64_16_if_true;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_48_61_63_false:
-        %tmp.176 = lgetv %key.1;
-        symbol [ key %tmp.176 61 48 51 ];
-        symbol [ WatchUi %tmp.177 61 55 62 ];
-        %tmp.177 = getm $.Toybox.WatchUi;
-        symbol [ KEY_START %tmp.178 61 63 72 ];
-        %tmp.178 = getv %tmp.177 :KEY_START;
-        %tmp.179 = eq %tmp.176 %tmp.178;
-        push %tmp.179;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_48_61_63_end:
-        %tmp.180 = phi [%tmp.175 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_20_61_63_begin] [%tmp.179 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_48_61_63_false] [%tmp.180 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_48_61_63_end];
-        bf %tmp.180 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_16_64_16_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_16_64_16_if_true:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_74_64_16_start:
+        %tmp.166 = true;
+        ret %tmp.166;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_54_16_57_16_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_16_57_16_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_50_16_57_16_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 58 16 ]
+        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_59_12_64_21_switchCase:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 60 16 ]
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_16_63_16_if_stmt:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_20_60_63_begin:
+        %tmp.167 = lgetv %key.1;
+        symbol [ key %tmp.167 60 20 23 ];
+        symbol [ WatchUi %tmp.168 60 27 34 ];
+        %tmp.168 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.169 60 35 44 ];
+        %tmp.169 = getv %tmp.168 :KEY_ENTER;
+        %tmp.170 = eq %tmp.167 %tmp.169;
+        bt %tmp.170 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_16_63_16_if_true;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_48_60_63_false:
+        %tmp.171 = lgetv %key.1;
+        symbol [ key %tmp.171 60 48 51 ];
+        symbol [ WatchUi %tmp.172 60 55 62 ];
+        %tmp.172 = getm $.Toybox.WatchUi;
+        symbol [ KEY_START %tmp.173 60 63 72 ];
+        %tmp.173 = getv %tmp.172 :KEY_START;
+        %tmp.174 = eq %tmp.171 %tmp.173;
+        push %tmp.174;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_48_60_63_end:
+        %tmp.175 = phi [%tmp.170 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_20_60_63_begin] [%tmp.174 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_48_60_63_false] [%tmp.175 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_48_60_63_end];
+        bf %tmp.175 @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_16_63_16_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_16_63_16_if_true:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_74_63_16_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 61 20 ]
+        %tmp.176 = lgetv %sm.3;
+        symbol [ sm %tmp.176 61 20 22 ];
+        symbol [ handle %tmp.177 61 23 29 ];
+        %tmp.177 = getv function %tmp.176 :handle;
+        symbol [ EVENT_SEND_RESULTS %tmp.179 61 30 48 ];
+        %tmp.179 = getv ? :EVENT_SEND_RESULTS;
+        invoke %tmp.176 %tmp.177(%tmp.179);
 [ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 62 20 ]
-        %tmp.181 = lgetv %sm.3;
-        symbol [ sm %tmp.181 62 20 22 ];
-        symbol [ handle %tmp.182 62 23 29 ];
-        %tmp.182 = getv function %tmp.181 :handle;
-        symbol [ EVENT_SEND_RESULTS %tmp.184 62 30 48 ];
-        %tmp.184 = getv ? :EVENT_SEND_RESULTS;
-        invoke %tmp.181 %tmp.182(%tmp.184);
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 63 20 ]
-        %tmp.185 = true;
-        ret %tmp.185;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_74_64_16_stop:
-        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_16_64_16_if_end;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_61_16_64_16_if_end:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 65 16 ]
-        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_66_12_66_32_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_67_12_67_29_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_68_12_68_30_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_69_12_69_33_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_70_12_70_28_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_71_12_71_27_switchCase:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_72_12_73_21_switchCase:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 73 16 ]
-        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_switchStmtEnd;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_defaultCodeBegin:
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_43_8_74_8_switchStmtEnd:
+        %tmp.180 = true;
+        ret %tmp.180;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_74_63_16_stop:
+        goto @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_16_63_16_if_end;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_60_16_63_16_if_end:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 64 16 ]
+        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_65_12_65_32_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_66_12_66_29_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_67_12_67_30_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_68_12_68_33_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_69_12_69_28_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_70_12_70_27_switchCase:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_71_12_72_21_switchCase:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 72 16 ]
+        goto break @_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_switchStmtEnd;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_defaultCodeBegin:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_42_8_73_8_switchStmtEnd:
         pop;
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 76 8 ]
-        %tmp.186 = false;
-        ret %tmp.186;
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_77_4_stop:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 75 8 ]
+        %tmp.181 = false;
+        ret %tmp.181;
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_11_52_76_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc"; @line = 79; @symbol_functiondef = [showConfirmation,79,21,37]; @symbol_param<0> = [msg,79,38,41]; @symbol_param<0>_type<0> = [String,79,45,51]; @symbol_param<1> = [nextState,79,53,62]; @symbol_param<1>_type<0> = [AppState,79,66,74]; ]
+    [ @file = "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc"; @line = 78; @symbol_functiondef = [showConfirmation,78,21,37]; @symbol_param<0> = [msg,78,38,41]; @symbol_param<0>_type<0> = [String,78,45,51]; @symbol_param<1> = [nextState,78,53,62]; @symbol_param<1>_type<0> = [AppState,78,66,74]; ]
     private
     function showConfirmation(msg as String, nextState as AppState) as Void {
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_79_84_86_4_start:
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 80 8 ]
-        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_79_84_86_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_79_84_86_4_stop" ]
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_78_84_85_4_start:
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 79 8 ]
+        [ "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_78_84_85_4_start" "_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_78_84_85_4_stop" ]
         %confirmation.1 = local;
-        symbol [ confirmation %confirmation.1 80 12 24 ];
-        symbol [ WatchUi %tmp.3 80 31 38 ];
+        symbol [ confirmation %confirmation.1 79 12 24 ];
+        symbol [ WatchUi %tmp.3 79 31 38 ];
         %tmp.3 = getm $.Toybox.WatchUi;
-        symbol [ Confirmation %tmp.4 80 39 51 ];
+        symbol [ Confirmation %tmp.4 79 39 51 ];
         %tmp.4 = getv function ? %tmp.3 :Confirmation;
         %tmp.5 = lgetv %msg;
-        symbol [ msg %tmp.5 80 52 55 ];
+        symbol [ msg %tmp.5 79 52 55 ];
         %tmp.1 = newc %tmp.4 (%tmp.5);
         lputv %confirmation.1 %tmp.1;
-        symbol [ confirmation %confirmation.1 80 12 24 ];
-[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 81 8 ]
-        symbol [ WatchUi %tmp.6 81 8 15 ];
+        symbol [ confirmation %confirmation.1 79 12 24 ];
+[ "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc" 80 8 ]
+        symbol [ WatchUi %tmp.6 80 8 15 ];
         %tmp.6 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.7 81 16 24 ];
+        symbol [ pushView %tmp.7 80 16 24 ];
         %tmp.7 = getv function %tmp.6 :pushView;
         %tmp.8 = lgetv %confirmation.1;
-        symbol [ confirmation %tmp.8 82 12 24 ];
-        symbol [ QuitConfirmationDelegate %tmp.12 83 16 40 ];
+        symbol [ confirmation %tmp.8 81 12 24 ];
+        symbol [ QuitConfirmationDelegate %tmp.12 82 16 40 ];
         %tmp.12 = getv ? :QuitConfirmationDelegate;
         %tmp.13 = lgetv %nextState;
-        symbol [ nextState %tmp.13 83 41 50 ];
+        symbol [ nextState %tmp.13 82 41 50 ];
         %tmp.9 = newc %tmp.12 (%tmp.13);
-        symbol [ WatchUi %tmp.14 84 12 19 ];
+        symbol [ WatchUi %tmp.14 83 12 19 ];
         %tmp.14 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_IMMEDIATE %tmp.15 84 20 35 ];
+        symbol [ SLIDE_IMMEDIATE %tmp.15 83 20 35 ];
         %tmp.15 = getv %tmp.14 :SLIDE_IMMEDIATE;
         invoke %tmp.6 %tmp.7(%tmp.8, %tmp.9, %tmp.15);
-_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_79_84_86_4_stop:
+_workspace_no_track_run_watch_source_NoTrackRunDelegate_mc_78_84_85_4_stop:
     }
 }
 [ @file = "/workspace/no-track-run-watch/source/NoTrackRunDelegate.mc"; @line = 1; ]

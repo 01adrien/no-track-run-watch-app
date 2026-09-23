@@ -18,32 +18,44 @@ module Rez {
         [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [RunnerIcon,9,27,37]; @symbol_type<0> = [ResourceId,9,41,51]; ]
+        var RunnerIcon as ResourceId;
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [UploadIcon,10,27,37]; @symbol_type<0> = [ResourceId,10,41,51]; ]
+        var UploadIcon as ResourceId;
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 11; @position = 27; initialized = true; @symbol_vardef = [CompassIcon,11,27,38]; @symbol_type<0> = [ResourceId,11,42,52]; ]
+        var CompassIcon as ResourceId;
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 12; @position = 27; initialized = true; @symbol_vardef = [SendIcon,12,27,35]; @symbol_type<0> = [ResourceId,12,39,49]; ]
+        var SendIcon as ResourceId;
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [GpsIcon,13,27,34]; @symbol_type<0> = [ResourceId,13,38,48]; ]
+        var GpsIcon as ResourceId;
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [HeartIcon,14,27,36]; @symbol_type<0> = [ResourceId,14,40,50]; ]
+        var HeartIcon as ResourceId;
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,15,27,39]; @symbol_type<0> = [ResourceId,15,43,53]; ]
         var LauncherIcon as ResourceId;
     }
-    [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 18; @symbol_moduledef = [Layouts,18,11,18]; ]
     module Layouts {
-        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 12; ]
-        <init> {
-        }
-        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 13; @symbol_functiondef = [MainLayout,13,17,27]; @symbol_param<0> = [dc,13,28,30]; @symbol_param<0>_type<0> = [Graphics,13,34,42]; @symbol_param<0>_type<1> = [Dc,13,43,45]; @symbol_return<0> = [Array,13,50,55]; @symbol_return<1> = [WatchUi,13,56,63]; @symbol_return<2> = [Drawable,13,64,72]; ]
-        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-_workspace_no_track_run_watch_bin_gen_006_B3076_00_source_Rez_mcgen_13_74_15_8_start:
-[ "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen" 14 12 ]
-            %tmp.1 = newa 0 Array<WatchUi.Drawable>;
-            symbol [ Array %tmp.1 14 25 30 ];
-            symbol [ WatchUi %tmp.1 14 31 38 ];
-            symbol [ Drawable %tmp.1 14 39 47 ];
-            ret %tmp.1;
-_workspace_no_track_run_watch_bin_gen_006_B3076_00_source_Rez_mcgen_13_74_15_8_stop:
-        }
-    }
-    [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 18; @symbol_moduledef = [Strings,18,11,18]; ]
-    module Strings {
         [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 18; ]
         <init> {
         }
-        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 19; @position = 27; initialized = true; @symbol_vardef = [AppName,19,27,34]; @symbol_type<0> = [ResourceId,19,38,48]; ]
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 19; @symbol_functiondef = [MainLayout,19,17,27]; @symbol_param<0> = [dc,19,28,30]; @symbol_param<0>_type<0> = [Graphics,19,34,42]; @symbol_param<0>_type<1> = [Dc,19,43,45]; @symbol_return<0> = [Array,19,50,55]; @symbol_return<1> = [WatchUi,19,56,63]; @symbol_return<2> = [Drawable,19,64,72]; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_workspace_no_track_run_watch_bin_gen_006_B3076_00_source_Rez_mcgen_19_74_21_8_start:
+[ "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen" 20 12 ]
+            %tmp.1 = newa 0 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.1 20 25 30 ];
+            symbol [ WatchUi %tmp.1 20 31 38 ];
+            symbol [ Drawable %tmp.1 20 39 47 ];
+            ret %tmp.1;
+_workspace_no_track_run_watch_bin_gen_006_B3076_00_source_Rez_mcgen_19_74_21_8_stop:
+        }
+    }
+    [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 24; @symbol_moduledef = [Strings,24,11,18]; ]
+    module Strings {
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 24; ]
+        <init> {
+        }
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 25; @position = 27; initialized = true; @symbol_vardef = [AppName,25,27,34]; @symbol_type<0> = [ResourceId,25,38,48]; ]
         var AppName as ResourceId;
     }
 }

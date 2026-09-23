@@ -22,7 +22,6 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                 case STATE_SUMMARY :
                     sm.backIdle();
                     break;
-                case STATE_IDLE:
                 case STATE_COUNTDOWN:
                 case STATE_GPS_FIXING:
                     showConfirmation("False Start ?", STATE_SUMMARY);
