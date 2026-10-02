@@ -28,8 +28,8 @@ module Rez {
         var SendIcon as ResourceId;
         [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [GpsIcon,13,27,34]; @symbol_type<0> = [ResourceId,13,38,48]; ]
         var GpsIcon as ResourceId;
-        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [HeartIcon,14,27,36]; @symbol_type<0> = [ResourceId,14,40,50]; ]
-        var HeartIcon as ResourceId;
+        [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [SyncIcon,14,27,35]; @symbol_type<0> = [ResourceId,14,39,49]; ]
+        var SyncIcon as ResourceId;
         [ @file = "/workspace/no-track-run-watch/bin/gen/006-B3076-00/source/Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,15,27,39]; @symbol_type<0> = [ResourceId,15,43,53]; ]
         var LauncherIcon as ResourceId;
     }

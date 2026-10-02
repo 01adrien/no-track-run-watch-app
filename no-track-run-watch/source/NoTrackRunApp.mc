@@ -10,7 +10,7 @@ import Toybox.Attention;
 
 const SENDING_TIMEOUT  as Number  = 5;
 const GPS_STABLE_TICKS as Number  = 5;
-const SIMULATOR        as Boolean = true;
+const SIMULATOR        as Boolean = false;
 const DEBUG            as Boolean = true;
 const WITH_VALIDATION  as Boolean = true;
 
@@ -67,6 +67,7 @@ class NoTrackRunApp extends Application.AppBase {
 
 
     function onPhoneMessage(msg as Communications.PhoneAppMessage) as Void {
+        
         if (WITH_VALIDATION) {
             if (!canReceiveMsg() || !Validator.isValidMsg(msg.data)) {
                 return;
@@ -75,7 +76,7 @@ class NoTrackRunApp extends Application.AppBase {
         var data = msg.data as Dictionary;
         var type = data["type"] as String;
 
-        if (type.equals("SESSION_PAYLOAD")) {
+        if (type.equals("SEND_SESSION")) {
             sm.handle(handleSendSession(data));
         } else if (type.equals("ACK_RESULTS")) {
             sm.handle(handleAckResults(data));
@@ -103,7 +104,7 @@ class NoTrackRunApp extends Application.AppBase {
 
     function handleSendSession(data as Dictionary) as AppEvent {
         if (getSession() != null) {
-            sendAck("ACK_SESSION", false, "Already a session on the watch");
+            sendAck("ACK_SESSION", false, "Session result to send on the watch");
             return EVENT_NONE; 
         }
 

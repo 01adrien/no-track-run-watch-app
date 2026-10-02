@@ -21,6 +21,7 @@ class NoTrackRunView extends WatchUi.View {
     var uploadIcon as BitmapResource?;
     var compassIcon as BitmapResource?;
     var sendIcon   as BitmapResource?;
+    var syncIcon   as BitmapResource?;
 
     function initialize() {
         View.initialize();
@@ -28,6 +29,7 @@ class NoTrackRunView extends WatchUi.View {
         compassIcon = WatchUi.loadResource(Rez.Drawables.CompassIcon) as BitmapResource;
         uploadIcon  = WatchUi.loadResource(Rez.Drawables.UploadIcon) as BitmapResource;
         sendIcon    = WatchUi.loadResource(Rez.Drawables.SendIcon) as BitmapResource;
+        syncIcon    = WatchUi.loadResource(Rez.Drawables.SyncIcon) as BitmapResource;
     }
 
 
@@ -55,6 +57,7 @@ class NoTrackRunView extends WatchUi.View {
                 drawFinished(dc, app);
                 break;
             case STATE_NEED_SYNC:
+                drawMessage(dc, app, "Need sync\nPress start to send", syncIcon);
                 break;
             case STATE_SYNCED:
                 drawSynced(dc, app);
@@ -104,6 +107,7 @@ class NoTrackRunView extends WatchUi.View {
         dc.drawText(cx, y, Graphics.FONT_SMALL,
             blockCount.toString() + " block" + (blockCount > 1 ? "s" : ""), Graphics.TEXT_JUSTIFY_CENTER);
         y += dc.getFontHeight(Graphics.FONT_SMALL) + LINE_GAP_PADDING;
+        dc.drawText(cx, y, Graphics.FONT_XTINY,"Press start to run" ,Graphics.TEXT_JUSTIFY_CENTER);
 
     }
 

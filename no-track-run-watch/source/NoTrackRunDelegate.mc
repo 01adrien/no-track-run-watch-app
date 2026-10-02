@@ -20,7 +20,7 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                     showConfirmation("Quit Run ?", STATE_SENDING);
                     break;
                 case STATE_SUMMARY :
-                    sm.backIdle();
+                    showConfirmation("Remove Session ?", STATE_IDLE);
                     break;
                 case STATE_COUNTDOWN:
                 case STATE_GPS_FIXING:
@@ -30,6 +30,7 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                 case STATE_ERROR:
                 case STATE_FINISHED:
                 case STATE_NEED_SYNC:
+                case STATE_SYNCED:
                 case STATE_SENDING:
                     showConfirmation("Quit App ?", STATE_QUIT);
                     break;
@@ -56,13 +57,13 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
                     return true;
                 }
                 break;
+            case STATE_NEED_SYNC:
             case STATE_FINISHED:
                 if (key == WatchUi.KEY_ENTER || key == WatchUi.KEY_START) {
                     sm.handle(EVENT_SEND_RESULTS);
                     return true;
                 }
                 break;
-            case STATE_NEED_SYNC:
             case STATE_SYNCED:
             case STATE_SENDING:
             case STATE_GPS_FIXING:

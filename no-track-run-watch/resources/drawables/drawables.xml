@@ -5,5 +5,5 @@
     <bitmap id="CompassIcon" filename="compass_icon.png" />
     <bitmap id="SendIcon" filename="send_icon.png" />
     <bitmap id="GpsIcon" filename="gps_icon.png" />
-    <bitmap id="HeartIcon" filename="heart_icon.png" />
+    <bitmap id="SyncIcon" filename="sync_icon.png" />
 </drawables>

@@ -11,7 +11,7 @@ module Rez {
         (:initialized) var CompassIcon as ResourceId;
         (:initialized) var SendIcon as ResourceId;
         (:initialized) var GpsIcon as ResourceId;
-        (:initialized) var HeartIcon as ResourceId;
+        (:initialized) var SyncIcon as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 

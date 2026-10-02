@@ -64,7 +64,7 @@ class StateManager {
         switch (state) {
             case STATE_IDLE:
                 if (e == EVENT_SESSION_RECEIVED) {transition(STATE_SUMMARY);}
-                if (e == EVENT_NEED_SYNC) {transition(STATE_SENDING);}
+                if (e == EVENT_NEED_SYNC) {transition(STATE_NEED_SYNC);}
                 break;
             case STATE_SUMMARY:
                 if (e == EVENT_SESSION_START) {transition(STATE_GPS_FIXING);}
@@ -81,6 +81,8 @@ class StateManager {
                 else if (e == EVENT_SYNCED_OK) {transition(STATE_SYNCED);}
                 break;
             case STATE_NEED_SYNC:
+                if (e == EVENT_SEND_RESULTS) {transition(STATE_SENDING);}
+                break;
             case STATE_SYNCED:
             case STATE_GPS_FIXING:
             case STATE_ERROR:
@@ -138,11 +140,15 @@ class StateManager {
                 else {app.exit();}
                 break;
             case STATE_IDLE:
+                if (app.rm.sessionData != null)  { app.rm.sessionData = {}; }
                 if (app.getSession() != null) {app.sm.handle(EVENT_NEED_SYNC);}
+                break;
+            case STATE_SUMMARY:
+                if (app.rm.session != null) {app.rm.session.discard() ;}
+                if (app.getSession() != null) {app.deleteSession() ;}
                 break;
             case STATE_FINISHED:
             case STATE_RUNNING:
-            case STATE_SUMMARY:
             case STATE_NEED_SYNC:
             case STATE_ERROR:
                 break;
@@ -165,12 +171,6 @@ class StateManager {
             case STATE_ERROR:
                 break;
         }
-    }
-
-    function backIdle() as Void {
-        var app = getApp();
-        app.rm.sessionData = {};
-        transition(STATE_IDLE);
     }
 
     function in(state as AppState) as Boolean {
