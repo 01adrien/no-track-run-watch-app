@@ -82,7 +82,6 @@ class RunManager {
         if (save) { session.save();} 
         else { session.discard();}
         session = null;
-        sessionData = {} as Dictionary;
     }
 
     function running() as Void {
@@ -180,6 +179,7 @@ class RunManager {
         }
         else {
             stopActivitySession(false);
+            sessionData = {} as Dictionary;
             if (onSessionEnd != null) { onSessionEnd.invoke();}
             sm.handle(EVENT_SESSION_END);
         }
@@ -192,6 +192,10 @@ class RunManager {
     function isCountDownOver() as Boolean {
         countdown -= 1;
         return countdown == 0;
+    }
+
+    function hasResult() as Boolean {
+        return results.size() > 0;
     }
 
     function hasSessionData() as Boolean {

@@ -263,7 +263,7 @@ _workspace_no_track_run_watch_source_RunManager_mc_65_44_77_4_stop:
     }
     [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 79; @symbol_functiondef = [stopActivitySession,79,13,32]; @symbol_param<0> = [save,79,33,37]; @symbol_param<0>_type<0> = [Boolean,79,41,48]; ]
     function stopActivitySession(save as Boolean) as Void {
-_workspace_no_track_run_watch_source_RunManager_mc_79_58_86_4_start:
+_workspace_no_track_run_watch_source_RunManager_mc_79_58_85_4_start:
 [ "/workspace/no-track-run-watch/source/RunManager.mc" 80 8 ]
 _workspace_no_track_run_watch_source_RunManager_mc_80_8_80_39_if_stmt:
         symbol [ session %tmp.2 80 12 19 ];
@@ -326,534 +326,534 @@ _workspace_no_track_run_watch_source_RunManager_mc_82_8_83_33_if_end:
         %tmp.19 = null;
         symbol [ session ? 84 8 15 ];
         putv self :session %tmp.19;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 85 8 ]
-        %tmp.20 = newd Dictionary 0;
-        symbol [ Dictionary %tmp.20 85 28 38 ];
-        symbol [ sessionData ? 85 8 19 ];
-        putv self :sessionData %tmp.20;
-_workspace_no_track_run_watch_source_RunManager_mc_79_58_86_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_79_58_85_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 88; @symbol_functiondef = [running,88,13,20]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 87; @symbol_functiondef = [running,87,13,20]; ]
     function running() as Void {
-_workspace_no_track_run_watch_source_RunManager_mc_88_31_120_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 89 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_88_31_120_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_88_31_120_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_87_31_119_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 88 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_87_31_119_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_87_31_119_4_stop" ]
         %info.1 = local;
-        symbol [ info %info.1 89 12 16 ];
-        symbol [ Activity %tmp.1 89 19 27 ];
+        symbol [ info %info.1 88 12 16 ];
+        symbol [ Activity %tmp.1 88 19 27 ];
         %tmp.1 = getm $.Toybox.Activity;
-        symbol [ getActivityInfo %tmp.2 89 28 43 ];
+        symbol [ getActivityInfo %tmp.2 88 28 43 ];
         %tmp.2 = getv function %tmp.1 :getActivityInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %info.1 %tmp.3;
-        symbol [ info %info.1 89 12 16 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 91 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_91_8_93_8_if_stmt:
-_workspace_no_track_run_watch_source_RunManager_mc_91_12_91_52_begin:
+        symbol [ info %info.1 88 12 16 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 90 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_90_8_92_8_if_stmt:
+_workspace_no_track_run_watch_source_RunManager_mc_90_12_90_52_begin:
         %tmp.4 = lgetv %info.1;
-        symbol [ info %tmp.4 91 12 16 ];
+        symbol [ info %tmp.4 90 12 16 ];
         %tmp.5 = null;
         %tmp.6 = eq %tmp.4 %tmp.5;
-        bt %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_91_8_93_8_if_true;
-_workspace_no_track_run_watch_source_RunManager_mc_91_28_91_52_false:
+        bt %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_90_8_92_8_if_true;
+_workspace_no_track_run_watch_source_RunManager_mc_90_28_90_52_false:
         %tmp.7 = lgetv %info.1;
-        symbol [ info %tmp.7 91 28 32 ];
+        symbol [ info %tmp.7 90 28 32 ];
         %tmp.8 = as %tmp.7 { (!Null) };
-        symbol [ elapsedDistance %tmp.9 91 33 48 ];
+        symbol [ elapsedDistance %tmp.9 90 33 48 ];
         %tmp.9 = getv %tmp.8 :elapsedDistance;
         %tmp.10 = null;
         %tmp.11 = eq %tmp.9 %tmp.10;
         push %tmp.11;
-_workspace_no_track_run_watch_source_RunManager_mc_91_28_91_52_end:
-        %tmp.12 = phi [%tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_91_12_91_52_begin] [%tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_91_28_91_52_false] [%tmp.12 @_workspace_no_track_run_watch_source_RunManager_mc_91_28_91_52_end];
-        bf %tmp.12 @_workspace_no_track_run_watch_source_RunManager_mc_91_8_93_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_91_8_93_8_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_91_58_93_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 92 12 ]
+_workspace_no_track_run_watch_source_RunManager_mc_90_28_90_52_end:
+        %tmp.12 = phi [%tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_90_12_90_52_begin] [%tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_90_28_90_52_false] [%tmp.12 @_workspace_no_track_run_watch_source_RunManager_mc_90_28_90_52_end];
+        bf %tmp.12 @_workspace_no_track_run_watch_source_RunManager_mc_90_8_92_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_90_8_92_8_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_90_58_92_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 91 12 ]
         ret ?;
-_workspace_no_track_run_watch_source_RunManager_mc_91_58_93_8_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_91_8_93_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_91_8_93_8_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 95 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_begin:
+_workspace_no_track_run_watch_source_RunManager_mc_90_58_92_8_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_90_8_92_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_90_8_92_8_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 94 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_begin:
         %tmp.13 = lgetv %info.1;
-        symbol [ info %tmp.13 95 23 27 ];
-        symbol [ currentSpeed %tmp.14 95 28 40 ];
+        symbol [ info %tmp.13 94 23 27 ];
+        symbol [ currentSpeed %tmp.14 94 28 40 ];
         %tmp.14 = getv %tmp.13 :currentSpeed;
         %tmp.15 = null;
         %tmp.16 = ne %tmp.14 %tmp.15;
-        bf %tmp.16 @_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_true:
+        bf %tmp.16 @_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_true:
         %tmp.17 = lgetv %info.1;
-        symbol [ info %tmp.17 96 14 18 ];
-        symbol [ currentSpeed %tmp.18 96 19 31 ];
+        symbol [ info %tmp.17 95 14 18 ];
+        symbol [ currentSpeed %tmp.18 95 19 31 ];
         %tmp.18 = getv %tmp.17 :currentSpeed;
         push %tmp.18;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_end;
-_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_else_false:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_end;
+_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_else_false:
         %tmp.19 = 0.0;
         push %tmp.19;
-_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_end:
-        %tmp.20 = phi [%tmp.16 @_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_begin] [%tmp.18 @_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_true] [%tmp.19 @_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_else_false] [%tmp.20 @_workspace_no_track_run_watch_source_RunManager_mc_95_23_97_14_end];
-        symbol [ currentSpeed ? 95 8 20 ];
+_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_end:
+        %tmp.20 = phi [%tmp.16 @_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_begin] [%tmp.18 @_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_true] [%tmp.19 @_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_else_false] [%tmp.20 @_workspace_no_track_run_watch_source_RunManager_mc_94_23_96_14_end];
+        symbol [ currentSpeed ? 94 8 20 ];
         putv self :currentSpeed %tmp.20;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 99 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_begin:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 98 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_begin:
         %tmp.21 = lgetv %info.1;
-        symbol [ info %tmp.21 99 24 28 ];
-        symbol [ totalAscent %tmp.22 99 29 40 ];
+        symbol [ info %tmp.21 98 24 28 ];
+        symbol [ totalAscent %tmp.22 98 29 40 ];
         %tmp.22 = getv %tmp.21 :totalAscent;
         %tmp.23 = null;
         %tmp.24 = ne %tmp.22 %tmp.23;
-        bf %tmp.24 @_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_true:
+        bf %tmp.24 @_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_true:
         %tmp.25 = lgetv %info.1;
-        symbol [ info %tmp.25 100 14 18 ];
-        symbol [ totalAscent %tmp.26 100 19 30 ];
+        symbol [ info %tmp.25 99 14 18 ];
+        symbol [ totalAscent %tmp.26 99 19 30 ];
         %tmp.26 = getv %tmp.25 :totalAscent;
         push %tmp.26;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_end;
-_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_else_false:
-        symbol [ elevationGain %tmp.28 101 14 27 ];
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_end;
+_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_else_false:
+        symbol [ elevationGain %tmp.28 100 14 27 ];
         %tmp.28 = getv ? :elevationGain;
         push %tmp.28;
-_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_end:
-        %tmp.29 = phi [%tmp.24 @_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_begin] [%tmp.26 @_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_true] [%tmp.28 @_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_else_false] [%tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_99_24_101_14_end];
-        symbol [ elevationGain ? 99 8 21 ];
+_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_end:
+        %tmp.29 = phi [%tmp.24 @_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_begin] [%tmp.26 @_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_true] [%tmp.28 @_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_else_false] [%tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_98_24_100_14_end];
+        symbol [ elevationGain ? 98 8 21 ];
         putv self :elevationGain %tmp.29;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 103 8 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 102 8 ]
         %tmp.30 = lgetv %info.1;
-        symbol [ info %tmp.30 103 27 31 ];
-        symbol [ currentHeartRate %tmp.31 103 32 48 ];
+        symbol [ info %tmp.30 102 27 31 ];
+        symbol [ currentHeartRate %tmp.31 102 32 48 ];
         %tmp.31 = getv %tmp.30 :currentHeartRate;
-        symbol [ currentHeartRate ? 103 8 24 ];
+        symbol [ currentHeartRate ? 102 8 24 ];
         putv self :currentHeartRate %tmp.31;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 105 8 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 104 8 ]
         %tmp.32 = lgetv %info.1;
-        symbol [ info %tmp.32 105 24 28 ];
-        symbol [ elapsedDistance %tmp.33 105 29 44 ];
+        symbol [ info %tmp.32 104 24 28 ];
+        symbol [ elapsedDistance %tmp.33 104 29 44 ];
         %tmp.33 = getv %tmp.32 :elapsedDistance;
-        symbol [ totalDistance ? 105 8 21 ];
+        symbol [ totalDistance ? 104 8 21 ];
         putv self :totalDistance %tmp.33;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 107 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_begin:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 106 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_begin:
         %tmp.34 = lgetv %info.1;
-        symbol [ info %tmp.34 107 24 28 ];
-        symbol [ timerTime %tmp.35 107 29 38 ];
+        symbol [ info %tmp.34 106 24 28 ];
+        symbol [ timerTime %tmp.35 106 29 38 ];
         %tmp.35 = getv %tmp.34 :timerTime;
         %tmp.36 = null;
         %tmp.37 = ne %tmp.35 %tmp.36;
-        bf %tmp.37 @_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_true:
+        bf %tmp.37 @_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_true:
         %tmp.38 = lgetv %info.1;
-        symbol [ info %tmp.38 108 15 19 ];
-        symbol [ timerTime %tmp.39 108 20 29 ];
+        symbol [ info %tmp.38 107 15 19 ];
+        symbol [ timerTime %tmp.39 107 20 29 ];
         %tmp.39 = getv %tmp.38 :timerTime;
         %tmp.40 = 1000;
         %tmp.41 = div %tmp.39 %tmp.40;
         push %tmp.41;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_end;
-_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_else_false:
-        symbol [ totalDuration %tmp.43 109 14 27 ];
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_end;
+_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_else_false:
+        symbol [ totalDuration %tmp.43 108 14 27 ];
         %tmp.43 = getv ? :totalDuration;
         push %tmp.43;
-_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_end:
-        %tmp.44 = phi [%tmp.37 @_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_begin] [%tmp.41 @_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_true] [%tmp.43 @_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_else_false] [%tmp.44 @_workspace_no_track_run_watch_source_RunManager_mc_107_24_109_14_end];
-        symbol [ totalDuration ? 107 8 21 ];
+_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_end:
+        %tmp.44 = phi [%tmp.37 @_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_begin] [%tmp.41 @_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_true] [%tmp.43 @_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_else_false] [%tmp.44 @_workspace_no_track_run_watch_source_RunManager_mc_106_24_108_14_end];
+        symbol [ totalDuration ? 106 8 21 ];
         putv self :totalDuration %tmp.44;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 112 8 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 111 8 ]
         %tmp.45 = lgetv %info.1;
-        symbol [ info %tmp.45 112 24 28 ];
-        symbol [ elapsedDistance %tmp.46 112 29 44 ];
+        symbol [ info %tmp.45 111 24 28 ];
+        symbol [ elapsedDistance %tmp.46 111 29 44 ];
         %tmp.46 = getv %tmp.45 :elapsedDistance;
-        symbol [ fieldStartDistance %tmp.48 112 47 65 ];
+        symbol [ fieldStartDistance %tmp.48 111 47 65 ];
         %tmp.48 = getv ? :fieldStartDistance;
         %tmp.49 = sub %tmp.46 %tmp.48;
-        symbol [ fieldDistance ? 112 8 21 ];
+        symbol [ fieldDistance ? 111 8 21 ];
         putv self :fieldDistance %tmp.49;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 114 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_114_8_114_56_if_stmt:
-        symbol [ fieldDistance %tmp.51 114 12 25 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 113 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_113_8_113_56_if_stmt:
+        symbol [ fieldDistance %tmp.51 113 12 25 ];
         %tmp.51 = getv ? :fieldDistance;
         %tmp.52 = 0.0;
         %tmp.53 = lt %tmp.51 %tmp.52;
-        bf %tmp.53 @_workspace_no_track_run_watch_source_RunManager_mc_114_8_114_56_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_114_8_114_56_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_114_33_114_56_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 114 35 ]
+        bf %tmp.53 @_workspace_no_track_run_watch_source_RunManager_mc_113_8_113_56_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_113_8_113_56_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_113_33_113_56_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 113 35 ]
         %tmp.54 = 0.0;
-        symbol [ fieldDistance ? 114 35 48 ];
+        symbol [ fieldDistance ? 113 35 48 ];
         putv self :fieldDistance %tmp.54;
-_workspace_no_track_run_watch_source_RunManager_mc_114_33_114_56_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_114_8_114_56_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_114_8_114_56_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 116 8 ]
-        symbol [ fieldElapsed %tmp.55 116 8 20 ];
+_workspace_no_track_run_watch_source_RunManager_mc_113_33_113_56_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_113_8_113_56_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_113_8_113_56_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 115 8 ]
+        symbol [ fieldElapsed %tmp.55 115 8 20 ];
         %tmp.55 = getv self :fieldElapsed;
         %tmp.56 = 1;
         %tmp.57 = add %tmp.55 %tmp.56;
-        symbol [ fieldElapsed ? 116 8 20 ];
+        symbol [ fieldElapsed ? 115 8 20 ];
         putv self :fieldElapsed dup %tmp.57;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 119 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_119_8_119_52_if_stmt:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 118 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_118_8_118_52_if_stmt:
         %tmp.58 = self;
-        symbol [ fieldRemaining %tmp.59 119 12 26 ];
+        symbol [ fieldRemaining %tmp.59 118 12 26 ];
         %tmp.59 = getv function %tmp.58 :fieldRemaining;
         %tmp.60 = invoke %tmp.58 %tmp.59();
         %tmp.61 = 0;
         %tmp.62 = eq %tmp.60 %tmp.61;
-        bf %tmp.62 @_workspace_no_track_run_watch_source_RunManager_mc_119_8_119_52_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_119_8_119_52_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_119_35_119_52_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 119 37 ]
+        bf %tmp.62 @_workspace_no_track_run_watch_source_RunManager_mc_118_8_118_52_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_118_8_118_52_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_118_35_118_52_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 118 37 ]
         %tmp.63 = self;
-        symbol [ advanceField %tmp.64 119 37 49 ];
+        symbol [ advanceField %tmp.64 118 37 49 ];
         %tmp.64 = getv function %tmp.63 :advanceField;
         invoke %tmp.63 %tmp.64();
-_workspace_no_track_run_watch_source_RunManager_mc_119_35_119_52_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_119_8_119_52_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_119_8_119_52_if_end:
-_workspace_no_track_run_watch_source_RunManager_mc_88_31_120_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_118_35_118_52_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_118_8_118_52_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_118_8_118_52_if_end:
+_workspace_no_track_run_watch_source_RunManager_mc_87_31_119_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 122; @symbol_functiondef = [advanceField,122,15,27]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 121; @symbol_functiondef = [advanceField,121,15,27]; ]
     function advanceField() as Void {
-_workspace_no_track_run_watch_source_RunManager_mc_122_38_148_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 123 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_123_8_126_8_if_stmt:
-_workspace_no_track_run_watch_source_RunManager_mc_123_12_123_49_begin:
+_workspace_no_track_run_watch_source_RunManager_mc_121_38_147_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 122 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_122_8_125_8_if_stmt:
+_workspace_no_track_run_watch_source_RunManager_mc_122_12_122_49_begin:
         %tmp.1 = self;
-        symbol [ isRunningBlock %tmp.2 123 13 27 ];
+        symbol [ isRunningBlock %tmp.2 122 13 27 ];
         %tmp.2 = getv function %tmp.1 :isRunningBlock;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = not %tmp.3;
-        bf %tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_123_8_126_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_123_33_123_49_true:
+        bf %tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_122_8_125_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_122_33_122_49_true:
         %tmp.5 = self;
-        symbol [ isLastExercice %tmp.6 123 34 48 ];
+        symbol [ isLastExercice %tmp.6 122 34 48 ];
         %tmp.6 = getv function %tmp.5 :isLastExercice;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         %tmp.8 = not %tmp.7;
         push %tmp.8;
-_workspace_no_track_run_watch_source_RunManager_mc_123_33_123_49_end:
-        %tmp.9 = phi [%tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_123_12_123_49_begin] [%tmp.8 @_workspace_no_track_run_watch_source_RunManager_mc_123_33_123_49_true] [%tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_123_33_123_49_end];
-        bf %tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_123_8_126_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_123_8_126_8_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_123_52_126_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 124 12 ]
-        symbol [ currentExoIdx %tmp.12 124 12 25 ];
+_workspace_no_track_run_watch_source_RunManager_mc_122_33_122_49_end:
+        %tmp.9 = phi [%tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_122_12_122_49_begin] [%tmp.8 @_workspace_no_track_run_watch_source_RunManager_mc_122_33_122_49_true] [%tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_122_33_122_49_end];
+        bf %tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_122_8_125_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_122_8_125_8_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_122_52_125_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 123 12 ]
+        symbol [ currentExoIdx %tmp.12 123 12 25 ];
         %tmp.12 = getv ? :currentExoIdx;
         %tmp.13 = add %tmp.12 1;
-        symbol [ currentExoIdx ? 124 12 25 ];
+        symbol [ currentExoIdx ? 123 12 25 ];
         putv self :currentExoIdx dup %tmp.13;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 125 12 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 124 12 ]
         ret ?;
-_workspace_no_track_run_watch_source_RunManager_mc_123_52_126_8_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_123_8_126_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_123_8_126_8_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 128 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_122_52_125_8_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_122_8_125_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_122_8_125_8_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 127 8 ]
         %tmp.14 = self;
-        symbol [ saveFieldResult %tmp.15 128 8 23 ];
+        symbol [ saveFieldResult %tmp.15 127 8 23 ];
         %tmp.15 = getv function %tmp.14 :saveFieldResult;
         invoke %tmp.14 %tmp.15();
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 130 8 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 129 8 ]
         %tmp.16 = 0;
-        symbol [ fieldElapsed ? 130 8 20 ];
+        symbol [ fieldElapsed ? 129 8 20 ];
         putv self :fieldElapsed %tmp.16;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 131 8 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 130 8 ]
         %tmp.17 = 0.0;
-        symbol [ fieldDistance ? 131 8 21 ];
+        symbol [ fieldDistance ? 130 8 21 ];
         putv self :fieldDistance %tmp.17;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 133 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_122_38_148_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_122_38_148_4_stop" ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 132 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_121_38_147_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_121_38_147_4_stop" ]
         %info.1 = local;
-        symbol [ info %info.1 133 12 16 ];
-        symbol [ Activity %tmp.18 133 19 27 ];
+        symbol [ info %info.1 132 12 16 ];
+        symbol [ Activity %tmp.18 132 19 27 ];
         %tmp.18 = getm $.Toybox.Activity;
-        symbol [ getActivityInfo %tmp.19 133 28 43 ];
+        symbol [ getActivityInfo %tmp.19 132 28 43 ];
         %tmp.19 = getv function %tmp.18 :getActivityInfo;
         %tmp.20 = invoke %tmp.18 %tmp.19();
         lputv %info.1 %tmp.20;
-        symbol [ info %info.1 133 12 16 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 134 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_begin:
-_workspace_no_track_run_watch_source_RunManager_mc_134_30_134_70_begin:
+        symbol [ info %info.1 132 12 16 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 133 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_begin:
+_workspace_no_track_run_watch_source_RunManager_mc_133_30_133_70_begin:
         %tmp.21 = lgetv %info.1;
-        symbol [ info %tmp.21 134 30 34 ];
+        symbol [ info %tmp.21 133 30 34 ];
         %tmp.22 = null;
         %tmp.23 = ne %tmp.21 %tmp.22;
-        bf %tmp.23 @_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_134_46_134_70_true:
+        bf %tmp.23 @_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_133_46_133_70_true:
         %tmp.24 = lgetv %info.1;
-        symbol [ info %tmp.24 134 46 50 ];
+        symbol [ info %tmp.24 133 46 50 ];
         %tmp.25 = as %tmp.24 { (!Null) };
-        symbol [ elapsedDistance %tmp.26 134 51 66 ];
+        symbol [ elapsedDistance %tmp.26 133 51 66 ];
         %tmp.26 = getv %tmp.25 :elapsedDistance;
         %tmp.27 = null;
         %tmp.28 = ne %tmp.26 %tmp.27;
         push %tmp.28;
-_workspace_no_track_run_watch_source_RunManager_mc_134_46_134_70_end:
-        %tmp.29 = phi [%tmp.23 @_workspace_no_track_run_watch_source_RunManager_mc_134_30_134_70_begin] [%tmp.28 @_workspace_no_track_run_watch_source_RunManager_mc_134_46_134_70_true] [%tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_134_46_134_70_end];
-        bf %tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_true:
+_workspace_no_track_run_watch_source_RunManager_mc_133_46_133_70_end:
+        %tmp.29 = phi [%tmp.23 @_workspace_no_track_run_watch_source_RunManager_mc_133_30_133_70_begin] [%tmp.28 @_workspace_no_track_run_watch_source_RunManager_mc_133_46_133_70_true] [%tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_133_46_133_70_end];
+        bf %tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_true:
         %tmp.30 = lgetv %info.1;
-        symbol [ info %tmp.30 135 14 18 ];
+        symbol [ info %tmp.30 134 14 18 ];
         %tmp.31 = as %tmp.30 { (!Null) };
-        symbol [ elapsedDistance %tmp.32 135 19 34 ];
+        symbol [ elapsedDistance %tmp.32 134 19 34 ];
         %tmp.32 = getv %tmp.31 :elapsedDistance;
         push %tmp.32;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_end;
-_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_else_false:
-        symbol [ fieldStartDistance %tmp.34 136 14 32 ];
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_end;
+_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_else_false:
+        symbol [ fieldStartDistance %tmp.34 135 14 32 ];
         %tmp.34 = getv ? :fieldStartDistance;
         push %tmp.34;
-_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_end:
-        %tmp.35 = phi [%tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_begin] [%tmp.32 @_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_true] [%tmp.34 @_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_else_false] [%tmp.35 @_workspace_no_track_run_watch_source_RunManager_mc_134_29_136_14_end];
-        symbol [ fieldStartDistance ? 134 8 26 ];
+_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_end:
+        %tmp.35 = phi [%tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_begin] [%tmp.32 @_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_true] [%tmp.34 @_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_else_false] [%tmp.35 @_workspace_no_track_run_watch_source_RunManager_mc_133_29_135_14_end];
+        symbol [ fieldStartDistance ? 133 8 26 ];
         putv self :fieldStartDistance %tmp.35;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 138 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_138_8_147_31_if_stmt:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 137 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_137_8_146_31_if_stmt:
         %tmp.36 = self;
-        symbol [ isRunningBlock %tmp.37 138 12 26 ];
+        symbol [ isRunningBlock %tmp.37 137 12 26 ];
         %tmp.37 = getv function %tmp.36 :isRunningBlock;
         %tmp.38 = invoke %tmp.36 %tmp.37();
-        bf %tmp.38 @_workspace_no_track_run_watch_source_RunManager_mc_138_8_147_31_if_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_138_8_147_31_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_138_30_147_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 140 12 ]
-_workspace_no_track_run_watch_source_RunManager_mc_140_12_145_35_if_stmt:
+        bf %tmp.38 @_workspace_no_track_run_watch_source_RunManager_mc_137_8_146_31_if_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_137_8_146_31_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_137_30_146_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 139 12 ]
+_workspace_no_track_run_watch_source_RunManager_mc_139_12_144_35_if_stmt:
         %tmp.39 = self;
-        symbol [ hasRemainingFields %tmp.40 140 16 34 ];
+        symbol [ hasRemainingFields %tmp.40 139 16 34 ];
         %tmp.40 = getv function %tmp.39 :hasRemainingFields;
         %tmp.41 = invoke %tmp.39 %tmp.40();
-        bf %tmp.41 @_workspace_no_track_run_watch_source_RunManager_mc_140_12_145_35_if_false;
-_workspace_no_track_run_watch_source_RunManager_mc_140_12_145_35_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_140_38_142_12_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 141 16 ]
+        bf %tmp.41 @_workspace_no_track_run_watch_source_RunManager_mc_139_12_144_35_if_false;
+_workspace_no_track_run_watch_source_RunManager_mc_139_12_144_35_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_139_38_141_12_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 140 16 ]
         %tmp.42 = self;
-        symbol [ nextField %tmp.43 141 16 25 ];
+        symbol [ nextField %tmp.43 140 16 25 ];
         %tmp.43 = getv function %tmp.42 :nextField;
-        symbol [ currentFieldIdx %tmp.45 141 26 41 ];
+        symbol [ currentFieldIdx %tmp.45 140 26 41 ];
         %tmp.45 = getv ? :currentFieldIdx;
         %tmp.46 = 1;
         %tmp.47 = add %tmp.45 %tmp.46;
         invoke %tmp.42 %tmp.43(%tmp.47);
-_workspace_no_track_run_watch_source_RunManager_mc_140_38_142_12_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_140_12_145_35_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_140_12_145_35_if_false:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 142 19 ]
-_workspace_no_track_run_watch_source_RunManager_mc_142_19_145_35_if_stmt:
-        symbol [ repCount %tmp.49 142 23 31 ];
+_workspace_no_track_run_watch_source_RunManager_mc_139_38_141_12_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_139_12_144_35_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_139_12_144_35_if_false:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 141 19 ]
+_workspace_no_track_run_watch_source_RunManager_mc_141_19_144_35_if_stmt:
+        symbol [ repCount %tmp.49 141 23 31 ];
         %tmp.49 = getv ? :repCount;
         %tmp.50 = self;
-        symbol [ getTargetReps %tmp.51 142 34 47 ];
+        symbol [ getTargetReps %tmp.51 141 34 47 ];
         %tmp.51 = getv function %tmp.50 :getTargetReps;
         %tmp.52 = invoke %tmp.50 %tmp.51();
         %tmp.53 = lt %tmp.49 %tmp.52;
-        bf %tmp.53 @_workspace_no_track_run_watch_source_RunManager_mc_142_19_145_35_if_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_142_19_145_35_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_142_51_144_12_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 143 16 ]
+        bf %tmp.53 @_workspace_no_track_run_watch_source_RunManager_mc_141_19_144_35_if_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_141_19_144_35_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_141_51_143_12_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 142 16 ]
         %tmp.54 = self;
-        symbol [ nextField %tmp.55 143 16 25 ];
+        symbol [ nextField %tmp.55 142 16 25 ];
         %tmp.55 = getv function %tmp.54 :nextField;
         %tmp.56 = 0;
         invoke %tmp.54 %tmp.55(%tmp.56);
-_workspace_no_track_run_watch_source_RunManager_mc_142_51_144_12_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_142_19_145_35_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_142_19_145_35_if_else_false:
-_workspace_no_track_run_watch_source_RunManager_mc_145_17_145_35_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 145 19 ]
+_workspace_no_track_run_watch_source_RunManager_mc_141_51_143_12_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_141_19_144_35_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_141_19_144_35_if_else_false:
+_workspace_no_track_run_watch_source_RunManager_mc_144_17_144_35_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 144 19 ]
         %tmp.57 = self;
-        symbol [ advanceBlock %tmp.58 145 19 31 ];
+        symbol [ advanceBlock %tmp.58 144 19 31 ];
         %tmp.58 = getv function %tmp.57 :advanceBlock;
         invoke %tmp.57 %tmp.58();
-_workspace_no_track_run_watch_source_RunManager_mc_145_17_145_35_stop:
-_workspace_no_track_run_watch_source_RunManager_mc_142_19_145_35_if_end:
-_workspace_no_track_run_watch_source_RunManager_mc_140_12_145_35_if_end:
-_workspace_no_track_run_watch_source_RunManager_mc_138_30_147_8_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_138_8_147_31_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_138_8_147_31_if_else_false:
-_workspace_no_track_run_watch_source_RunManager_mc_147_15_147_31_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 147 16 ]
+_workspace_no_track_run_watch_source_RunManager_mc_144_17_144_35_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_141_19_144_35_if_end:
+_workspace_no_track_run_watch_source_RunManager_mc_139_12_144_35_if_end:
+_workspace_no_track_run_watch_source_RunManager_mc_137_30_146_8_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_137_8_146_31_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_137_8_146_31_if_else_false:
+_workspace_no_track_run_watch_source_RunManager_mc_146_15_146_31_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 146 16 ]
         %tmp.59 = self;
-        symbol [ advanceBlock %tmp.60 147 16 28 ];
+        symbol [ advanceBlock %tmp.60 146 16 28 ];
         %tmp.60 = getv function %tmp.59 :advanceBlock;
         invoke %tmp.59 %tmp.60();
-_workspace_no_track_run_watch_source_RunManager_mc_147_15_147_31_stop:
-_workspace_no_track_run_watch_source_RunManager_mc_138_8_147_31_if_end:
-_workspace_no_track_run_watch_source_RunManager_mc_122_38_148_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_146_15_146_31_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_137_8_146_31_if_end:
+_workspace_no_track_run_watch_source_RunManager_mc_121_38_147_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 151; @symbol_functiondef = [saveFieldResult,151,13,28]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 150; @symbol_functiondef = [saveFieldResult,150,13,28]; ]
     function saveFieldResult() as Void {
-_workspace_no_track_run_watch_source_RunManager_mc_151_39_170_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 153 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_151_39_170_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_151_39_170_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_150_39_169_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 152 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_150_39_169_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_150_39_169_4_stop" ]
         %block.1 = local;
-        symbol [ block %block.1 153 12 17 ];
+        symbol [ block %block.1 152 12 17 ];
         %tmp.1 = self;
-        symbol [ getCurrentBlock %tmp.2 153 20 35 ];
+        symbol [ getCurrentBlock %tmp.2 152 20 35 ];
         %tmp.2 = getv function %tmp.1 :getCurrentBlock;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %block.1 %tmp.3;
-        symbol [ block %block.1 153 12 17 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 154 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_151_39_170_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_151_39_170_4_stop" ]
+        symbol [ block %block.1 152 12 17 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 153 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_150_39_169_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_150_39_169_4_stop" ]
         %field.2 = local;
-        symbol [ field %field.2 154 12 17 ];
+        symbol [ field %field.2 153 12 17 ];
         %tmp.4 = self;
-        symbol [ getCurrentField %tmp.5 154 20 35 ];
+        symbol [ getCurrentField %tmp.5 153 20 35 ];
         %tmp.5 = getv function %tmp.4 :getCurrentField;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %field.2 %tmp.6;
-        symbol [ field %field.2 154 12 17 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 161 8 ]
-        symbol [ results %tmp.8 161 8 15 ];
+        symbol [ field %field.2 153 12 17 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 160 8 ]
+        symbol [ results %tmp.8 160 8 15 ];
         %tmp.8 = getv ? :results;
-        symbol [ add %tmp.9 161 16 19 ];
+        symbol [ add %tmp.9 160 16 19 ];
         %tmp.9 = getv function %tmp.8 :add;
         %tmp.10 = newd 5;
         %tmp.11 = "blockId";
         %tmp.12 = lgetv %block.1;
-        symbol [ block %tmp.12 162 26 31 ];
+        symbol [ block %tmp.12 161 26 31 ];
         %tmp.13 = "id";
         %tmp.14 = agetv %tmp.12 %tmp.13;
         %tmp.15 = dup %tmp.10;
         %tmp.16 = aputv %tmp.15 %tmp.11 %tmp.14;
         %tmp.17 = "index";
-        symbol [ repCount %tmp.19 163 26 34 ];
+        symbol [ repCount %tmp.19 162 26 34 ];
         %tmp.19 = getv ? :repCount;
         %tmp.20 = dup %tmp.16;
         %tmp.21 = aputv %tmp.20 %tmp.17 %tmp.19;
         %tmp.22 = "distance";
-        symbol [ fieldDistance %tmp.24 164 26 39 ];
+        symbol [ fieldDistance %tmp.24 163 26 39 ];
         %tmp.24 = getv ? :fieldDistance;
         %tmp.25 = dup %tmp.21;
         %tmp.26 = aputv %tmp.25 %tmp.22 %tmp.24;
         %tmp.27 = "duration";
-        symbol [ fieldElapsed %tmp.29 165 26 38 ];
+        symbol [ fieldElapsed %tmp.29 164 26 38 ];
         %tmp.29 = getv ? :fieldElapsed;
         %tmp.30 = dup %tmp.26;
         %tmp.31 = aputv %tmp.30 %tmp.27 %tmp.29;
         %tmp.32 = "role";
-_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_begin:
+_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_begin:
         %tmp.33 = self;
-        symbol [ isRunningBlock %tmp.34 166 27 41 ];
+        symbol [ isRunningBlock %tmp.34 165 27 41 ];
         %tmp.34 = getv function %tmp.33 :isRunningBlock;
         %tmp.35 = invoke %tmp.33 %tmp.34();
         %tmp.36 = not %tmp.35;
-        bf %tmp.36 @_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_true:
+        bf %tmp.36 @_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_true:
         %tmp.37 = "EXERCICES";
         push %tmp.37;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_end;
-_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_else_false:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_end;
+_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_else_false:
         %tmp.38 = lgetv %field.2;
-        symbol [ field %tmp.38 166 60 65 ];
+        symbol [ field %tmp.38 165 60 65 ];
         %tmp.39 = "role";
         %tmp.40 = agetv %tmp.38 %tmp.39;
         push %tmp.40;
-_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_end:
-        %tmp.41 = phi [%tmp.36 @_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_begin] [%tmp.37 @_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_true] [%tmp.40 @_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_else_false] [%tmp.41 @_workspace_no_track_run_watch_source_RunManager_mc_166_26_166_72_end];
+_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_end:
+        %tmp.41 = phi [%tmp.36 @_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_begin] [%tmp.37 @_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_true] [%tmp.40 @_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_else_false] [%tmp.41 @_workspace_no_track_run_watch_source_RunManager_mc_165_26_165_72_end];
         %tmp.42 = dup %tmp.31;
         %tmp.43 = aputv %tmp.42 %tmp.32 %tmp.41;
         invoke %tmp.8 %tmp.9(%tmp.43);
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 169 8 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 168 8 ]
         %tmp.44 = self;
-        symbol [ saveSessionLocally %tmp.45 169 8 26 ];
+        symbol [ saveSessionLocally %tmp.45 168 8 26 ];
         %tmp.45 = getv function %tmp.44 :saveSessionLocally;
         invoke %tmp.44 %tmp.45();
-_workspace_no_track_run_watch_source_RunManager_mc_151_39_170_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_150_39_169_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 172; @symbol_functiondef = [advanceBlock,172,13,25]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 171; @symbol_functiondef = [advanceBlock,171,13,25]; ]
     function advanceBlock() as Void {
-_workspace_no_track_run_watch_source_RunManager_mc_172_36_186_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 173 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_171_36_186_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 172 8 ]
         %tmp.1 = 0;
-        symbol [ currentFieldIdx ? 173 8 23 ];
+        symbol [ currentFieldIdx ? 172 8 23 ];
         putv self :currentFieldIdx %tmp.1;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 174 8 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 173 8 ]
         %tmp.2 = 1;
-        symbol [ repCount ? 174 8 16 ];
+        symbol [ repCount ? 173 8 16 ];
         putv self :repCount %tmp.2;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 175 8 ]
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 174 8 ]
         %tmp.3 = 0;
-        symbol [ currentExoIdx ? 175 8 21 ];
+        symbol [ currentExoIdx ? 174 8 21 ];
         putv self :currentExoIdx %tmp.3;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 177 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_177_8_185_8_if_stmt:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 176 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_176_8_185_8_if_stmt:
         %tmp.4 = self;
-        symbol [ hasRemainingBlocks %tmp.5 177 12 30 ];
+        symbol [ hasRemainingBlocks %tmp.5 176 12 30 ];
         %tmp.5 = getv function %tmp.4 :hasRemainingBlocks;
         %tmp.6 = invoke %tmp.4 %tmp.5();
-        bf %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_177_8_185_8_if_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_177_8_185_8_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_177_34_180_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 178 12 ]
-        symbol [ currentBlockIdx %tmp.7 178 12 27 ];
+        bf %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_176_8_185_8_if_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_176_8_185_8_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_176_34_179_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 177 12 ]
+        symbol [ currentBlockIdx %tmp.7 177 12 27 ];
         %tmp.7 = getv self :currentBlockIdx;
         %tmp.8 = 1;
         %tmp.9 = add %tmp.7 %tmp.8;
-        symbol [ currentBlockIdx ? 178 12 27 ];
+        symbol [ currentBlockIdx ? 177 12 27 ];
         putv self :currentBlockIdx dup %tmp.9;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 179 12 ]
-_workspace_no_track_run_watch_source_RunManager_mc_179_12_179_66_if_stmt:
-        symbol [ onBlockAdvance %tmp.11 179 16 30 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 178 12 ]
+_workspace_no_track_run_watch_source_RunManager_mc_178_12_178_66_if_stmt:
+        symbol [ onBlockAdvance %tmp.11 178 16 30 ];
         %tmp.11 = getv ? :onBlockAdvance;
         %tmp.12 = null;
         %tmp.13 = ne %tmp.11 %tmp.12;
-        bf %tmp.13 @_workspace_no_track_run_watch_source_RunManager_mc_179_12_179_66_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_179_12_179_66_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_179_40_179_66_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 179 42 ]
-        symbol [ onBlockAdvance %tmp.15 179 42 56 ];
+        bf %tmp.13 @_workspace_no_track_run_watch_source_RunManager_mc_178_12_178_66_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_178_12_178_66_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_178_40_178_66_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 178 42 ]
+        symbol [ onBlockAdvance %tmp.15 178 42 56 ];
         %tmp.15 = getv ? :onBlockAdvance;
         %tmp.16 = as %tmp.15 { (!Null) };
-        symbol [ invoke %tmp.17 179 57 63 ];
+        symbol [ invoke %tmp.17 178 57 63 ];
         %tmp.17 = getv function %tmp.16 :invoke;
         invoke %tmp.16 %tmp.17();
-_workspace_no_track_run_watch_source_RunManager_mc_179_40_179_66_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_179_12_179_66_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_179_12_179_66_if_end:
-_workspace_no_track_run_watch_source_RunManager_mc_177_34_180_8_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_177_8_185_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_177_8_185_8_if_else_false:
-_workspace_no_track_run_watch_source_RunManager_mc_181_13_185_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 182 12 ]
+_workspace_no_track_run_watch_source_RunManager_mc_178_40_178_66_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_178_12_178_66_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_178_12_178_66_if_end:
+_workspace_no_track_run_watch_source_RunManager_mc_176_34_179_8_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_176_8_185_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_176_8_185_8_if_else_false:
+_workspace_no_track_run_watch_source_RunManager_mc_180_13_185_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 181 12 ]
         %tmp.18 = self;
-        symbol [ stopActivitySession %tmp.19 182 12 31 ];
+        symbol [ stopActivitySession %tmp.19 181 12 31 ];
         %tmp.19 = getv function %tmp.18 :stopActivitySession;
         %tmp.20 = false;
         invoke %tmp.18 %tmp.19(%tmp.20);
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 182 12 ]
+        %tmp.21 = newd Dictionary 0;
+        symbol [ Dictionary %tmp.21 182 32 42 ];
+        symbol [ sessionData ? 182 12 23 ];
+        putv self :sessionData %tmp.21;
 [ "/workspace/no-track-run-watch/source/RunManager.mc" 183 12 ]
 _workspace_no_track_run_watch_source_RunManager_mc_183_12_183_62_if_stmt:
-        symbol [ onSessionEnd %tmp.22 183 16 28 ];
-        %tmp.22 = getv ? :onSessionEnd;
-        %tmp.23 = null;
-        %tmp.24 = ne %tmp.22 %tmp.23;
-        bf %tmp.24 @_workspace_no_track_run_watch_source_RunManager_mc_183_12_183_62_if_end;
+        symbol [ onSessionEnd %tmp.23 183 16 28 ];
+        %tmp.23 = getv ? :onSessionEnd;
+        %tmp.24 = null;
+        %tmp.25 = ne %tmp.23 %tmp.24;
+        bf %tmp.25 @_workspace_no_track_run_watch_source_RunManager_mc_183_12_183_62_if_end;
 _workspace_no_track_run_watch_source_RunManager_mc_183_12_183_62_if_true:
 _workspace_no_track_run_watch_source_RunManager_mc_183_38_183_62_start:
 [ "/workspace/no-track-run-watch/source/RunManager.mc" 183 40 ]
-        symbol [ onSessionEnd %tmp.26 183 40 52 ];
-        %tmp.26 = getv ? :onSessionEnd;
-        %tmp.27 = as %tmp.26 { (!Null) };
-        symbol [ invoke %tmp.28 183 53 59 ];
-        %tmp.28 = getv function %tmp.27 :invoke;
-        invoke %tmp.27 %tmp.28();
+        symbol [ onSessionEnd %tmp.27 183 40 52 ];
+        %tmp.27 = getv ? :onSessionEnd;
+        %tmp.28 = as %tmp.27 { (!Null) };
+        symbol [ invoke %tmp.29 183 53 59 ];
+        %tmp.29 = getv function %tmp.28 :invoke;
+        invoke %tmp.28 %tmp.29();
 _workspace_no_track_run_watch_source_RunManager_mc_183_38_183_62_stop:
         goto @_workspace_no_track_run_watch_source_RunManager_mc_183_12_183_62_if_end;
 _workspace_no_track_run_watch_source_RunManager_mc_183_12_183_62_if_end:
 [ "/workspace/no-track-run-watch/source/RunManager.mc" 184 12 ]
-        symbol [ sm %tmp.30 184 12 14 ];
-        %tmp.30 = getv ? :sm;
-        symbol [ handle %tmp.31 184 15 21 ];
-        %tmp.31 = getv function %tmp.30 :handle;
-        symbol [ EVENT_SESSION_END %tmp.33 184 22 39 ];
-        %tmp.33 = getv ? :EVENT_SESSION_END;
-        invoke %tmp.30 %tmp.31(%tmp.33);
-_workspace_no_track_run_watch_source_RunManager_mc_181_13_185_8_stop:
-_workspace_no_track_run_watch_source_RunManager_mc_177_8_185_8_if_end:
-_workspace_no_track_run_watch_source_RunManager_mc_172_36_186_4_stop:
+        symbol [ sm %tmp.31 184 12 14 ];
+        %tmp.31 = getv ? :sm;
+        symbol [ handle %tmp.32 184 15 21 ];
+        %tmp.32 = getv function %tmp.31 :handle;
+        symbol [ EVENT_SESSION_END %tmp.34 184 22 39 ];
+        %tmp.34 = getv ? :EVENT_SESSION_END;
+        invoke %tmp.31 %tmp.32(%tmp.34);
+_workspace_no_track_run_watch_source_RunManager_mc_180_13_185_8_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_176_8_185_8_if_end:
+_workspace_no_track_run_watch_source_RunManager_mc_171_36_186_4_stop:
     }
     [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 188; @symbol_functiondef = [resetCountDown,188,13,27]; ]
     function resetCountDown() as Void {
@@ -882,900 +882,914 @@ _workspace_no_track_run_watch_source_RunManager_mc_192_42_195_4_start:
         ret %tmp.7;
 _workspace_no_track_run_watch_source_RunManager_mc_192_42_195_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 197; @symbol_functiondef = [hasSessionData,197,13,27]; @symbol_return<0> = [Boolean,197,33,40]; ]
-    function hasSessionData() as Boolean {
-_workspace_no_track_run_watch_source_RunManager_mc_197_41_199_4_start:
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 197; @symbol_functiondef = [hasResult,197,13,22]; @symbol_return<0> = [Boolean,197,28,35]; ]
+    function hasResult() as Boolean {
+_workspace_no_track_run_watch_source_RunManager_mc_197_36_199_4_start:
 [ "/workspace/no-track-run-watch/source/RunManager.mc" 198 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_198_15_198_59_begin:
-        symbol [ sessionData %tmp.2 198 15 26 ];
+        symbol [ results %tmp.2 198 15 22 ];
+        %tmp.2 = getv ? :results;
+        symbol [ size %tmp.3 198 23 27 ];
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 0;
+        %tmp.6 = gt %tmp.4 %tmp.5;
+        ret %tmp.6;
+_workspace_no_track_run_watch_source_RunManager_mc_197_36_199_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 201; @symbol_functiondef = [hasSessionData,201,13,27]; @symbol_return<0> = [Boolean,201,33,40]; ]
+    function hasSessionData() as Boolean {
+_workspace_no_track_run_watch_source_RunManager_mc_201_41_203_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 202 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_202_15_202_59_begin:
+        symbol [ sessionData %tmp.2 202 15 26 ];
         %tmp.2 = getv ? :sessionData;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
         %tmp.5 = dup %tmp.4;
-        bf %tmp.5 @_workspace_no_track_run_watch_source_RunManager_mc_198_38_198_59_end;
-_workspace_no_track_run_watch_source_RunManager_mc_198_38_198_59_true:
-        symbol [ sessionData %tmp.7 198 38 49 ];
+        bf %tmp.5 @_workspace_no_track_run_watch_source_RunManager_mc_202_38_202_59_end;
+_workspace_no_track_run_watch_source_RunManager_mc_202_38_202_59_true:
+        symbol [ sessionData %tmp.7 202 38 49 ];
         %tmp.7 = getv ? :sessionData;
         %tmp.8 = as %tmp.7 { (!Null) };
-        symbol [ size %tmp.9 198 50 54 ];
+        symbol [ size %tmp.9 202 50 54 ];
         %tmp.9 = getv function %tmp.8 :size;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         %tmp.11 = 0;
         %tmp.12 = gt %tmp.10 %tmp.11;
         %tmp.13 = and %tmp.4 %tmp.12;
         push %tmp.13;
-_workspace_no_track_run_watch_source_RunManager_mc_198_38_198_59_end:
-        %tmp.14 = phi [%tmp.5 @_workspace_no_track_run_watch_source_RunManager_mc_198_15_198_59_begin] [%tmp.13 @_workspace_no_track_run_watch_source_RunManager_mc_198_38_198_59_true] [%tmp.14 @_workspace_no_track_run_watch_source_RunManager_mc_198_38_198_59_end];
+_workspace_no_track_run_watch_source_RunManager_mc_202_38_202_59_end:
+        %tmp.14 = phi [%tmp.5 @_workspace_no_track_run_watch_source_RunManager_mc_202_15_202_59_begin] [%tmp.13 @_workspace_no_track_run_watch_source_RunManager_mc_202_38_202_59_true] [%tmp.14 @_workspace_no_track_run_watch_source_RunManager_mc_202_38_202_59_end];
         ret %tmp.14;
-_workspace_no_track_run_watch_source_RunManager_mc_197_41_199_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_201_41_203_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 201; @symbol_functiondef = [getCurrentBlock,201,13,28]; @symbol_return<0> = [Dictionary,201,34,44]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 205; @symbol_functiondef = [getCurrentBlock,205,13,28]; @symbol_return<0> = [Dictionary,205,34,44]; ]
     function getCurrentBlock() as Dictionary {
-_workspace_no_track_run_watch_source_RunManager_mc_201_45_204_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 202 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_201_45_204_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_201_45_204_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_205_45_208_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 206 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_205_45_208_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_205_45_208_4_stop" ]
         %blocks.1 = local;
-        symbol [ blocks %blocks.1 202 12 18 ];
+        symbol [ blocks %blocks.1 206 12 18 ];
         %tmp.1 = self;
-        symbol [ getBlocks %tmp.2 202 21 30 ];
+        symbol [ getBlocks %tmp.2 206 21 30 ];
         %tmp.2 = getv function %tmp.1 :getBlocks;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %blocks.1 %tmp.3;
-        symbol [ blocks %blocks.1 202 12 18 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 203 8 ]
+        symbol [ blocks %blocks.1 206 12 18 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 207 8 ]
         %tmp.4 = lgetv %blocks.1;
-        symbol [ blocks %tmp.4 203 15 21 ];
-        symbol [ currentBlockIdx %tmp.6 203 22 37 ];
+        symbol [ blocks %tmp.4 207 15 21 ];
+        symbol [ currentBlockIdx %tmp.6 207 22 37 ];
         %tmp.6 = getv ? :currentBlockIdx;
         %tmp.7 = agetv %tmp.4 %tmp.6;
         %tmp.8 = as %tmp.7 Dictionary;
-        symbol [ Dictionary %tmp.8 203 42 52 ];
+        symbol [ Dictionary %tmp.8 207 42 52 ];
         ret %tmp.8;
-_workspace_no_track_run_watch_source_RunManager_mc_201_45_204_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_205_45_208_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 206; @symbol_functiondef = [getCurrentField,206,13,28]; @symbol_return<0> = [Dictionary,206,34,44]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 210; @symbol_functiondef = [getCurrentField,210,13,28]; @symbol_return<0> = [Dictionary,210,34,44]; ]
     function getCurrentField() as Dictionary {
-_workspace_no_track_run_watch_source_RunManager_mc_206_45_212_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 207 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_206_45_212_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_206_45_212_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_210_45_216_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 211 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_210_45_216_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_210_45_216_4_stop" ]
         %block.1 = local;
-        symbol [ block %block.1 207 12 17 ];
+        symbol [ block %block.1 211 12 17 ];
         %tmp.1 = self;
-        symbol [ getCurrentBlock %tmp.2 207 21 36 ];
+        symbol [ getCurrentBlock %tmp.2 211 21 36 ];
         %tmp.2 = getv function %tmp.1 :getCurrentBlock;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %block.1 %tmp.3;
-        symbol [ block %block.1 207 12 17 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 208 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_206_45_212_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_206_45_212_4_stop" ]
+        symbol [ block %block.1 211 12 17 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 212 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_210_45_216_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_210_45_216_4_stop" ]
         %fields.2 = local;
-        symbol [ fields %fields.2 208 12 18 ];
+        symbol [ fields %fields.2 212 12 18 ];
         %tmp.4 = lgetv %block.1;
-        symbol [ block %tmp.4 208 21 26 ];
+        symbol [ block %tmp.4 212 21 26 ];
         %tmp.5 = "fields";
         %tmp.6 = agetv %tmp.4 %tmp.5;
         %tmp.7 = as %tmp.6 Array;
-        symbol [ Array %tmp.7 208 40 45 ];
+        symbol [ Array %tmp.7 212 40 45 ];
         lputv %fields.2 %tmp.7;
-        symbol [ fields %fields.2 208 12 18 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 210 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_210_8_210_59_if_stmt:
+        symbol [ fields %fields.2 212 12 18 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 214 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_214_8_214_59_if_stmt:
         %tmp.8 = lgetv %fields.2;
-        symbol [ fields %tmp.8 210 12 18 ];
-        symbol [ size %tmp.9 210 19 23 ];
+        symbol [ fields %tmp.8 214 12 18 ];
+        symbol [ size %tmp.9 214 19 23 ];
         %tmp.9 = getv function %tmp.8 :size;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         %tmp.11 = 0;
         %tmp.12 = eq %tmp.10 %tmp.11;
-        bf %tmp.12 @_workspace_no_track_run_watch_source_RunManager_mc_210_8_210_59_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_210_8_210_59_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_210_32_210_59_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 210 34 ]
+        bf %tmp.12 @_workspace_no_track_run_watch_source_RunManager_mc_214_8_214_59_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_214_8_214_59_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_214_32_214_59_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 214 34 ]
         %tmp.13 = newd Dictionary 0;
-        symbol [ Dictionary %tmp.13 210 47 57 ];
+        symbol [ Dictionary %tmp.13 214 47 57 ];
         ret %tmp.13;
-_workspace_no_track_run_watch_source_RunManager_mc_210_32_210_59_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_210_8_210_59_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_210_8_210_59_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 211 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_214_32_214_59_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_214_8_214_59_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_214_8_214_59_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 215 8 ]
         %tmp.14 = lgetv %fields.2;
-        symbol [ fields %tmp.14 211 15 21 ];
-        symbol [ currentFieldIdx %tmp.16 211 22 37 ];
+        symbol [ fields %tmp.14 215 15 21 ];
+        symbol [ currentFieldIdx %tmp.16 215 22 37 ];
         %tmp.16 = getv ? :currentFieldIdx;
         %tmp.17 = agetv %tmp.14 %tmp.16;
         %tmp.18 = as %tmp.17 Dictionary;
-        symbol [ Dictionary %tmp.18 211 42 52 ];
+        symbol [ Dictionary %tmp.18 215 42 52 ];
         ret %tmp.18;
-_workspace_no_track_run_watch_source_RunManager_mc_206_45_212_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_210_45_216_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 214; @symbol_functiondef = [getGoal,214,13,20]; @symbol_return<0> = [BlockGoal,214,26,35]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 218; @symbol_functiondef = [getGoal,218,13,20]; @symbol_return<0> = [BlockGoal,218,26,35]; ]
     function getGoal() as BlockGoal {
-_workspace_no_track_run_watch_source_RunManager_mc_214_36_228_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 215 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_214_36_228_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_214_36_228_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_218_36_232_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 219 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_218_36_232_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_218_36_232_4_stop" ]
         %field.1 = local;
-        symbol [ field %field.1 215 12 17 ];
+        symbol [ field %field.1 219 12 17 ];
         %tmp.1 = self;
-        symbol [ getCurrentField %tmp.2 215 20 35 ];
+        symbol [ getCurrentField %tmp.2 219 20 35 ];
         %tmp.2 = getv function %tmp.1 :getCurrentField;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %field.1 %tmp.3;
-        symbol [ field %field.1 215 12 17 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 216 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_216_8_226_8_if_stmt:
+        symbol [ field %field.1 219 12 17 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 220 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_220_8_230_8_if_stmt:
         %tmp.4 = lgetv %field.1;
-        symbol [ field %tmp.4 216 12 17 ];
-        symbol [ size %tmp.5 216 18 22 ];
+        symbol [ field %tmp.4 220 12 17 ];
+        symbol [ size %tmp.5 220 18 22 ];
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
-        bf %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_216_8_226_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_216_8_226_8_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_216_26_226_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 217 12 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_216_26_226_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_216_26_226_8_stop" ]
+        bf %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_220_8_230_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_220_8_230_8_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_220_26_230_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 221 12 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_220_26_230_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_220_26_230_8_stop" ]
         %target.2 = local;
-        symbol [ target %target.2 217 16 22 ];
+        symbol [ target %target.2 221 16 22 ];
         %tmp.7 = self;
-        symbol [ getCurrentField %tmp.8 217 25 40 ];
+        symbol [ getCurrentField %tmp.8 221 25 40 ];
         %tmp.8 = getv function %tmp.7 :getCurrentField;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         %tmp.10 = "targetType";
         %tmp.11 = agetv %tmp.9 %tmp.10;
         lputv %target.2 %tmp.11;
-        symbol [ target %target.2 217 16 22 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 218 12 ]
+        symbol [ target %target.2 221 16 22 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 222 12 ]
         %tmp.12 = lgetv %target.2;
-        symbol [ target %tmp.12 218 20 26 ];
+        symbol [ target %tmp.12 222 20 26 ];
         push %tmp.12;
-        switch %tmp.12 @_workspace_no_track_run_watch_source_RunManager_mc_218_12_225_12_switchStmtEnd;
-_workspace_no_track_run_watch_source_RunManager_mc_218_12_225_12_switchStmtBegin:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 219 16 ]
+        switch %tmp.12 @_workspace_no_track_run_watch_source_RunManager_mc_222_12_229_12_switchStmtEnd;
+_workspace_no_track_run_watch_source_RunManager_mc_222_12_229_12_switchStmtBegin:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 223 16 ]
         %tmp.13 = dup %tmp.12;
         %tmp.14 = "DISTANCE";
         %tmp.15 = getv function %tmp.13 :equals;
         %tmp.16 = invoke %tmp.13 %tmp.15 (%tmp.14);
-        bt %tmp.16 @_workspace_no_track_run_watch_source_RunManager_mc_219_16_220_40_switchCase;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 221 16 ]
+        bt %tmp.16 @_workspace_no_track_run_watch_source_RunManager_mc_223_16_224_40_switchCase;
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 225 16 ]
         %tmp.17 = dup %tmp.12;
         %tmp.18 = "DURATION";
         %tmp.19 = getv function %tmp.17 :equals;
         %tmp.20 = invoke %tmp.17 %tmp.19 (%tmp.18);
-        bt %tmp.20 @_workspace_no_track_run_watch_source_RunManager_mc_221_16_222_40_switchCase;
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 223 16 ]
+        bt %tmp.20 @_workspace_no_track_run_watch_source_RunManager_mc_225_16_226_40_switchCase;
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 227 16 ]
         %tmp.21 = dup %tmp.12;
         %tmp.22 = "NONE";
         %tmp.23 = getv function %tmp.21 :equals;
         %tmp.24 = invoke %tmp.21 %tmp.23 (%tmp.22);
-        bt %tmp.24 @_workspace_no_track_run_watch_source_RunManager_mc_223_16_224_36_switchCase;
-_workspace_no_track_run_watch_source_RunManager_mc_218_12_225_12_switchStmtDefault:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_218_12_225_12_defaultCodeBegin;
-_workspace_no_track_run_watch_source_RunManager_mc_219_16_220_40_switchCase:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 220 20 ]
-        symbol [ GOAL_DISTANCE %tmp.26 220 27 40 ];
+        bt %tmp.24 @_workspace_no_track_run_watch_source_RunManager_mc_227_16_228_36_switchCase;
+_workspace_no_track_run_watch_source_RunManager_mc_222_12_229_12_switchStmtDefault:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_222_12_229_12_defaultCodeBegin;
+_workspace_no_track_run_watch_source_RunManager_mc_223_16_224_40_switchCase:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 224 20 ]
+        symbol [ GOAL_DISTANCE %tmp.26 224 27 40 ];
         %tmp.26 = getv ? :GOAL_DISTANCE;
         ret %tmp.26;
-_workspace_no_track_run_watch_source_RunManager_mc_221_16_222_40_switchCase:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 222 20 ]
-        symbol [ GOAL_DURATION %tmp.28 222 27 40 ];
+_workspace_no_track_run_watch_source_RunManager_mc_225_16_226_40_switchCase:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 226 20 ]
+        symbol [ GOAL_DURATION %tmp.28 226 27 40 ];
         %tmp.28 = getv ? :GOAL_DURATION;
         ret %tmp.28;
-_workspace_no_track_run_watch_source_RunManager_mc_223_16_224_36_switchCase:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 224 20 ]
-        symbol [ GOAL_NONE %tmp.30 224 27 36 ];
+_workspace_no_track_run_watch_source_RunManager_mc_227_16_228_36_switchCase:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 228 20 ]
+        symbol [ GOAL_NONE %tmp.30 228 27 36 ];
         %tmp.30 = getv ? :GOAL_NONE;
         ret %tmp.30;
-_workspace_no_track_run_watch_source_RunManager_mc_218_12_225_12_defaultCodeBegin:
-_workspace_no_track_run_watch_source_RunManager_mc_218_12_225_12_switchStmtEnd:
+_workspace_no_track_run_watch_source_RunManager_mc_222_12_229_12_defaultCodeBegin:
+_workspace_no_track_run_watch_source_RunManager_mc_222_12_229_12_switchStmtEnd:
         pop;
-_workspace_no_track_run_watch_source_RunManager_mc_216_26_226_8_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_216_8_226_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_216_8_226_8_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 227 8 ]
-        symbol [ GOAL_NONE %tmp.32 227 15 24 ];
+_workspace_no_track_run_watch_source_RunManager_mc_220_26_230_8_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_220_8_230_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_220_8_230_8_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 231 8 ]
+        symbol [ GOAL_NONE %tmp.32 231 15 24 ];
         %tmp.32 = getv ? :GOAL_NONE;
         ret %tmp.32;
-_workspace_no_track_run_watch_source_RunManager_mc_214_36_228_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_218_36_232_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 230; @symbol_functiondef = [getTrainingType,230,13,28]; @symbol_return<0> = [BlockType,230,34,43]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 234; @symbol_functiondef = [getTrainingType,234,13,28]; @symbol_return<0> = [BlockType,234,34,43]; ]
     function getTrainingType() as BlockType {
-_workspace_no_track_run_watch_source_RunManager_mc_230_44_236_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 231 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_230_44_236_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_230_44_236_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_234_44_240_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 235 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_234_44_240_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_234_44_240_4_stop" ]
         %type.1 = local;
-        symbol [ type %type.1 231 12 16 ];
+        symbol [ type %type.1 235 12 16 ];
         %tmp.1 = self;
-        symbol [ getCurrentBlock %tmp.2 231 19 34 ];
+        symbol [ getCurrentBlock %tmp.2 235 19 34 ];
         %tmp.2 = getv function %tmp.1 :getCurrentBlock;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = "type";
         %tmp.5 = agetv %tmp.3 %tmp.4;
         lputv %type.1 %tmp.5;
-        symbol [ type %type.1 231 12 16 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 232 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_begin:
+        symbol [ type %type.1 235 12 16 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 236 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_begin:
         %tmp.6 = lgetv %type.1;
-        symbol [ type %tmp.6 232 15 19 ];
-        symbol [ equals %tmp.7 232 20 26 ];
+        symbol [ type %tmp.6 236 15 19 ];
+        symbol [ equals %tmp.7 236 20 26 ];
         %tmp.7 = getv function %tmp.6 :equals;
         %tmp.8 = "RUNNING";
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
-        bf %tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_true:
-        symbol [ RUNNING %tmp.11 233 14 21 ];
+        bf %tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_true:
+        symbol [ RUNNING %tmp.11 237 14 21 ];
         %tmp.11 = getv ? :RUNNING;
         push %tmp.11;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_end;
-_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_else_false:
-        symbol [ CONDITIONNING %tmp.13 234 14 27 ];
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_end;
+_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_else_false:
+        symbol [ CONDITIONNING %tmp.13 238 14 27 ];
         %tmp.13 = getv ? :CONDITIONNING;
         push %tmp.13;
-_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_end:
-        %tmp.14 = phi [%tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_begin] [%tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_true] [%tmp.13 @_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_else_false] [%tmp.14 @_workspace_no_track_run_watch_source_RunManager_mc_232_15_234_14_end];
+_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_end:
+        %tmp.14 = phi [%tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_begin] [%tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_true] [%tmp.13 @_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_else_false] [%tmp.14 @_workspace_no_track_run_watch_source_RunManager_mc_236_15_238_14_end];
         ret %tmp.14;
-_workspace_no_track_run_watch_source_RunManager_mc_230_44_236_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_234_44_240_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 238; @symbol_functiondef = [getSessionLabel,238,13,28]; @symbol_return<0> = [String,238,34,40]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 242; @symbol_functiondef = [getSessionLabel,242,13,28]; @symbol_return<0> = [String,242,34,40]; ]
     function getSessionLabel() as String {
-_workspace_no_track_run_watch_source_RunManager_mc_238_41_240_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 239 8 ]
-        symbol [ sessionData %tmp.2 239 15 26 ];
+_workspace_no_track_run_watch_source_RunManager_mc_242_41_244_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 243 8 ]
+        symbol [ sessionData %tmp.2 243 15 26 ];
         %tmp.2 = getv ? :sessionData;
         %tmp.3 = "label";
         %tmp.4 = agetv %tmp.2 %tmp.3;
         %tmp.5 = as %tmp.4 String;
-        symbol [ String %tmp.5 239 39 45 ];
+        symbol [ String %tmp.5 243 39 45 ];
         ret %tmp.5;
-_workspace_no_track_run_watch_source_RunManager_mc_238_41_240_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_242_41_244_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 242; @symbol_functiondef = [getSessionDate,242,13,27]; @symbol_return<0> = [String,242,33,39]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 246; @symbol_functiondef = [getSessionDate,246,13,27]; @symbol_return<0> = [String,246,33,39]; ]
     function getSessionDate() as String {
-_workspace_no_track_run_watch_source_RunManager_mc_242_40_244_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 243 8 ]
-        symbol [ sessionData %tmp.2 243 15 26 ];
+_workspace_no_track_run_watch_source_RunManager_mc_246_40_248_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 247 8 ]
+        symbol [ sessionData %tmp.2 247 15 26 ];
         %tmp.2 = getv ? :sessionData;
         %tmp.3 = "date";
         %tmp.4 = agetv %tmp.2 %tmp.3;
         %tmp.5 = as %tmp.4 String;
-        symbol [ String %tmp.5 243 38 44 ];
+        symbol [ String %tmp.5 247 38 44 ];
         ret %tmp.5;
-_workspace_no_track_run_watch_source_RunManager_mc_242_40_244_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_246_40_248_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 246; @symbol_functiondef = [getBlocks,246,13,22]; @symbol_return<0> = [Array,246,28,33]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 250; @symbol_functiondef = [getBlocks,250,13,22]; @symbol_return<0> = [Array,250,28,33]; ]
     function getBlocks() as Array {
-_workspace_no_track_run_watch_source_RunManager_mc_246_34_248_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 247 8 ]
-        symbol [ sessionData %tmp.2 247 15 26 ];
+_workspace_no_track_run_watch_source_RunManager_mc_250_34_252_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 251 8 ]
+        symbol [ sessionData %tmp.2 251 15 26 ];
         %tmp.2 = getv ? :sessionData;
         %tmp.3 = "blocks";
         %tmp.4 = agetv %tmp.2 %tmp.3;
         %tmp.5 = as %tmp.4 Array;
-        symbol [ Array %tmp.5 247 40 45 ];
+        symbol [ Array %tmp.5 251 40 45 ];
         ret %tmp.5;
-_workspace_no_track_run_watch_source_RunManager_mc_246_34_248_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_250_34_252_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 250; @symbol_functiondef = [getFieldsCount,250,13,27]; @symbol_return<0> = [Number,250,33,39]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 254; @symbol_functiondef = [getFieldsCount,254,13,27]; @symbol_return<0> = [Number,254,33,39]; ]
     function getFieldsCount() as Number {
-_workspace_no_track_run_watch_source_RunManager_mc_250_40_259_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 251 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_250_40_259_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_250_40_259_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_254_40_263_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 255 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_254_40_263_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_254_40_263_4_stop" ]
         %fieldsCount.1 = local;
-        symbol [ fieldsCount %fieldsCount.1 251 12 23 ];
+        symbol [ fieldsCount %fieldsCount.1 255 12 23 ];
         %tmp.1 = 0;
         lputv %fieldsCount.1 %tmp.1;
-        symbol [ fieldsCount %fieldsCount.1 251 12 23 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 252 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_250_40_259_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_250_40_259_4_stop" ]
+        symbol [ fieldsCount %fieldsCount.1 255 12 23 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 256 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_254_40_263_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_254_40_263_4_stop" ]
         %blocks.2 = local;
-        symbol [ blocks %blocks.2 252 12 18 ];
+        symbol [ blocks %blocks.2 256 12 18 ];
         %tmp.2 = self;
-        symbol [ getBlocks %tmp.3 252 21 30 ];
+        symbol [ getBlocks %tmp.3 256 21 30 ];
         %tmp.3 = getv function %tmp.2 :getBlocks;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %blocks.2 %tmp.4;
-        symbol [ blocks %blocks.2 252 12 18 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 253 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_250_40_259_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_250_40_259_4_stop" ]
+        symbol [ blocks %blocks.2 256 12 18 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 257 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_254_40_263_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_254_40_263_4_stop" ]
         %count.3 = local;
-        symbol [ count %count.3 253 12 17 ];
+        symbol [ count %count.3 257 12 17 ];
         %tmp.5 = lgetv %blocks.2;
-        symbol [ blocks %tmp.5 253 20 26 ];
-        symbol [ size %tmp.6 253 27 31 ];
+        symbol [ blocks %tmp.5 257 20 26 ];
+        symbol [ size %tmp.6 257 27 31 ];
         %tmp.6 = getv function %tmp.5 :size;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         lputv %count.3 %tmp.7;
-        symbol [ count %count.3 253 12 17 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 254 8 ]
-        for @_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_test @_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_incr @_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_end;
-_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_init:
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_begin" "_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_end" ]
+        symbol [ count %count.3 257 12 17 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 258 8 ]
+        for @_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_test @_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_incr @_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_end;
+_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_init:
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_begin" "_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_end" ]
         %i.4 = local;
-        symbol [ i %i.4 254 17 18 ];
+        symbol [ i %i.4 258 17 18 ];
         %tmp.8 = 0;
         lputv %i.4 %tmp.8;
-        symbol [ i %i.4 254 17 18 ];
-_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_test:
+        symbol [ i %i.4 258 17 18 ];
+_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_test:
         %tmp.9 = lgetv %i.4;
-        symbol [ i %tmp.9 254 24 25 ];
+        symbol [ i %tmp.9 258 24 25 ];
         %tmp.10 = lgetv %count.3;
-        symbol [ count %tmp.10 254 28 33 ];
+        symbol [ count %tmp.10 258 28 33 ];
         %tmp.11 = lt %tmp.9 %tmp.10;
-        bf %tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_end;
-_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_begin:
-_workspace_no_track_run_watch_source_RunManager_mc_254_40_257_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 255 12 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_254_40_257_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_254_40_257_8_stop" ]
+        bf %tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_end;
+_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_begin:
+_workspace_no_track_run_watch_source_RunManager_mc_258_40_261_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 259 12 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_258_40_261_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_258_40_261_8_stop" ]
         %fields.5 = local;
-        symbol [ fields %fields.5 255 16 22 ];
+        symbol [ fields %fields.5 259 16 22 ];
         %tmp.12 = lgetv %blocks.2;
-        symbol [ blocks %tmp.12 255 25 31 ];
+        symbol [ blocks %tmp.12 259 25 31 ];
         %tmp.13 = lgetv %i.4;
-        symbol [ i %tmp.13 255 32 33 ];
+        symbol [ i %tmp.13 259 32 33 ];
         %tmp.14 = agetv %tmp.12 %tmp.13;
         %tmp.15 = "fields";
         %tmp.16 = agetv %tmp.14 %tmp.15;
         %tmp.17 = as %tmp.16 Array;
-        symbol [ Array %tmp.17 255 48 53 ];
+        symbol [ Array %tmp.17 259 48 53 ];
         lputv %fields.5 %tmp.17;
-        symbol [ fields %fields.5 255 16 22 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 256 12 ]
+        symbol [ fields %fields.5 259 16 22 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 260 12 ]
         %tmp.18 = lgetv %fieldsCount.1;
-        symbol [ fieldsCount %tmp.18 256 12 23 ];
+        symbol [ fieldsCount %tmp.18 260 12 23 ];
         %tmp.19 = lgetv %fields.5;
-        symbol [ fields %tmp.19 256 27 33 ];
-        symbol [ size %tmp.20 256 34 38 ];
+        symbol [ fields %tmp.19 260 27 33 ];
+        symbol [ size %tmp.20 260 34 38 ];
         %tmp.20 = getv function %tmp.19 :size;
         %tmp.21 = invoke %tmp.19 %tmp.20();
         %tmp.22 = lgetv %blocks.2;
-        symbol [ blocks %tmp.22 256 43 49 ];
+        symbol [ blocks %tmp.22 260 43 49 ];
         %tmp.23 = lgetv %i.4;
-        symbol [ i %tmp.23 256 50 51 ];
+        symbol [ i %tmp.23 260 50 51 ];
         %tmp.24 = agetv %tmp.22 %tmp.23;
         %tmp.25 = "repetitions";
         %tmp.26 = agetv %tmp.24 %tmp.25;
         %tmp.27 = mul %tmp.21 %tmp.26;
         %tmp.28 = add %tmp.18 %tmp.27;
         lputv %fieldsCount.1 %tmp.28;
-        symbol [ fieldsCount %fieldsCount.1 256 12 23 ];
-_workspace_no_track_run_watch_source_RunManager_mc_254_40_257_8_stop:
-_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_incr:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 254 ]
+        symbol [ fieldsCount %fieldsCount.1 260 12 23 ];
+_workspace_no_track_run_watch_source_RunManager_mc_258_40_261_8_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_incr:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 258 ]
         %tmp.31 = lgetv %i.4;
-        symbol [ i %tmp.31 254 35 36 ];
+        symbol [ i %tmp.31 258 35 36 ];
         %tmp.32 = add %tmp.31 1;
         lputv %i.4 %tmp.32;
-        symbol [ i %i.4 254 35 36 ];
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_test;
-_workspace_no_track_run_watch_source_RunManager_mc_254_8_257_8_for_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 258 8 ]
-        %tmp.33 = lgetv %fieldsCount.1;
-        symbol [ fieldsCount %tmp.33 258 15 26 ];
-        ret %tmp.33;
-_workspace_no_track_run_watch_source_RunManager_mc_250_40_259_4_stop:
-    }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 261; @symbol_functiondef = [getBlocksCount,261,13,27]; @symbol_return<0> = [Number,261,33,39]; ]
-    function getBlocksCount() as Number {
-_workspace_no_track_run_watch_source_RunManager_mc_261_40_263_4_start:
+        symbol [ i %i.4 258 35 36 ];
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_test;
+_workspace_no_track_run_watch_source_RunManager_mc_258_8_261_8_for_end:
 [ "/workspace/no-track-run-watch/source/RunManager.mc" 262 8 ]
+        %tmp.33 = lgetv %fieldsCount.1;
+        symbol [ fieldsCount %tmp.33 262 15 26 ];
+        ret %tmp.33;
+_workspace_no_track_run_watch_source_RunManager_mc_254_40_263_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 265; @symbol_functiondef = [getBlocksCount,265,13,27]; @symbol_return<0> = [Number,265,33,39]; ]
+    function getBlocksCount() as Number {
+_workspace_no_track_run_watch_source_RunManager_mc_265_40_267_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 266 8 ]
         %tmp.1 = self;
-        symbol [ getBlocks %tmp.2 262 15 24 ];
+        symbol [ getBlocks %tmp.2 266 15 24 ];
         %tmp.2 = getv function %tmp.1 :getBlocks;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ size %tmp.4 262 27 31 ];
+        symbol [ size %tmp.4 266 27 31 ];
         %tmp.4 = getv function %tmp.3 :size;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         ret %tmp.5;
-_workspace_no_track_run_watch_source_RunManager_mc_261_40_263_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_265_40_267_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 265; @symbol_functiondef = [fieldRemaining,265,13,27]; @symbol_return<0> = [Number,265,33,39]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 269; @symbol_functiondef = [fieldRemaining,269,13,27]; @symbol_return<0> = [Number,269,33,39]; ]
     function fieldRemaining() as Number {
-_workspace_no_track_run_watch_source_RunManager_mc_265_40_277_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 266 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_265_40_277_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_265_40_277_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_269_40_281_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 270 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_269_40_281_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_269_40_281_4_stop" ]
         %field.1 = local;
-        symbol [ field %field.1 266 12 17 ];
+        symbol [ field %field.1 270 12 17 ];
         %tmp.1 = self;
-        symbol [ getCurrentField %tmp.2 266 20 35 ];
+        symbol [ getCurrentField %tmp.2 270 20 35 ];
         %tmp.2 = getv function %tmp.1 :getCurrentField;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %field.1 %tmp.3;
-        symbol [ field %field.1 266 12 17 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 267 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_267_8_267_44_if_stmt:
+        symbol [ field %field.1 270 12 17 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 271 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_271_8_271_44_if_stmt:
         %tmp.4 = lgetv %field.1;
-        symbol [ field %tmp.4 267 12 17 ];
-        symbol [ size %tmp.5 267 18 22 ];
+        symbol [ field %tmp.4 271 12 17 ];
+        symbol [ size %tmp.5 271 18 22 ];
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = 0;
         %tmp.8 = eq %tmp.6 %tmp.7;
-        bf %tmp.8 @_workspace_no_track_run_watch_source_RunManager_mc_267_8_267_44_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_267_8_267_44_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_267_31_267_44_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 267 33 ]
+        bf %tmp.8 @_workspace_no_track_run_watch_source_RunManager_mc_271_8_271_44_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_271_8_271_44_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_271_31_271_44_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 271 33 ]
         %tmp.9 = -1;
         ret %tmp.9;
-_workspace_no_track_run_watch_source_RunManager_mc_267_31_267_44_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_267_8_267_44_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_267_8_267_44_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 268 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_268_8_276_8_if_stmt:
+_workspace_no_track_run_watch_source_RunManager_mc_271_31_271_44_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_271_8_271_44_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_271_8_271_44_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 272 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_272_8_280_8_if_stmt:
         %tmp.10 = self;
-        symbol [ getGoal %tmp.11 268 12 19 ];
+        symbol [ getGoal %tmp.11 272 12 19 ];
         %tmp.11 = getv function %tmp.10 :getGoal;
         %tmp.12 = invoke %tmp.10 %tmp.11();
-        symbol [ GOAL_DISTANCE %tmp.14 268 25 38 ];
+        symbol [ GOAL_DISTANCE %tmp.14 272 25 38 ];
         %tmp.14 = getv ? :GOAL_DISTANCE;
         %tmp.15 = eq %tmp.12 %tmp.14;
-        bf %tmp.15 @_workspace_no_track_run_watch_source_RunManager_mc_268_8_276_8_if_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_268_8_276_8_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_268_40_272_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 269 12 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_268_40_272_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_268_40_272_8_stop" ]
+        bf %tmp.15 @_workspace_no_track_run_watch_source_RunManager_mc_272_8_280_8_if_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_272_8_280_8_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_272_40_276_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 273 12 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_272_40_276_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_272_40_276_8_stop" ]
         %dist.2 = local;
-        symbol [ dist %dist.2 269 16 20 ];
+        symbol [ dist %dist.2 273 16 20 ];
         %tmp.16 = lgetv %field.1;
-        symbol [ field %tmp.16 269 24 29 ];
+        symbol [ field %tmp.16 273 24 29 ];
         %tmp.17 = "targetValue";
         %tmp.18 = agetv %tmp.16 %tmp.17;
         %tmp.19 = as %tmp.18 Number;
-        symbol [ Number %tmp.19 269 48 54 ];
+        symbol [ Number %tmp.19 273 48 54 ];
         lputv %dist.2 %tmp.19;
-        symbol [ dist %dist.2 269 16 20 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 270 12 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_268_40_272_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_268_40_272_8_stop" ]
+        symbol [ dist %dist.2 273 16 20 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 274 12 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_272_40_276_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_272_40_276_8_stop" ]
         %rem.3 = local;
-        symbol [ rem %rem.3 270 16 19 ];
+        symbol [ rem %rem.3 274 16 19 ];
         %tmp.20 = lgetv %dist.2;
-        symbol [ dist %tmp.20 270 23 27 ];
-        symbol [ fieldDistance %tmp.22 270 30 43 ];
+        symbol [ dist %tmp.20 274 23 27 ];
+        symbol [ fieldDistance %tmp.22 274 30 43 ];
         %tmp.22 = getv ? :fieldDistance;
         %tmp.23 = sub %tmp.20 %tmp.22;
         lputv %rem.3 %tmp.23;
-        symbol [ rem %rem.3 270 16 19 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 271 12 ]
-_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_begin:
+        symbol [ rem %rem.3 274 16 19 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 275 12 ]
+_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_begin:
         %tmp.24 = lgetv %rem.3;
-        symbol [ rem %tmp.24 271 20 23 ];
+        symbol [ rem %tmp.24 275 20 23 ];
         %tmp.25 = 0;
         %tmp.26 = lt %tmp.24 %tmp.25;
-        bf %tmp.26 @_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_true:
+        bf %tmp.26 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_true:
         %tmp.27 = 0;
         push %tmp.27;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_end;
-_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_else_false:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_end;
+_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_else_false:
         %tmp.28 = lgetv %rem.3;
-        symbol [ rem %tmp.28 271 35 38 ];
+        symbol [ rem %tmp.28 275 35 38 ];
         push %tmp.28;
-_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_end:
-        %tmp.29 = phi [%tmp.26 @_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_begin] [%tmp.27 @_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_true] [%tmp.28 @_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_else_false] [%tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_271_19_271_35_end];
+_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_end:
+        %tmp.29 = phi [%tmp.26 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_begin] [%tmp.27 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_true] [%tmp.28 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_else_false] [%tmp.29 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_end];
         ret %tmp.29;
-_workspace_no_track_run_watch_source_RunManager_mc_268_40_272_8_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_268_8_276_8_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_268_8_276_8_if_else_false:
-_workspace_no_track_run_watch_source_RunManager_mc_272_15_276_8_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 273 12 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_272_15_276_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_272_15_276_8_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_272_40_276_8_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_272_8_280_8_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_272_8_280_8_if_else_false:
+_workspace_no_track_run_watch_source_RunManager_mc_276_15_280_8_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 277 12 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_276_15_280_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_276_15_280_8_stop" ]
         %dur.4 = local;
-        symbol [ dur %dur.4 273 16 19 ];
+        symbol [ dur %dur.4 277 16 19 ];
         %tmp.30 = lgetv %field.1;
-        symbol [ field %tmp.30 273 23 28 ];
+        symbol [ field %tmp.30 277 23 28 ];
         %tmp.31 = "targetValue";
         %tmp.32 = agetv %tmp.30 %tmp.31;
         %tmp.33 = as %tmp.32 Number;
-        symbol [ Number %tmp.33 273 47 53 ];
+        symbol [ Number %tmp.33 277 47 53 ];
         lputv %dur.4 %tmp.33;
-        symbol [ dur %dur.4 273 16 19 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 274 12 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_272_15_276_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_272_15_276_8_stop" ]
+        symbol [ dur %dur.4 277 16 19 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 278 12 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_276_15_280_8_start" "_workspace_no_track_run_watch_source_RunManager_mc_276_15_280_8_stop" ]
         %rem.5 = local;
-        symbol [ rem %rem.5 274 16 19 ];
+        symbol [ rem %rem.5 278 16 19 ];
         %tmp.34 = lgetv %dur.4;
-        symbol [ dur %tmp.34 274 22 25 ];
-        symbol [ fieldElapsed %tmp.36 274 28 40 ];
+        symbol [ dur %tmp.34 278 22 25 ];
+        symbol [ fieldElapsed %tmp.36 278 28 40 ];
         %tmp.36 = getv ? :fieldElapsed;
         %tmp.37 = sub %tmp.34 %tmp.36;
         lputv %rem.5 %tmp.37;
-        symbol [ rem %rem.5 274 16 19 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 275 12 ]
-_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_begin:
+        symbol [ rem %rem.5 278 16 19 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 279 12 ]
+_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_begin:
         %tmp.38 = lgetv %rem.5;
-        symbol [ rem %tmp.38 275 20 23 ];
+        symbol [ rem %tmp.38 279 20 23 ];
         %tmp.39 = 0;
         %tmp.40 = lt %tmp.38 %tmp.39;
-        bf %tmp.40 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_true:
+        bf %tmp.40 @_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_true:
         %tmp.41 = 0;
         push %tmp.41;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_end;
-_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_else_false:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_end;
+_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_else_false:
         %tmp.42 = lgetv %rem.5;
-        symbol [ rem %tmp.42 275 35 38 ];
+        symbol [ rem %tmp.42 279 35 38 ];
         push %tmp.42;
-_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_end:
-        %tmp.43 = phi [%tmp.40 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_begin] [%tmp.41 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_true] [%tmp.42 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_else_false] [%tmp.43 @_workspace_no_track_run_watch_source_RunManager_mc_275_19_275_35_end];
+_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_end:
+        %tmp.43 = phi [%tmp.40 @_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_begin] [%tmp.41 @_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_true] [%tmp.42 @_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_else_false] [%tmp.43 @_workspace_no_track_run_watch_source_RunManager_mc_279_19_279_35_end];
         ret %tmp.43;
-_workspace_no_track_run_watch_source_RunManager_mc_272_15_276_8_stop:
-_workspace_no_track_run_watch_source_RunManager_mc_268_8_276_8_if_end:
-_workspace_no_track_run_watch_source_RunManager_mc_265_40_277_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_276_15_280_8_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_272_8_280_8_if_end:
+_workspace_no_track_run_watch_source_RunManager_mc_269_40_281_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 280; @symbol_functiondef = [getAveragePaceSecPerKm,280,14,36]; @symbol_return<0> = [Number,280,42,48]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 284; @symbol_functiondef = [getAveragePaceSecPerKm,284,14,36]; @symbol_return<0> = [Number,284,42,48]; ]
     function getAveragePaceSecPerKm() as Number {
-_workspace_no_track_run_watch_source_RunManager_mc_280_49_283_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 281 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_281_8_281_43_if_stmt:
-        symbol [ averageSpeed %tmp.2 281 12 24 ];
+_workspace_no_track_run_watch_source_RunManager_mc_284_49_287_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 285 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_285_8_285_43_if_stmt:
+        symbol [ averageSpeed %tmp.2 285 12 24 ];
         %tmp.2 = getv ? :averageSpeed;
         %tmp.3 = 0.0;
         %tmp.4 = lte %tmp.2 %tmp.3;
-        bf %tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_281_8_281_43_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_281_8_281_43_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_281_33_281_43_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 281 34 ]
+        bf %tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_285_8_285_43_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_285_8_285_43_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_285_33_285_43_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 285 34 ]
         %tmp.5 = 0;
         ret %tmp.5;
-_workspace_no_track_run_watch_source_RunManager_mc_281_33_281_43_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_281_8_281_43_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_281_8_281_43_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 282 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_285_33_285_43_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_285_8_285_43_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_285_8_285_43_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 286 8 ]
         %tmp.6 = 1000.0;
-        symbol [ averageSpeed %tmp.8 282 25 37 ];
+        symbol [ averageSpeed %tmp.8 286 25 37 ];
         %tmp.8 = getv ? :averageSpeed;
         %tmp.9 = div %tmp.6 %tmp.8;
-        symbol [ toNumber %tmp.10 282 39 47 ];
+        symbol [ toNumber %tmp.10 286 39 47 ];
         %tmp.10 = getv function %tmp.9 :toNumber;
         %tmp.11 = invoke %tmp.9 %tmp.10();
         ret %tmp.11;
-_workspace_no_track_run_watch_source_RunManager_mc_280_49_283_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_284_49_287_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 287; @symbol_functiondef = [getAveragePaceFormatted,287,13,36]; @symbol_return<0> = [String,287,42,48]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 291; @symbol_functiondef = [getAveragePaceFormatted,291,13,36]; @symbol_return<0> = [String,291,42,48]; ]
     function getAveragePaceFormatted() as String {
-_workspace_no_track_run_watch_source_RunManager_mc_287_49_293_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 288 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_287_49_293_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_287_49_293_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_291_49_297_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 292 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_291_49_297_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_291_49_297_4_stop" ]
         %paceSec.1 = local;
-        symbol [ paceSec %paceSec.1 288 12 19 ];
+        symbol [ paceSec %paceSec.1 292 12 19 ];
         %tmp.1 = self;
-        symbol [ getAveragePaceSecPerKm %tmp.2 288 22 44 ];
+        symbol [ getAveragePaceSecPerKm %tmp.2 292 22 44 ];
         %tmp.2 = getv function %tmp.1 :getAveragePaceSecPerKm;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %paceSec.1 %tmp.3;
-        symbol [ paceSec %paceSec.1 288 12 19 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 289 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_289_8_289_43_if_stmt:
+        symbol [ paceSec %paceSec.1 292 12 19 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 293 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_293_8_293_43_if_stmt:
         %tmp.4 = lgetv %paceSec.1;
-        symbol [ paceSec %tmp.4 289 12 19 ];
+        symbol [ paceSec %tmp.4 293 12 19 ];
         %tmp.5 = 0;
         %tmp.6 = lte %tmp.4 %tmp.5;
-        bf %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_289_8_289_43_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_289_8_289_43_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_289_26_289_43_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 289 28 ]
+        bf %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_293_8_293_43_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_293_8_293_43_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_293_26_293_43_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 293 28 ]
         %tmp.7 = "--:--";
         ret %tmp.7;
-_workspace_no_track_run_watch_source_RunManager_mc_289_26_289_43_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_289_8_289_43_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_289_8_289_43_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 290 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_287_49_293_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_287_49_293_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_293_26_293_43_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_293_8_293_43_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_293_8_293_43_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 294 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_291_49_297_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_291_49_297_4_stop" ]
         %minutes.2 = local;
-        symbol [ minutes %minutes.2 290 12 19 ];
+        symbol [ minutes %minutes.2 294 12 19 ];
         %tmp.8 = lgetv %paceSec.1;
-        symbol [ paceSec %tmp.8 290 22 29 ];
+        symbol [ paceSec %tmp.8 294 22 29 ];
         %tmp.9 = 60;
         %tmp.10 = div %tmp.8 %tmp.9;
         lputv %minutes.2 %tmp.10;
-        symbol [ minutes %minutes.2 290 12 19 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 291 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_287_49_293_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_287_49_293_4_stop" ]
+        symbol [ minutes %minutes.2 294 12 19 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 295 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_291_49_297_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_291_49_297_4_stop" ]
         %seconds.3 = local;
-        symbol [ seconds %seconds.3 291 12 19 ];
+        symbol [ seconds %seconds.3 295 12 19 ];
         %tmp.11 = lgetv %paceSec.1;
-        symbol [ paceSec %tmp.11 291 22 29 ];
+        symbol [ paceSec %tmp.11 295 22 29 ];
         %tmp.12 = 60;
         %tmp.13 = mod %tmp.11 %tmp.12;
         lputv %seconds.3 %tmp.13;
-        symbol [ seconds %seconds.3 291 12 19 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 292 8 ]
+        symbol [ seconds %seconds.3 295 12 19 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 296 8 ]
         %tmp.14 = lgetv %minutes.2;
-        symbol [ minutes %tmp.14 292 15 22 ];
-        symbol [ toString %tmp.15 292 23 31 ];
+        symbol [ minutes %tmp.14 296 15 22 ];
+        symbol [ toString %tmp.15 296 23 31 ];
         %tmp.15 = getv function %tmp.14 :toString;
         %tmp.16 = invoke %tmp.14 %tmp.15();
         %tmp.17 = ":";
         %tmp.18 = add %tmp.16 %tmp.17;
         %tmp.19 = lgetv %seconds.3;
-        symbol [ seconds %tmp.19 292 42 49 ];
-        symbol [ format %tmp.20 292 50 56 ];
+        symbol [ seconds %tmp.19 296 42 49 ];
+        symbol [ format %tmp.20 296 50 56 ];
         %tmp.20 = getv function %tmp.19 :format;
         %tmp.21 = "%02d";
         %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
         %tmp.23 = add %tmp.18 %tmp.22;
         ret %tmp.23;
-_workspace_no_track_run_watch_source_RunManager_mc_287_49_293_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_291_49_297_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 295; @symbol_functiondef = [getHeartRateFormatted,295,13,34]; @symbol_return<0> = [String,295,40,46]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 299; @symbol_functiondef = [getHeartRateFormatted,299,13,34]; @symbol_return<0> = [String,299,40,46]; ]
     function getHeartRateFormatted() as String {
-_workspace_no_track_run_watch_source_RunManager_mc_295_47_299_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 296 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_begin:
-        symbol [ currentHeartRate %tmp.2 296 16 32 ];
+_workspace_no_track_run_watch_source_RunManager_mc_299_47_303_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 300 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_begin:
+        symbol [ currentHeartRate %tmp.2 300 16 32 ];
         %tmp.2 = getv ? :currentHeartRate;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_else_false;
-_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_true:
-        symbol [ currentHeartRate %tmp.6 297 14 30 ];
+        bf %tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_else_false;
+_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_true:
+        symbol [ currentHeartRate %tmp.6 301 14 30 ];
         %tmp.6 = getv ? :currentHeartRate;
         %tmp.7 = as %tmp.6 { (!Null) };
-        symbol [ toString %tmp.8 297 31 39 ];
+        symbol [ toString %tmp.8 301 31 39 ];
         %tmp.8 = getv function %tmp.7 :toString;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         push %tmp.9;
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_end;
-_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_else_false:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_end;
+_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_else_false:
         %tmp.10 = "---";
         push %tmp.10;
-_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_end:
-        %tmp.11 = phi [%tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_begin] [%tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_true] [%tmp.10 @_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_else_false] [%tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_296_15_298_14_end];
+_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_end:
+        %tmp.11 = phi [%tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_begin] [%tmp.9 @_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_true] [%tmp.10 @_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_else_false] [%tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_300_15_302_14_end];
         ret %tmp.11;
-_workspace_no_track_run_watch_source_RunManager_mc_295_47_299_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_299_47_303_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 301; @symbol_functiondef = [isRunningBlock,301,13,27]; @symbol_return<0> = [Boolean,301,33,40]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 305; @symbol_functiondef = [isRunningBlock,305,13,27]; @symbol_return<0> = [Boolean,305,33,40]; ]
     function isRunningBlock() as Boolean {
-_workspace_no_track_run_watch_source_RunManager_mc_301_41_303_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 302 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_305_41_307_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 306 8 ]
         %tmp.1 = self;
-        symbol [ getTrainingType %tmp.2 302 15 30 ];
+        symbol [ getTrainingType %tmp.2 306 15 30 ];
         %tmp.2 = getv function %tmp.1 :getTrainingType;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ RUNNING %tmp.5 302 36 43 ];
+        symbol [ RUNNING %tmp.5 306 36 43 ];
         %tmp.5 = getv ? :RUNNING;
         %tmp.6 = eq %tmp.3 %tmp.5;
         ret %tmp.6;
-_workspace_no_track_run_watch_source_RunManager_mc_301_41_303_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_305_41_307_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 305; @symbol_functiondef = [getTargetReps,305,13,26]; @symbol_return<0> = [Number,305,32,38]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 309; @symbol_functiondef = [getTargetReps,309,13,26]; @symbol_return<0> = [Number,309,32,38]; ]
     function getTargetReps() as Number {
-_workspace_no_track_run_watch_source_RunManager_mc_305_39_307_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 306 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_309_39_311_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 310 8 ]
         %tmp.1 = self;
-        symbol [ getCurrentBlock %tmp.2 306 15 30 ];
+        symbol [ getCurrentBlock %tmp.2 310 15 30 ];
         %tmp.2 = getv function %tmp.1 :getCurrentBlock;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = "repetitions";
         %tmp.5 = agetv %tmp.3 %tmp.4;
         ret %tmp.5;
-_workspace_no_track_run_watch_source_RunManager_mc_305_39_307_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_309_39_311_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 309; @symbol_functiondef = [nextField,309,13,22]; @symbol_param<0> = [index,309,23,28]; @symbol_param<0>_type<0> = [Number,309,32,38]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 313; @symbol_functiondef = [nextField,313,13,22]; @symbol_param<0> = [index,313,23,28]; @symbol_param<0>_type<0> = [Number,313,32,38]; ]
     function nextField(index as Number) {
-_workspace_no_track_run_watch_source_RunManager_mc_309_40_313_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 310 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_310_8_310_62_if_stmt:
-        symbol [ onFieldAdvance %tmp.2 310 12 26 ];
+_workspace_no_track_run_watch_source_RunManager_mc_313_40_317_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 314 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_314_8_314_62_if_stmt:
+        symbol [ onFieldAdvance %tmp.2 314 12 26 ];
         %tmp.2 = getv ? :onFieldAdvance;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_310_8_310_62_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_310_8_310_62_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_310_36_310_62_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 310 38 ]
-        symbol [ onFieldAdvance %tmp.6 310 38 52 ];
+        bf %tmp.4 @_workspace_no_track_run_watch_source_RunManager_mc_314_8_314_62_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_314_8_314_62_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_314_36_314_62_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 314 38 ]
+        symbol [ onFieldAdvance %tmp.6 314 38 52 ];
         %tmp.6 = getv ? :onFieldAdvance;
         %tmp.7 = as %tmp.6 { (!Null) };
-        symbol [ invoke %tmp.8 310 53 59 ];
+        symbol [ invoke %tmp.8 314 53 59 ];
         %tmp.8 = getv function %tmp.7 :invoke;
         invoke %tmp.7 %tmp.8();
-_workspace_no_track_run_watch_source_RunManager_mc_310_36_310_62_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_310_8_310_62_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_310_8_310_62_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 311 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_311_8_311_39_if_stmt:
+_workspace_no_track_run_watch_source_RunManager_mc_314_36_314_62_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_314_8_314_62_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_314_8_314_62_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 315 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_315_8_315_39_if_stmt:
         %tmp.9 = lgetv %index;
-        symbol [ index %tmp.9 311 12 17 ];
+        symbol [ index %tmp.9 315 12 17 ];
         %tmp.10 = 0;
         %tmp.11 = eq %tmp.9 %tmp.10;
-        bf %tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_311_8_311_39_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_311_8_311_39_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_311_24_311_39_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 311 25 ]
-        symbol [ repCount %tmp.12 311 25 33 ];
+        bf %tmp.11 @_workspace_no_track_run_watch_source_RunManager_mc_315_8_315_39_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_315_8_315_39_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_315_24_315_39_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 315 25 ]
+        symbol [ repCount %tmp.12 315 25 33 ];
         %tmp.12 = getv self :repCount;
         %tmp.13 = 1;
         %tmp.14 = add %tmp.12 %tmp.13;
-        symbol [ repCount ? 311 25 33 ];
+        symbol [ repCount ? 315 25 33 ];
         putv self :repCount dup %tmp.14;
-_workspace_no_track_run_watch_source_RunManager_mc_311_24_311_39_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_311_8_311_39_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_311_8_311_39_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 312 8 ]
-        %tmp.15 = lgetv %index;
-        symbol [ index %tmp.15 312 26 31 ];
-        symbol [ currentFieldIdx ? 312 8 23 ];
-        putv self :currentFieldIdx %tmp.15;
-_workspace_no_track_run_watch_source_RunManager_mc_309_40_313_4_stop:
-    }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 315; @symbol_functiondef = [hasRemainingFields,315,13,31]; @symbol_return<0> = [Boolean,315,37,44]; ]
-    function hasRemainingFields() as Boolean {
-_workspace_no_track_run_watch_source_RunManager_mc_315_45_319_4_start:
+_workspace_no_track_run_watch_source_RunManager_mc_315_24_315_39_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_315_8_315_39_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_315_8_315_39_if_end:
 [ "/workspace/no-track-run-watch/source/RunManager.mc" 316 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_315_45_319_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_315_45_319_4_stop" ]
+        %tmp.15 = lgetv %index;
+        symbol [ index %tmp.15 316 26 31 ];
+        symbol [ currentFieldIdx ? 316 8 23 ];
+        putv self :currentFieldIdx %tmp.15;
+_workspace_no_track_run_watch_source_RunManager_mc_313_40_317_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 319; @symbol_functiondef = [hasRemainingFields,319,13,31]; @symbol_return<0> = [Boolean,319,37,44]; ]
+    function hasRemainingFields() as Boolean {
+_workspace_no_track_run_watch_source_RunManager_mc_319_45_323_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 320 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_319_45_323_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_319_45_323_4_stop" ]
         %block.1 = local;
-        symbol [ block %block.1 316 12 17 ];
+        symbol [ block %block.1 320 12 17 ];
         %tmp.1 = self;
-        symbol [ getCurrentBlock %tmp.2 316 21 36 ];
+        symbol [ getCurrentBlock %tmp.2 320 21 36 ];
         %tmp.2 = getv function %tmp.1 :getCurrentBlock;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %block.1 %tmp.3;
-        symbol [ block %block.1 316 12 17 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 317 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_315_45_319_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_315_45_319_4_stop" ]
+        symbol [ block %block.1 320 12 17 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 321 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_319_45_323_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_319_45_323_4_stop" ]
         %fields.2 = local;
-        symbol [ fields %fields.2 317 12 18 ];
+        symbol [ fields %fields.2 321 12 18 ];
         %tmp.4 = lgetv %block.1;
-        symbol [ block %tmp.4 317 21 26 ];
+        symbol [ block %tmp.4 321 21 26 ];
         %tmp.5 = "fields";
         %tmp.6 = agetv %tmp.4 %tmp.5;
         %tmp.7 = as %tmp.6 Array;
-        symbol [ Array %tmp.7 317 40 45 ];
+        symbol [ Array %tmp.7 321 40 45 ];
         lputv %fields.2 %tmp.7;
-        symbol [ fields %fields.2 317 12 18 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 318 8 ]
-        symbol [ currentFieldIdx %tmp.9 318 15 30 ];
+        symbol [ fields %fields.2 321 12 18 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 322 8 ]
+        symbol [ currentFieldIdx %tmp.9 322 15 30 ];
         %tmp.9 = getv ? :currentFieldIdx;
         %tmp.10 = lgetv %fields.2;
-        symbol [ fields %tmp.10 318 34 40 ];
-        symbol [ size %tmp.11 318 41 45 ];
+        symbol [ fields %tmp.10 322 34 40 ];
+        symbol [ size %tmp.11 322 41 45 ];
         %tmp.11 = getv function %tmp.10 :size;
         %tmp.12 = invoke %tmp.10 %tmp.11();
         %tmp.13 = 1;
         %tmp.14 = sub %tmp.12 %tmp.13;
         %tmp.15 = lt %tmp.9 %tmp.14;
         ret %tmp.15;
-_workspace_no_track_run_watch_source_RunManager_mc_315_45_319_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_319_45_323_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 321; @symbol_functiondef = [hasRemainingBlocks,321,13,31]; @symbol_return<0> = [Boolean,321,37,44]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 325; @symbol_functiondef = [hasRemainingBlocks,325,13,31]; @symbol_return<0> = [Boolean,325,37,44]; ]
     function hasRemainingBlocks() as Boolean {
-_workspace_no_track_run_watch_source_RunManager_mc_321_45_323_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 322 8 ]
-        symbol [ currentBlockIdx %tmp.2 322 15 30 ];
+_workspace_no_track_run_watch_source_RunManager_mc_325_45_327_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 326 8 ]
+        symbol [ currentBlockIdx %tmp.2 326 15 30 ];
         %tmp.2 = getv ? :currentBlockIdx;
         %tmp.3 = self;
-        symbol [ getBlocksCount %tmp.4 322 34 48 ];
+        symbol [ getBlocksCount %tmp.4 326 34 48 ];
         %tmp.4 = getv function %tmp.3 :getBlocksCount;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         %tmp.6 = 1;
         %tmp.7 = sub %tmp.5 %tmp.6;
         %tmp.8 = lt %tmp.2 %tmp.7;
         ret %tmp.8;
-_workspace_no_track_run_watch_source_RunManager_mc_321_45_323_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_325_45_327_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 325; @symbol_functiondef = [isLastExercice,325,13,27]; @symbol_return<0> = [Boolean,325,33,40]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 329; @symbol_functiondef = [isLastExercice,329,13,27]; @symbol_return<0> = [Boolean,329,33,40]; ]
     function isLastExercice() as Boolean {
-_workspace_no_track_run_watch_source_RunManager_mc_325_41_329_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 326 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_325_41_329_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_325_41_329_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_329_41_333_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 330 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_329_41_333_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_329_41_333_4_stop" ]
         %b.1 = local;
-        symbol [ b %b.1 326 12 13 ];
+        symbol [ b %b.1 330 12 13 ];
         %tmp.1 = self;
-        symbol [ getCurrentBlock %tmp.2 326 16 31 ];
+        symbol [ getCurrentBlock %tmp.2 330 16 31 ];
         %tmp.2 = getv function %tmp.1 :getCurrentBlock;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %b.1 %tmp.3;
-        symbol [ b %b.1 326 12 13 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 327 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_327_8_327_51_if_stmt:
+        symbol [ b %b.1 330 12 13 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 331 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_331_8_331_51_if_stmt:
         %tmp.4 = lgetv %b.1;
-        symbol [ b %tmp.4 327 13 14 ];
-        symbol [ hasKey %tmp.5 327 15 21 ];
+        symbol [ b %tmp.4 331 13 14 ];
+        symbol [ hasKey %tmp.5 331 15 21 ];
         %tmp.5 = getv function %tmp.4 :hasKey;
         %tmp.6 = "exercices";
         %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
         %tmp.8 = not %tmp.7;
-        bf %tmp.8 @_workspace_no_track_run_watch_source_RunManager_mc_327_8_327_51_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_327_8_327_51_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_327_36_327_51_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 327 37 ]
+        bf %tmp.8 @_workspace_no_track_run_watch_source_RunManager_mc_331_8_331_51_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_331_8_331_51_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_331_36_331_51_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 331 37 ]
         %tmp.9 = false;
         ret %tmp.9;
-_workspace_no_track_run_watch_source_RunManager_mc_327_36_327_51_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_327_8_327_51_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_327_8_327_51_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 328 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_331_36_331_51_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_331_8_331_51_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_331_8_331_51_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 332 8 ]
         %tmp.10 = lgetv %b.1;
-        symbol [ b %tmp.10 328 15 16 ];
+        symbol [ b %tmp.10 332 15 16 ];
         %tmp.11 = "exercices";
         %tmp.12 = agetv %tmp.10 %tmp.11;
-        symbol [ size %tmp.13 328 30 34 ];
+        symbol [ size %tmp.13 332 30 34 ];
         %tmp.13 = getv function %tmp.12 :size;
         %tmp.14 = invoke %tmp.12 %tmp.13();
-        symbol [ currentExoIdx %tmp.16 328 40 53 ];
+        symbol [ currentExoIdx %tmp.16 332 40 53 ];
         %tmp.16 = getv ? :currentExoIdx;
         %tmp.17 = 1;
         %tmp.18 = add %tmp.16 %tmp.17;
         %tmp.19 = eq %tmp.14 %tmp.18;
         ret %tmp.19;
-_workspace_no_track_run_watch_source_RunManager_mc_325_41_329_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_329_41_333_4_stop:
     }
-    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 331; @symbol_functiondef = [saveSessionLocally,331,13,31]; ]
+    [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 335; @symbol_functiondef = [saveSessionLocally,335,13,31]; ]
     function saveSessionLocally() as Void {
-_workspace_no_track_run_watch_source_RunManager_mc_331_42_343_4_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 332 8 ]
-_workspace_no_track_run_watch_source_RunManager_mc_332_8_332_43_if_stmt:
-        symbol [ results %tmp.2 332 12 19 ];
+_workspace_no_track_run_watch_source_RunManager_mc_335_42_347_4_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 336 8 ]
+_workspace_no_track_run_watch_source_RunManager_mc_336_8_336_43_if_stmt:
+        symbol [ results %tmp.2 336 12 19 ];
         %tmp.2 = getv ? :results;
-        symbol [ size %tmp.3 332 20 24 ];
+        symbol [ size %tmp.3 336 20 24 ];
         %tmp.3 = getv function %tmp.2 :size;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         %tmp.5 = 0;
         %tmp.6 = eq %tmp.4 %tmp.5;
-        bf %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_332_8_332_43_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_332_8_332_43_if_true:
-_workspace_no_track_run_watch_source_RunManager_mc_332_33_332_43_start:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 332 35 ]
+        bf %tmp.6 @_workspace_no_track_run_watch_source_RunManager_mc_336_8_336_43_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_336_8_336_43_if_true:
+_workspace_no_track_run_watch_source_RunManager_mc_336_33_336_43_start:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 336 35 ]
         ret ?;
-_workspace_no_track_run_watch_source_RunManager_mc_332_33_332_43_stop:
-        goto @_workspace_no_track_run_watch_source_RunManager_mc_332_8_332_43_if_end;
-_workspace_no_track_run_watch_source_RunManager_mc_332_8_332_43_if_end:
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 333 8 ]
-        [ "_workspace_no_track_run_watch_source_RunManager_mc_331_42_343_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_331_42_343_4_stop" ]
+_workspace_no_track_run_watch_source_RunManager_mc_336_33_336_43_stop:
+        goto @_workspace_no_track_run_watch_source_RunManager_mc_336_8_336_43_if_end;
+_workspace_no_track_run_watch_source_RunManager_mc_336_8_336_43_if_end:
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 337 8 ]
+        [ "_workspace_no_track_run_watch_source_RunManager_mc_335_42_347_4_start" "_workspace_no_track_run_watch_source_RunManager_mc_335_42_347_4_stop" ]
         %store.1 = local;
-        symbol [ store %store.1 333 12 17 ];
-        symbol [ Application %tmp.7 333 20 31 ];
+        symbol [ store %store.1 337 12 17 ];
+        symbol [ Application %tmp.7 337 20 31 ];
         %tmp.7 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.8 333 32 39 ];
+        symbol [ Storage %tmp.8 337 32 39 ];
         %tmp.8 = getv %tmp.7 :Storage;
         lputv %store.1 %tmp.8;
-        symbol [ store %store.1 333 12 17 ];
-[ "/workspace/no-track-run-watch/source/RunManager.mc" 334 8 ]
+        symbol [ store %store.1 337 12 17 ];
+[ "/workspace/no-track-run-watch/source/RunManager.mc" 338 8 ]
         %tmp.9 = lgetv %store.1;
-        symbol [ store %tmp.9 334 8 13 ];
-        symbol [ setValue %tmp.10 334 14 22 ];
+        symbol [ store %tmp.9 338 8 13 ];
+        symbol [ setValue %tmp.10 338 14 22 ];
         %tmp.10 = getv function %tmp.9 :setValue;
         %tmp.11 = "session@notrackrun";
         %tmp.12 = newd 7;
         %tmp.13 = "sessionId";
-        symbol [ sessionData %tmp.15 335 32 43 ];
+        symbol [ sessionData %tmp.15 339 32 43 ];
         %tmp.15 = getv ? :sessionData;
         %tmp.16 = "id";
         %tmp.17 = agetv %tmp.15 %tmp.16;
         %tmp.18 = dup %tmp.12;
         %tmp.19 = aputv %tmp.18 %tmp.13 %tmp.17;
         %tmp.20 = "results";
-        symbol [ results %tmp.22 336 32 39 ];
+        symbol [ results %tmp.22 340 32 39 ];
         %tmp.22 = getv ? :results;
         %tmp.23 = dup %tmp.19;
         %tmp.24 = aputv %tmp.23 %tmp.20 %tmp.22;
         %tmp.25 = "elevationGain";
-        symbol [ elevationGain %tmp.27 337 32 45 ];
+        symbol [ elevationGain %tmp.27 341 32 45 ];
         %tmp.27 = getv ? :elevationGain;
         %tmp.28 = dup %tmp.24;
         %tmp.29 = aputv %tmp.28 %tmp.25 %tmp.27;
         %tmp.30 = "distance";
-        symbol [ totalDistance %tmp.32 338 32 45 ];
+        symbol [ totalDistance %tmp.32 342 32 45 ];
         %tmp.32 = getv ? :totalDistance;
         %tmp.33 = dup %tmp.29;
         %tmp.34 = aputv %tmp.33 %tmp.30 %tmp.32;
         %tmp.35 = "duration";
-        symbol [ totalDuration %tmp.37 339 32 45 ];
+        symbol [ totalDuration %tmp.37 343 32 45 ];
         %tmp.37 = getv ? :totalDuration;
         %tmp.38 = dup %tmp.34;
         %tmp.39 = aputv %tmp.38 %tmp.35 %tmp.37;
         %tmp.40 = "avgPace";
         %tmp.41 = self;
-        symbol [ getAveragePaceFormatted %tmp.42 340 32 55 ];
+        symbol [ getAveragePaceFormatted %tmp.42 344 32 55 ];
         %tmp.42 = getv function %tmp.41 :getAveragePaceFormatted;
         %tmp.43 = invoke %tmp.41 %tmp.42();
         %tmp.44 = dup %tmp.39;
         %tmp.45 = aputv %tmp.44 %tmp.40 %tmp.43;
         %tmp.46 = "date";
-        symbol [ runDateSec %tmp.48 341 32 42 ];
+        symbol [ runDateSec %tmp.48 345 32 42 ];
         %tmp.48 = getv ? :runDateSec;
         %tmp.49 = dup %tmp.45;
         %tmp.50 = aputv %tmp.49 %tmp.46 %tmp.48;
         invoke %tmp.9 %tmp.10(%tmp.11, %tmp.50);
-_workspace_no_track_run_watch_source_RunManager_mc_331_42_343_4_stop:
+_workspace_no_track_run_watch_source_RunManager_mc_335_42_347_4_stop:
     }
 }
 [ @file = "/workspace/no-track-run-watch/source/RunManager.mc"; @line = 1; ]

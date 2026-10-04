@@ -16,8 +16,12 @@ class NoTrackRunDelegate extends WatchUi.InputDelegate {
 
         if (key == WatchUi.KEY_ESC) {
             switch (state) {
-                case STATE_RUNNING : 
-                    showConfirmation("Quit Run ?", STATE_SENDING);
+                case STATE_RUNNING :
+                    if (!app.rm.hasResult()) {
+                        showConfirmation("Abort Run ?", STATE_SUMMARY);
+                    } else {
+                        showConfirmation("Quit Run ?", STATE_SENDING);
+                    }
                     break;
                 case STATE_SUMMARY :
                     showConfirmation("Remove Session ?", STATE_IDLE);

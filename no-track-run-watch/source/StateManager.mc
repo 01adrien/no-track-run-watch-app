@@ -144,11 +144,13 @@ class StateManager {
                 if (app.getSession() != null) {app.sm.handle(EVENT_NEED_SYNC);}
                 break;
             case STATE_SUMMARY:
-                if (app.rm.session != null) {app.rm.session.discard() ;}
+                app.rm.stopActivitySession(false);
                 if (app.getSession() != null) {app.deleteSession() ;}
                 break;
-            case STATE_FINISHED:
             case STATE_RUNNING:
+                app.startRunVibe();
+                break;
+            case STATE_FINISHED:
             case STATE_NEED_SYNC:
             case STATE_ERROR:
                 break;

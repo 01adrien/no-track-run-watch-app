@@ -11,20 +11,20 @@ import Toybox.Attention;
 const SENDING_TIMEOUT  as Number  = 5;
 const GPS_STABLE_TICKS as Number  = 5;
 const SIMULATOR        as Boolean = false;
-const DEBUG            as Boolean = true;
+const DEBUG            as Boolean = false;
 const WITH_VALIDATION  as Boolean = true;
 
-const VIBE_BLOCK_CHANGE as Array<Attention.VibeProfile> = [
+const VIBE_2 as Array<Attention.VibeProfile> = [
     new Attention.VibeProfile(50, 300),
     new Attention.VibeProfile(0, 200),
     new Attention.VibeProfile(50, 300)
 ];
 
-const VIBE_FIELD_CHANGE as Array<Attention.VibeProfile> = [
+const VIBE_1 as Array<Attention.VibeProfile> = [
     new Attention.VibeProfile(50, 300),
 ];
 
-const VIBE_SESSION_END as Array<Attention.VibeProfile> = [
+const VIBE_3 as Array<Attention.VibeProfile> = [
     new Attention.VibeProfile(50, 300),
     new Attention.VibeProfile(0, 200),
     new Attention.VibeProfile(50, 300),
@@ -58,6 +58,8 @@ class NoTrackRunApp extends Application.AppBase {
             },
             method(:onPosition)
         );
+
+        if (getSession() != null) { sm.handle(EVENT_NEED_SYNC) ;}
     }
 
     function onStop(state as Dictionary?) as Void {
@@ -173,7 +175,6 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function sendSession() as Void {
-        System.println(getSession());
         sendingTime = 0;
         if (SIMULATOR) {return;}
         Communications.transmit(
@@ -207,14 +208,18 @@ class NoTrackRunApp extends Application.AppBase {
     }
 
     function vibe(pattern as Array<Attention.VibeProfile>) as Void {
-        if (Attention has :vibrate) { Attention.vibrate(pattern);}
+        if (!(Attention has :vibrate)) { return; }                 
+        if (!System.getDeviceSettings().vibrateOn) { return; }     
+        Attention.vibrate(pattern);
     }
 
-    function onBlockChanged() as Void { vibe(VIBE_BLOCK_CHANGE);}
-    
-    function onFieldChanged() as Void { vibe(VIBE_FIELD_CHANGE);}
+    function startRunVibe() as Void { vibe(VIBE_1) ;}
 
-    function onSessionEnded() as Void { vibe(VIBE_SESSION_END);}
+    function onBlockChanged() as Void { vibe(VIBE_2);}
+    
+    function onFieldChanged() as Void { vibe(VIBE_1);}
+
+    function onSessionEnded() as Void { vibe(VIBE_3);}
 
     function getInitialView() as [Views] or [Views, InputDelegates] {
         return [ new NoTrackRunView(), new NoTrackRunDelegate() ];
