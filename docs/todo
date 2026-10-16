@@ -1,2 +1,87 @@
 checker que les type de messages (ACCK ou SESSION)
 correspondent bien a l'etat de la montre (IDLE, SENDING)
+
+
+CHECKLIST SIMULATEUR - NoTrackRun (Garmin Connect IQ)
+=====================================================
+Les resolutions viennent de memoire : a confirmer dans le simulateur
+(fichiers compiler.json / simulator.json de chaque appareil dans le dossier Devices).
+
+MONTRES A TESTER (10)
+---------------------
+
+ 1. fr245
+    Ecran : 240x240 MIP, peu de couleurs
+    Pourquoi : la plus ancienne et la plus limitee en memoire, sans tactile.
+    Avec 5 bitmaps charges dans initialize, candidate n1 a un probleme memoire.
+
+ 2. fr255s
+    Ecran : 218x218 MIP
+    Pourquoi : le plus petit ecran MIP. Tester truncateText, les hints en
+    FONT_XTINY et le chevauchement icone/titre dans drawStatus.
+
+ 3. fr255
+    Ecran : 260x260 MIP
+    Pourquoi : ta montre physique, reference pour comparer simulateur et reel.
+
+ 5. enduro3 ou fenix8solar51mm
+    Ecran : 280x280 MIP
+    Pourquoi : le plus grand MIP, les icones risquent de paraitre petites et
+    les polices fines.
+
+ 6. fr265s
+    Ecran : 360x360 AMOLED + tactile
+    Pourquoi : le plus petit AMOLED, verifier les couleurs saturees sur noir pur.
+
+ 7. fr965
+    Ecran : 454x454 AMOLED + tactile
+    Pourquoi : tres haute resolution, les icones de taille fixe et l'arc de
+    drawRunning (penWidth = 5) paraitront minuscules.
+
+ 8. instinct3amoled45mm
+    Ecran : ~390x390 AMOLED
+    Pourquoi : disposition de boutons differente des Forerunner, verifier
+    que ESC et START font ce qui est attendu.
+
+ 9. fr970
+    Ecran : AMOLED recent
+    Pourquoi : le plus recent de la liste, pour attraper un comportement de
+    firmware ou d'API plus recent.
+
+10. marqathlete
+    Ecran : 240x240 MIP
+    Pourquoi : ancienne famille, autre firmware que les Forerunner. Deuxieme
+    modele ancien en plus de la fr245.
+
+
+A VERIFIER SUR CHAQUE MONTRE
+----------------------------
+[ ] Icones : taille en pixels fixe, placee a hauteur/6. Sur 218 elles peuvent
+    mordre sur le titre, sur 454 elles seront petites. Solution : plusieurs
+    tailles via des dossiers de ressources par resolution dans le jungle.
+[ ] Arc de course : epaisseur (5) et rayon (w/2 - 8) en pixels. Les calculer
+    en proportion de la largeur sur les grands ecrans.
+[ ] Textes longs : titre de seance dans drawSummary (truncateText) et hints
+    de drawStatus, surtout "Start: send  |  Back: options".
+[ ] Compte a rebours : FONT_NUMBER_HOT varie beaucoup selon la resolution,
+    verifier qu'il ne deborde pas.
+[ ] Tactile (modeles 4 a 9) : ouvrir Menu2 et Confirmation au doigt, et
+    observer un balayage vers la droite (peut servir de retour selon le modele).
+[ ] Memoire : sur fr245, ouvrir le moniteur memoire du simulateur pendant
+    STATE_RUNNING, pas seulement au demarrage.
+[ ] Etats a parcourir : IDLE, SUMMARY, GPS_FIXING, COUNTDOWN, RUNNING,
+    FINISHED, SENDING, PENDING_ACK, NEED_SYNC, SYNCED, ERROR.
+
+
+NE SE TESTE QUE SUR LA FR255 REELLE
+-----------------------------------
+- GPS (isGpsReady)
+- Bluetooth et communication avec le telephone
+- ACK avec telephone verrouille
+- Lisibilite en plein soleil
+
+
+NOTES
+-----
+- Le manifeste ne contient plus d'ecran monochrome (Instinct 3 Solar retire).
+- minApiLevel du manifeste : 3.3.0.

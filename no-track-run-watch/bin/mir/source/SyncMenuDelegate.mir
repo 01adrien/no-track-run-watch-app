@@ -1,0 +1,125 @@
+[ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 4; @symbol_classdef = [SyncMenuDelegate,4,6,22]; @symbol_extends<0> = [WatchUi,4,31,38]; @symbol_extends<1> = [Menu2InputDelegate,4,39,57]; ]
+class SyncMenuDelegate extends WatchUi.Menu2InputDelegate {
+    [ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_6_26_8_4_start:
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 7 8 ]
+        symbol [ Menu2InputDelegate %tmp.2 7 8 26 ];
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        symbol [ initialize %tmp.3 7 27 37 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 10; @symbol_functiondef = [onSelect,10,13,21]; @symbol_param<0> = [item,10,22,26]; @symbol_param<0>_type<0> = [WatchUi,10,30,37]; @symbol_param<0>_type<1> = [MenuItem,10,38,46]; ]
+    function onSelect(item as WatchUi.MenuItem) as Void {
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_10_56_20_4_start:
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 11 8 ]
+        [ "_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_10_56_20_4_start" "_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_10_56_20_4_stop" ]
+        %id.1 = local;
+        symbol [ id %id.1 11 12 14 ];
+        %tmp.1 = lgetv %item;
+        symbol [ item %tmp.1 11 17 21 ];
+        symbol [ getId %tmp.2 11 22 27 ];
+        %tmp.2 = getv function %tmp.1 :getId;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %id.1 %tmp.3;
+        symbol [ id %id.1 11 12 14 ];
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 12 8 ]
+        [ "_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_10_56_20_4_start" "_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_10_56_20_4_stop" ]
+        %sm.2 = local;
+        symbol [ sm %sm.2 12 12 14 ];
+        %tmp.4 = self;
+        symbol [ getApp %tmp.5 12 17 23 ];
+        %tmp.5 = getv function %tmp.4 :getApp;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ sm %tmp.7 12 26 28 ];
+        %tmp.7 = getv %tmp.6 :sm;
+        lputv %sm.2 %tmp.7;
+        symbol [ sm %sm.2 12 12 14 ];
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 13 8 ]
+        symbol [ WatchUi %tmp.8 13 8 15 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.9 13 16 23 ];
+        %tmp.9 = getv function %tmp.8 :popView;
+        symbol [ WatchUi %tmp.10 13 24 31 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.11 13 32 42 ];
+        %tmp.11 = getv %tmp.10 :SLIDE_DOWN;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 15 8 ]
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_15_8_19_8_if_stmt:
+        %tmp.12 = lgetv %id.1;
+        symbol [ id %tmp.12 15 12 14 ];
+        %tmp.14 = const :quit;
+        symbol [ quit %tmp.14 15 19 23 const ];
+        %tmp.15 = eq %tmp.12 %tmp.14;
+        bf %tmp.15 @_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_15_8_19_8_if_false;
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_15_8_19_8_if_true:
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_15_25_17_8_start:
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 16 12 ]
+        %tmp.16 = lgetv %sm.2;
+        symbol [ sm %tmp.16 16 12 14 ];
+        symbol [ transition %tmp.17 16 15 25 ];
+        %tmp.17 = getv function %tmp.16 :transition;
+        symbol [ STATE_QUIT %tmp.19 16 26 36 ];
+        %tmp.19 = getv ? :STATE_QUIT;
+        invoke %tmp.16 %tmp.17(%tmp.19);
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_15_25_17_8_stop:
+        goto @_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_15_8_19_8_if_end;
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_15_8_19_8_if_false:
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 17 15 ]
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_17_15_19_8_if_stmt:
+        %tmp.20 = lgetv %id.1;
+        symbol [ id %tmp.20 17 19 21 ];
+        %tmp.22 = const :delete;
+        symbol [ delete %tmp.22 17 26 32 const ];
+        %tmp.23 = eq %tmp.20 %tmp.22;
+        bf %tmp.23 @_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_17_15_19_8_if_end;
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_17_15_19_8_if_true:
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_17_34_19_8_start:
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 18 12 ]
+        %tmp.24 = lgetv %sm.2;
+        symbol [ sm %tmp.24 18 12 14 ];
+        symbol [ confirm %tmp.25 18 15 22 ];
+        %tmp.25 = getv function %tmp.24 :confirm;
+        %tmp.26 = "Delete session ?";
+        symbol [ STATE_IDLE %tmp.28 18 43 53 ];
+        %tmp.28 = getv ? :STATE_IDLE;
+        invoke %tmp.24 %tmp.25(%tmp.26, %tmp.28);
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_17_34_19_8_stop:
+        goto @_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_17_15_19_8_if_end;
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_17_15_19_8_if_end:
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_15_8_19_8_if_end:
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_10_56_20_4_stop:
+    }
+    [ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 22; @symbol_functiondef = [onBack,22,13,19]; ]
+    function onBack() as Void {
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_22_30_24_4_start:
+[ "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc" 23 8 ]
+        symbol [ WatchUi %tmp.1 23 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 23 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 23 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.4 23 32 42 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+_workspace_no_track_run_watch_source_SyncMenuDelegate_mc_22_30_24_4_stop:
+    }
+}
+[ @file = "/workspace/no-track-run-watch/source/SyncMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

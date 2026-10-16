@@ -132,6 +132,14 @@ class NoTrackRunApp extends Application.AppBase {
         rm.initRunning();
     }
 
+    function isNeedSync() as Boolean {
+        var session = getSession();
+        if (session == null) {return false;}
+        if (!session.hasKey("results")) {return false ;}
+        var results = session["results"];
+        return results.size() > 0;
+    }
+
     function onTick() as Void { sm.tick();}
 
     function isGpsReady() as Boolean {
@@ -157,7 +165,6 @@ class NoTrackRunApp extends Application.AppBase {
 
     function isTimeoutSending() as Boolean {
         if (sendingTime >= SENDING_TIMEOUT) {
-            errorMsg = "Send timeout";
             return true;
         }
         sendingTime += 1;
@@ -168,14 +175,18 @@ class NoTrackRunApp extends Application.AppBase {
          switch (sm._state) {
             case STATE_IDLE:
             case STATE_SENDING:
+            case STATE_PENDING_ACK:
                 return true;
             default:
                 return false;
         }
     }
 
+    var transmitted as Boolean = false;
+
     function sendSession() as Void {
         sendingTime = 0;
+        transmitted = false;
         if (SIMULATOR) {return;}
         Communications.transmit(
             {
@@ -183,7 +194,7 @@ class NoTrackRunApp extends Application.AppBase {
                 "payload" => getSession(), 
             },
             null, 
-            new TransmitCallback(self)
+            new TransmitCallback(self, true)
         );
     }
 
@@ -195,7 +206,7 @@ class NoTrackRunApp extends Application.AppBase {
         Communications.transmit(
             { "type" => type, "payload" => payload },
             null,
-            new TransmitCallback(self)
+            new TransmitCallback(self, false)
         );
     }
 
@@ -233,19 +244,21 @@ function getApp() as NoTrackRunApp {
 
 
 class TransmitCallback extends Communications.ConnectionListener {
+    var app;
+    var isResults as Boolean;
 
-        var app;
+    function initialize(a, results as Boolean) {
+        ConnectionListener.initialize();
+        app = a;
+        isResults = results;
+    }
 
-        function initialize(a) {
-            ConnectionListener.initialize();
-            app = a;
-        }
+    function onComplete() as Void {
+        if (isResults) { app.transmitted = true; }
+    }
 
-        function onComplete() as Void {}
-
-        function onError() as Void {
-            // If bluetooth is off on the mobile
-            app.sm.handle(EVENT_SYNCED_KO);
-            app.errorMsg = "Phone unreachable";
-        }
+    function onError() as Void {
+        app.errorMsg = "Phone unreachable";
+        app.sm.handle(EVENT_SYNCED_KO);
+    }
 }

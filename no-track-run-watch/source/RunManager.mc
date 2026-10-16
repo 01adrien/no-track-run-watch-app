@@ -58,6 +58,7 @@ class RunManager {
         averageSpeed       = 0.0;
         runDateSec         = Time.now().value();
         repCount           = 1;
+        Application.Storage.setValue("session@notrackrun", {});
         startActivitySession();
     }
 
@@ -71,8 +72,7 @@ class RunManager {
             :sport    => Activity.SPORT_RUNNING,
             :subSport => Activity.SUB_SPORT_GENERIC
         });
-        var store = Application.Storage;
-        store.setValue("session@notrackrun", {});
+        
         session.start();
     }
 

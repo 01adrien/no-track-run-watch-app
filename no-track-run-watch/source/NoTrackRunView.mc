@@ -39,38 +39,20 @@ class NoTrackRunView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
         var app = getApp();
-        var state = app.sm._state;
-        switch (state) {
-            case STATE_IDLE:
-                drawMessage(dc, app, "Upload a session", runnerIcon);
-                break;
-            case STATE_SUMMARY:
-                drawSummary(dc, app);
-                break;
-            case STATE_COUNTDOWN:
-                drawCountdown(dc, app);
-                break;
-            case STATE_RUNNING:
-                drawRunning(dc, app);
-                break;
-            case STATE_FINISHED:
-                drawFinished(dc, app);
-                break;
-            case STATE_NEED_SYNC:
-                drawMessage(dc, app, "Need sync\nPress start to send", syncIcon);
-                break;
-            case STATE_SYNCED:
-                drawSynced(dc, app);
-                break;
-            case STATE_SENDING:
-                drawMessage(dc, app, "Sending session", sendIcon);
-                break;
-            case STATE_GPS_FIXING:
-                drawMessage(dc, app, "Acquiring GPS", compassIcon);
-                break;
-            case STATE_ERROR:
-                drawError(dc, app);
-                break;
+
+        switch (app.sm._state) {
+            case STATE_IDLE:        drawIdle(dc); break;
+            case STATE_SUMMARY:     drawSummary(dc, app); break;
+            case STATE_GPS_FIXING:  drawGpsFixing(dc); break;
+            case STATE_COUNTDOWN:   drawCountdown(dc, app); break;
+            case STATE_RUNNING:     drawRunning(dc, app); break;
+            case STATE_FINISHED:    drawFinished(dc, app); break;
+            case STATE_NEED_SYNC:   drawNeedSync(dc); break;
+            case STATE_SENDING:     drawSending(dc); break;
+            case STATE_PENDING_ACK: drawPendingAck(dc); break;
+            case STATE_SYNCED:      drawSynced(dc, app); break;
+            case STATE_ERROR:       drawError(dc, app); break;
+            case STATE_QUIT:        break;
         }
     }
 
@@ -109,40 +91,6 @@ class NoTrackRunView extends WatchUi.View {
         y += dc.getFontHeight(Graphics.FONT_SMALL) + LINE_GAP_PADDING;
         dc.drawText(cx, y, Graphics.FONT_XTINY,"Press start to run" ,Graphics.TEXT_JUSTIFY_CENTER);
 
-    }
-
-
-    // ------------------
-    // -- MESSAGE VIEW -- 
-    // ------------------
-    function drawMessage(dc as Dc, app as NoTrackRunApp, msg as String, icon as BitmapResource?) as Void {
-        var cx = dc.getWidth()  / 2;
-        var cy = dc.getHeight() / 2;
-        var offset = (dc.getFontHeight(Graphics.FONT_SMALL) / 2) + LINE_GAP_PADDING;
-
-        if (icon != null) {
-            var iconWidth  = icon.getWidth();
-            var iconHeight = icon.getHeight();
-            var iconY = dc.getHeight() / 6 ; 
-
-            dc.drawBitmap(cx - (iconWidth / 2), iconY, icon);
-
-            dc.drawText(
-                cx,
-                iconY + iconHeight + LINE_GAP_PADDING,
-                Graphics.FONT_TINY,
-                msg,
-                Graphics.TEXT_JUSTIFY_CENTER
-            );
-        } else {
-            dc.drawText(
-                cx,
-                cy - offset,
-                Graphics.FONT_SMALL,
-                msg,
-                Graphics.TEXT_JUSTIFY_CENTER
-            );
-        }
     }
 
 
@@ -390,6 +338,85 @@ class NoTrackRunView extends WatchUi.View {
             "You can close the app",
             Graphics.TEXT_JUSTIFY_CENTER
         );
+    }
+
+        // ── Helper commun : icône en haut, titre, indication d'action ──
+    function drawStatus(
+        dc as Dc,
+        icon as BitmapResource?,
+        title as String,
+        titleColor as ColorType,
+        hint as String?
+    ) as Void {
+        var cx = dc.getWidth() / 2;
+        var h  = dc.getHeight();
+
+        var hTitle = dc.getFontHeight(Graphics.FONT_TINY);
+        var hHint  = dc.getFontHeight(Graphics.FONT_XTINY);
+
+        var lines = [];
+        if (hint != null) { lines = splitLines(hint); }
+
+        // ── Hauteur totale du bloc ──
+        var total = hTitle;
+        if (icon != null)       { total += icon.getHeight() + LINE_GAP_PADDING; }
+        if (lines.size() > 0)   { total += LINE_GAP_PADDING + (lines.size() * hHint); }
+
+        // ── Position de départ : centré, mais jamais plus bas que h/6 ──
+        var y = (h - total) / 2;
+        if (icon != null && y > h / 6) { y = h / 6; }   // comportement d'origine quand ça tient
+        var minTop = h / 12;                              // garde-fou en haut d'écran rond
+        if (y < minTop) { y = minTop; }
+
+        // ── Dessin ──
+        if (icon != null) {
+            dc.drawBitmap(cx - (icon.getWidth() / 2), y, icon);
+            y += icon.getHeight() + LINE_GAP_PADDING;
+        }
+
+        dc.setColor(titleColor, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(cx, y, Graphics.FONT_TINY, title, Graphics.TEXT_JUSTIFY_CENTER);
+        y += hTitle + LINE_GAP_PADDING;
+
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        for (var i = 0; i < lines.size(); i++) {
+            dc.drawText(cx, y, Graphics.FONT_XTINY, lines[i], Graphics.TEXT_JUSTIFY_CENTER);
+            y += hHint;
+        }
+    }
+
+    function splitLines(text as String) as Array<String> {
+        var lines = [];
+        var rest = text;
+        var idx = rest.find("\n");
+        while (idx != null) {
+            lines.add(rest.substring(0, idx) as String);
+            rest = rest.substring(idx + 1, rest.length()) as String;
+            idx = rest.find("\n");
+        }
+        lines.add(rest);
+        return lines;
+    }
+
+    // ── Une fonction par état ──
+    function drawIdle(dc as Dc) as Void {
+        drawStatus(dc, runnerIcon, "Upload a session", Graphics.COLOR_WHITE, null);
+    }
+
+    function drawGpsFixing(dc as Dc) as Void {
+        drawStatus(dc, compassIcon, "Acquiring GPS", Graphics.COLOR_WHITE, "Stay outside");
+    }
+
+    function drawSending(dc as Dc) as Void {
+        drawStatus(dc, sendIcon, "Sending session", Graphics.COLOR_WHITE, null);
+    }
+
+    function drawNeedSync(dc as Dc) as Void {
+        drawStatus(dc, syncIcon, "Results to send", Graphics.COLOR_YELLOW, "Start: send \n Back: options");
+    }
+
+    function drawPendingAck(dc as Dc) as Void {
+        drawStatus(dc, sendIcon, "Waiting for phone", Graphics.COLOR_YELLOW, "Start to retry");
     }
 
     function truncateText(dc as Dc, text as String, font as FontType, maxWidth as Number) as String {

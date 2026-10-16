@@ -37,7 +37,7 @@
 
 
 {
-    "type": "SESSION_PAYLOAD",
+    "type": "SEND_SESSION",
     "payload": {
         "id": 1,
         "label": "Tempo",
